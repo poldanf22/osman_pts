@@ -1,0 +1,4 @@
+openpyxl==3.0.9
+pandas==1.4.2
+Pillow==9.5.0
+streamlit==1.12.0
