@@ -880,8 +880,14 @@ if uploaded_file is not None:
     row160 = sort160.shape[0]
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
-    writer = pd.ExcelWriter(
-        fr'E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_untuk_lokasi\{kelas}_{penilaian}_{semester}_{kurikulum}_lokasi_101_160.xlsx', engine='xlsxwriter')
+    # Path file hasil penyimpanan
+    file_name = f"{kelas}_{penilaian}_{semester}_lokasi_161_236.xlsx"
+    file_path = tempfile.gettempdir() + '/' + file_name
+
+    # Menyimpan file Excel
+    writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
+    df.to_excel(writer, index=False)
+    writer.save()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -5974,10 +5980,15 @@ if uploaded_file is not None:
     worksheet160.conditional_format(22, 0, row160+21, 17,
                                     {'type': 'no_errors', 'format': border})
 
-    workbook.close()
-    st.success(
-        "File telah disimpan di pts_pas_pat_untuk_lokasi")
+    # workbook.close()
+    writer.close()
+    st.success("File telah disimpan")
 
+    # Tombol unduh file
+    with open(file_path, "rb") as f:
+        bytes_data = f.read()
+    st.download_button(label="Unduh File", data=bytes_data,
+                       file_name=file_name)
 
 uploaded_file = st.file_uploader(
     'Letakkan file excel NILAI STANDAR [LOKASI 161-236]', type='xlsx')
