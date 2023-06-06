@@ -3,12 +3,9 @@ import pandas as pd
 import openpyxl
 from openpyxl.styles import Font, PatternFill
 import os
-import subprocess
-import tempfile
 from PIL import Image
 
-# image = Image.open('E:\\logo resmi nf resize.png')
-image = Image.open('logo resmi nf resize.png')
+image = Image.open('E:\\logo resmi nf resize.png')
 st.image(image)
 
 st.title("Olah Nilai Standar")
@@ -89,14 +86,8 @@ uploaded_file = st.file_uploader(
     'Letakkan file excel', type='xlsx')
 
 if uploaded_file is not None:
-    # Simpan file ke direktori temporer
-    file_path = os.path.join(tempfile.gettempdir(), uploaded_file.name)
-    with open(file_path, 'wb') as f:
-        f.write(uploaded_file.read())
-    st.success("File berhasil diunggah!")
 
-    # Memuat file Excel menggunakan openpyxl
-    wb = openpyxl.load_workbook(file_path)
+    wb = openpyxl.load_workbook(uploaded_file)
     ws = wb['Sheet1']
 
     q = len(ws['K'])
@@ -1398,14 +1389,18 @@ if uploaded_file is not None:
     penilaian = PENILAIAN.lower()
     kurikulum = KURIKULUM.lower()
 
-    # path_file = fr"E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_nilai_std\{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
+    path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
 
-    # Path file hasil penyimpanan
-    file_name = "nilai_std.xlsx"
-    file_path = os.path.join(tempfile.gettempdir(), file_name)
-
+    # Simpan file ke direktori temporer
+    temp_dir = tempfile.gettempdir()
+    file_path = temp_dir + '/' + path_file
     wb.save(file_path)
-    st.success("File telah disimpan")
+
+    st.success(
+        "File telah disimpan")
 
     # Tombol unduh file
-    st.download_button(label="Unduh File", data=file_path, file_name=file_name)
+    with open(file_path, "rb") as f:
+        bytes_data = f.read()
+    st.download_button(label="Unduh File", data=bytes_data,
+                       file_name=path_file)
