@@ -31,8 +31,8 @@ def commit_and_push_to_github(file_path):
     subprocess.call(["git", "push", "origin", "main"])
 
 
-image = Image.open('E:\\logo resmi nf resize.png')
-# image = Image.open('logo resmi nf resize.png')
+# image = Image.open('E:\\logo resmi nf resize.png')
+image = Image.open('logo resmi nf resize.png')
 st.image(image)
 
 st.title("Olah Nilai Standar")
