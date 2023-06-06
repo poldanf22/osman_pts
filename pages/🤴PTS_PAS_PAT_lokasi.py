@@ -1873,7 +1873,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(16, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'E:\logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -1913,7 +1913,7 @@ if uploaded_file is not None:
                                       {'type': 'no_errors', 'format': borderCover})
 
     # worksheet 101
-    worksheet101.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet101.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet101.set_column('A:A', 7, center)
     worksheet101.set_column('B:B', 6, center)
@@ -1982,7 +1982,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 102
-    worksheet102.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet102.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet102.set_column('A:A', 7, center)
     worksheet102.set_column('B:B', 6, center)
@@ -2051,7 +2051,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 103
-    worksheet103.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet103.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet103.set_column('A:A', 7, center)
     worksheet103.set_column('B:B', 6, center)
@@ -2120,7 +2120,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 104
-    worksheet104.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet104.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet104.set_column('A:A', 7, center)
     worksheet104.set_column('B:B', 6, center)
@@ -2189,7 +2189,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 105
-    worksheet105.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet105.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet105.set_column('A:A', 7, center)
     worksheet105.set_column('B:B', 6, center)
@@ -2258,7 +2258,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 106
-    worksheet106.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet106.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet106.set_column('A:A', 7, center)
     worksheet106.set_column('B:B', 6, center)
@@ -2327,7 +2327,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 107
-    worksheet107.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet107.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet107.set_column('A:A', 7, center)
     worksheet107.set_column('B:B', 6, center)
@@ -2396,7 +2396,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 108
-    worksheet108.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet108.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet108.set_column('A:A', 7, center)
     worksheet108.set_column('B:B', 6, center)
@@ -2465,7 +2465,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 109
-    worksheet109.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet109.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet109.set_column('A:A', 7, center)
     worksheet109.set_column('B:B', 6, center)
@@ -2534,7 +2534,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 110
-    worksheet110.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet110.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet110.set_column('A:A', 7, center)
     worksheet110.set_column('B:B', 6, center)
@@ -2603,7 +2603,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 111
-    worksheet111.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet111.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet111.set_column('A:A', 7, center)
     worksheet111.set_column('B:B', 6, center)
@@ -2672,7 +2672,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 112
-    worksheet112.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet112.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet112.set_column('A:A', 7, center)
     worksheet112.set_column('B:B', 6, center)
@@ -2741,7 +2741,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 113
-    worksheet113.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet113.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet113.set_column('A:A', 7, center)
     worksheet113.set_column('B:B', 6, center)
@@ -2810,7 +2810,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 114
-    worksheet114.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet114.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet114.set_column('A:A', 7, center)
     worksheet114.set_column('B:B', 6, center)
@@ -2878,7 +2878,7 @@ if uploaded_file is not None:
     worksheet114.conditional_format(22, 0, row114+21, 17,
                                     {'type': 'no_errors', 'format': border})
     # worksheet 115
-    worksheet115.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet115.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet115.set_column('A:A', 7, center)
     worksheet115.set_column('B:B', 6, center)
@@ -2947,7 +2947,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 116
-    worksheet116.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet116.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet116.set_column('A:A', 7, center)
     worksheet116.set_column('B:B', 6, center)
@@ -3016,7 +3016,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 117
-    worksheet117.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet117.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet117.set_column('A:A', 7, center)
     worksheet117.set_column('B:B', 6, center)
@@ -3085,7 +3085,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 118
-    worksheet118.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet118.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet118.set_column('A:A', 7, center)
     worksheet118.set_column('B:B', 6, center)
@@ -3154,7 +3154,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 119
-    worksheet119.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet119.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet119.set_column('A:A', 7, center)
     worksheet119.set_column('B:B', 6, center)
@@ -3223,7 +3223,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 120
-    worksheet120.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet120.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet120.set_column('A:A', 7, center)
     worksheet120.set_column('B:B', 6, center)
@@ -3292,7 +3292,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 121
-    worksheet121.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet121.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet121.set_column('A:A', 7, center)
     worksheet121.set_column('B:B', 6, center)
@@ -3361,7 +3361,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 122
-    worksheet122.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet122.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet122.set_column('A:A', 7, center)
     worksheet122.set_column('B:B', 6, center)
@@ -3430,7 +3430,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 123
-    worksheet123.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet123.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet123.set_column('A:A', 7, center)
     worksheet123.set_column('B:B', 6, center)
@@ -3499,7 +3499,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 124
-    worksheet124.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet124.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet124.set_column('A:A', 7, center)
     worksheet124.set_column('B:B', 6, center)
@@ -3568,7 +3568,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 125
-    worksheet125.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet125.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet125.set_column('A:A', 7, center)
     worksheet125.set_column('B:B', 6, center)
@@ -3637,7 +3637,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 126
-    worksheet126.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet126.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet126.set_column('A:A', 7, center)
     worksheet126.set_column('B:B', 6, center)
@@ -3706,7 +3706,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 127
-    worksheet127.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet127.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet127.set_column('A:A', 7, center)
     worksheet127.set_column('B:B', 6, center)
@@ -3775,7 +3775,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 128
-    worksheet128.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet128.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet128.set_column('A:A', 7, center)
     worksheet128.set_column('B:B', 6, center)
@@ -3844,7 +3844,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 129
-    worksheet129.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet129.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet129.set_column('A:A', 7, center)
     worksheet129.set_column('B:B', 6, center)
@@ -3913,7 +3913,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 130
-    worksheet130.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet130.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet130.set_column('A:A', 7, center)
     worksheet130.set_column('B:B', 6, center)
@@ -3982,7 +3982,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 131
-    worksheet131.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet131.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet131.set_column('A:A', 7, center)
     worksheet131.set_column('B:B', 6, center)
@@ -4051,7 +4051,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 132
-    worksheet132.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet132.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet132.set_column('A:A', 7, center)
     worksheet132.set_column('B:B', 6, center)
@@ -4120,7 +4120,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 133
-    worksheet133.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet133.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet133.set_column('A:A', 7, center)
     worksheet133.set_column('B:B', 6, center)
@@ -4189,7 +4189,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 134
-    worksheet134.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet134.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet134.set_column('A:A', 7, center)
     worksheet134.set_column('B:B', 6, center)
@@ -4258,7 +4258,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 135
-    worksheet135.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet135.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet135.set_column('A:A', 7, center)
     worksheet135.set_column('B:B', 6, center)
@@ -4327,7 +4327,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 136
-    worksheet136.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet136.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet136.set_column('A:A', 7, center)
     worksheet136.set_column('B:B', 6, center)
@@ -4396,7 +4396,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 137
-    worksheet137.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet137.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet137.set_column('A:A', 7, center)
     worksheet137.set_column('B:B', 6, center)
@@ -4465,7 +4465,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 138
-    worksheet138.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet138.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet138.set_column('A:A', 7, center)
     worksheet138.set_column('B:B', 6, center)
@@ -4534,7 +4534,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 139
-    worksheet139.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet139.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet139.set_column('A:A', 7, center)
     worksheet139.set_column('B:B', 6, center)
@@ -4603,7 +4603,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 140
-    worksheet140.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet140.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet140.set_column('A:A', 7, center)
     worksheet140.set_column('B:B', 6, center)
@@ -4672,7 +4672,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 141
-    worksheet141.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet141.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet141.set_column('A:A', 7, center)
     worksheet141.set_column('B:B', 6, center)
@@ -4741,7 +4741,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 142
-    worksheet142.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet142.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet142.set_column('A:A', 7, center)
     worksheet142.set_column('B:B', 6, center)
@@ -4810,7 +4810,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 143
-    worksheet143.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet143.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet143.set_column('A:A', 7, center)
     worksheet143.set_column('B:B', 6, center)
@@ -4879,7 +4879,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 144
-    worksheet144.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet144.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet144.set_column('A:A', 7, center)
     worksheet144.set_column('B:B', 6, center)
@@ -4948,7 +4948,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 145
-    worksheet145.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet145.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet145.set_column('A:A', 7, center)
     worksheet145.set_column('B:B', 6, center)
@@ -5017,7 +5017,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 146
-    worksheet146.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet146.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet146.set_column('A:A', 7, center)
     worksheet146.set_column('B:B', 6, center)
@@ -5086,7 +5086,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 148
-    worksheet148.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet148.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet148.set_column('A:A', 7, center)
     worksheet148.set_column('B:B', 6, center)
@@ -5155,7 +5155,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 149
-    worksheet149.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet149.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet149.set_column('A:A', 7, center)
     worksheet149.set_column('B:B', 6, center)
@@ -5224,7 +5224,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 150
-    worksheet150.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet150.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet150.set_column('A:A', 7, center)
     worksheet150.set_column('B:B', 6, center)
@@ -5293,7 +5293,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 151
-    worksheet151.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet151.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet151.set_column('A:A', 7, center)
     worksheet151.set_column('B:B', 6, center)
@@ -5362,7 +5362,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 152
-    worksheet152.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet152.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet152.set_column('A:A', 7, center)
     worksheet152.set_column('B:B', 6, center)
@@ -5431,7 +5431,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 153
-    worksheet153.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet153.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet153.set_column('A:A', 7, center)
     worksheet153.set_column('B:B', 6, center)
@@ -5500,7 +5500,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 154
-    worksheet154.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet154.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet154.set_column('A:A', 7, center)
     worksheet154.set_column('B:B', 6, center)
@@ -5569,7 +5569,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 155
-    worksheet155.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet155.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet155.set_column('A:A', 7, center)
     worksheet155.set_column('B:B', 6, center)
@@ -5638,7 +5638,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 156
-    worksheet156.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet156.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet156.set_column('A:A', 7, center)
     worksheet156.set_column('B:B', 6, center)
@@ -5707,7 +5707,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 157
-    worksheet157.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet157.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet157.set_column('A:A', 7, center)
     worksheet157.set_column('B:B', 6, center)
@@ -5776,7 +5776,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 158
-    worksheet158.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet158.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet158.set_column('A:A', 7, center)
     worksheet158.set_column('B:B', 6, center)
@@ -5845,7 +5845,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 159
-    worksheet159.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet159.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet159.set_column('A:A', 7, center)
     worksheet159.set_column('B:B', 6, center)
@@ -5914,7 +5914,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 160
-    worksheet160.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet160.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet160.set_column('A:A', 7, center)
     worksheet160.set_column('B:B', 6, center)
@@ -7785,7 +7785,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(16, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'E:\logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -7825,7 +7825,7 @@ if uploaded_file is not None:
                                       {'type': 'no_errors', 'format': borderCover})
 
     # worksheet 161
-    worksheet161.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet161.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet161.set_column('A:A', 7, center)
     worksheet161.set_column('B:B', 6, center)
@@ -7894,7 +7894,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 162
-    worksheet162.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet162.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet162.set_column('A:A', 7, center)
     worksheet162.set_column('B:B', 6, center)
@@ -7963,7 +7963,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 163
-    worksheet163.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet163.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet163.set_column('A:A', 7, center)
     worksheet163.set_column('B:B', 6, center)
@@ -8032,7 +8032,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 164
-    worksheet164.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet164.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet164.set_column('A:A', 7, center)
     worksheet164.set_column('B:B', 6, center)
@@ -8101,7 +8101,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 165
-    worksheet165.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet165.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet165.set_column('A:A', 7, center)
     worksheet165.set_column('B:B', 6, center)
@@ -8170,7 +8170,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 166
-    worksheet166.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet166.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet166.set_column('A:A', 7, center)
     worksheet166.set_column('B:B', 6, center)
@@ -8239,7 +8239,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 167
-    worksheet167.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet167.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet167.set_column('A:A', 7, center)
     worksheet167.set_column('B:B', 6, center)
@@ -8308,7 +8308,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 168
-    worksheet168.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet168.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet168.set_column('A:A', 7, center)
     worksheet168.set_column('B:B', 6, center)
@@ -8377,7 +8377,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 169
-    worksheet169.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet169.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet169.set_column('A:A', 7, center)
     worksheet169.set_column('B:B', 6, center)
@@ -8446,7 +8446,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 171
-    worksheet171.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet171.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet171.set_column('A:A', 7, center)
     worksheet171.set_column('B:B', 6, center)
@@ -8515,7 +8515,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 173
-    worksheet173.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet173.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet173.set_column('A:A', 7, center)
     worksheet173.set_column('B:B', 6, center)
@@ -8584,7 +8584,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 174
-    worksheet174.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet174.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet174.set_column('A:A', 7, center)
     worksheet174.set_column('B:B', 6, center)
@@ -8653,7 +8653,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 175
-    worksheet175.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet175.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet175.set_column('A:A', 7, center)
     worksheet175.set_column('B:B', 6, center)
@@ -8722,7 +8722,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 176
-    worksheet176.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet176.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet176.set_column('A:A', 7, center)
     worksheet176.set_column('B:B', 6, center)
@@ -8790,7 +8790,7 @@ if uploaded_file is not None:
     worksheet176.conditional_format(22, 0, row176+21, 17,
                                     {'type': 'no_errors', 'format': border})
     # worksheet 177
-    worksheet177.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet177.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet177.set_column('A:A', 7, center)
     worksheet177.set_column('B:B', 6, center)
@@ -8859,7 +8859,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 178
-    worksheet178.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet178.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet178.set_column('A:A', 7, center)
     worksheet178.set_column('B:B', 6, center)
@@ -8928,7 +8928,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 179
-    worksheet179.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet179.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet179.set_column('A:A', 7, center)
     worksheet179.set_column('B:B', 6, center)
@@ -8997,7 +8997,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 180
-    worksheet180.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet180.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet180.set_column('A:A', 7, center)
     worksheet180.set_column('B:B', 6, center)
@@ -9066,7 +9066,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 181
-    worksheet181.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet181.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet181.set_column('A:A', 7, center)
     worksheet181.set_column('B:B', 6, center)
@@ -9135,7 +9135,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 182
-    worksheet182.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet182.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet182.set_column('A:A', 7, center)
     worksheet182.set_column('B:B', 6, center)
@@ -9204,7 +9204,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 183
-    worksheet183.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet183.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet183.set_column('A:A', 7, center)
     worksheet183.set_column('B:B', 6, center)
@@ -9273,7 +9273,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 184
-    worksheet184.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet184.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet184.set_column('A:A', 7, center)
     worksheet184.set_column('B:B', 6, center)
@@ -9342,7 +9342,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 185
-    worksheet185.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet185.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet185.set_column('A:A', 7, center)
     worksheet185.set_column('B:B', 6, center)
@@ -9411,7 +9411,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 186
-    worksheet186.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet186.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet186.set_column('A:A', 7, center)
     worksheet186.set_column('B:B', 6, center)
@@ -9480,7 +9480,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 187
-    worksheet187.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet187.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet187.set_column('A:A', 7, center)
     worksheet187.set_column('B:B', 6, center)
@@ -9549,7 +9549,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 188
-    worksheet188.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet188.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet188.set_column('A:A', 7, center)
     worksheet188.set_column('B:B', 6, center)
@@ -9618,7 +9618,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 189
-    worksheet189.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet189.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet189.set_column('A:A', 7, center)
     worksheet189.set_column('B:B', 6, center)
@@ -9687,7 +9687,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 190
-    worksheet190.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet190.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet190.set_column('A:A', 7, center)
     worksheet190.set_column('B:B', 6, center)
@@ -9756,7 +9756,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 191
-    worksheet191.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet191.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet191.set_column('A:A', 7, center)
     worksheet191.set_column('B:B', 6, center)
@@ -9825,7 +9825,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 192
-    worksheet192.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet192.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet192.set_column('A:A', 7, center)
     worksheet192.set_column('B:B', 6, center)
@@ -9894,7 +9894,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 193
-    worksheet193.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet193.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet193.set_column('A:A', 7, center)
     worksheet193.set_column('B:B', 6, center)
@@ -9963,7 +9963,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 194
-    worksheet194.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet194.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet194.set_column('A:A', 7, center)
     worksheet194.set_column('B:B', 6, center)
@@ -10032,7 +10032,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 195
-    worksheet195.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet195.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet195.set_column('A:A', 7, center)
     worksheet195.set_column('B:B', 6, center)
@@ -10101,7 +10101,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 196
-    worksheet196.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet196.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet196.set_column('A:A', 7, center)
     worksheet196.set_column('B:B', 6, center)
@@ -10170,7 +10170,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 197
-    worksheet197.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet197.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet197.set_column('A:A', 7, center)
     worksheet197.set_column('B:B', 6, center)
@@ -10239,7 +10239,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 198
-    worksheet198.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet198.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet198.set_column('A:A', 7, center)
     worksheet198.set_column('B:B', 6, center)
@@ -10308,7 +10308,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 199
-    worksheet199.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet199.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet199.set_column('A:A', 7, center)
     worksheet199.set_column('B:B', 6, center)
@@ -10377,7 +10377,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 201
-    worksheet201.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet201.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet201.set_column('A:A', 7, center)
     worksheet201.set_column('B:B', 6, center)
@@ -10446,7 +10446,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 202
-    worksheet202.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet202.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet202.set_column('A:A', 7, center)
     worksheet202.set_column('B:B', 6, center)
@@ -10515,7 +10515,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 203
-    worksheet203.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet203.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet203.set_column('A:A', 7, center)
     worksheet203.set_column('B:B', 6, center)
@@ -10584,7 +10584,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 210
-    worksheet210.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet210.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet210.set_column('A:A', 7, center)
     worksheet210.set_column('B:B', 6, center)
@@ -10653,7 +10653,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 211
-    worksheet211.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet211.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet211.set_column('A:A', 7, center)
     worksheet211.set_column('B:B', 6, center)
@@ -10722,7 +10722,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 212
-    worksheet212.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet212.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet212.set_column('A:A', 7, center)
     worksheet212.set_column('B:B', 6, center)
@@ -10791,7 +10791,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 216
-    worksheet216.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet216.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet216.set_column('A:A', 7, center)
     worksheet216.set_column('B:B', 6, center)
@@ -10860,7 +10860,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 217
-    worksheet217.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet217.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet217.set_column('A:A', 7, center)
     worksheet217.set_column('B:B', 6, center)
@@ -10929,7 +10929,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 218
-    worksheet218.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet218.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet218.set_column('A:A', 7, center)
     worksheet218.set_column('B:B', 6, center)
@@ -10998,7 +10998,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 219
-    worksheet219.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet219.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet219.set_column('A:A', 7, center)
     worksheet219.set_column('B:B', 6, center)
@@ -11067,7 +11067,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 220
-    worksheet220.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet220.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet220.set_column('A:A', 7, center)
     worksheet220.set_column('B:B', 6, center)
@@ -11136,7 +11136,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 222
-    worksheet222.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet222.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet222.set_column('A:A', 7, center)
     worksheet222.set_column('B:B', 6, center)
@@ -11205,7 +11205,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 226
-    worksheet226.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet226.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet226.set_column('A:A', 7, center)
     worksheet226.set_column('B:B', 6, center)
@@ -11274,7 +11274,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 227
-    worksheet227.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet227.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet227.set_column('A:A', 7, center)
     worksheet227.set_column('B:B', 6, center)
@@ -11343,7 +11343,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 228
-    worksheet228.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet228.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet228.set_column('A:A', 7, center)
     worksheet228.set_column('B:B', 6, center)
@@ -11412,7 +11412,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 229
-    worksheet229.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet229.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet229.set_column('A:A', 7, center)
     worksheet229.set_column('B:B', 6, center)
@@ -11481,7 +11481,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 230
-    worksheet230.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet230.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet230.set_column('A:A', 7, center)
     worksheet230.set_column('B:B', 6, center)
@@ -11550,7 +11550,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 231
-    worksheet231.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet231.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet231.set_column('A:A', 7, center)
     worksheet231.set_column('B:B', 6, center)
@@ -11619,7 +11619,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 233
-    worksheet233.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet233.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet233.set_column('A:A', 7, center)
     worksheet233.set_column('B:B', 6, center)
@@ -11688,7 +11688,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 234
-    worksheet234.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet234.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet234.set_column('A:A', 7, center)
     worksheet234.set_column('B:B', 6, center)
@@ -11757,7 +11757,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 235
-    worksheet235.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet235.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet235.set_column('A:A', 7, center)
     worksheet235.set_column('B:B', 6, center)
@@ -11826,7 +11826,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 236
-    worksheet236.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet236.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet236.set_column('A:A', 7, center)
     worksheet236.set_column('B:B', 6, center)
@@ -13692,7 +13692,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(16, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'E:\logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -13732,7 +13732,7 @@ if uploaded_file is not None:
                                       {'type': 'no_errors', 'format': borderCover})
 
     # worksheet 237
-    worksheet237.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet237.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet237.set_column('A:A', 7, center)
     worksheet237.set_column('B:B', 6, center)
@@ -13801,7 +13801,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 238
-    worksheet238.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet238.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet238.set_column('A:A', 7, center)
     worksheet238.set_column('B:B', 6, center)
@@ -13870,7 +13870,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 240
-    worksheet240.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet240.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet240.set_column('A:A', 7, center)
     worksheet240.set_column('B:B', 6, center)
@@ -13939,7 +13939,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 241
-    worksheet241.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet241.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet241.set_column('A:A', 7, center)
     worksheet241.set_column('B:B', 6, center)
@@ -14008,7 +14008,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 243
-    worksheet243.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet243.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet243.set_column('A:A', 7, center)
     worksheet243.set_column('B:B', 6, center)
@@ -14077,7 +14077,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 244
-    worksheet244.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet244.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet244.set_column('A:A', 7, center)
     worksheet244.set_column('B:B', 6, center)
@@ -14146,7 +14146,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 245
-    worksheet245.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet245.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet245.set_column('A:A', 7, center)
     worksheet245.set_column('B:B', 6, center)
@@ -14215,7 +14215,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 246
-    worksheet246.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet246.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet246.set_column('A:A', 7, center)
     worksheet246.set_column('B:B', 6, center)
@@ -14284,7 +14284,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 247
-    worksheet247.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet247.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet247.set_column('A:A', 7, center)
     worksheet247.set_column('B:B', 6, center)
@@ -14353,7 +14353,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 248
-    worksheet248.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet248.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet248.set_column('A:A', 7, center)
     worksheet248.set_column('B:B', 6, center)
@@ -14422,7 +14422,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 249
-    worksheet249.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet249.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet249.set_column('A:A', 7, center)
     worksheet249.set_column('B:B', 6, center)
@@ -14491,7 +14491,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 250
-    worksheet250.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet250.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet250.set_column('A:A', 7, center)
     worksheet250.set_column('B:B', 6, center)
@@ -14560,7 +14560,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 251
-    worksheet251.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet251.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet251.set_column('A:A', 7, center)
     worksheet251.set_column('B:B', 6, center)
@@ -14629,7 +14629,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 252
-    worksheet252.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet252.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet252.set_column('A:A', 7, center)
     worksheet252.set_column('B:B', 6, center)
@@ -14697,7 +14697,7 @@ if uploaded_file is not None:
     worksheet252.conditional_format(22, 0, row252+21, 17,
                                     {'type': 'no_errors', 'format': border})
     # worksheet 253
-    worksheet253.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet253.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet253.set_column('A:A', 7, center)
     worksheet253.set_column('B:B', 6, center)
@@ -14766,7 +14766,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 254
-    worksheet254.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet254.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet254.set_column('A:A', 7, center)
     worksheet254.set_column('B:B', 6, center)
@@ -14835,7 +14835,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 255
-    worksheet255.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet255.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet255.set_column('A:A', 7, center)
     worksheet255.set_column('B:B', 6, center)
@@ -14904,7 +14904,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 256
-    worksheet256.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet256.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet256.set_column('A:A', 7, center)
     worksheet256.set_column('B:B', 6, center)
@@ -14973,7 +14973,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 258
-    worksheet258.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet258.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet258.set_column('A:A', 7, center)
     worksheet258.set_column('B:B', 6, center)
@@ -15042,7 +15042,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 259
-    worksheet259.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet259.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet259.set_column('A:A', 7, center)
     worksheet259.set_column('B:B', 6, center)
@@ -15111,7 +15111,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 260
-    worksheet260.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet260.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet260.set_column('A:A', 7, center)
     worksheet260.set_column('B:B', 6, center)
@@ -15180,7 +15180,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 261
-    worksheet261.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet261.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet261.set_column('A:A', 7, center)
     worksheet261.set_column('B:B', 6, center)
@@ -15249,7 +15249,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 262
-    worksheet262.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet262.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet262.set_column('A:A', 7, center)
     worksheet262.set_column('B:B', 6, center)
@@ -15318,7 +15318,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 264
-    worksheet264.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet264.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet264.set_column('A:A', 7, center)
     worksheet264.set_column('B:B', 6, center)
@@ -15387,7 +15387,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 265
-    worksheet265.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet265.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet265.set_column('A:A', 7, center)
     worksheet265.set_column('B:B', 6, center)
@@ -15456,7 +15456,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 266
-    worksheet266.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet266.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet266.set_column('A:A', 7, center)
     worksheet266.set_column('B:B', 6, center)
@@ -15525,7 +15525,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 267
-    worksheet267.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet267.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet267.set_column('A:A', 7, center)
     worksheet267.set_column('B:B', 6, center)
@@ -15594,7 +15594,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 268
-    worksheet268.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet268.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet268.set_column('A:A', 7, center)
     worksheet268.set_column('B:B', 6, center)
@@ -15663,7 +15663,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 269
-    worksheet269.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet269.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet269.set_column('A:A', 7, center)
     worksheet269.set_column('B:B', 6, center)
@@ -15732,7 +15732,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 270
-    worksheet270.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet270.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet270.set_column('A:A', 7, center)
     worksheet270.set_column('B:B', 6, center)
@@ -15801,7 +15801,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 271
-    worksheet271.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet271.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet271.set_column('A:A', 7, center)
     worksheet271.set_column('B:B', 6, center)
@@ -15870,7 +15870,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 272
-    worksheet272.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet272.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet272.set_column('A:A', 7, center)
     worksheet272.set_column('B:B', 6, center)
@@ -15939,7 +15939,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 273
-    worksheet273.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet273.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet273.set_column('A:A', 7, center)
     worksheet273.set_column('B:B', 6, center)
@@ -16008,7 +16008,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 274
-    worksheet274.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet274.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet274.set_column('A:A', 7, center)
     worksheet274.set_column('B:B', 6, center)
@@ -16077,7 +16077,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 275
-    worksheet275.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet275.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet275.set_column('A:A', 7, center)
     worksheet275.set_column('B:B', 6, center)
@@ -16146,7 +16146,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 276
-    worksheet276.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet276.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet276.set_column('A:A', 7, center)
     worksheet276.set_column('B:B', 6, center)
@@ -16215,7 +16215,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 277
-    worksheet277.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet277.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet277.set_column('A:A', 7, center)
     worksheet277.set_column('B:B', 6, center)
@@ -16284,7 +16284,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 278
-    worksheet278.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet278.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet278.set_column('A:A', 7, center)
     worksheet278.set_column('B:B', 6, center)
@@ -16353,7 +16353,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 279
-    worksheet279.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet279.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet279.set_column('A:A', 7, center)
     worksheet279.set_column('B:B', 6, center)
@@ -16422,7 +16422,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 280
-    worksheet280.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet280.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet280.set_column('A:A', 7, center)
     worksheet280.set_column('B:B', 6, center)
@@ -16491,7 +16491,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 281
-    worksheet281.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet281.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet281.set_column('A:A', 7, center)
     worksheet281.set_column('B:B', 6, center)
@@ -16560,7 +16560,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 282
-    worksheet282.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet282.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet282.set_column('A:A', 7, center)
     worksheet282.set_column('B:B', 6, center)
@@ -16629,7 +16629,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 283
-    worksheet283.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet283.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet283.set_column('A:A', 7, center)
     worksheet283.set_column('B:B', 6, center)
@@ -16698,7 +16698,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 284
-    worksheet284.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet284.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet284.set_column('A:A', 7, center)
     worksheet284.set_column('B:B', 6, center)
@@ -16767,7 +16767,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 285
-    worksheet285.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet285.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet285.set_column('A:A', 7, center)
     worksheet285.set_column('B:B', 6, center)
@@ -16836,7 +16836,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 286
-    worksheet286.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet286.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet286.set_column('A:A', 7, center)
     worksheet286.set_column('B:B', 6, center)
@@ -16905,7 +16905,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 287
-    worksheet287.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet287.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet287.set_column('A:A', 7, center)
     worksheet287.set_column('B:B', 6, center)
@@ -16974,7 +16974,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 288
-    worksheet288.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet288.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet288.set_column('A:A', 7, center)
     worksheet288.set_column('B:B', 6, center)
@@ -17043,7 +17043,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 289
-    worksheet289.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet289.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet289.set_column('A:A', 7, center)
     worksheet289.set_column('B:B', 6, center)
@@ -17112,7 +17112,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 290
-    worksheet290.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet290.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet290.set_column('A:A', 7, center)
     worksheet290.set_column('B:B', 6, center)
@@ -17181,7 +17181,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 291
-    worksheet291.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet291.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet291.set_column('A:A', 7, center)
     worksheet291.set_column('B:B', 6, center)
@@ -17250,7 +17250,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 292
-    worksheet292.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet292.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet292.set_column('A:A', 7, center)
     worksheet292.set_column('B:B', 6, center)
@@ -17319,7 +17319,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 293
-    worksheet293.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet293.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet293.set_column('A:A', 7, center)
     worksheet293.set_column('B:B', 6, center)
@@ -17388,7 +17388,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 294
-    worksheet294.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet294.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet294.set_column('A:A', 7, center)
     worksheet294.set_column('B:B', 6, center)
@@ -17457,7 +17457,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 295
-    worksheet295.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet295.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet295.set_column('A:A', 7, center)
     worksheet295.set_column('B:B', 6, center)
@@ -17526,7 +17526,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 296
-    worksheet296.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet296.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet296.set_column('A:A', 7, center)
     worksheet296.set_column('B:B', 6, center)
@@ -17595,7 +17595,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 297
-    worksheet297.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet297.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet297.set_column('A:A', 7, center)
     worksheet297.set_column('B:B', 6, center)
@@ -17664,7 +17664,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 298
-    worksheet298.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet298.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet298.set_column('A:A', 7, center)
     worksheet298.set_column('B:B', 6, center)
@@ -17733,7 +17733,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 299
-    worksheet299.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet299.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet299.set_column('A:A', 7, center)
     worksheet299.set_column('B:B', 6, center)
@@ -18689,7 +18689,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(16, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'E:\logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -18729,7 +18729,7 @@ if uploaded_file is not None:
                                       {'type': 'no_errors', 'format': borderCover})
 
     # worksheet 530
-    worksheet530.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet530.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet530.set_column('A:A', 7, center)
     worksheet530.set_column('B:B', 6, center)
@@ -18798,7 +18798,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 531
-    worksheet531.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet531.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet531.set_column('A:A', 7, center)
     worksheet531.set_column('B:B', 6, center)
@@ -18867,7 +18867,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 532
-    worksheet532.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet532.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet532.set_column('A:A', 7, center)
     worksheet532.set_column('B:B', 6, center)
@@ -18936,7 +18936,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 533
-    worksheet533.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet533.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet533.set_column('A:A', 7, center)
     worksheet533.set_column('B:B', 6, center)
@@ -19005,7 +19005,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 534
-    worksheet534.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet534.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet534.set_column('A:A', 7, center)
     worksheet534.set_column('B:B', 6, center)
@@ -19074,7 +19074,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 535
-    worksheet535.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet535.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet535.set_column('A:A', 7, center)
     worksheet535.set_column('B:B', 6, center)
@@ -19143,7 +19143,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 546
-    worksheet546.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet546.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet546.set_column('A:A', 7, center)
     worksheet546.set_column('B:B', 6, center)
@@ -19212,7 +19212,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 547
-    worksheet547.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet547.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet547.set_column('A:A', 7, center)
     worksheet547.set_column('B:B', 6, center)
@@ -19281,7 +19281,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 548
-    worksheet548.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet548.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet548.set_column('A:A', 7, center)
     worksheet548.set_column('B:B', 6, center)
@@ -19350,7 +19350,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 549
-    worksheet549.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet549.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet549.set_column('A:A', 7, center)
     worksheet549.set_column('B:B', 6, center)
@@ -19419,7 +19419,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 556
-    worksheet556.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet556.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet556.set_column('A:A', 7, center)
     worksheet556.set_column('B:B', 6, center)
@@ -19488,7 +19488,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 557
-    worksheet557.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet557.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet557.set_column('A:A', 7, center)
     worksheet557.set_column('B:B', 6, center)
@@ -19557,7 +19557,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 558
-    worksheet558.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet558.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet558.set_column('A:A', 7, center)
     worksheet558.set_column('B:B', 6, center)
@@ -19626,7 +19626,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 575
-    worksheet575.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet575.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet575.set_column('A:A', 7, center)
     worksheet575.set_column('B:B', 6, center)
@@ -19695,7 +19695,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 576
-    worksheet576.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet576.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet576.set_column('A:A', 7, center)
     worksheet576.set_column('B:B', 6, center)
@@ -19763,7 +19763,7 @@ if uploaded_file is not None:
     worksheet576.conditional_format(22, 0, row576+21, 17,
                                     {'type': 'no_errors', 'format': border})
     # worksheet 577
-    worksheet577.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet577.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet577.set_column('A:A', 7, center)
     worksheet577.set_column('B:B', 6, center)
@@ -19832,7 +19832,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 578
-    worksheet578.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet578.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet578.set_column('A:A', 7, center)
     worksheet578.set_column('B:B', 6, center)
@@ -19901,7 +19901,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 588
-    worksheet588.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet588.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet588.set_column('A:A', 7, center)
     worksheet588.set_column('B:B', 6, center)
@@ -19970,7 +19970,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 589
-    worksheet589.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet589.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet589.set_column('A:A', 7, center)
     worksheet589.set_column('B:B', 6, center)
@@ -20039,7 +20039,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 594
-    worksheet594.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet594.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet594.set_column('A:A', 7, center)
     worksheet594.set_column('B:B', 6, center)
@@ -20108,7 +20108,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 661
-    worksheet661.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet661.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet661.set_column('A:A', 7, center)
     worksheet661.set_column('B:B', 6, center)
@@ -20177,7 +20177,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 662
-    worksheet662.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet662.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet662.set_column('A:A', 7, center)
     worksheet662.set_column('B:B', 6, center)
@@ -20246,7 +20246,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 663
-    worksheet663.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet663.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet663.set_column('A:A', 7, center)
     worksheet663.set_column('B:B', 6, center)
@@ -20315,7 +20315,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 664
-    worksheet664.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet664.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet664.set_column('A:A', 7, center)
     worksheet664.set_column('B:B', 6, center)
