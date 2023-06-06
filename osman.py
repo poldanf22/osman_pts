@@ -1401,14 +1401,11 @@ if uploaded_file is not None:
     # path_file = fr"E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_nilai_std\{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
 
     # Path file hasil penyimpanan
-    file_path = os.path.join(tempfile.gettempdir(
-    ), "nilai_std.xlsx")
+    file_name = "nilai_std.xlsx"
+    file_path = os.path.join(tempfile.gettempdir(), file_name)
 
     wb.save(file_path)
-
-    st.success(
-        "File telah disimpan")
+    st.success("File telah disimpan")
 
     # Tombol unduh file
-    st.download_button(label="Unduh File", data=file_path,
-                       file_name="nilai_std.xlsx")
+    st.download_button(label="Unduh File", data=file_path, file_name=file_name)
