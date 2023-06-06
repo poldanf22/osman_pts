@@ -888,8 +888,6 @@ if uploaded_file is not None:
 
     # Menyimpan file Excel
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
-    df.to_excel(writer, index=False)
-    writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -6805,8 +6803,6 @@ if uploaded_file is not None:
 
     # Menyimpan file Excel
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
-    df.to_excel(writer, index=False)
-    writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -12723,8 +12719,6 @@ if uploaded_file is not None:
 
     # Menyimpan file Excel
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
-    df.to_excel(writer, index=False)
-    writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -18221,8 +18215,6 @@ if uploaded_file is not None:
 
     # Menyimpan file Excel
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
-    df.to_excel(writer, index=False)
-    writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
