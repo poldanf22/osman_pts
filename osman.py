@@ -61,7 +61,7 @@ with col9:
         "KURIKULUM",
         ("--Pilih Kurikulum--", "K13", "KM"))
 
-TAHUN = st.text_input("Masukkan Tahun Ajaran", value="placeholder information put here",
+TAHUN = st.text_input("Masukkan Tahun Ajaran", placeholder="2022-2023",
                       help="Contoh: 2022-2023")
 
 col1, col2, col3, col4, col5 = st.columns(5)
