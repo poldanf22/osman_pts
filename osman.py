@@ -1435,7 +1435,7 @@ if uploaded_file is not None:
     wb.save(path_file)
 
     st.success(
-        "File telah disimpan di pts_pas_pat_nilai_std")
+        "File telah disimpan")
 
     def download_file(file_path):
         with open(file_path, 'rb') as f:
