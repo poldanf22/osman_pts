@@ -1442,7 +1442,6 @@ if uploaded_file is not None:
             st.download_button('Download File', f, file_path)
 
     # Contoh penggunaan
-    file_path = "file.xlsx"  # Ganti dengan path file yang sesuai
     if os.path.exists(file_path):
         download_file(file_path)
     else:
