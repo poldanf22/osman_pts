@@ -889,7 +889,6 @@ if uploaded_file is not None:
     # Menyimpan file Excel
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
     df.to_excel(writer, index=False)
-    writer.save()
     writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
@@ -6807,7 +6806,6 @@ if uploaded_file is not None:
     # Menyimpan file Excel
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
     df.to_excel(writer, index=False)
-    writer.save()
     writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
@@ -12726,7 +12724,6 @@ if uploaded_file is not None:
     # Menyimpan file Excel
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
     df.to_excel(writer, index=False)
-    writer.save()
     writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
@@ -18225,7 +18222,6 @@ if uploaded_file is not None:
     # Menyimpan file Excel
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
     df.to_excel(writer, index=False)
-    writer.save()
     writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
