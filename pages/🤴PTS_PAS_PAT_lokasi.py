@@ -890,6 +890,7 @@ if uploaded_file is not None:
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
     df.to_excel(writer, index=False)
     writer.save()
+    writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -5983,7 +5984,6 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     workbook.close()
-    # writer.close()
     st.success("File telah disimpan")
 
     # Tombol unduh file
@@ -6808,6 +6808,7 @@ if uploaded_file is not None:
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
     df.to_excel(writer, index=False)
     writer.save()
+    writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -11901,8 +11902,13 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     workbook.close()
-    st.success(
-        "File telah disimpan di pts_pas_pat_untuk_lokasi")
+    st.success("File telah disimpan")
+
+    # Tombol unduh file
+    with open(file_path, "rb") as f:
+        bytes_data = f.read()
+    st.download_button(label="Unduh File", data=bytes_data,
+                       file_name=file_name)
 
 
 uploaded_file = st.file_uploader(
@@ -12721,6 +12727,7 @@ if uploaded_file is not None:
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
     df.to_excel(writer, index=False)
     writer.save()
+    writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -17814,8 +17821,13 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     workbook.close()
-    st.success(
-        "File telah disimpan di pts_pas_pat_untuk_lokasi")
+    st.success("File telah disimpan")
+
+    # Tombol unduh file
+    with open(file_path, "rb") as f:
+        bytes_data = f.read()
+    st.download_button(label="Unduh File", data=bytes_data,
+                       file_name=file_name)
 
 
 uploaded_file = st.file_uploader(
@@ -18214,6 +18226,7 @@ if uploaded_file is not None:
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
     df.to_excel(writer, index=False)
     writer.save()
+    writer.close()
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -20402,5 +20415,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     workbook.close()
-    st.success(
-        "File telah disimpan di pts_pas_pat_untuk_lokasi")
+    st.success("File telah disimpan")
+
+    # Tombol unduh file
+    with open(file_path, "rb") as f:
+        bytes_data = f.read()
+    st.download_button(label="Unduh File", data=bytes_data,
+                       file_name=file_name)
