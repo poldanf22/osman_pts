@@ -3,12 +3,36 @@ import pandas as pd
 import openpyxl
 from openpyxl.styles import Font, PatternFill
 import os
-import tempfile
-
+import subprocess
 from PIL import Image
 
-# image = Image.open('E:\\logo resmi nf resize.png')
-image = Image.open('logo resmi nf resize.png')
+# Fungsi untuk menyimpan file ke direktori temporer
+
+
+def save_file_to_temp_directory(file):
+    temp_dir = "temp_directory"  # Nama direktori temporer
+    if not os.path.exists(temp_dir):
+        os.makedirs(temp_dir)
+    file_path = os.path.join(temp_dir, file.name)
+    with open(file_path, "wb") as f:
+        f.write(file.getbuffer())
+    return file_path
+
+# Fungsi untuk menambahkan, melakukan commit, dan mendorong perubahan ke repositori GitHub
+
+
+def commit_and_push_to_github(file_path):
+    # Tambahkan file ke repositori lokal
+    subprocess.call(["git", "add", file_path])
+    # Commit perubahan
+    subprocess.call(["git", "commit", "-m", "Menambahkan file dari Streamlit"])
+    # Dorong perubahan ke repositori GitHub
+    # Ganti "master" dengan nama branch yang sesuai
+    subprocess.call(["git", "push", "origin", "main"])
+
+
+image = Image.open('E:\\logo resmi nf resize.png')
+# image = Image.open('logo resmi nf resize.png')
 st.image(image)
 
 st.title("Olah Nilai Standar")
@@ -1392,10 +1416,10 @@ if uploaded_file is not None:
     penilaian = PENILAIAN.lower()
     kurikulum = KURIKULUM.lower()
 
-    # path_file = fr"E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_nilai_std\{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
+    path_file = fr"E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_nilai_std\{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
 
-    path_file = os.path.join(tempfile.gettempdir(
-    ), f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx")
+    # path_file = os.path.join(tempfile.gettempdir(
+    # ), f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx")
 
     wb.save(path_file)
 
