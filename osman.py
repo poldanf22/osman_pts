@@ -9,7 +9,7 @@ from PIL import Image
 # menghilangkan hamburger
 st.markdown("""
 <style>
-.css-1rs6os edgvbvh3
+.css-1rs6os.edgvbvh3
 {
     visibility:hidden;
 }
