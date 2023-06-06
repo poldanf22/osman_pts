@@ -3,6 +3,20 @@ import pandas as pd
 import tempfile
 import xlsxwriter
 
+# menghilangkan hamburger
+st.markdown("""
+<style>
+.css-1rs6os.edgvbvh3
+{
+    visibility:hidden;
+}
+.css-1lsmgbg.egzxvld0
+{
+    visibility:hidden;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.title("Olahan untuk Lokasi-TPS")
 
 col6 = st.container()
