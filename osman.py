@@ -5,7 +5,7 @@ from openpyxl.styles import Font, PatternFill
 import os
 from PIL import Image
 
-image = Image.open('E:\\logo resmi nf resize.png')
+image = Image.open('logo resmi nf resize.png')
 st.image(image)
 
 st.title("Olah Nilai Standar")
