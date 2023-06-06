@@ -1402,7 +1402,7 @@ if uploaded_file is not None:
 
     # Path file hasil penyimpanan
     path_file = os.path.join(tempfile.gettempdir(
-    ), f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx")
+    ), "nilai_std.xlsx")
 
     wb.save(path_file)
 
