@@ -2,10 +2,13 @@ import streamlit as st
 import pandas as pd
 import openpyxl
 from openpyxl.styles import Font, PatternFill
-import webbrowser
+import os
+import tempfile
+
 from PIL import Image
 
-image = Image.open('E:\\logo resmi nf resize.png')
+# image = Image.open('E:\\logo resmi nf resize.png')
+image = Image.open('logo resmi nf resize.png')
 st.image(image)
 
 st.title("Olah Nilai Standar")
@@ -1389,8 +1392,12 @@ if uploaded_file is not None:
     penilaian = PENILAIAN.lower()
     kurikulum = KURIKULUM.lower()
 
-    path_file = fr"E:\apk osman v.1.1 buat filezilla\hasil nilai standar\{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
+    # path_file = fr"E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_nilai_std\{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
+
+    path_file = os.path.join(tempfile.gettempdir(
+    ), f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx")
+
     wb.save(path_file)
 
     st.success(
-        "File telah disimpan di E:\ apk osman v.1.1 buat filezilla\hasil nilai standar")
+        "File telah disimpan di pts_pas_pat_nilai_std")

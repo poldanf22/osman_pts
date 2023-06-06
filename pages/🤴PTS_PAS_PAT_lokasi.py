@@ -881,7 +881,7 @@ if uploaded_file is not None:
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
     writer = pd.ExcelWriter(
-        fr'E:\apk osman v.1.1 buat filezilla\hasil untuk lokasi\{kelas}_{penilaian}_{semester}_{kurikulum}_lokasi_101_160.xlsx', engine='xlsxwriter')
+        fr'E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_untuk_lokasi\{kelas}_{penilaian}_{semester}_{kurikulum}_lokasi_101_160.xlsx', engine='xlsxwriter')
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -5976,7 +5976,7 @@ if uploaded_file is not None:
 
     workbook.close()
     st.success(
-        "File telah disimpan di E:\ apk osman v.1.1 buat filezilla\hasil untuk lokasi")
+        "File telah disimpan di pts_pas_pat_untuk_lokasi")
 
 
 uploaded_file = st.file_uploader(
@@ -6788,7 +6788,7 @@ if uploaded_file is not None:
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
     writer = pd.ExcelWriter(
-        fr'E:\apk osman v.1.1 buat filezilla\hasil untuk lokasi\{kelas}_{penilaian}_{semester}_lokasi_161_236.xlsx', engine='xlsxwriter')
+        fr'E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_untuk_lokasi\{kelas}_{penilaian}_{semester}_lokasi_161_236.xlsx', engine='xlsxwriter')
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -11883,7 +11883,7 @@ if uploaded_file is not None:
 
     workbook.close()
     st.success(
-        "File telah disimpan di E:\ apk osman v.1.1 buat filezilla\hasil untuk lokasi")
+        "File telah disimpan di pts_pas_pat_untuk_lokasi")
 
 
 uploaded_file = st.file_uploader(
@@ -12695,7 +12695,7 @@ if uploaded_file is not None:
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
     writer = pd.ExcelWriter(
-        fr'E:\apk osman v.1.1 buat filezilla\hasil untuk lokasi\{kelas}_{penilaian}_{semester}_lokasi_237_299.xlsx', engine='xlsxwriter')
+        fr'E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_untuk_lokasi\{kelas}_{penilaian}_{semester}_lokasi_237_299.xlsx', engine='xlsxwriter')
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -17790,7 +17790,7 @@ if uploaded_file is not None:
 
     workbook.close()
     st.success(
-        "File telah disimpan di E:\ apk osman v.1.1 buat filezilla\hasil untuk lokasi")
+        "File telah disimpan di pts_pas_pat_untuk_lokasi")
 
 
 uploaded_file = st.file_uploader(
@@ -18182,7 +18182,7 @@ if uploaded_file is not None:
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
     writer = pd.ExcelWriter(
-        fr'E:\apk osman v.1.1 buat filezilla\hasil untuk lokasi\{kelas}_{penilaian}_{semester}_lokasi_depok_padang.xlsx', engine='xlsxwriter')
+        fr'E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_untuk_lokasi\{kelas}_{penilaian}_{semester}_lokasi_depok_padang.xlsx', engine='xlsxwriter')
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -20372,4 +20372,4 @@ if uploaded_file is not None:
 
     workbook.close()
     st.success(
-        "File telah disimpan di E:\ apk osman v.1.1 buat filezilla\hasil untuk lokasi")
+        "File telah disimpan di pts_pas_pat_untuk_lokasi")
