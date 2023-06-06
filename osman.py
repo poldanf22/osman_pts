@@ -96,7 +96,7 @@ if uploaded_file is not None:
     st.success("File berhasil diunggah!")
 
     # Memuat file Excel menggunakan openpyxl
-    wb = openpyxl.load_workbook(uploaded_file)
+    wb = openpyxl.load_workbook(file_path)
     ws = wb['Sheet1']
 
     q = len(ws['K'])
