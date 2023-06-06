@@ -1427,10 +1427,10 @@ if uploaded_file is not None:
     penilaian = PENILAIAN.lower()
     kurikulum = KURIKULUM.lower()
 
-    path_file = fr"E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_nilai_std\{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
+    # path_file = fr"E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_nilai_std\{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
 
-    # path_file = os.path.join(tempfile.gettempdir(
-    # ), f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx")
+    path_file = os.path.join(tempfile.gettempdir(
+    ), f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx")
 
     wb.save(path_file)
 
