@@ -11,7 +11,7 @@ from PIL import Image
 
 
 def save_file_to_temp_directory(file):
-    temp_dir = tempfile.gettempdir()
+    temp_dir = "temp_directory"()
     if not os.path.exists(temp_dir):
         os.makedirs(temp_dir)
     file_path = os.path.join(temp_dir, file.name)
