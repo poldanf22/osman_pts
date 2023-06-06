@@ -31,8 +31,8 @@ def commit_and_push_to_github(file_path):
     subprocess.call(["git", "push", "origin", "main"])
 
 
-image = Image.open('E:\\logo resmi nf resize.png')
-# image = Image.open('logo resmi nf resize.png')
+# image = Image.open('E:\\logo resmi nf resize.png')
+image = Image.open('logo resmi nf resize.png')
 st.image(image)
 
 st.title("Olah Nilai Standar")
@@ -113,7 +113,17 @@ uploaded_file = st.file_uploader(
     'Letakkan file excel', type='xlsx')
 
 if uploaded_file is not None:
+    # Simpan file ke direktori temporer
+    file_path = save_file_to_temp_directory(uploaded_file)
+    st.success("File berhasil diunggah!")
 
+    # Tambahkan, commit, dan dorong perubahan ke GitHub
+    commit_and_push_to_github(file_path)
+    st.success("Perubahan berhasil disimpan di GitHub!")
+    # Hapus file dari direktori temporer jika tidak diperlukan lagi
+    os.remove(file_path)
+
+    # Memuat file Excel menggunakan openpyxl
     wb = openpyxl.load_workbook(uploaded_file)
     ws = wb['Sheet1']
 
