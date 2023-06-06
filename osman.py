@@ -7,31 +7,6 @@ import subprocess
 import tempfile
 from PIL import Image
 
-# Fungsi untuk menyimpan file ke direktori temporer
-
-
-def save_file_to_temp_directory(file):
-    temp_dir = tempfile.gettempdir()
-    if not os.path.exists(temp_dir):
-        os.makedirs(temp_dir)
-    file_path = os.path.join(temp_dir, file.name)
-    with open(file_path, "wb") as f:
-        f.write(file.getbuffer())
-    return file_path
-
-# Fungsi untuk menambahkan, melakukan commit, dan mendorong perubahan ke repositori GitHub
-
-
-def commit_and_push_to_github(file_path):
-    # Tambahkan file ke repositori lokal
-    subprocess.call(["git", "add", file_path])
-    # Commit perubahan
-    subprocess.call(["git", "commit", "-m", "Menambahkan file dari Streamlit"])
-    # Dorong perubahan ke repositori GitHub
-    # Ganti "master" dengan nama branch yang sesuai
-    subprocess.call(["git", "push", "origin", "main"])
-
-
 # image = Image.open('E:\\logo resmi nf resize.png')
 image = Image.open('logo resmi nf resize.png')
 st.image(image)
@@ -115,14 +90,10 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file is not None:
     # Simpan file ke direktori temporer
-    file_path = save_file_to_temp_directory(uploaded_file)
+    file_path = os.path.join(tempfile.gettempdir(), uploaded_file.name)
+    with open(file_path, 'wb') as f:
+        f.write(uploaded_file.read())
     st.success("File berhasil diunggah!")
-
-    # Tambahkan, commit, dan dorong perubahan ke GitHub
-    commit_and_push_to_github(file_path)
-    st.success("Perubahan berhasil disimpan di GitHub!")
-    # Hapus file dari direktori temporer jika tidak diperlukan lagi
-    os.remove(file_path)
 
     # Memuat file Excel menggunakan openpyxl
     wb = openpyxl.load_workbook(uploaded_file)
@@ -1429,6 +1400,7 @@ if uploaded_file is not None:
 
     # path_file = fr"E:\apk osman v.1.1 buat filezilla\aplikasi\pts_pas_pat_nilai_std\{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
 
+    # Path file hasil penyimpanan
     path_file = os.path.join(tempfile.gettempdir(
     ), f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx")
 
@@ -1437,12 +1409,6 @@ if uploaded_file is not None:
     st.success(
         "File telah disimpan")
 
-    def download_file(file_path):
-        with open(file_path, 'rb') as f:
-            st.download_button('Download File', f, file_path)
-
-    # Contoh penggunaan
-    if os.path.exists(file_path):
-        download_file(file_path)
-    else:
-        st.write("File not found")
+    # Tombol unduh file
+    st.download_button(label="Unduh File", data=path_file,
+                       file_name="nilai_std.xlsx")
