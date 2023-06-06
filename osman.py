@@ -1436,3 +1436,14 @@ if uploaded_file is not None:
 
     st.success(
         "File telah disimpan di pts_pas_pat_nilai_std")
+
+    def download_file(file_path):
+        with open(file_path, 'rb') as f:
+            st.download_button('Download File', f, file_path)
+
+    # Contoh penggunaan
+    file_path = "file.xlsx"  # Ganti dengan path file yang sesuai
+    if os.path.exists(file_path):
+        download_file(file_path)
+    else:
+        st.write("File not found")
