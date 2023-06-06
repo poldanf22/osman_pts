@@ -6,6 +6,16 @@ import os
 import tempfile
 from PIL import Image
 
+# menghilangkan hamburger
+st.markdown("""
+<style>
+.css-1rs6os edgvbvh3
+{
+    visibility:hidden;
+}
+</style>
+""", unsafe_allow_html=True)
+
 image = Image.open('logo resmi nf resize.png')
 st.image(image)
 
