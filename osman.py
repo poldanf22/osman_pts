@@ -4,13 +4,14 @@ import openpyxl
 from openpyxl.styles import Font, PatternFill
 import os
 import subprocess
+import tempfile
 from PIL import Image
 
 # Fungsi untuk menyimpan file ke direktori temporer
 
 
 def save_file_to_temp_directory(file):
-    temp_dir = "temp_directory"  # Nama direktori temporer
+    temp_dir = tempfile.gettempdir()
     if not os.path.exists(temp_dir):
         os.makedirs(temp_dir)
     file_path = os.path.join(temp_dir, file.name)
