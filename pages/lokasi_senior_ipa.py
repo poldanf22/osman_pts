@@ -18,7 +18,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title("Olahan untuk Lokasi")
-st.header("SD-SMP")
+st.header("SMA IPA")
 
 col6 = st.container()
 
@@ -6537,10 +6537,10 @@ if uploaded_file is not None:
     row236 = sort236.shape[0]
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
-	# Path file hasil penyimpanan
+    # Path file hasil penyimpanan
     file_name = f"{kelas}_{penilaian}_{semester}_lokasi_162_236.xlsx"
     file_path = tempfile.gettempdir() + '/' + file_name
-   
+
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
                        startrow=10,
@@ -12200,10 +12200,10 @@ if uploaded_file is not None:
     row299 = sort299.shape[0]
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
-	# Path file hasil penyimpanan
+    # Path file hasil penyimpanan
     file_name = f"{kelas}_{penilaian}_{semester}_lokasi_237_299.xlsx"
     file_path = tempfile.gettempdir() + '/' + file_name
-   
+
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
                        startrow=10,
@@ -17510,10 +17510,10 @@ if uploaded_file is not None:
     row664 = sort664.shape[0]
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
-	# Path file hasil penyimpanan
+    # Path file hasil penyimpanan
     file_name = f"{kelas}_{penilaian}_{semester}_lokasi_depok_padang.xlsx"
     file_path = tempfile.gettempdir() + '/' + file_name
-    
+
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
                        startrow=10,
