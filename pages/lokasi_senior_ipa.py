@@ -86,7 +86,7 @@ penilaian = PENILAIAN
 kurikulum = KURIKULUM.lower()
 
 uploaded_file = st.file_uploader(
-    'Letakkan file excel NILAI STANDAR kelas [LOKASI 101-160]', type='xlsx')
+    'Letakkan file excel NILAI STANDAR [LOKASI 101-160]', type='xlsx')
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
@@ -5745,7 +5745,7 @@ if uploaded_file is not None:
 
 
 uploaded_file = st.file_uploader(
-    'Letakkan file excel NILAI STANDAR kelas [LOKASI 162-236]', type='xlsx')
+    'Letakkan file excel NILAI STANDAR [LOKASI 162-236]', type='xlsx')
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
@@ -11401,7 +11401,7 @@ if uploaded_file is not None:
 
 
 uploaded_file = st.file_uploader(
-    'Letakkan file excel NILAI STANDAR kelas [LOKASI 237-299]', type='xlsx')
+    'Letakkan file excel NILAI STANDAR [LOKASI 237-299]', type='xlsx')
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
@@ -17140,7 +17140,7 @@ if uploaded_file is not None:
 
 
 uploaded_file = st.file_uploader(
-    'Letakkan file excel NILAI STANDAR kelas [LOKASI DEPOK-PADANG]', type='xlsx')
+    'Letakkan file excel NILAI STANDAR [LOKASI DEPOK-PADANG]', type='xlsx')
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
