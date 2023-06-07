@@ -1409,10 +1409,13 @@ if uploaded_file is not None:
     wb.save(file_path)
 
     st.success(
-        "File telah disimpan")
+        "File siap diunduh!")
 
     # Tombol unduh file
     with open(file_path, "rb") as f:
         bytes_data = f.read()
     st.download_button(label="Unduh File", data=bytes_data,
                        file_name=path_file)
+
+    st.warning(
+        "Buka file unduhan, klik 'Enable Editing' dan 'Save'")

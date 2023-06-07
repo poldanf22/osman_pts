@@ -22,7 +22,7 @@ image = Image.open('logo resmi nf resize.png')
 st.image(image)
 
 st.title("Olah Nilai Standar")
-st.header("SMA IPA")
+st.header("SMA, PPLS, RONIN IPA")
 
 col6 = st.container()
 
@@ -1290,4 +1290,4 @@ if uploaded_file is not None:
                        file_name=path_file)
 
     st.warning(
-        "Jangan lupa untuk membuka file unduhan dan save")
+        "Buka file unduhan, klik 'Enable Editing' dan 'Save'")

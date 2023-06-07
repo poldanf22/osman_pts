@@ -49,7 +49,7 @@ with col9:
         ("--Pilih Kurikulum--", "K13", "KM"))
 
 TAHUN = st.text_input("Masukkan Tahun Ajaran", value="",
-                      help="Contoh: 2022-2023")
+                      placeholder="contoh: 2022-2023")
 
 col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -5996,7 +5996,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     workbook.close()
-    st.success("File telah disimpan")
+    st.success("File siap diunduh!")
 
     # Tombol unduh file
     with open(file_path, "rb") as f:
@@ -11911,7 +11911,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     workbook.close()
-    st.success("File telah disimpan")
+    st.success("File siap diunduh!")
 
     # Tombol unduh file
     with open(file_path, "rb") as f:
@@ -17827,7 +17827,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     workbook.close()
-    st.success("File telah disimpan")
+    st.success("File siap diunduh!")
 
     # Tombol unduh file
     with open(file_path, "rb") as f:
@@ -20418,7 +20418,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     workbook.close()
-    st.success("File telah disimpan")
+    st.success("File siap diunduh!")
 
     # Tombol unduh file
     with open(file_path, "rb") as f:
