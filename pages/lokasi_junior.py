@@ -17,7 +17,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("Olahan untuk Lokasi-TPS")
+st.title("Olahan untuk Lokasi")
+st.header("SD-SMP")
 
 col6 = st.container()
 
