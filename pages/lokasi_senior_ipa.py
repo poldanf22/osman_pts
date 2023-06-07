@@ -1792,7 +1792,7 @@ if uploaded_file is not None:
         'border': 1,
         'align': 'center',
         'valign': 'vcenter',
-        'font_size': 40,
+        'font_size': 35,
         'font_name': 'Arial Rounded MT Bold'})
     borderCover = workbook.add_format({
         'bottom': 1,
@@ -1870,7 +1870,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(15, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'E:\logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -1892,12 +1892,12 @@ if uploaded_file is not None:
     worksheetcover.set_column('G:G', 13, centerCover)
     worksheetcover.merge_range('A1:F3', 'DAFTAR NILAI', titleCover)
     worksheetcover.merge_range(
-        'A4:F5', 'PENILAIAN AKHIR SEMESTER', sub_titleCover)
+        'A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', 'SEMESTER 1 TAHUN 2022-2023', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
     worksheetcover.write('A19', 'NILAI STANDAR', sub_headerCover)
-    worksheetcover.merge_range('F8:G9', '10 SMA IPA', kelasCover)
+    worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
     worksheetcover.conditional_format(25, 0, 21, 3,
@@ -1910,7 +1910,7 @@ if uploaded_file is not None:
                                       {'type': 'no_errors', 'format': borderCover})
 
     # worksheet 101
-    worksheet101.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet101.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet101.set_column('A:A', 7, center)
     worksheet101.set_column('B:B', 6, center)
@@ -1920,9 +1920,9 @@ if uploaded_file is not None:
     worksheet101.set_column('F:F', 8.57, center)
     worksheet101.set_column('G:R', 5, center)
     worksheet101.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TAMAN MARGASATWA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TAMAN MARGASATWA', title)
     worksheet101.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet101.write('A5', 'LOKASI', header)
     worksheet101.write('B5', 'TOTAL', header)
     worksheet101.merge_range('A4:B4', 'RANK', header)
@@ -1947,10 +1947,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet101.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TAMAN MARGASATWA', title)
-    worksheet101.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TAMAN MARGASATWA', title)
+    worksheet101.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet101.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet101.write('A22', 'LOKASI', header)
     worksheet101.write('B22', 'TOTAL', header)
     worksheet101.merge_range('A21:B21', 'RANK', header)
@@ -1975,7 +1975,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 102
-    worksheet102.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet102.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet102.set_column('A:A', 7, center)
     worksheet102.set_column('B:B', 6, center)
@@ -1985,9 +1985,9 @@ if uploaded_file is not None:
     worksheet102.set_column('F:F', 8.57, center)
     worksheet102.set_column('G:R', 5, center)
     worksheet102.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CEMPAKA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CEMPAKA', title)
     worksheet102.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet102.write('A5', 'LOKASI', header)
     worksheet102.write('B5', 'TOTAL', header)
     worksheet102.merge_range('A4:B4', 'RANK', header)
@@ -2012,10 +2012,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet102.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CEMPAKA', title)
-    worksheet102.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CEMPAKA', title)
+    worksheet102.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet102.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet102.write('A22', 'LOKASI', header)
     worksheet102.write('B22', 'TOTAL', header)
     worksheet102.merge_range('A21:B21', 'RANK', header)
@@ -2040,7 +2040,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 103
-    worksheet103.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet103.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet103.set_column('A:A', 7, center)
     worksheet103.set_column('B:B', 6, center)
@@ -2050,9 +2050,9 @@ if uploaded_file is not None:
     worksheet103.set_column('F:F', 8.57, center)
     worksheet103.set_column('G:R', 5, center)
     worksheet103.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PANGKALAN JATI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PANGKALAN JATI', title)
     worksheet103.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet103.write('A5', 'LOKASI', header)
     worksheet103.write('B5', 'TOTAL', header)
     worksheet103.merge_range('A4:B4', 'RANK', header)
@@ -2077,10 +2077,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet103.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PANGKALAN JATI', title)
-    worksheet103.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PANGKALAN JATI', title)
+    worksheet103.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet103.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet103.write('A22', 'LOKASI', header)
     worksheet103.write('B22', 'TOTAL', header)
     worksheet103.merge_range('A21:B21', 'RANK', header)
@@ -2105,7 +2105,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # # worksheet 104
-    # worksheet104.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet104.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet104.set_column('A:A', 7, center)
     # worksheet104.set_column('B:B', 6, center)
@@ -2114,10 +2114,9 @@ if uploaded_file is not None:
     # worksheet104.set_column('E:E', 13.14, left)
     # worksheet104.set_column('F:F', 8.57, center)
     # worksheet104.set_column('G:R', 5, center)
-    # worksheet104.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KENARI', title)
+    # worksheet104.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KENARI', title)
     # worksheet104.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
-    # worksheet104.write('A5', 'LOKASI', header)
-    # worksheet104.write('B5', 'TOTAL', header)
+    # worksheet104.write('A5', 'LOKASI',fr {penilaian}04.{semester}, 'TOTA{tahun}r)
     # worksheet104.merge_range('A4:B4', 'RANK', header)
     # worksheet104.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet104.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -2140,11 +2139,10 @@ if uploaded_file is not None:
     # worksheet104.conditional_format(5,0,row104_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet104.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KENARI', title)
-    # worksheet104.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet104.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+    # worksheet104.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF KENARI', title)
+    # worksheet104.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet104.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
     # worksheet104.write('A22', 'LOKASI', header)
-    # worksheet104.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet104.merge_range('A21:B21', 'RANK', header)
     # worksheet104.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet104.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -2167,7 +2165,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # worksheet 105
-    worksheet105.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet105.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet105.set_column('A:A', 7, center)
     worksheet105.set_column('B:B', 6, center)
@@ -2177,9 +2175,9 @@ if uploaded_file is not None:
     worksheet105.set_column('F:F', 8.57, center)
     worksheet105.set_column('G:R', 5, center)
     worksheet105.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BUARAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BUARAN', title)
     worksheet105.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet105.write('A5', 'LOKASI', header)
     worksheet105.write('B5', 'TOTAL', header)
     worksheet105.merge_range('A4:B4', 'RANK', header)
@@ -2204,10 +2202,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet105.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BUARAN', title)
-    worksheet105.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BUARAN', title)
+    worksheet105.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet105.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet105.write('A22', 'LOKASI', header)
     worksheet105.write('B22', 'TOTAL', header)
     worksheet105.merge_range('A21:B21', 'RANK', header)
@@ -2232,7 +2230,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 106
-    worksheet106.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet106.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet106.set_column('A:A', 7, center)
     worksheet106.set_column('B:B', 6, center)
@@ -2242,9 +2240,9 @@ if uploaded_file is not None:
     worksheet106.set_column('F:F', 8.57, center)
     worksheet106.set_column('G:R', 5, center)
     worksheet106.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF HEK-KRAMAT JATI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF HEK-KRAMAT JATI', title)
     worksheet106.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet106.write('A5', 'LOKASI', header)
     worksheet106.write('B5', 'TOTAL', header)
     worksheet106.merge_range('A4:B4', 'RANK', header)
@@ -2269,10 +2267,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet106.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF HEK-KRAMAT JATI', title)
-    worksheet106.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF HEK-KRAMAT JATI', title)
+    worksheet106.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet106.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet106.write('A22', 'LOKASI', header)
     worksheet106.write('B22', 'TOTAL', header)
     worksheet106.merge_range('A21:B21', 'RANK', header)
@@ -2297,7 +2295,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 107
-    worksheet107.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet107.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet107.set_column('A:A', 7, center)
     worksheet107.set_column('B:B', 6, center)
@@ -2307,9 +2305,9 @@ if uploaded_file is not None:
     worksheet107.set_column('F:F', 8.57, center)
     worksheet107.set_column('G:R', 5, center)
     worksheet107.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MAMPANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MAMPANG', title)
     worksheet107.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet107.write('A5', 'LOKASI', header)
     worksheet107.write('B5', 'TOTAL', header)
     worksheet107.merge_range('A4:B4', 'RANK', header)
@@ -2334,10 +2332,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet107.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MAMPANG', title)
-    worksheet107.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MAMPANG', title)
+    worksheet107.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet107.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet107.write('A22', 'LOKASI', header)
     worksheet107.write('B22', 'TOTAL', header)
     worksheet107.merge_range('A21:B21', 'RANK', header)
@@ -2362,7 +2360,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 108
-    worksheet108.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet108.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet108.set_column('A:A', 7, center)
     worksheet108.set_column('B:B', 6, center)
@@ -2372,9 +2370,9 @@ if uploaded_file is not None:
     worksheet108.set_column('F:F', 8.57, center)
     worksheet108.set_column('G:R', 5, center)
     worksheet108.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PALMERAH', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PALMERAH', title)
     worksheet108.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet108.write('A5', 'LOKASI', header)
     worksheet108.write('B5', 'TOTAL', header)
     worksheet108.merge_range('A4:B4', 'RANK', header)
@@ -2399,10 +2397,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet108.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PALMERAH', title)
-    worksheet108.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PALMERAH', title)
+    worksheet108.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet108.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet108.write('A22', 'LOKASI', header)
     worksheet108.write('B22', 'TOTAL', header)
     worksheet108.merge_range('A21:B21', 'RANK', header)
@@ -2427,7 +2425,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 109
-    worksheet109.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet109.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet109.set_column('A:A', 7, center)
     worksheet109.set_column('B:B', 6, center)
@@ -2437,9 +2435,9 @@ if uploaded_file is not None:
     worksheet109.set_column('F:F', 8.57, center)
     worksheet109.set_column('G:R', 5, center)
     worksheet109.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PASAR MINGGU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PASAR MINGGU', title)
     worksheet109.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet109.write('A5', 'LOKASI', header)
     worksheet109.write('B5', 'TOTAL', header)
     worksheet109.merge_range('A4:B4', 'RANK', header)
@@ -2464,10 +2462,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet109.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PASAR MINGGU', title)
-    worksheet109.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PASAR MINGGU', title)
+    worksheet109.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet109.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet109.write('A22', 'LOKASI', header)
     worksheet109.write('B22', 'TOTAL', header)
     worksheet109.merge_range('A21:B21', 'RANK', header)
@@ -2492,7 +2490,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 110
-    worksheet110.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet110.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet110.set_column('A:A', 7, center)
     worksheet110.set_column('B:B', 6, center)
@@ -2502,9 +2500,9 @@ if uploaded_file is not None:
     worksheet110.set_column('F:F', 8.57, center)
     worksheet110.set_column('G:R', 5, center)
     worksheet110.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BINTARO', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BINTARO', title)
     worksheet110.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet110.write('A5', 'LOKASI', header)
     worksheet110.write('B5', 'TOTAL', header)
     worksheet110.merge_range('A4:B4', 'RANK', header)
@@ -2529,10 +2527,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet110.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BINTARO', title)
-    worksheet110.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BINTARO', title)
+    worksheet110.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet110.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet110.write('A22', 'LOKASI', header)
     worksheet110.write('B22', 'TOTAL', header)
     worksheet110.merge_range('A21:B21', 'RANK', header)
@@ -2557,7 +2555,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 111
-    worksheet111.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet111.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet111.set_column('A:A', 7, center)
     worksheet111.set_column('B:B', 6, center)
@@ -2567,9 +2565,9 @@ if uploaded_file is not None:
     worksheet111.set_column('F:F', 8.57, center)
     worksheet111.set_column('G:R', 5, center)
     worksheet111.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF LAMPIRI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF LAMPIRI', title)
     worksheet111.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet111.write('A5', 'LOKASI', header)
     worksheet111.write('B5', 'TOTAL', header)
     worksheet111.merge_range('A4:B4', 'RANK', header)
@@ -2594,10 +2592,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet111.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF LAMPIRI', title)
-    worksheet111.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF LAMPIRI', title)
+    worksheet111.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet111.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet111.write('A22', 'LOKASI', header)
     worksheet111.write('B22', 'TOTAL', header)
     worksheet111.merge_range('A21:B21', 'RANK', header)
@@ -2622,7 +2620,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 112
-    worksheet112.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet112.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet112.set_column('A:A', 7, center)
     worksheet112.set_column('B:B', 6, center)
@@ -2632,9 +2630,9 @@ if uploaded_file is not None:
     worksheet112.set_column('F:F', 8.57, center)
     worksheet112.set_column('G:R', 5, center)
     worksheet112.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PONDOK BAMBU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PONDOK BAMBU', title)
     worksheet112.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet112.write('A5', 'LOKASI', header)
     worksheet112.write('B5', 'TOTAL', header)
     worksheet112.merge_range('A4:B4', 'RANK', header)
@@ -2659,10 +2657,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet112.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PONDOK BAMBU', title)
-    worksheet112.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PONDOK BAMBU', title)
+    worksheet112.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet112.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet112.write('A22', 'LOKASI', header)
     worksheet112.write('B22', 'TOTAL', header)
     worksheet112.merge_range('A21:B21', 'RANK', header)
@@ -2687,7 +2685,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 113
-    worksheet113.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet113.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet113.set_column('A:A', 7, center)
     worksheet113.set_column('B:B', 6, center)
@@ -2697,9 +2695,9 @@ if uploaded_file is not None:
     worksheet113.set_column('F:F', 8.57, center)
     worksheet113.set_column('G:R', 5, center)
     worksheet113.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF RAWA BADAK', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RAWA BADAK', title)
     worksheet113.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet113.write('A5', 'LOKASI', header)
     worksheet113.write('B5', 'TOTAL', header)
     worksheet113.merge_range('A4:B4', 'RANK', header)
@@ -2724,10 +2722,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet113.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF RAWA BADAK', title)
-    worksheet113.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF RAWA BADAK', title)
+    worksheet113.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet113.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet113.write('A22', 'LOKASI', header)
     worksheet113.write('B22', 'TOTAL', header)
     worksheet113.merge_range('A21:B21', 'RANK', header)
@@ -2752,7 +2750,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # # worksheet 114
-    # worksheet114.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet114.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet114.set_column('A:A', 7, center)
     # worksheet114.set_column('B:B', 6, center)
@@ -2761,10 +2759,9 @@ if uploaded_file is not None:
     # worksheet114.set_column('E:E', 13.14, left)
     # worksheet114.set_column('F:F', 8.57, center)
     # worksheet114.set_column('G:R', 5, center)
-    # worksheet114.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PASAR REBO', title)
+    # worksheet114.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PASAR REBO', title)
     # worksheet114.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
-    # worksheet114.write('A5', 'LOKASI', header)
-    # worksheet114.write('B5', 'TOTAL', header)
+    # worksheet114.write('A5', 'LOKASI',fr {penilaian}14.{semester}, 'TOTA{tahun}r)
     # worksheet114.merge_range('A4:B4', 'RANK', header)
     # worksheet114.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet114.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -2787,11 +2784,10 @@ if uploaded_file is not None:
     # worksheet114.conditional_format(5,0,row114_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet114.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PASAR REBO', title)
-    # worksheet114.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet114.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+    # worksheet114.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF PASAR REBO', title)
+    # worksheet114.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet114.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
     # worksheet114.write('A22', 'LOKASI', header)
-    # worksheet114.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet114.merge_range('A21:B21', 'RANK', header)
     # worksheet114.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet114.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -2813,7 +2809,7 @@ if uploaded_file is not None:
     # worksheet114.conditional_format(22,0,row114+21,15,
     #                              {'type': 'no_errors', 'format': border})
     # worksheet 115
-    worksheet115.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet115.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet115.set_column('A:A', 7, center)
     worksheet115.set_column('B:B', 6, center)
@@ -2823,9 +2819,9 @@ if uploaded_file is not None:
     worksheet115.set_column('F:F', 8.57, center)
     worksheet115.set_column('G:R', 5, center)
     worksheet115.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF RAWAMANGUN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RAWAMANGUN', title)
     worksheet115.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet115.write('A5', 'LOKASI', header)
     worksheet115.write('B5', 'TOTAL', header)
     worksheet115.merge_range('A4:B4', 'RANK', header)
@@ -2850,10 +2846,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet115.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF RAWAMANGUN', title)
-    worksheet115.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF RAWAMANGUN', title)
+    worksheet115.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet115.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet115.write('A22', 'LOKASI', header)
     worksheet115.write('B22', 'TOTAL', header)
     worksheet115.merge_range('A21:B21', 'RANK', header)
@@ -2878,7 +2874,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 116
-    worksheet116.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet116.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet116.set_column('A:A', 7, center)
     worksheet116.set_column('B:B', 6, center)
@@ -2888,9 +2884,9 @@ if uploaded_file is not None:
     worksheet116.set_column('F:F', 8.57, center)
     worksheet116.set_column('G:R', 5, center)
     worksheet116.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIRACAS', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIRACAS', title)
     worksheet116.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet116.write('A5', 'LOKASI', header)
     worksheet116.write('B5', 'TOTAL', header)
     worksheet116.merge_range('A4:B4', 'RANK', header)
@@ -2915,10 +2911,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet116.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIRACAS', title)
-    worksheet116.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIRACAS', title)
+    worksheet116.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet116.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet116.write('A22', 'LOKASI', header)
     worksheet116.write('B22', 'TOTAL', header)
     worksheet116.merge_range('A21:B21', 'RANK', header)
@@ -2943,7 +2939,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 117
-    worksheet117.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet117.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet117.set_column('A:A', 7, center)
     worksheet117.set_column('B:B', 6, center)
@@ -2953,9 +2949,9 @@ if uploaded_file is not None:
     worksheet117.set_column('F:F', 8.57, center)
     worksheet117.set_column('G:R', 5, center)
     worksheet117.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KAMPUNG MELAYU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KAMPUNG MELAYU', title)
     worksheet117.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet117.write('A5', 'LOKASI', header)
     worksheet117.write('B5', 'TOTAL', header)
     worksheet117.merge_range('A4:B4', 'RANK', header)
@@ -2980,10 +2976,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet117.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KAMPUNG MELAYU', title)
-    worksheet117.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KAMPUNG MELAYU', title)
+    worksheet117.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet117.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet117.write('A22', 'LOKASI', header)
     worksheet117.write('B22', 'TOTAL', header)
     worksheet117.merge_range('A21:B21', 'RANK', header)
@@ -3008,7 +3004,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 118
-    worksheet118.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet118.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet118.set_column('A:A', 7, center)
     worksheet118.set_column('B:B', 6, center)
@@ -3018,9 +3014,9 @@ if uploaded_file is not None:
     worksheet118.set_column('F:F', 8.57, center)
     worksheet118.set_column('G:R', 5, center)
     worksheet118.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF AKSES UI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF AKSES UI', title)
     worksheet118.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet118.write('A5', 'LOKASI', header)
     worksheet118.write('B5', 'TOTAL', header)
     worksheet118.merge_range('A4:B4', 'RANK', header)
@@ -3045,10 +3041,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet118.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF AKSES UI', title)
-    worksheet118.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF AKSES UI', title)
+    worksheet118.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet118.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet118.write('A22', 'LOKASI', header)
     worksheet118.write('B22', 'TOTAL', header)
     worksheet118.merge_range('A21:B21', 'RANK', header)
@@ -3073,7 +3069,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 119
-    worksheet119.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet119.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet119.set_column('A:A', 7, center)
     worksheet119.set_column('B:B', 6, center)
@@ -3083,9 +3079,9 @@ if uploaded_file is not None:
     worksheet119.set_column('F:F', 8.57, center)
     worksheet119.set_column('G:R', 5, center)
     worksheet119.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF JATIMEKAR', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATIMEKAR', title)
     worksheet119.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet119.write('A5', 'LOKASI', header)
     worksheet119.write('B5', 'TOTAL', header)
     worksheet119.merge_range('A4:B4', 'RANK', header)
@@ -3110,10 +3106,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet119.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF JATIMEKAR', title)
-    worksheet119.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF JATIMEKAR', title)
+    worksheet119.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet119.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet119.write('A22', 'LOKASI', header)
     worksheet119.write('B22', 'TOTAL', header)
     worksheet119.merge_range('A21:B21', 'RANK', header)
@@ -3138,7 +3134,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 120
-    worksheet120.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet120.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet120.set_column('A:A', 7, center)
     worksheet120.set_column('B:B', 6, center)
@@ -3148,9 +3144,9 @@ if uploaded_file is not None:
     worksheet120.set_column('F:F', 8.57, center)
     worksheet120.set_column('G:R', 5, center)
     worksheet120.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF RAWALUMBU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RAWALUMBU', title)
     worksheet120.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet120.write('A5', 'LOKASI', header)
     worksheet120.write('B5', 'TOTAL', header)
     worksheet120.merge_range('A4:B4', 'RANK', header)
@@ -3175,10 +3171,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet120.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF RAWALUMBU', title)
-    worksheet120.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF RAWALUMBU', title)
+    worksheet120.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet120.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet120.write('A22', 'LOKASI', header)
     worksheet120.write('B22', 'TOTAL', header)
     worksheet120.merge_range('A21:B21', 'RANK', header)
@@ -3203,7 +3199,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 121
-    worksheet121.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet121.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet121.set_column('A:A', 7, center)
     worksheet121.set_column('B:B', 6, center)
@@ -3213,9 +3209,9 @@ if uploaded_file is not None:
     worksheet121.set_column('F:F', 8.57, center)
     worksheet121.set_column('G:R', 5, center)
     worksheet121.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TAMAN HARAPAN BARU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TAMAN HARAPAN BARU', title)
     worksheet121.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet121.write('A5', 'LOKASI', header)
     worksheet121.write('B5', 'TOTAL', header)
     worksheet121.merge_range('A4:B4', 'RANK', header)
@@ -3240,10 +3236,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet121.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TAMAN HARAPAN BARU', title)
-    worksheet121.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TAMAN HARAPAN BARU', title)
+    worksheet121.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet121.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet121.write('A22', 'LOKASI', header)
     worksheet121.write('B22', 'TOTAL', header)
     worksheet121.merge_range('A21:B21', 'RANK', header)
@@ -3268,7 +3264,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 122
-    worksheet122.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet122.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet122.set_column('A:A', 7, center)
     worksheet122.set_column('B:B', 6, center)
@@ -3278,9 +3274,9 @@ if uploaded_file is not None:
     worksheet122.set_column('F:F', 8.57, center)
     worksheet122.set_column('G:R', 5, center)
     worksheet122.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF VILA NUSA INDAH', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF VILA NUSA INDAH', title)
     worksheet122.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet122.write('A5', 'LOKASI', header)
     worksheet122.write('B5', 'TOTAL', header)
     worksheet122.merge_range('A4:B4', 'RANK', header)
@@ -3305,10 +3301,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet122.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF VILA NUSA INDAH', title)
-    worksheet122.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF VILA NUSA INDAH', title)
+    worksheet122.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet122.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet122.write('A22', 'LOKASI', header)
     worksheet122.write('B22', 'TOTAL', header)
     worksheet122.merge_range('A21:B21', 'RANK', header)
@@ -3333,7 +3329,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 123
-    worksheet123.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet123.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet123.set_column('A:A', 7, center)
     worksheet123.set_column('B:B', 6, center)
@@ -3343,9 +3339,9 @@ if uploaded_file is not None:
     worksheet123.set_column('F:F', 8.57, center)
     worksheet123.set_column('G:R', 5, center)
     worksheet123.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF JATIWARNA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATIWARNA', title)
     worksheet123.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet123.write('A5', 'LOKASI', header)
     worksheet123.write('B5', 'TOTAL', header)
     worksheet123.merge_range('A4:B4', 'RANK', header)
@@ -3370,10 +3366,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet123.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF JATIWARNA', title)
-    worksheet123.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF JATIWARNA', title)
+    worksheet123.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet123.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet123.write('A22', 'LOKASI', header)
     worksheet123.write('B22', 'TOTAL', header)
     worksheet123.merge_range('A21:B21', 'RANK', header)
@@ -3398,7 +3394,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 124
-    worksheet124.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet124.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet124.set_column('A:A', 7, center)
     worksheet124.set_column('B:B', 6, center)
@@ -3408,9 +3404,9 @@ if uploaded_file is not None:
     worksheet124.set_column('F:F', 8.57, center)
     worksheet124.set_column('G:R', 5, center)
     worksheet124.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TAMBUN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TAMBUN', title)
     worksheet124.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet124.write('A5', 'LOKASI', header)
     worksheet124.write('B5', 'TOTAL', header)
     worksheet124.merge_range('A4:B4', 'RANK', header)
@@ -3435,10 +3431,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet124.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TAMBUN', title)
-    worksheet124.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TAMBUN', title)
+    worksheet124.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet124.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet124.write('A22', 'LOKASI', header)
     worksheet124.write('B22', 'TOTAL', header)
     worksheet124.merge_range('A21:B21', 'RANK', header)
@@ -3463,7 +3459,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 125
-    worksheet125.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet125.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet125.set_column('A:A', 7, center)
     worksheet125.set_column('B:B', 6, center)
@@ -3473,9 +3469,9 @@ if uploaded_file is not None:
     worksheet125.set_column('F:F', 8.57, center)
     worksheet125.set_column('G:R', 5, center)
     worksheet125.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF DAAN MOGOT', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF DAAN MOGOT', title)
     worksheet125.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet125.write('A5', 'LOKASI', header)
     worksheet125.write('B5', 'TOTAL', header)
     worksheet125.merge_range('A4:B4', 'RANK', header)
@@ -3500,10 +3496,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet125.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF DAAN MOGOT', title)
-    worksheet125.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF DAAN MOGOT', title)
+    worksheet125.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet125.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet125.write('A22', 'LOKASI', header)
     worksheet125.write('B22', 'TOTAL', header)
     worksheet125.merge_range('A21:B21', 'RANK', header)
@@ -3528,7 +3524,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 126
-    worksheet126.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet126.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet126.set_column('A:A', 7, center)
     worksheet126.set_column('B:B', 6, center)
@@ -3538,9 +3534,9 @@ if uploaded_file is not None:
     worksheet126.set_column('F:F', 8.57, center)
     worksheet126.set_column('G:R', 5, center)
     worksheet126.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIBUBUR', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIBUBUR', title)
     worksheet126.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet126.write('A5', 'LOKASI', header)
     worksheet126.write('B5', 'TOTAL', header)
     worksheet126.merge_range('A4:B4', 'RANK', header)
@@ -3565,10 +3561,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet126.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIBUBUR', title)
-    worksheet126.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIBUBUR', title)
+    worksheet126.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet126.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet126.write('A22', 'LOKASI', header)
     worksheet126.write('B22', 'TOTAL', header)
     worksheet126.merge_range('A21:B21', 'RANK', header)
@@ -3593,7 +3589,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 127
-    worksheet127.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet127.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet127.set_column('A:A', 7, center)
     worksheet127.set_column('B:B', 6, center)
@@ -3603,9 +3599,9 @@ if uploaded_file is not None:
     worksheet127.set_column('F:F', 8.57, center)
     worksheet127.set_column('G:R', 5, center)
     worksheet127.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CENGKARENG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CENGKARENG', title)
     worksheet127.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet127.write('A5', 'LOKASI', header)
     worksheet127.write('B5', 'TOTAL', header)
     worksheet127.merge_range('A4:B4', 'RANK', header)
@@ -3630,10 +3626,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet127.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CENGKARENG', title)
-    worksheet127.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CENGKARENG', title)
+    worksheet127.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet127.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet127.write('A22', 'LOKASI', header)
     worksheet127.write('B22', 'TOTAL', header)
     worksheet127.merge_range('A21:B21', 'RANK', header)
@@ -3658,7 +3654,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 128
-    worksheet128.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet128.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet128.set_column('A:A', 7, center)
     worksheet128.set_column('B:B', 6, center)
@@ -3668,9 +3664,9 @@ if uploaded_file is not None:
     worksheet128.set_column('F:F', 8.57, center)
     worksheet128.set_column('G:R', 5, center)
     worksheet128.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PETUKANGAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PETUKANGAN', title)
     worksheet128.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet128.write('A5', 'LOKASI', header)
     worksheet128.write('B5', 'TOTAL', header)
     worksheet128.merge_range('A4:B4', 'RANK', header)
@@ -3695,10 +3691,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet128.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PETUKANGAN', title)
-    worksheet128.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PETUKANGAN', title)
+    worksheet128.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet128.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet128.write('A22', 'LOKASI', header)
     worksheet128.write('B22', 'TOTAL', header)
     worksheet128.merge_range('A21:B21', 'RANK', header)
@@ -3723,7 +3719,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 129
-    worksheet129.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet129.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet129.set_column('A:A', 7, center)
     worksheet129.set_column('B:B', 6, center)
@@ -3733,9 +3729,9 @@ if uploaded_file is not None:
     worksheet129.set_column('F:F', 8.57, center)
     worksheet129.set_column('G:R', 5, center)
     worksheet129.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MERUYA UTARA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MERUYA UTARA', title)
     worksheet129.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet129.write('A5', 'LOKASI', header)
     worksheet129.write('B5', 'TOTAL', header)
     worksheet129.merge_range('A4:B4', 'RANK', header)
@@ -3760,10 +3756,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet129.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MERUYA UTARA', title)
-    worksheet129.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MERUYA UTARA', title)
+    worksheet129.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet129.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet129.write('A22', 'LOKASI', header)
     worksheet129.write('B22', 'TOTAL', header)
     worksheet129.merge_range('A21:B21', 'RANK', header)
@@ -3788,7 +3784,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 130
-    worksheet130.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet130.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet130.set_column('A:A', 7, center)
     worksheet130.set_column('B:B', 6, center)
@@ -3798,9 +3794,9 @@ if uploaded_file is not None:
     worksheet130.set_column('F:F', 8.57, center)
     worksheet130.set_column('G:R', 5, center)
     worksheet130.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BINTARA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BINTARA', title)
     worksheet130.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet130.write('A5', 'LOKASI', header)
     worksheet130.write('B5', 'TOTAL', header)
     worksheet130.merge_range('A4:B4', 'RANK', header)
@@ -3825,10 +3821,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet130.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BINTARA', title)
-    worksheet130.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BINTARA', title)
+    worksheet130.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet130.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet130.write('A22', 'LOKASI', header)
     worksheet130.write('B22', 'TOTAL', header)
     worksheet130.merge_range('A21:B21', 'RANK', header)
@@ -3853,7 +3849,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 131
-    worksheet131.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet131.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet131.set_column('A:A', 7, center)
     worksheet131.set_column('B:B', 6, center)
@@ -3863,9 +3859,9 @@ if uploaded_file is not None:
     worksheet131.set_column('F:F', 8.57, center)
     worksheet131.set_column('G:R', 5, center)
     worksheet131.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MALANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MALANG', title)
     worksheet131.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet131.write('A5', 'LOKASI', header)
     worksheet131.write('B5', 'TOTAL', header)
     worksheet131.merge_range('A4:B4', 'RANK', header)
@@ -3890,10 +3886,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet131.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MALANG', title)
-    worksheet131.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MALANG', title)
+    worksheet131.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet131.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet131.write('A22', 'LOKASI', header)
     worksheet131.write('B22', 'TOTAL', header)
     worksheet131.merge_range('A21:B21', 'RANK', header)
@@ -3918,7 +3914,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 132
-    worksheet132.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet132.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet132.set_column('A:A', 7, center)
     worksheet132.set_column('B:B', 6, center)
@@ -3928,9 +3924,9 @@ if uploaded_file is not None:
     worksheet132.set_column('F:F', 8.57, center)
     worksheet132.set_column('G:R', 5, center)
     worksheet132.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MEDAN BARU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MEDAN BARU', title)
     worksheet132.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet132.write('A5', 'LOKASI', header)
     worksheet132.write('B5', 'TOTAL', header)
     worksheet132.merge_range('A4:B4', 'RANK', header)
@@ -3955,10 +3951,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet132.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MEDAN BARU', title)
-    worksheet132.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MEDAN BARU', title)
+    worksheet132.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet132.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet132.write('A22', 'LOKASI', header)
     worksheet132.write('B22', 'TOTAL', header)
     worksheet132.merge_range('A21:B21', 'RANK', header)
@@ -3983,7 +3979,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 133
-    worksheet133.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet133.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet133.set_column('A:A', 7, center)
     worksheet133.set_column('B:B', 6, center)
@@ -3993,9 +3989,9 @@ if uploaded_file is not None:
     worksheet133.set_column('F:F', 8.57, center)
     worksheet133.set_column('G:R', 5, center)
     worksheet133.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MEDAN HELVETIA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MEDAN HELVETIA', title)
     worksheet133.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet133.write('A5', 'LOKASI', header)
     worksheet133.write('B5', 'TOTAL', header)
     worksheet133.merge_range('A4:B4', 'RANK', header)
@@ -4020,10 +4016,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet133.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MEDAN HELVETIA', title)
-    worksheet133.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MEDAN HELVETIA', title)
+    worksheet133.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet133.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet133.write('A22', 'LOKASI', header)
     worksheet133.write('B22', 'TOTAL', header)
     worksheet133.merge_range('A21:B21', 'RANK', header)
@@ -4048,7 +4044,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 134
-    worksheet134.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet134.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet134.set_column('A:A', 7, center)
     worksheet134.set_column('B:B', 6, center)
@@ -4058,9 +4054,9 @@ if uploaded_file is not None:
     worksheet134.set_column('F:F', 8.57, center)
     worksheet134.set_column('G:R', 5, center)
     worksheet134.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIHANJUANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIHANJUANG', title)
     worksheet134.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet134.write('A5', 'LOKASI', header)
     worksheet134.write('B5', 'TOTAL', header)
     worksheet134.merge_range('A4:B4', 'RANK', header)
@@ -4085,10 +4081,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet134.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIHANJUANG', title)
-    worksheet134.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIHANJUANG', title)
+    worksheet134.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet134.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet134.write('A22', 'LOKASI', header)
     worksheet134.write('B22', 'TOTAL', header)
     worksheet134.merge_range('A21:B21', 'RANK', header)
@@ -4113,7 +4109,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 135
-    worksheet135.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet135.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet135.set_column('A:A', 7, center)
     worksheet135.set_column('B:B', 6, center)
@@ -4123,9 +4119,9 @@ if uploaded_file is not None:
     worksheet135.set_column('F:F', 8.57, center)
     worksheet135.set_column('G:R', 5, center)
     worksheet135.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BUAH BATU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BUAH BATU', title)
     worksheet135.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet135.write('A5', 'LOKASI', header)
     worksheet135.write('B5', 'TOTAL', header)
     worksheet135.merge_range('A4:B4', 'RANK', header)
@@ -4150,10 +4146,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet135.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BUAH BATU', title)
-    worksheet135.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BUAH BATU', title)
+    worksheet135.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet135.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet135.write('A22', 'LOKASI', header)
     worksheet135.write('B22', 'TOTAL', header)
     worksheet135.merge_range('A21:B21', 'RANK', header)
@@ -4178,7 +4174,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 136
-    worksheet136.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet136.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet136.set_column('A:A', 7, center)
     worksheet136.set_column('B:B', 6, center)
@@ -4188,9 +4184,9 @@ if uploaded_file is not None:
     worksheet136.set_column('F:F', 8.57, center)
     worksheet136.set_column('G:R', 5, center)
     worksheet136.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SUMBAWA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUMBAWA', title)
     worksheet136.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet136.write('A5', 'LOKASI', header)
     worksheet136.write('B5', 'TOTAL', header)
     worksheet136.merge_range('A4:B4', 'RANK', header)
@@ -4215,10 +4211,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet136.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SUMBAWA', title)
-    worksheet136.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SUMBAWA', title)
+    worksheet136.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet136.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet136.write('A22', 'LOKASI', header)
     worksheet136.write('B22', 'TOTAL', header)
     worksheet136.merge_range('A21:B21', 'RANK', header)
@@ -4243,7 +4239,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 137
-    worksheet137.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet137.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet137.set_column('A:A', 7, center)
     worksheet137.set_column('B:B', 6, center)
@@ -4253,9 +4249,9 @@ if uploaded_file is not None:
     worksheet137.set_column('F:F', 8.57, center)
     worksheet137.set_column('G:R', 5, center)
     worksheet137.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF UJUNG BERUNG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF UJUNG BERUNG', title)
     worksheet137.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet137.write('A5', 'LOKASI', header)
     worksheet137.write('B5', 'TOTAL', header)
     worksheet137.merge_range('A4:B4', 'RANK', header)
@@ -4280,10 +4276,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet137.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF UJUNG BERUNG', title)
-    worksheet137.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF UJUNG BERUNG', title)
+    worksheet137.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet137.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet137.write('A22', 'LOKASI', header)
     worksheet137.write('B22', 'TOTAL', header)
     worksheet137.merge_range('A21:B21', 'RANK', header)
@@ -4308,7 +4304,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 138
-    worksheet138.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet138.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet138.set_column('A:A', 7, center)
     worksheet138.set_column('B:B', 6, center)
@@ -4318,9 +4314,9 @@ if uploaded_file is not None:
     worksheet138.set_column('F:F', 8.57, center)
     worksheet138.set_column('G:R', 5, center)
     worksheet138.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SANGKURIANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SANGKURIANG', title)
     worksheet138.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet138.write('A5', 'LOKASI', header)
     worksheet138.write('B5', 'TOTAL', header)
     worksheet138.merge_range('A4:B4', 'RANK', header)
@@ -4345,10 +4341,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet138.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SANGKURIANG', title)
-    worksheet138.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SANGKURIANG', title)
+    worksheet138.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet138.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet138.write('A22', 'LOKASI', header)
     worksheet138.write('B22', 'TOTAL', header)
     worksheet138.merge_range('A21:B21', 'RANK', header)
@@ -4373,7 +4369,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # # worksheet 139
-    # worksheet139.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet139.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet139.set_column('A:A', 7, center)
     # worksheet139.set_column('B:B', 6, center)
@@ -4382,10 +4378,9 @@ if uploaded_file is not None:
     # worksheet139.set_column('E:E', 13.14, left)
     # worksheet139.set_column('F:F', 8.57, center)
     # worksheet139.set_column('G:R', 5, center)
-    # worksheet139.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SARIJADI', title)
+    # worksheet139.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SARIJADI', title)
     # worksheet139.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
-    # worksheet139.write('A5', 'LOKASI', header)
-    # worksheet139.write('B5', 'TOTAL', header)
+    # worksheet139.write('A5', 'LOKASI',fr {penilaian}39.{semester}, 'TOTA{tahun}r)
     # worksheet139.merge_range('A4:B4', 'RANK', header)
     # worksheet139.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet139.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -4408,11 +4403,10 @@ if uploaded_file is not None:
     # worksheet139.conditional_format(5,0,row139_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet139.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SARIJADI', title)
-    # worksheet139.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet139.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+    # worksheet139.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF SARIJADI', title)
+    # worksheet139.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet139.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
     # worksheet139.write('A22', 'LOKASI', header)
-    # worksheet139.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet139.merge_range('A21:B21', 'RANK', header)
     # worksheet139.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet139.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -4435,7 +4429,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # worksheet 140
-    worksheet140.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet140.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet140.set_column('A:A', 7, center)
     worksheet140.set_column('B:B', 6, center)
@@ -4445,9 +4439,9 @@ if uploaded_file is not None:
     worksheet140.set_column('F:F', 8.57, center)
     worksheet140.set_column('G:R', 5, center)
     worksheet140.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KARAWACI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KARAWACI', title)
     worksheet140.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet140.write('A5', 'LOKASI', header)
     worksheet140.write('B5', 'TOTAL', header)
     worksheet140.merge_range('A4:B4', 'RANK', header)
@@ -4472,10 +4466,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet140.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KARAWACI', title)
-    worksheet140.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KARAWACI', title)
+    worksheet140.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet140.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet140.write('A22', 'LOKASI', header)
     worksheet140.write('B22', 'TOTAL', header)
     worksheet140.merge_range('A21:B21', 'RANK', header)
@@ -4500,7 +4494,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 141
-    worksheet141.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet141.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet141.set_column('A:A', 7, center)
     worksheet141.set_column('B:B', 6, center)
@@ -4510,9 +4504,9 @@ if uploaded_file is not None:
     worksheet141.set_column('F:F', 8.57, center)
     worksheet141.set_column('G:R', 5, center)
     worksheet141.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF VETERAN TANGERANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF VETERAN TANGERANG', title)
     worksheet141.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet141.write('A5', 'LOKASI', header)
     worksheet141.write('B5', 'TOTAL', header)
     worksheet141.merge_range('A4:B4', 'RANK', header)
@@ -4537,10 +4531,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet141.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF VETERAN TANGERANG', title)
-    worksheet141.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF VETERAN TANGERANG', title)
+    worksheet141.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet141.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet141.write('A22', 'LOKASI', header)
     worksheet141.write('B22', 'TOTAL', header)
     worksheet141.merge_range('A21:B21', 'RANK', header)
@@ -4565,7 +4559,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 142
-    worksheet142.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet142.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet142.set_column('A:A', 7, center)
     worksheet142.set_column('B:B', 6, center)
@@ -4575,9 +4569,9 @@ if uploaded_file is not None:
     worksheet142.set_column('F:F', 8.57, center)
     worksheet142.set_column('G:R', 5, center)
     worksheet142.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PERUMNAS 2 TANGERANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PERUMNAS 2 TANGERANG', title)
     worksheet142.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet142.write('A5', 'LOKASI', header)
     worksheet142.write('B5', 'TOTAL', header)
     worksheet142.merge_range('A4:B4', 'RANK', header)
@@ -4602,10 +4596,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet142.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PERUMNAS 2 TANGERANG', title)
-    worksheet142.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PERUMNAS 2 TANGERANG', title)
+    worksheet142.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet142.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet142.write('A22', 'LOKASI', header)
     worksheet142.write('B22', 'TOTAL', header)
     worksheet142.merge_range('A21:B21', 'RANK', header)
@@ -4630,7 +4624,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 143
-    worksheet143.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet143.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet143.set_column('A:A', 7, center)
     worksheet143.set_column('B:B', 6, center)
@@ -4640,9 +4634,9 @@ if uploaded_file is not None:
     worksheet143.set_column('F:F', 8.57, center)
     worksheet143.set_column('G:R', 5, center)
     worksheet143.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KAYURINGIN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KAYURINGIN', title)
     worksheet143.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet143.write('A5', 'LOKASI', header)
     worksheet143.write('B5', 'TOTAL', header)
     worksheet143.merge_range('A4:B4', 'RANK', header)
@@ -4667,10 +4661,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet143.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KAYURINGIN', title)
-    worksheet143.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KAYURINGIN', title)
+    worksheet143.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet143.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet143.write('A22', 'LOKASI', header)
     worksheet143.write('B22', 'TOTAL', header)
     worksheet143.merge_range('A21:B21', 'RANK', header)
@@ -4695,7 +4689,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 144
-    worksheet144.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet144.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet144.set_column('A:A', 7, center)
     worksheet144.set_column('B:B', 6, center)
@@ -4705,9 +4699,9 @@ if uploaded_file is not None:
     worksheet144.set_column('F:F', 8.57, center)
     worksheet144.set_column('G:R', 5, center)
     worksheet144.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF AGUS SALIM', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF AGUS SALIM', title)
     worksheet144.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet144.write('A5', 'LOKASI', header)
     worksheet144.write('B5', 'TOTAL', header)
     worksheet144.merge_range('A4:B4', 'RANK', header)
@@ -4732,10 +4726,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet144.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF AGUS SALIM', title)
-    worksheet144.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF AGUS SALIM', title)
+    worksheet144.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet144.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet144.write('A22', 'LOKASI', header)
     worksheet144.write('B22', 'TOTAL', header)
     worksheet144.merge_range('A21:B21', 'RANK', header)
@@ -4760,7 +4754,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 145
-    worksheet145.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet145.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet145.set_column('A:A', 7, center)
     worksheet145.set_column('B:B', 6, center)
@@ -4770,9 +4764,9 @@ if uploaded_file is not None:
     worksheet145.set_column('F:F', 8.57, center)
     worksheet145.set_column('G:R', 5, center)
     worksheet145.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SUMERU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUMERU', title)
     worksheet145.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet145.write('A5', 'LOKASI', header)
     worksheet145.write('B5', 'TOTAL', header)
     worksheet145.merge_range('A4:B4', 'RANK', header)
@@ -4797,10 +4791,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet145.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SUMERU', title)
-    worksheet145.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SUMERU', title)
+    worksheet145.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet145.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet145.write('A22', 'LOKASI', header)
     worksheet145.write('B22', 'TOTAL', header)
     worksheet145.merge_range('A21:B21', 'RANK', header)
@@ -4825,7 +4819,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 146
-    worksheet146.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet146.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet146.set_column('A:A', 7, center)
     worksheet146.set_column('B:B', 6, center)
@@ -4835,9 +4829,9 @@ if uploaded_file is not None:
     worksheet146.set_column('F:F', 8.57, center)
     worksheet146.set_column('G:R', 5, center)
     worksheet146.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIKEAS', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIKEAS', title)
     worksheet146.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet146.write('A5', 'LOKASI', header)
     worksheet146.write('B5', 'TOTAL', header)
     worksheet146.merge_range('A4:B4', 'RANK', header)
@@ -4862,10 +4856,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet146.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIKEAS', title)
-    worksheet146.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIKEAS', title)
+    worksheet146.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet146.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet146.write('A22', 'LOKASI', header)
     worksheet146.write('B22', 'TOTAL', header)
     worksheet146.merge_range('A21:B21', 'RANK', header)
@@ -4890,7 +4884,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 148
-    worksheet148.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet148.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet148.set_column('A:A', 7, center)
     worksheet148.set_column('B:B', 6, center)
@@ -4900,9 +4894,9 @@ if uploaded_file is not None:
     worksheet148.set_column('F:F', 8.57, center)
     worksheet148.set_column('G:R', 5, center)
     worksheet148.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIJAWA MASJID', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIJAWA MASJID', title)
     worksheet148.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet148.write('A5', 'LOKASI', header)
     worksheet148.write('B5', 'TOTAL', header)
     worksheet148.merge_range('A4:B4', 'RANK', header)
@@ -4927,10 +4921,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet148.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIJAWA MASJID', title)
-    worksheet148.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIJAWA MASJID', title)
+    worksheet148.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet148.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet148.write('A22', 'LOKASI', header)
     worksheet148.write('B22', 'TOTAL', header)
     worksheet148.merge_range('A21:B21', 'RANK', header)
@@ -4955,7 +4949,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 149
-    worksheet149.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet149.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet149.set_column('A:A', 7, center)
     worksheet149.set_column('B:B', 6, center)
@@ -4965,9 +4959,9 @@ if uploaded_file is not None:
     worksheet149.set_column('F:F', 8.57, center)
     worksheet149.set_column('G:R', 5, center)
     worksheet149.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PALEDANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PALEDANG', title)
     worksheet149.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet149.write('A5', 'LOKASI', header)
     worksheet149.write('B5', 'TOTAL', header)
     worksheet149.merge_range('A4:B4', 'RANK', header)
@@ -4992,10 +4986,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet149.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PALEDANG', title)
-    worksheet149.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PALEDANG', title)
+    worksheet149.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet149.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet149.write('A22', 'LOKASI', header)
     worksheet149.write('B22', 'TOTAL', header)
     worksheet149.merge_range('A21:B21', 'RANK', header)
@@ -5020,7 +5014,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 150
-    worksheet150.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet150.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet150.set_column('A:A', 7, center)
     worksheet150.set_column('B:B', 6, center)
@@ -5030,9 +5024,9 @@ if uploaded_file is not None:
     worksheet150.set_column('F:F', 8.57, center)
     worksheet150.set_column('G:R', 5, center)
     worksheet150.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF GEDONG KUNING', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GEDONG KUNING', title)
     worksheet150.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet150.write('A5', 'LOKASI', header)
     worksheet150.write('B5', 'TOTAL', header)
     worksheet150.merge_range('A4:B4', 'RANK', header)
@@ -5057,10 +5051,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet150.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF GEDONG KUNING', title)
-    worksheet150.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF GEDONG KUNING', title)
+    worksheet150.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet150.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet150.write('A22', 'LOKASI', header)
     worksheet150.write('B22', 'TOTAL', header)
     worksheet150.merge_range('A21:B21', 'RANK', header)
@@ -5085,7 +5079,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 151
-    worksheet151.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet151.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet151.set_column('A:A', 7, center)
     worksheet151.set_column('B:B', 6, center)
@@ -5095,9 +5089,9 @@ if uploaded_file is not None:
     worksheet151.set_column('F:F', 8.57, center)
     worksheet151.set_column('G:R', 5, center)
     worksheet151.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF JATIWARINGIN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATIWARINGIN', title)
     worksheet151.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet151.write('A5', 'LOKASI', header)
     worksheet151.write('B5', 'TOTAL', header)
     worksheet151.merge_range('A4:B4', 'RANK', header)
@@ -5122,10 +5116,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet151.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF JATIWARINGIN', title)
-    worksheet151.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF JATIWARINGIN', title)
+    worksheet151.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet151.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet151.write('A22', 'LOKASI', header)
     worksheet151.write('B22', 'TOTAL', header)
     worksheet151.merge_range('A21:B21', 'RANK', header)
@@ -5150,7 +5144,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 152
-    worksheet152.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet152.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet152.set_column('A:A', 7, center)
     worksheet152.set_column('B:B', 6, center)
@@ -5160,9 +5154,9 @@ if uploaded_file is not None:
     worksheet152.set_column('F:F', 8.57, center)
     worksheet152.set_column('G:R', 5, center)
     worksheet152.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CILEDUG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CILEDUG', title)
     worksheet152.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet152.write('A5', 'LOKASI', header)
     worksheet152.write('B5', 'TOTAL', header)
     worksheet152.merge_range('A4:B4', 'RANK', header)
@@ -5187,10 +5181,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet152.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CILEDUG', title)
-    worksheet152.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CILEDUG', title)
+    worksheet152.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet152.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet152.write('A22', 'LOKASI', header)
     worksheet152.write('B22', 'TOTAL', header)
     worksheet152.merge_range('A21:B21', 'RANK', header)
@@ -5215,7 +5209,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 153
-    worksheet153.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet153.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet153.set_column('A:A', 7, center)
     worksheet153.set_column('B:B', 6, center)
@@ -5225,9 +5219,9 @@ if uploaded_file is not None:
     worksheet153.set_column('F:F', 8.57, center)
     worksheet153.set_column('G:R', 5, center)
     worksheet153.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KRANGGAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KRANGGAN', title)
     worksheet153.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet153.write('A5', 'LOKASI', header)
     worksheet153.write('B5', 'TOTAL', header)
     worksheet153.merge_range('A4:B4', 'RANK', header)
@@ -5252,10 +5246,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet153.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KRANGGAN', title)
-    worksheet153.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KRANGGAN', title)
+    worksheet153.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet153.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet153.write('A22', 'LOKASI', header)
     worksheet153.write('B22', 'TOTAL', header)
     worksheet153.merge_range('A21:B21', 'RANK', header)
@@ -5280,7 +5274,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 154
-    worksheet154.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet154.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet154.set_column('A:A', 7, center)
     worksheet154.set_column('B:B', 6, center)
@@ -5290,9 +5284,9 @@ if uploaded_file is not None:
     worksheet154.set_column('F:F', 8.57, center)
     worksheet154.set_column('G:R', 5, center)
     worksheet154.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MUSTIKA JAYA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MUSTIKA JAYA', title)
     worksheet154.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet154.write('A5', 'LOKASI', header)
     worksheet154.write('B5', 'TOTAL', header)
     worksheet154.merge_range('A4:B4', 'RANK', header)
@@ -5317,10 +5311,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet154.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MUSTIKA JAYA', title)
-    worksheet154.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MUSTIKA JAYA', title)
+    worksheet154.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet154.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet154.write('A22', 'LOKASI', header)
     worksheet154.write('B22', 'TOTAL', header)
     worksheet154.merge_range('A21:B21', 'RANK', header)
@@ -5345,7 +5339,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 155
-    worksheet155.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet155.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet155.set_column('A:A', 7, center)
     worksheet155.set_column('B:B', 6, center)
@@ -5355,9 +5349,9 @@ if uploaded_file is not None:
     worksheet155.set_column('F:F', 8.57, center)
     worksheet155.set_column('G:R', 5, center)
     worksheet155.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF ALEXINDO', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF ALEXINDO', title)
     worksheet155.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet155.write('A5', 'LOKASI', header)
     worksheet155.write('B5', 'TOTAL', header)
     worksheet155.merge_range('A4:B4', 'RANK', header)
@@ -5382,10 +5376,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet155.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF ALEXINDO', title)
-    worksheet155.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF ALEXINDO', title)
+    worksheet155.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet155.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet155.write('A22', 'LOKASI', header)
     worksheet155.write('B22', 'TOTAL', header)
     worksheet155.merge_range('A21:B21', 'RANK', header)
@@ -5410,7 +5404,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 156
-    worksheet156.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet156.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet156.set_column('A:A', 7, center)
     worksheet156.set_column('B:B', 6, center)
@@ -5420,9 +5414,9 @@ if uploaded_file is not None:
     worksheet156.set_column('F:F', 8.57, center)
     worksheet156.set_column('G:R', 5, center)
     worksheet156.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIBITUNG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIBITUNG', title)
     worksheet156.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet156.write('A5', 'LOKASI', header)
     worksheet156.write('B5', 'TOTAL', header)
     worksheet156.merge_range('A4:B4', 'RANK', header)
@@ -5447,10 +5441,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet156.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIBITUNG', title)
-    worksheet156.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIBITUNG', title)
+    worksheet156.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet156.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet156.write('A22', 'LOKASI', header)
     worksheet156.write('B22', 'TOTAL', header)
     worksheet156.merge_range('A21:B21', 'RANK', header)
@@ -5475,7 +5469,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 157
-    worksheet157.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet157.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet157.set_column('A:A', 7, center)
     worksheet157.set_column('B:B', 6, center)
@@ -5485,9 +5479,9 @@ if uploaded_file is not None:
     worksheet157.set_column('F:F', 8.57, center)
     worksheet157.set_column('G:R', 5, center)
     worksheet157.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KRAMAT JAYA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KRAMAT JAYA', title)
     worksheet157.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet157.write('A5', 'LOKASI', header)
     worksheet157.write('B5', 'TOTAL', header)
     worksheet157.merge_range('A4:B4', 'RANK', header)
@@ -5512,10 +5506,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet157.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KRAMAT JAYA', title)
-    worksheet157.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KRAMAT JAYA', title)
+    worksheet157.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet157.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet157.write('A22', 'LOKASI', header)
     worksheet157.write('B22', 'TOTAL', header)
     worksheet157.merge_range('A21:B21', 'RANK', header)
@@ -5540,7 +5534,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 158
-    worksheet158.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet158.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet158.set_column('A:A', 7, center)
     worksheet158.set_column('B:B', 6, center)
@@ -5550,9 +5544,9 @@ if uploaded_file is not None:
     worksheet158.set_column('F:F', 8.57, center)
     worksheet158.set_column('G:R', 5, center)
     worksheet158.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PONDOK GEDE', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PONDOK GEDE', title)
     worksheet158.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet158.write('A5', 'LOKASI', header)
     worksheet158.write('B5', 'TOTAL', header)
     worksheet158.merge_range('A4:B4', 'RANK', header)
@@ -5577,10 +5571,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet158.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PONDOK GEDE', title)
-    worksheet158.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PONDOK GEDE', title)
+    worksheet158.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet158.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet158.write('A22', 'LOKASI', header)
     worksheet158.write('B22', 'TOTAL', header)
     worksheet158.merge_range('A21:B21', 'RANK', header)
@@ -5605,7 +5599,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 159
-    worksheet159.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet159.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet159.set_column('A:A', 7, center)
     worksheet159.set_column('B:B', 6, center)
@@ -5615,9 +5609,9 @@ if uploaded_file is not None:
     worksheet159.set_column('F:F', 8.57, center)
     worksheet159.set_column('G:R', 5, center)
     worksheet159.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF GALAXY', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GALAXY', title)
     worksheet159.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet159.write('A5', 'LOKASI', header)
     worksheet159.write('B5', 'TOTAL', header)
     worksheet159.merge_range('A4:B4', 'RANK', header)
@@ -5642,10 +5636,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet159.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF GALAXY', title)
-    worksheet159.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF GALAXY', title)
+    worksheet159.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet159.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet159.write('A22', 'LOKASI', header)
     worksheet159.write('B22', 'TOTAL', header)
     worksheet159.merge_range('A21:B21', 'RANK', header)
@@ -5670,7 +5664,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 160
-    worksheet160.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet160.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet160.set_column('A:A', 7, center)
     worksheet160.set_column('B:B', 6, center)
@@ -5680,9 +5674,9 @@ if uploaded_file is not None:
     worksheet160.set_column('F:F', 8.57, center)
     worksheet160.set_column('G:R', 5, center)
     worksheet160.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIGANJUR', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIGANJUR', title)
     worksheet160.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet160.write('A5', 'LOKASI', header)
     worksheet160.write('B5', 'TOTAL', header)
     worksheet160.merge_range('A4:B4', 'RANK', header)
@@ -5707,10 +5701,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet160.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIGANJUR', title)
-    worksheet160.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIGANJUR', title)
+    worksheet160.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet160.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet160.write('A22', 'LOKASI', header)
     worksheet160.write('B22', 'TOTAL', header)
     worksheet160.merge_range('A21:B21', 'RANK', header)
@@ -7529,7 +7523,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(16, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'E:\logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -7551,12 +7545,12 @@ if uploaded_file is not None:
     worksheetcover.set_column('G:G', 13, centerCover)
     worksheetcover.merge_range('A1:F3', 'DAFTAR NILAI', titleCover)
     worksheetcover.merge_range(
-        'A4:F5', 'PENILAIAN AKHIR SEMESTER', sub_titleCover)
+        'A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', 'SEMESTER 1 TAHUN 2022-2023', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
     worksheetcover.write('A19', 'NILAI STANDAR', sub_headerCover)
-    worksheetcover.merge_range('F8:G9', '10 SMA IPA', kelasCover)
+    worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
     worksheetcover.conditional_format(26, 0, 21, 3,
@@ -7569,7 +7563,7 @@ if uploaded_file is not None:
                                       {'type': 'no_errors', 'format': borderCover})
 
     # # worksheet 161
-    # worksheet161.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet161.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet161.set_column('A:A', 7, center)
     # worksheet161.set_column('B:B', 6, center)
@@ -7578,10 +7572,9 @@ if uploaded_file is not None:
     # worksheet161.set_column('E:E', 13.14, left)
     # worksheet161.set_column('F:F', 8.57, center)
     # worksheet161.set_column('G:R', 5, center)
-    # worksheet161.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BENHIL', title)
+    # worksheet161.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BENHIL', title)
     # worksheet161.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
-    # worksheet161.write('A5', 'LOKASI', header)
-    # worksheet161.write('B5', 'TOTAL', header)
+    # worksheet161.write('A5', 'LOKASI',fr {penilaian}61.{semester}, 'TOTA{tahun}r)
     # worksheet161.merge_range('A4:B4', 'RANK', header)
     # worksheet161.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet161.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -7604,11 +7597,10 @@ if uploaded_file is not None:
     # worksheet161.conditional_format(5,0,row161_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet161.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BENHIL', title)
-    # worksheet161.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet161.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+    # worksheet161.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF BENHIL', title)
+    # worksheet161.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet161.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
     # worksheet161.write('A22', 'LOKASI', header)
-    # worksheet161.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet161.merge_range('A21:B21', 'RANK', header)
     # worksheet161.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet161.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -7631,7 +7623,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # worksheet 162
-    worksheet162.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet162.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet162.set_column('A:A', 7, center)
     worksheet162.set_column('B:B', 6, center)
@@ -7641,9 +7633,9 @@ if uploaded_file is not None:
     worksheet162.set_column('F:F', 8.57, center)
     worksheet162.set_column('G:R', 5, center)
     worksheet162.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PUNTI KAYU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PUNTI KAYU', title)
     worksheet162.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet162.write('A5', 'LOKASI', header)
     worksheet162.write('B5', 'TOTAL', header)
     worksheet162.merge_range('A4:B4', 'RANK', header)
@@ -7668,10 +7660,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet162.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PUNTI KAYU', title)
-    worksheet162.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PUNTI KAYU', title)
+    worksheet162.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet162.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet162.write('A22', 'LOKASI', header)
     worksheet162.write('B22', 'TOTAL', header)
     worksheet162.merge_range('A21:B21', 'RANK', header)
@@ -7696,7 +7688,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 163
-    worksheet163.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet163.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet163.set_column('A:A', 7, center)
     worksheet163.set_column('B:B', 6, center)
@@ -7706,9 +7698,9 @@ if uploaded_file is not None:
     worksheet163.set_column('F:F', 8.57, center)
     worksheet163.set_column('G:R', 5, center)
     worksheet163.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SUKAMTO', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUKAMTO', title)
     worksheet163.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet163.write('A5', 'LOKASI', header)
     worksheet163.write('B5', 'TOTAL', header)
     worksheet163.merge_range('A4:B4', 'RANK', header)
@@ -7733,10 +7725,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet163.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SUKAMTO', title)
-    worksheet163.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SUKAMTO', title)
+    worksheet163.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet163.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet163.write('A22', 'LOKASI', header)
     worksheet163.write('B22', 'TOTAL', header)
     worksheet163.merge_range('A21:B21', 'RANK', header)
@@ -7761,7 +7753,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 164
-    worksheet164.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet164.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet164.set_column('A:A', 7, center)
     worksheet164.set_column('B:B', 6, center)
@@ -7771,9 +7763,9 @@ if uploaded_file is not None:
     worksheet164.set_column('F:F', 8.57, center)
     worksheet164.set_column('G:R', 5, center)
     worksheet164.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BUKIT BESAR', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BUKIT BESAR', title)
     worksheet164.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet164.write('A5', 'LOKASI', header)
     worksheet164.write('B5', 'TOTAL', header)
     worksheet164.merge_range('A4:B4', 'RANK', header)
@@ -7798,10 +7790,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet164.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BUKIT BESAR', title)
-    worksheet164.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BUKIT BESAR', title)
+    worksheet164.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet164.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet164.write('A22', 'LOKASI', header)
     worksheet164.write('B22', 'TOTAL', header)
     worksheet164.merge_range('A21:B21', 'RANK', header)
@@ -7826,7 +7818,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 165
-    worksheet165.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet165.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet165.set_column('A:A', 7, center)
     worksheet165.set_column('B:B', 6, center)
@@ -7836,9 +7828,9 @@ if uploaded_file is not None:
     worksheet165.set_column('F:F', 8.57, center)
     worksheet165.set_column('G:R', 5, center)
     worksheet165.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SUDIRMAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUDIRMAN', title)
     worksheet165.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet165.write('A5', 'LOKASI', header)
     worksheet165.write('B5', 'TOTAL', header)
     worksheet165.merge_range('A4:B4', 'RANK', header)
@@ -7863,10 +7855,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet165.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SUDIRMAN', title)
-    worksheet165.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SUDIRMAN', title)
+    worksheet165.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet165.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet165.write('A22', 'LOKASI', header)
     worksheet165.write('B22', 'TOTAL', header)
     worksheet165.merge_range('A21:B21', 'RANK', header)
@@ -7891,7 +7883,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # # worksheet 166
-    # worksheet166.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet166.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet166.set_column('A:A', 7, center)
     # worksheet166.set_column('B:B', 6, center)
@@ -7900,10 +7892,9 @@ if uploaded_file is not None:
     # worksheet166.set_column('E:E', 13.14, left)
     # worksheet166.set_column('F:F', 8.57, center)
     # worksheet166.set_column('G:R', 5, center)
-    # worksheet166.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIMANGGU', title)
+    # worksheet166.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIMANGGU', title)
     # worksheet166.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
-    # worksheet166.write('A5', 'LOKASI', header)
-    # worksheet166.write('B5', 'TOTAL', header)
+    # worksheet166.write('A5', 'LOKASI',fr {penilaian}66.{semester}, 'TOTA{tahun}r)
     # worksheet166.merge_range('A4:B4', 'RANK', header)
     # worksheet166.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet166.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -7926,11 +7917,10 @@ if uploaded_file is not None:
     # worksheet166.conditional_format(5,0,row166_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet166.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIMANGGU', title)
-    # worksheet166.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet166.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+    # worksheet166.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF CIMANGGU', title)
+    # worksheet166.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet166.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
     # worksheet166.write('A22', 'LOKASI', header)
-    # worksheet166.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet166.merge_range('A21:B21', 'RANK', header)
     # worksheet166.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet166.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -7953,7 +7943,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # worksheet 167
-    worksheet167.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet167.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet167.set_column('A:A', 7, center)
     worksheet167.set_column('B:B', 6, center)
@@ -7963,9 +7953,9 @@ if uploaded_file is not None:
     worksheet167.set_column('F:F', 8.57, center)
     worksheet167.set_column('G:R', 5, center)
     worksheet167.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CILANGKAP', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CILANGKAP', title)
     worksheet167.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet167.write('A5', 'LOKASI', header)
     worksheet167.write('B5', 'TOTAL', header)
     worksheet167.merge_range('A4:B4', 'RANK', header)
@@ -7990,10 +7980,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet167.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CILANGKAP', title)
-    worksheet167.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CILANGKAP', title)
+    worksheet167.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet167.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet167.write('A22', 'LOKASI', header)
     worksheet167.write('B22', 'TOTAL', header)
     worksheet167.merge_range('A21:B21', 'RANK', header)
@@ -8018,7 +8008,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 168
-    worksheet168.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet168.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet168.set_column('A:A', 7, center)
     worksheet168.set_column('B:B', 6, center)
@@ -8028,9 +8018,9 @@ if uploaded_file is not None:
     worksheet168.set_column('F:F', 8.57, center)
     worksheet168.set_column('G:R', 5, center)
     worksheet168.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF HALIM', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF HALIM', title)
     worksheet168.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet168.write('A5', 'LOKASI', header)
     worksheet168.write('B5', 'TOTAL', header)
     worksheet168.merge_range('A4:B4', 'RANK', header)
@@ -8055,10 +8045,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet168.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF HALIM', title)
-    worksheet168.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF HALIM', title)
+    worksheet168.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet168.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet168.write('A22', 'LOKASI', header)
     worksheet168.write('B22', 'TOTAL', header)
     worksheet168.merge_range('A21:B21', 'RANK', header)
@@ -8083,7 +8073,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 169
-    worksheet169.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet169.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet169.set_column('A:A', 7, center)
     worksheet169.set_column('B:B', 6, center)
@@ -8093,9 +8083,9 @@ if uploaded_file is not None:
     worksheet169.set_column('F:F', 8.57, center)
     worksheet169.set_column('G:R', 5, center)
     worksheet169.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TANAH MERDEKA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TANAH MERDEKA', title)
     worksheet169.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet169.write('A5', 'LOKASI', header)
     worksheet169.write('B5', 'TOTAL', header)
     worksheet169.merge_range('A4:B4', 'RANK', header)
@@ -8120,10 +8110,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet169.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TANAH MERDEKA', title)
-    worksheet169.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TANAH MERDEKA', title)
+    worksheet169.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet169.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet169.write('A22', 'LOKASI', header)
     worksheet169.write('B22', 'TOTAL', header)
     worksheet169.merge_range('A21:B21', 'RANK', header)
@@ -8148,7 +8138,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 171
-    worksheet171.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet171.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet171.set_column('A:A', 7, center)
     worksheet171.set_column('B:B', 6, center)
@@ -8158,9 +8148,9 @@ if uploaded_file is not None:
     worksheet171.set_column('F:F', 8.57, center)
     worksheet171.set_column('G:R', 5, center)
     worksheet171.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIPUTAT', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIPUTAT', title)
     worksheet171.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet171.write('A5', 'LOKASI', header)
     worksheet171.write('B5', 'TOTAL', header)
     worksheet171.merge_range('A4:B4', 'RANK', header)
@@ -8185,10 +8175,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet171.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIPUTAT', title)
-    worksheet171.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIPUTAT', title)
+    worksheet171.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet171.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet171.write('A22', 'LOKASI', header)
     worksheet171.write('B22', 'TOTAL', header)
     worksheet171.merge_range('A21:B21', 'RANK', header)
@@ -8213,7 +8203,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 173
-    worksheet173.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet173.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet173.set_column('A:A', 7, center)
     worksheet173.set_column('B:B', 6, center)
@@ -8223,9 +8213,9 @@ if uploaded_file is not None:
     worksheet173.set_column('F:F', 8.57, center)
     worksheet173.set_column('G:R', 5, center)
     worksheet173.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SALEMBA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SALEMBA', title)
     worksheet173.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet173.write('A5', 'LOKASI', header)
     worksheet173.write('B5', 'TOTAL', header)
     worksheet173.merge_range('A4:B4', 'RANK', header)
@@ -8250,10 +8240,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet173.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SALEMBA', title)
-    worksheet173.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SALEMBA', title)
+    worksheet173.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet173.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet173.write('A22', 'LOKASI', header)
     worksheet173.write('B22', 'TOTAL', header)
     worksheet173.merge_range('A21:B21', 'RANK', header)
@@ -8278,7 +8268,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 174
-    worksheet174.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet174.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet174.set_column('A:A', 7, center)
     worksheet174.set_column('B:B', 6, center)
@@ -8288,9 +8278,9 @@ if uploaded_file is not None:
     worksheet174.set_column('F:F', 8.57, center)
     worksheet174.set_column('G:R', 5, center)
     worksheet174.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIPINANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIPINANG', title)
     worksheet174.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet174.write('A5', 'LOKASI', header)
     worksheet174.write('B5', 'TOTAL', header)
     worksheet174.merge_range('A4:B4', 'RANK', header)
@@ -8315,10 +8305,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet174.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIPINANG', title)
-    worksheet174.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIPINANG', title)
+    worksheet174.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet174.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet174.write('A22', 'LOKASI', header)
     worksheet174.write('B22', 'TOTAL', header)
     worksheet174.merge_range('A21:B21', 'RANK', header)
@@ -8343,7 +8333,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 175
-    worksheet175.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet175.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet175.set_column('A:A', 7, center)
     worksheet175.set_column('B:B', 6, center)
@@ -8353,9 +8343,9 @@ if uploaded_file is not None:
     worksheet175.set_column('F:F', 8.57, center)
     worksheet175.set_column('G:R', 5, center)
     worksheet175.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KRAMAT ASEM', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KRAMAT ASEM', title)
     worksheet175.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet175.write('A5', 'LOKASI', header)
     worksheet175.write('B5', 'TOTAL', header)
     worksheet175.merge_range('A4:B4', 'RANK', header)
@@ -8380,10 +8370,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet175.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KRAMAT ASEM', title)
-    worksheet175.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KRAMAT ASEM', title)
+    worksheet175.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet175.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet175.write('A22', 'LOKASI', header)
     worksheet175.write('B22', 'TOTAL', header)
     worksheet175.merge_range('A21:B21', 'RANK', header)
@@ -8408,7 +8398,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 176
-    worksheet176.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet176.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet176.set_column('A:A', 7, center)
     worksheet176.set_column('B:B', 6, center)
@@ -8418,9 +8408,9 @@ if uploaded_file is not None:
     worksheet176.set_column('F:F', 8.57, center)
     worksheet176.set_column('G:R', 5, center)
     worksheet176.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PANGKALAN ASEM', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PANGKALAN ASEM', title)
     worksheet176.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet176.write('A5', 'LOKASI', header)
     worksheet176.write('B5', 'TOTAL', header)
     worksheet176.merge_range('A4:B4', 'RANK', header)
@@ -8445,10 +8435,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet176.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PANGKALAN ASEM', title)
-    worksheet176.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PANGKALAN ASEM', title)
+    worksheet176.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet176.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet176.write('A22', 'LOKASI', header)
     worksheet176.write('B22', 'TOTAL', header)
     worksheet176.merge_range('A21:B21', 'RANK', header)
@@ -8472,7 +8462,7 @@ if uploaded_file is not None:
     worksheet176.conditional_format(22, 0, row176+21, 15,
                                     {'type': 'no_errors', 'format': border})
     # worksheet 177
-    worksheet177.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet177.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet177.set_column('A:A', 7, center)
     worksheet177.set_column('B:B', 6, center)
@@ -8482,9 +8472,9 @@ if uploaded_file is not None:
     worksheet177.set_column('F:F', 8.57, center)
     worksheet177.set_column('G:R', 5, center)
     worksheet177.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PAMULANG 2', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PAMULANG 2', title)
     worksheet177.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet177.write('A5', 'LOKASI', header)
     worksheet177.write('B5', 'TOTAL', header)
     worksheet177.merge_range('A4:B4', 'RANK', header)
@@ -8509,10 +8499,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet177.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PAMULANG 2', title)
-    worksheet177.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PAMULANG 2', title)
+    worksheet177.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet177.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet177.write('A22', 'LOKASI', header)
     worksheet177.write('B22', 'TOTAL', header)
     worksheet177.merge_range('A21:B21', 'RANK', header)
@@ -8537,7 +8527,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 178
-    worksheet178.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet178.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet178.set_column('A:A', 7, center)
     worksheet178.set_column('B:B', 6, center)
@@ -8547,9 +8537,9 @@ if uploaded_file is not None:
     worksheet178.set_column('F:F', 8.57, center)
     worksheet178.set_column('G:R', 5, center)
     worksheet178.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PURI BETA LARANGAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PURI BETA LARANGAN', title)
     worksheet178.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet178.write('A5', 'LOKASI', header)
     worksheet178.write('B5', 'TOTAL', header)
     worksheet178.merge_range('A4:B4', 'RANK', header)
@@ -8574,10 +8564,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet178.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PURI BETA LARANGAN', title)
-    worksheet178.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PURI BETA LARANGAN', title)
+    worksheet178.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet178.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet178.write('A22', 'LOKASI', header)
     worksheet178.write('B22', 'TOTAL', header)
     worksheet178.merge_range('A21:B21', 'RANK', header)
@@ -8602,7 +8592,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 179
-    worksheet179.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet179.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet179.set_column('A:A', 7, center)
     worksheet179.set_column('B:B', 6, center)
@@ -8612,9 +8602,9 @@ if uploaded_file is not None:
     worksheet179.set_column('F:F', 8.57, center)
     worksheet179.set_column('G:R', 5, center)
     worksheet179.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CEGER', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CEGER', title)
     worksheet179.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet179.write('A5', 'LOKASI', header)
     worksheet179.write('B5', 'TOTAL', header)
     worksheet179.merge_range('A4:B4', 'RANK', header)
@@ -8639,10 +8629,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet179.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CEGER', title)
-    worksheet179.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CEGER', title)
+    worksheet179.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet179.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet179.write('A22', 'LOKASI', header)
     worksheet179.write('B22', 'TOTAL', header)
     worksheet179.merge_range('A21:B21', 'RANK', header)
@@ -8667,7 +8657,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 180
-    worksheet180.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet180.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet180.set_column('A:A', 7, center)
     worksheet180.set_column('B:B', 6, center)
@@ -8677,9 +8667,9 @@ if uploaded_file is not None:
     worksheet180.set_column('F:F', 8.57, center)
     worksheet180.set_column('G:R', 5, center)
     worksheet180.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SMA KOMPLEK', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SMA KOMPLEK', title)
     worksheet180.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet180.write('A5', 'LOKASI', header)
     worksheet180.write('B5', 'TOTAL', header)
     worksheet180.merge_range('A4:B4', 'RANK', header)
@@ -8704,10 +8694,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet180.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SMA KOMPLEK', title)
-    worksheet180.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SMA KOMPLEK', title)
+    worksheet180.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet180.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet180.write('A22', 'LOKASI', header)
     worksheet180.write('B22', 'TOTAL', header)
     worksheet180.merge_range('A21:B21', 'RANK', header)
@@ -8732,7 +8722,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 181
-    worksheet181.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet181.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet181.set_column('A:A', 7, center)
     worksheet181.set_column('B:B', 6, center)
@@ -8742,9 +8732,9 @@ if uploaded_file is not None:
     worksheet181.set_column('F:F', 8.57, center)
     worksheet181.set_column('G:R', 5, center)
     worksheet181.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF GAYUNGSARI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GAYUNGSARI', title)
     worksheet181.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet181.write('A5', 'LOKASI', header)
     worksheet181.write('B5', 'TOTAL', header)
     worksheet181.merge_range('A4:B4', 'RANK', header)
@@ -8769,10 +8759,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet181.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF GAYUNGSARI', title)
-    worksheet181.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF GAYUNGSARI', title)
+    worksheet181.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet181.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet181.write('A22', 'LOKASI', header)
     worksheet181.write('B22', 'TOTAL', header)
     worksheet181.merge_range('A21:B21', 'RANK', header)
@@ -8797,7 +8787,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 182
-    worksheet182.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet182.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet182.set_column('A:A', 7, center)
     worksheet182.set_column('B:B', 6, center)
@@ -8807,9 +8797,9 @@ if uploaded_file is not None:
     worksheet182.set_column('F:F', 8.57, center)
     worksheet182.set_column('G:R', 5, center)
     worksheet182.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TUPAREV', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TUPAREV', title)
     worksheet182.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet182.write('A5', 'LOKASI', header)
     worksheet182.write('B5', 'TOTAL', header)
     worksheet182.merge_range('A4:B4', 'RANK', header)
@@ -8834,10 +8824,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet182.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TUPAREV', title)
-    worksheet182.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TUPAREV', title)
+    worksheet182.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet182.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet182.write('A22', 'LOKASI', header)
     worksheet182.write('B22', 'TOTAL', header)
     worksheet182.merge_range('A21:B21', 'RANK', header)
@@ -8862,7 +8852,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 183
-    worksheet183.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet183.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet183.set_column('A:A', 7, center)
     worksheet183.set_column('B:B', 6, center)
@@ -8872,9 +8862,9 @@ if uploaded_file is not None:
     worksheet183.set_column('F:F', 8.57, center)
     worksheet183.set_column('G:R', 5, center)
     worksheet183.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PERUMNAS KLENDER', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PERUMNAS KLENDER', title)
     worksheet183.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet183.write('A5', 'LOKASI', header)
     worksheet183.write('B5', 'TOTAL', header)
     worksheet183.merge_range('A4:B4', 'RANK', header)
@@ -8899,10 +8889,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet183.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PERUMNAS KLENDER', title)
-    worksheet183.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PERUMNAS KLENDER', title)
+    worksheet183.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet183.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet183.write('A22', 'LOKASI', header)
     worksheet183.write('B22', 'TOTAL', header)
     worksheet183.merge_range('A21:B21', 'RANK', header)
@@ -8927,7 +8917,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 184
-    worksheet184.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet184.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet184.set_column('A:A', 7, center)
     worksheet184.set_column('B:B', 6, center)
@@ -8937,9 +8927,9 @@ if uploaded_file is not None:
     worksheet184.set_column('F:F', 8.57, center)
     worksheet184.set_column('G:R', 5, center)
     worksheet184.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KARANG AKHIR', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KARANG AKHIR', title)
     worksheet184.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet184.write('A5', 'LOKASI', header)
     worksheet184.write('B5', 'TOTAL', header)
     worksheet184.merge_range('A4:B4', 'RANK', header)
@@ -8964,10 +8954,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet184.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KARANG AKHIR', title)
-    worksheet184.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KARANG AKHIR', title)
+    worksheet184.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet184.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet184.write('A22', 'LOKASI', header)
     worksheet184.write('B22', 'TOTAL', header)
     worksheet184.merge_range('A21:B21', 'RANK', header)
@@ -8992,7 +8982,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 185
-    worksheet185.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet185.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet185.set_column('A:A', 7, center)
     worksheet185.set_column('B:B', 6, center)
@@ -9002,9 +8992,9 @@ if uploaded_file is not None:
     worksheet185.set_column('F:F', 8.57, center)
     worksheet185.set_column('G:R', 5, center)
     worksheet185.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SIMPANG TIGA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SIMPANG TIGA', title)
     worksheet185.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet185.write('A5', 'LOKASI', header)
     worksheet185.write('B5', 'TOTAL', header)
     worksheet185.merge_range('A4:B4', 'RANK', header)
@@ -9029,10 +9019,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet185.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SIMPANG TIGA', title)
-    worksheet185.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SIMPANG TIGA', title)
+    worksheet185.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet185.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet185.write('A22', 'LOKASI', header)
     worksheet185.write('B22', 'TOTAL', header)
     worksheet185.merge_range('A21:B21', 'RANK', header)
@@ -9057,7 +9047,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 186
-    worksheet186.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet186.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet186.set_column('A:A', 7, center)
     worksheet186.set_column('B:B', 6, center)
@@ -9067,9 +9057,9 @@ if uploaded_file is not None:
     worksheet186.set_column('F:F', 8.57, center)
     worksheet186.set_column('G:R', 5, center)
     worksheet186.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF RUKO PCI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RUKO PCI', title)
     worksheet186.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet186.write('A5', 'LOKASI', header)
     worksheet186.write('B5', 'TOTAL', header)
     worksheet186.merge_range('A4:B4', 'RANK', header)
@@ -9094,10 +9084,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet186.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF RUKO PCI', title)
-    worksheet186.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF RUKO PCI', title)
+    worksheet186.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet186.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet186.write('A22', 'LOKASI', header)
     worksheet186.write('B22', 'TOTAL', header)
     worksheet186.merge_range('A21:B21', 'RANK', header)
@@ -9122,7 +9112,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 187
-    worksheet187.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet187.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet187.set_column('A:A', 7, center)
     worksheet187.set_column('B:B', 6, center)
@@ -9132,9 +9122,9 @@ if uploaded_file is not None:
     worksheet187.set_column('F:F', 8.57, center)
     worksheet187.set_column('G:R', 5, center)
     worksheet187.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KRAMATWATU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KRAMATWATU', title)
     worksheet187.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet187.write('A5', 'LOKASI', header)
     worksheet187.write('B5', 'TOTAL', header)
     worksheet187.merge_range('A4:B4', 'RANK', header)
@@ -9159,10 +9149,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet187.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KRAMATWATU', title)
-    worksheet187.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KRAMATWATU', title)
+    worksheet187.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet187.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet187.write('A22', 'LOKASI', header)
     worksheet187.write('B22', 'TOTAL', header)
     worksheet187.merge_range('A21:B21', 'RANK', header)
@@ -9187,7 +9177,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # # worksheet 188
-    # worksheet188.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet188.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet188.set_column('A:A', 7, center)
     # worksheet188.set_column('B:B', 6, center)
@@ -9196,10 +9186,9 @@ if uploaded_file is not None:
     # worksheet188.set_column('E:E', 13.14, left)
     # worksheet188.set_column('F:F', 8.57, center)
     # worksheet188.set_column('G:R', 5, center)
-    # worksheet188.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KEPANDEAN', title)
+    # worksheet188.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KEPANDEAN', title)
     # worksheet188.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
-    # worksheet188.write('A5', 'LOKASI', header)
-    # worksheet188.write('B5', 'TOTAL', header)
+    # worksheet188.write('A5', 'LOKASI',fr {penilaian}88.{semester}, 'TOTA{tahun}r)
     # worksheet188.merge_range('A4:B4', 'RANK', header)
     # worksheet188.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet188.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -9222,11 +9211,10 @@ if uploaded_file is not None:
     # worksheet188.conditional_format(5,0,row188_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet188.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KEPANDEAN', title)
-    # worksheet188.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet188.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+    # worksheet188.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF KEPANDEAN', title)
+    # worksheet188.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet188.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
     # worksheet188.write('A22', 'LOKASI', header)
-    # worksheet188.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet188.merge_range('A21:B21', 'RANK', header)
     # worksheet188.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet188.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -9249,7 +9237,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # worksheet 189
-    worksheet189.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet189.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet189.set_column('A:A', 7, center)
     worksheet189.set_column('B:B', 6, center)
@@ -9259,9 +9247,9 @@ if uploaded_file is not None:
     worksheet189.set_column('F:F', 8.57, center)
     worksheet189.set_column('G:R', 5, center)
     worksheet189.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PINANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PINANG', title)
     worksheet189.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet189.write('A5', 'LOKASI', header)
     worksheet189.write('B5', 'TOTAL', header)
     worksheet189.merge_range('A4:B4', 'RANK', header)
@@ -9286,10 +9274,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet189.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PINANG', title)
-    worksheet189.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PINANG', title)
+    worksheet189.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet189.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet189.write('A22', 'LOKASI', header)
     worksheet189.write('B22', 'TOTAL', header)
     worksheet189.merge_range('A21:B21', 'RANK', header)
@@ -9314,7 +9302,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 190
-    worksheet190.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet190.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet190.set_column('A:A', 7, center)
     worksheet190.set_column('B:B', 6, center)
@@ -9324,9 +9312,9 @@ if uploaded_file is not None:
     worksheet190.set_column('F:F', 8.57, center)
     worksheet190.set_column('G:R', 5, center)
     worksheet190.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BOJONG GEDE', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BOJONG GEDE', title)
     worksheet190.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet190.write('A5', 'LOKASI', header)
     worksheet190.write('B5', 'TOTAL', header)
     worksheet190.merge_range('A4:B4', 'RANK', header)
@@ -9351,10 +9339,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet190.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BOJONG GEDE', title)
-    worksheet190.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BOJONG GEDE', title)
+    worksheet190.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet190.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet190.write('A22', 'LOKASI', header)
     worksheet190.write('B22', 'TOTAL', header)
     worksheet190.merge_range('A21:B21', 'RANK', header)
@@ -9379,7 +9367,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 191
-    worksheet191.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet191.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet191.set_column('A:A', 7, center)
     worksheet191.set_column('B:B', 6, center)
@@ -9389,9 +9377,9 @@ if uploaded_file is not None:
     worksheet191.set_column('F:F', 8.57, center)
     worksheet191.set_column('G:R', 5, center)
     worksheet191.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF POMAD', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF POMAD', title)
     worksheet191.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet191.write('A5', 'LOKASI', header)
     worksheet191.write('B5', 'TOTAL', header)
     worksheet191.merge_range('A4:B4', 'RANK', header)
@@ -9416,10 +9404,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet191.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF POMAD', title)
-    worksheet191.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF POMAD', title)
+    worksheet191.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet191.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet191.write('A22', 'LOKASI', header)
     worksheet191.write('B22', 'TOTAL', header)
     worksheet191.merge_range('A21:B21', 'RANK', header)
@@ -9444,7 +9432,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 192
-    worksheet192.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet192.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet192.set_column('A:A', 7, center)
     worksheet192.set_column('B:B', 6, center)
@@ -9454,9 +9442,9 @@ if uploaded_file is not None:
     worksheet192.set_column('F:F', 8.57, center)
     worksheet192.set_column('G:R', 5, center)
     worksheet192.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CONDET', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CONDET', title)
     worksheet192.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet192.write('A5', 'LOKASI', header)
     worksheet192.write('B5', 'TOTAL', header)
     worksheet192.merge_range('A4:B4', 'RANK', header)
@@ -9481,10 +9469,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet192.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CONDET', title)
-    worksheet192.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CONDET', title)
+    worksheet192.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet192.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet192.write('A22', 'LOKASI', header)
     worksheet192.write('B22', 'TOTAL', header)
     worksheet192.merge_range('A21:B21', 'RANK', header)
@@ -9509,7 +9497,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 193
-    worksheet193.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet193.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet193.set_column('A:A', 7, center)
     worksheet193.set_column('B:B', 6, center)
@@ -9519,9 +9507,9 @@ if uploaded_file is not None:
     worksheet193.set_column('F:F', 8.57, center)
     worksheet193.set_column('G:R', 5, center)
     worksheet193.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF JOMBANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JOMBANG', title)
     worksheet193.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet193.write('A5', 'LOKASI', header)
     worksheet193.write('B5', 'TOTAL', header)
     worksheet193.merge_range('A4:B4', 'RANK', header)
@@ -9546,10 +9534,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet193.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF JOMBANG', title)
-    worksheet193.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF JOMBANG', title)
+    worksheet193.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet193.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet193.write('A22', 'LOKASI', header)
     worksheet193.write('B22', 'TOTAL', header)
     worksheet193.merge_range('A21:B21', 'RANK', header)
@@ -9574,7 +9562,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 194
-    worksheet194.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet194.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet194.set_column('A:A', 7, center)
     worksheet194.set_column('B:B', 6, center)
@@ -9584,9 +9572,9 @@ if uploaded_file is not None:
     worksheet194.set_column('F:F', 8.57, center)
     worksheet194.set_column('G:R', 5, center)
     worksheet194.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KEMAYORAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KEMAYORAN', title)
     worksheet194.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet194.write('A5', 'LOKASI', header)
     worksheet194.write('B5', 'TOTAL', header)
     worksheet194.merge_range('A4:B4', 'RANK', header)
@@ -9611,10 +9599,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet194.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KEMAYORAN', title)
-    worksheet194.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KEMAYORAN', title)
+    worksheet194.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet194.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet194.write('A22', 'LOKASI', header)
     worksheet194.write('B22', 'TOTAL', header)
     worksheet194.merge_range('A21:B21', 'RANK', header)
@@ -9639,7 +9627,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 195
-    worksheet195.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet195.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet195.set_column('A:A', 7, center)
     worksheet195.set_column('B:B', 6, center)
@@ -9649,9 +9637,9 @@ if uploaded_file is not None:
     worksheet195.set_column('F:F', 8.57, center)
     worksheet195.set_column('G:R', 5, center)
     worksheet195.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KALISARI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KALISARI', title)
     worksheet195.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet195.write('A5', 'LOKASI', header)
     worksheet195.write('B5', 'TOTAL', header)
     worksheet195.merge_range('A4:B4', 'RANK', header)
@@ -9676,10 +9664,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet195.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KALISARI', title)
-    worksheet195.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KALISARI', title)
+    worksheet195.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet195.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet195.write('A22', 'LOKASI', header)
     worksheet195.write('B22', 'TOTAL', header)
     worksheet195.merge_range('A21:B21', 'RANK', header)
@@ -9704,7 +9692,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 196
-    worksheet196.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet196.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet196.set_column('A:A', 7, center)
     worksheet196.set_column('B:B', 6, center)
@@ -9714,9 +9702,9 @@ if uploaded_file is not None:
     worksheet196.set_column('F:F', 8.57, center)
     worksheet196.set_column('G:R', 5, center)
     worksheet196.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PAMULANG 1', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PAMULANG 1', title)
     worksheet196.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet196.write('A5', 'LOKASI', header)
     worksheet196.write('B5', 'TOTAL', header)
     worksheet196.merge_range('A4:B4', 'RANK', header)
@@ -9741,10 +9729,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet196.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PAMULANG 1', title)
-    worksheet196.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PAMULANG 1', title)
+    worksheet196.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet196.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet196.write('A22', 'LOKASI', header)
     worksheet196.write('B22', 'TOTAL', header)
     worksheet196.merge_range('A21:B21', 'RANK', header)
@@ -9769,7 +9757,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 197
-    worksheet197.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet197.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet197.set_column('A:A', 7, center)
     worksheet197.set_column('B:B', 6, center)
@@ -9779,9 +9767,9 @@ if uploaded_file is not None:
     worksheet197.set_column('F:F', 8.57, center)
     worksheet197.set_column('G:R', 5, center)
     worksheet197.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PANDEGLANG BARU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PANDEGLANG BARU', title)
     worksheet197.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet197.write('A5', 'LOKASI', header)
     worksheet197.write('B5', 'TOTAL', header)
     worksheet197.merge_range('A4:B4', 'RANK', header)
@@ -9806,10 +9794,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet197.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PANDEGLANG BARU', title)
-    worksheet197.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PANDEGLANG BARU', title)
+    worksheet197.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet197.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet197.write('A22', 'LOKASI', header)
     worksheet197.write('B22', 'TOTAL', header)
     worksheet197.merge_range('A21:B21', 'RANK', header)
@@ -9834,7 +9822,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 198
-    worksheet198.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet198.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet198.set_column('A:A', 7, center)
     worksheet198.set_column('B:B', 6, center)
@@ -9844,9 +9832,9 @@ if uploaded_file is not None:
     worksheet198.set_column('F:F', 8.57, center)
     worksheet198.set_column('G:R', 5, center)
     worksheet198.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF RUNGKUT', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RUNGKUT', title)
     worksheet198.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet198.write('A5', 'LOKASI', header)
     worksheet198.write('B5', 'TOTAL', header)
     worksheet198.merge_range('A4:B4', 'RANK', header)
@@ -9871,10 +9859,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet198.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF RUNGKUT', title)
-    worksheet198.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF RUNGKUT', title)
+    worksheet198.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet198.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet198.write('A22', 'LOKASI', header)
     worksheet198.write('B22', 'TOTAL', header)
     worksheet198.merge_range('A21:B21', 'RANK', header)
@@ -9899,7 +9887,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 199
-    worksheet199.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet199.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet199.set_column('A:A', 7, center)
     worksheet199.set_column('B:B', 6, center)
@@ -9909,9 +9897,9 @@ if uploaded_file is not None:
     worksheet199.set_column('F:F', 8.57, center)
     worksheet199.set_column('G:R', 5, center)
     worksheet199.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIOMAS', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIOMAS', title)
     worksheet199.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet199.write('A5', 'LOKASI', header)
     worksheet199.write('B5', 'TOTAL', header)
     worksheet199.merge_range('A4:B4', 'RANK', header)
@@ -9936,10 +9924,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet199.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIOMAS', title)
-    worksheet199.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIOMAS', title)
+    worksheet199.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet199.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet199.write('A22', 'LOKASI', header)
     worksheet199.write('B22', 'TOTAL', header)
     worksheet199.merge_range('A21:B21', 'RANK', header)
@@ -9964,7 +9952,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 201
-    worksheet201.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet201.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet201.set_column('A:A', 7, center)
     worksheet201.set_column('B:B', 6, center)
@@ -9974,9 +9962,9 @@ if uploaded_file is not None:
     worksheet201.set_column('F:F', 8.57, center)
     worksheet201.set_column('G:R', 5, center)
     worksheet201.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SUNTER JAYA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUNTER JAYA', title)
     worksheet201.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet201.write('A5', 'LOKASI', header)
     worksheet201.write('B5', 'TOTAL', header)
     worksheet201.merge_range('A4:B4', 'RANK', header)
@@ -10001,10 +9989,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet201.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SUNTER JAYA', title)
-    worksheet201.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SUNTER JAYA', title)
+    worksheet201.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet201.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet201.write('A22', 'LOKASI', header)
     worksheet201.write('B22', 'TOTAL', header)
     worksheet201.merge_range('A21:B21', 'RANK', header)
@@ -10029,7 +10017,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 202
-    worksheet202.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet202.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet202.set_column('A:A', 7, center)
     worksheet202.set_column('B:B', 6, center)
@@ -10039,9 +10027,9 @@ if uploaded_file is not None:
     worksheet202.set_column('F:F', 8.57, center)
     worksheet202.set_column('G:R', 5, center)
     worksheet202.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PENGGILINGAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PENGGILINGAN', title)
     worksheet202.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet202.write('A5', 'LOKASI', header)
     worksheet202.write('B5', 'TOTAL', header)
     worksheet202.merge_range('A4:B4', 'RANK', header)
@@ -10066,10 +10054,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet202.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PENGGILINGAN', title)
-    worksheet202.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PENGGILINGAN', title)
+    worksheet202.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet202.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet202.write('A22', 'LOKASI', header)
     worksheet202.write('B22', 'TOTAL', header)
     worksheet202.merge_range('A21:B21', 'RANK', header)
@@ -10094,7 +10082,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 203
-    worksheet203.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet203.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet203.set_column('A:A', 7, center)
     worksheet203.set_column('B:B', 6, center)
@@ -10104,9 +10092,9 @@ if uploaded_file is not None:
     worksheet203.set_column('F:F', 8.57, center)
     worksheet203.set_column('G:R', 5, center)
     worksheet203.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF GORONTALO', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GORONTALO', title)
     worksheet203.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet203.write('A5', 'LOKASI', header)
     worksheet203.write('B5', 'TOTAL', header)
     worksheet203.merge_range('A4:B4', 'RANK', header)
@@ -10131,10 +10119,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet203.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF GORONTALO', title)
-    worksheet203.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF GORONTALO', title)
+    worksheet203.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet203.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet203.write('A22', 'LOKASI', header)
     worksheet203.write('B22', 'TOTAL', header)
     worksheet203.merge_range('A21:B21', 'RANK', header)
@@ -10159,7 +10147,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 210
-    worksheet210.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet210.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet210.set_column('A:A', 7, center)
     worksheet210.set_column('B:B', 6, center)
@@ -10169,9 +10157,9 @@ if uploaded_file is not None:
     worksheet210.set_column('F:F', 8.57, center)
     worksheet210.set_column('G:R', 5, center)
     worksheet210.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KOPO', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KOPO', title)
     worksheet210.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet210.write('A5', 'LOKASI', header)
     worksheet210.write('B5', 'TOTAL', header)
     worksheet210.merge_range('A4:B4', 'RANK', header)
@@ -10196,10 +10184,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet210.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KOPO', title)
-    worksheet210.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KOPO', title)
+    worksheet210.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet210.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet210.write('A22', 'LOKASI', header)
     worksheet210.write('B22', 'TOTAL', header)
     worksheet210.merge_range('A21:B21', 'RANK', header)
@@ -10224,7 +10212,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 211
-    worksheet211.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet211.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet211.set_column('A:A', 7, center)
     worksheet211.set_column('B:B', 6, center)
@@ -10234,9 +10222,9 @@ if uploaded_file is not None:
     worksheet211.set_column('F:F', 8.57, center)
     worksheet211.set_column('G:R', 5, center)
     worksheet211.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF VILLA INDAH PERMAI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF VILLA INDAH PERMAI', title)
     worksheet211.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet211.write('A5', 'LOKASI', header)
     worksheet211.write('B5', 'TOTAL', header)
     worksheet211.merge_range('A4:B4', 'RANK', header)
@@ -10261,10 +10249,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet211.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF VILLA INDAH PERMAI', title)
-    worksheet211.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF VILLA INDAH PERMAI', title)
+    worksheet211.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet211.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet211.write('A22', 'LOKASI', header)
     worksheet211.write('B22', 'TOTAL', header)
     worksheet211.merge_range('A21:B21', 'RANK', header)
@@ -10289,7 +10277,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 212
-    worksheet212.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet212.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet212.set_column('A:A', 7, center)
     worksheet212.set_column('B:B', 6, center)
@@ -10299,9 +10287,9 @@ if uploaded_file is not None:
     worksheet212.set_column('F:F', 8.57, center)
     worksheet212.set_column('G:R', 5, center)
     worksheet212.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CISAUK', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CISAUK', title)
     worksheet212.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet212.write('A5', 'LOKASI', header)
     worksheet212.write('B5', 'TOTAL', header)
     worksheet212.merge_range('A4:B4', 'RANK', header)
@@ -10326,10 +10314,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet212.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CISAUK', title)
-    worksheet212.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CISAUK', title)
+    worksheet212.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet212.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet212.write('A22', 'LOKASI', header)
     worksheet212.write('B22', 'TOTAL', header)
     worksheet212.merge_range('A21:B21', 'RANK', header)
@@ -10354,7 +10342,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 216
-    worksheet216.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet216.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet216.set_column('A:A', 7, center)
     worksheet216.set_column('B:B', 6, center)
@@ -10364,9 +10352,9 @@ if uploaded_file is not None:
     worksheet216.set_column('F:F', 8.57, center)
     worksheet216.set_column('G:R', 5, center)
     worksheet216.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF RADIO DALAM', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RADIO DALAM', title)
     worksheet216.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet216.write('A5', 'LOKASI', header)
     worksheet216.write('B5', 'TOTAL', header)
     worksheet216.merge_range('A4:B4', 'RANK', header)
@@ -10391,10 +10379,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet216.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF RADIO DALAM', title)
-    worksheet216.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF RADIO DALAM', title)
+    worksheet216.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet216.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet216.write('A22', 'LOKASI', header)
     worksheet216.write('B22', 'TOTAL', header)
     worksheet216.merge_range('A21:B21', 'RANK', header)
@@ -10419,7 +10407,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 217
-    worksheet217.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet217.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet217.set_column('A:A', 7, center)
     worksheet217.set_column('B:B', 6, center)
@@ -10429,9 +10417,9 @@ if uploaded_file is not None:
     worksheet217.set_column('F:F', 8.57, center)
     worksheet217.set_column('G:R', 5, center)
     worksheet217.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KALIBATA CITY', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KALIBATA CITY', title)
     worksheet217.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet217.write('A5', 'LOKASI', header)
     worksheet217.write('B5', 'TOTAL', header)
     worksheet217.merge_range('A4:B4', 'RANK', header)
@@ -10456,10 +10444,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet217.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KALIBATA CITY', title)
-    worksheet217.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KALIBATA CITY', title)
+    worksheet217.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet217.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet217.write('A22', 'LOKASI', header)
     worksheet217.write('B22', 'TOTAL', header)
     worksheet217.merge_range('A21:B21', 'RANK', header)
@@ -10484,7 +10472,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 218
-    worksheet218.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet218.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet218.set_column('A:A', 7, center)
     worksheet218.set_column('B:B', 6, center)
@@ -10494,9 +10482,9 @@ if uploaded_file is not None:
     worksheet218.set_column('F:F', 8.57, center)
     worksheet218.set_column('G:R', 5, center)
     worksheet218.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF JAGAKARSA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JAGAKARSA', title)
     worksheet218.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet218.write('A5', 'LOKASI', header)
     worksheet218.write('B5', 'TOTAL', header)
     worksheet218.merge_range('A4:B4', 'RANK', header)
@@ -10521,10 +10509,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet218.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF JAGAKARSA', title)
-    worksheet218.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF JAGAKARSA', title)
+    worksheet218.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet218.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet218.write('A22', 'LOKASI', header)
     worksheet218.write('B22', 'TOTAL', header)
     worksheet218.merge_range('A21:B21', 'RANK', header)
@@ -10549,7 +10537,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 219
-    worksheet219.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet219.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet219.set_column('A:A', 7, center)
     worksheet219.set_column('B:B', 6, center)
@@ -10559,9 +10547,9 @@ if uploaded_file is not None:
     worksheet219.set_column('F:F', 8.57, center)
     worksheet219.set_column('G:R', 5, center)
     worksheet219.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TEBET', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TEBET', title)
     worksheet219.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet219.write('A5', 'LOKASI', header)
     worksheet219.write('B5', 'TOTAL', header)
     worksheet219.merge_range('A4:B4', 'RANK', header)
@@ -10586,10 +10574,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet219.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TEBET', title)
-    worksheet219.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TEBET', title)
+    worksheet219.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet219.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet219.write('A22', 'LOKASI', header)
     worksheet219.write('B22', 'TOTAL', header)
     worksheet219.merge_range('A21:B21', 'RANK', header)
@@ -10614,7 +10602,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 220
-    worksheet220.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet220.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet220.set_column('A:A', 7, center)
     worksheet220.set_column('B:B', 6, center)
@@ -10624,9 +10612,9 @@ if uploaded_file is not None:
     worksheet220.set_column('F:F', 8.57, center)
     worksheet220.set_column('G:R', 5, center)
     worksheet220.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PADALARANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PADALARANG', title)
     worksheet220.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet220.write('A5', 'LOKASI', header)
     worksheet220.write('B5', 'TOTAL', header)
     worksheet220.merge_range('A4:B4', 'RANK', header)
@@ -10651,10 +10639,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet220.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PADALARANG', title)
-    worksheet220.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PADALARANG', title)
+    worksheet220.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet220.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet220.write('A22', 'LOKASI', header)
     worksheet220.write('B22', 'TOTAL', header)
     worksheet220.merge_range('A21:B21', 'RANK', header)
@@ -10679,7 +10667,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # # worksheet 222
-    # worksheet222.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet222.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet222.set_column('A:A', 7, center)
     # worksheet222.set_column('B:B', 6, center)
@@ -10688,10 +10676,9 @@ if uploaded_file is not None:
     # worksheet222.set_column('E:E', 13.14, left)
     # worksheet222.set_column('F:F', 8.57, center)
     # worksheet222.set_column('G:R', 5, center)
-    # worksheet222.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CILANDAK', title)
+    # worksheet222.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CILANDAK', title)
     # worksheet222.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
-    # worksheet222.write('A5', 'LOKASI', header)
-    # worksheet222.write('B5', 'TOTAL', header)
+    # worksheet222.write('A5', 'LOKASI',fr {penilaian}22.{semester}, 'TOTA{tahun}r)
     # worksheet222.merge_range('A4:B4', 'RANK', header)
     # worksheet222.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet222.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -10714,11 +10701,10 @@ if uploaded_file is not None:
     # worksheet222.conditional_format(5,0,row222_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet222.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CILANDAK', title)
-    # worksheet222.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet222.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+    # worksheet222.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF CILANDAK', title)
+    # worksheet222.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet222.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
     # worksheet222.write('A22', 'LOKASI', header)
-    # worksheet222.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet222.merge_range('A21:B21', 'RANK', header)
     # worksheet222.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet222.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -10741,7 +10727,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # worksheet 226
-    worksheet226.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet226.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet226.set_column('A:A', 7, center)
     worksheet226.set_column('B:B', 6, center)
@@ -10751,9 +10737,9 @@ if uploaded_file is not None:
     worksheet226.set_column('F:F', 8.57, center)
     worksheet226.set_column('G:R', 5, center)
     worksheet226.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KEBON JERUK', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KEBON JERUK', title)
     worksheet226.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet226.write('A5', 'LOKASI', header)
     worksheet226.write('B5', 'TOTAL', header)
     worksheet226.merge_range('A4:B4', 'RANK', header)
@@ -10778,10 +10764,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet226.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KEBON JERUK', title)
-    worksheet226.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KEBON JERUK', title)
+    worksheet226.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet226.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet226.write('A22', 'LOKASI', header)
     worksheet226.write('B22', 'TOTAL', header)
     worksheet226.merge_range('A21:B21', 'RANK', header)
@@ -10806,7 +10792,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 227
-    worksheet227.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet227.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet227.set_column('A:A', 7, center)
     worksheet227.set_column('B:B', 6, center)
@@ -10816,9 +10802,9 @@ if uploaded_file is not None:
     worksheet227.set_column('F:F', 8.57, center)
     worksheet227.set_column('G:R', 5, center)
     worksheet227.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MERUYA SELATAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MERUYA SELATAN', title)
     worksheet227.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet227.write('A5', 'LOKASI', header)
     worksheet227.write('B5', 'TOTAL', header)
     worksheet227.merge_range('A4:B4', 'RANK', header)
@@ -10843,10 +10829,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet227.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MERUYA SELATAN', title)
-    worksheet227.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MERUYA SELATAN', title)
+    worksheet227.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet227.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet227.write('A22', 'LOKASI', header)
     worksheet227.write('B22', 'TOTAL', header)
     worksheet227.merge_range('A21:B21', 'RANK', header)
@@ -10871,7 +10857,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 228
-    worksheet228.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet228.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet228.set_column('A:A', 7, center)
     worksheet228.set_column('B:B', 6, center)
@@ -10881,9 +10867,9 @@ if uploaded_file is not None:
     worksheet228.set_column('F:F', 8.57, center)
     worksheet228.set_column('G:R', 5, center)
     worksheet228.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TANJUNG DUREN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TANJUNG DUREN', title)
     worksheet228.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet228.write('A5', 'LOKASI', header)
     worksheet228.write('B5', 'TOTAL', header)
     worksheet228.merge_range('A4:B4', 'RANK', header)
@@ -10908,10 +10894,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet228.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TANJUNG DUREN', title)
-    worksheet228.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TANJUNG DUREN', title)
+    worksheet228.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet228.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet228.write('A22', 'LOKASI', header)
     worksheet228.write('B22', 'TOTAL', header)
     worksheet228.merge_range('A21:B21', 'RANK', header)
@@ -10936,7 +10922,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 229
-    worksheet229.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet229.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet229.set_column('A:A', 7, center)
     worksheet229.set_column('B:B', 6, center)
@@ -10946,9 +10932,9 @@ if uploaded_file is not None:
     worksheet229.set_column('F:F', 8.57, center)
     worksheet229.set_column('G:R', 5, center)
     worksheet229.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TOMANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TOMANG', title)
     worksheet229.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet229.write('A5', 'LOKASI', header)
     worksheet229.write('B5', 'TOTAL', header)
     worksheet229.merge_range('A4:B4', 'RANK', header)
@@ -10973,10 +10959,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet229.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TOMANG', title)
-    worksheet229.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TOMANG', title)
+    worksheet229.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet229.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet229.write('A22', 'LOKASI', header)
     worksheet229.write('B22', 'TOTAL', header)
     worksheet229.merge_range('A21:B21', 'RANK', header)
@@ -11001,7 +10987,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 230
-    worksheet230.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet230.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet230.set_column('A:A', 7, center)
     worksheet230.set_column('B:B', 6, center)
@@ -11011,9 +10997,9 @@ if uploaded_file is not None:
     worksheet230.set_column('F:F', 8.57, center)
     worksheet230.set_column('G:R', 5, center)
     worksheet230.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KERADENAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KERADENAN', title)
     worksheet230.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet230.write('A5', 'LOKASI', header)
     worksheet230.write('B5', 'TOTAL', header)
     worksheet230.merge_range('A4:B4', 'RANK', header)
@@ -11038,10 +11024,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet230.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KERADENAN', title)
-    worksheet230.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KERADENAN', title)
+    worksheet230.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet230.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet230.write('A22', 'LOKASI', header)
     worksheet230.write('B22', 'TOTAL', header)
     worksheet230.merge_range('A21:B21', 'RANK', header)
@@ -11066,7 +11052,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 231
-    worksheet231.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet231.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet231.set_column('A:A', 7, center)
     worksheet231.set_column('B:B', 6, center)
@@ -11076,9 +11062,9 @@ if uploaded_file is not None:
     worksheet231.set_column('F:F', 8.57, center)
     worksheet231.set_column('G:R', 5, center)
     worksheet231.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF RA KOSASIH SUKABUMI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RA KOSASIH SUKABUMI', title)
     worksheet231.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet231.write('A5', 'LOKASI', header)
     worksheet231.write('B5', 'TOTAL', header)
     worksheet231.merge_range('A4:B4', 'RANK', header)
@@ -11103,10 +11089,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet231.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF RA KOSASIH SUKABUMI', title)
-    worksheet231.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF RA KOSASIH SUKABUMI', title)
+    worksheet231.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet231.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet231.write('A22', 'LOKASI', header)
     worksheet231.write('B22', 'TOTAL', header)
     worksheet231.merge_range('A21:B21', 'RANK', header)
@@ -11131,7 +11117,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 233
-    worksheet233.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet233.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet233.set_column('A:A', 7, center)
     worksheet233.set_column('B:B', 6, center)
@@ -11141,9 +11127,9 @@ if uploaded_file is not None:
     worksheet233.set_column('F:F', 8.57, center)
     worksheet233.set_column('G:R', 5, center)
     worksheet233.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BANGBARUNG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BANGBARUNG', title)
     worksheet233.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet233.write('A5', 'LOKASI', header)
     worksheet233.write('B5', 'TOTAL', header)
     worksheet233.merge_range('A4:B4', 'RANK', header)
@@ -11168,10 +11154,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet233.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BANGBARUNG', title)
-    worksheet233.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BANGBARUNG', title)
+    worksheet233.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet233.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet233.write('A22', 'LOKASI', header)
     worksheet233.write('B22', 'TOTAL', header)
     worksheet233.merge_range('A21:B21', 'RANK', header)
@@ -11196,7 +11182,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 234
-    worksheet234.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet234.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet234.set_column('A:A', 7, center)
     worksheet234.set_column('B:B', 6, center)
@@ -11206,9 +11192,9 @@ if uploaded_file is not None:
     worksheet234.set_column('F:F', 8.57, center)
     worksheet234.set_column('G:R', 5, center)
     worksheet234.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF LIMUS PRATAMA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF LIMUS PRATAMA', title)
     worksheet234.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet234.write('A5', 'LOKASI', header)
     worksheet234.write('B5', 'TOTAL', header)
     worksheet234.merge_range('A4:B4', 'RANK', header)
@@ -11233,10 +11219,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet234.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF LIMUS PRATAMA', title)
-    worksheet234.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF LIMUS PRATAMA', title)
+    worksheet234.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet234.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet234.write('A22', 'LOKASI', header)
     worksheet234.write('B22', 'TOTAL', header)
     worksheet234.merge_range('A21:B21', 'RANK', header)
@@ -11261,7 +11247,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 235
-    worksheet235.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet235.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet235.set_column('A:A', 7, center)
     worksheet235.set_column('B:B', 6, center)
@@ -11271,9 +11257,9 @@ if uploaded_file is not None:
     worksheet235.set_column('F:F', 8.57, center)
     worksheet235.set_column('G:R', 5, center)
     worksheet235.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIKARET CIBINONG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIKARET CIBINONG', title)
     worksheet235.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet235.write('A5', 'LOKASI', header)
     worksheet235.write('B5', 'TOTAL', header)
     worksheet235.merge_range('A4:B4', 'RANK', header)
@@ -11298,10 +11284,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet235.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIKARET CIBINONG', title)
-    worksheet235.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIKARET CIBINONG', title)
+    worksheet235.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet235.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet235.write('A22', 'LOKASI', header)
     worksheet235.write('B22', 'TOTAL', header)
     worksheet235.merge_range('A21:B21', 'RANK', header)
@@ -11326,7 +11312,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 236
-    worksheet236.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet236.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet236.set_column('A:A', 7, center)
     worksheet236.set_column('B:B', 6, center)
@@ -11336,9 +11322,9 @@ if uploaded_file is not None:
     worksheet236.set_column('F:F', 8.57, center)
     worksheet236.set_column('G:R', 5, center)
     worksheet236.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF GARUT', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GARUT', title)
     worksheet236.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet236.write('A5', 'LOKASI', header)
     worksheet236.write('B5', 'TOTAL', header)
     worksheet236.merge_range('A4:B4', 'RANK', header)
@@ -11363,10 +11349,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet236.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF GARUT', title)
-    worksheet236.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF GARUT', title)
+    worksheet236.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet236.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet236.write('A22', 'LOKASI', header)
     worksheet236.write('B22', 'TOTAL', header)
     worksheet236.merge_range('A21:B21', 'RANK', header)
@@ -13209,7 +13195,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(16, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'E:\logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -13231,12 +13217,12 @@ if uploaded_file is not None:
     worksheetcover.set_column('G:G', 13, centerCover)
     worksheetcover.merge_range('A1:F3', 'DAFTAR NILAI', titleCover)
     worksheetcover.merge_range(
-        'A4:F5', 'PENILAIAN AKHIR SEMESTER', sub_titleCover)
+        'A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', 'SEMESTER 1 TAHUN 2022-2023', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
     worksheetcover.write('A19', 'NILAI STANDAR', sub_headerCover)
-    worksheetcover.merge_range('F8:G9', '10 SMA IPA', kelasCover)
+    worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
     worksheetcover.conditional_format(26, 0, 21, 3,
@@ -13249,7 +13235,7 @@ if uploaded_file is not None:
                                       {'type': 'no_errors', 'format': borderCover})
 
     # worksheet 237
-    worksheet237.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet237.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet237.set_column('A:A', 7, center)
     worksheet237.set_column('B:B', 6, center)
@@ -13259,9 +13245,9 @@ if uploaded_file is not None:
     worksheet237.set_column('F:F', 8.57, center)
     worksheet237.set_column('G:R', 5, center)
     worksheet237.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TASIKMALAYA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TASIKMALAYA', title)
     worksheet237.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet237.write('A5', 'LOKASI', header)
     worksheet237.write('B5', 'TOTAL', header)
     worksheet237.merge_range('A4:B4', 'RANK', header)
@@ -13286,10 +13272,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet237.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TASIKMALAYA', title)
-    worksheet237.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TASIKMALAYA', title)
+    worksheet237.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet237.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet237.write('A22', 'LOKASI', header)
     worksheet237.write('B22', 'TOTAL', header)
     worksheet237.merge_range('A21:B21', 'RANK', header)
@@ -13314,7 +13300,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 238
-    worksheet238.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet238.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet238.set_column('A:A', 7, center)
     worksheet238.set_column('B:B', 6, center)
@@ -13324,9 +13310,9 @@ if uploaded_file is not None:
     worksheet238.set_column('F:F', 8.57, center)
     worksheet238.set_column('G:R', 5, center)
     worksheet238.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SUBANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUBANG', title)
     worksheet238.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet238.write('A5', 'LOKASI', header)
     worksheet238.write('B5', 'TOTAL', header)
     worksheet238.merge_range('A4:B4', 'RANK', header)
@@ -13351,10 +13337,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet238.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SUBANG', title)
-    worksheet238.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SUBANG', title)
+    worksheet238.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet238.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet238.write('A22', 'LOKASI', header)
     worksheet238.write('B22', 'TOTAL', header)
     worksheet238.merge_range('A21:B21', 'RANK', header)
@@ -13379,7 +13365,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 240
-    worksheet240.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet240.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet240.set_column('A:A', 7, center)
     worksheet240.set_column('B:B', 6, center)
@@ -13389,9 +13375,9 @@ if uploaded_file is not None:
     worksheet240.set_column('F:F', 8.57, center)
     worksheet240.set_column('G:R', 5, center)
     worksheet240.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SUMEDANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUMEDANG', title)
     worksheet240.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet240.write('A5', 'LOKASI', header)
     worksheet240.write('B5', 'TOTAL', header)
     worksheet240.merge_range('A4:B4', 'RANK', header)
@@ -13416,10 +13402,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet240.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SUMEDANG', title)
-    worksheet240.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SUMEDANG', title)
+    worksheet240.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet240.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet240.write('A22', 'LOKASI', header)
     worksheet240.write('B22', 'TOTAL', header)
     worksheet240.merge_range('A21:B21', 'RANK', header)
@@ -13444,7 +13430,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 241
-    worksheet241.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet241.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet241.set_column('A:A', 7, center)
     worksheet241.set_column('B:B', 6, center)
@@ -13454,9 +13440,9 @@ if uploaded_file is not None:
     worksheet241.set_column('F:F', 8.57, center)
     worksheet241.set_column('G:R', 5, center)
     worksheet241.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MAJALENGKA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MAJALENGKA', title)
     worksheet241.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet241.write('A5', 'LOKASI', header)
     worksheet241.write('B5', 'TOTAL', header)
     worksheet241.merge_range('A4:B4', 'RANK', header)
@@ -13481,10 +13467,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet241.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MAJALENGKA', title)
-    worksheet241.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MAJALENGKA', title)
+    worksheet241.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet241.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet241.write('A22', 'LOKASI', header)
     worksheet241.write('B22', 'TOTAL', header)
     worksheet241.merge_range('A21:B21', 'RANK', header)
@@ -13509,7 +13495,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 243
-    worksheet243.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet243.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet243.set_column('A:A', 7, center)
     worksheet243.set_column('B:B', 6, center)
@@ -13519,9 +13505,9 @@ if uploaded_file is not None:
     worksheet243.set_column('F:F', 8.57, center)
     worksheet243.set_column('G:R', 5, center)
     worksheet243.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PURBALINGGA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PURBALINGGA', title)
     worksheet243.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet243.write('A5', 'LOKASI', header)
     worksheet243.write('B5', 'TOTAL', header)
     worksheet243.merge_range('A4:B4', 'RANK', header)
@@ -13546,10 +13532,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet243.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PURBALINGGA', title)
-    worksheet243.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PURBALINGGA', title)
+    worksheet243.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet243.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet243.write('A22', 'LOKASI', header)
     worksheet243.write('B22', 'TOTAL', header)
     worksheet243.merge_range('A21:B21', 'RANK', header)
@@ -13574,7 +13560,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 244
-    worksheet244.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet244.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet244.set_column('A:A', 7, center)
     worksheet244.set_column('B:B', 6, center)
@@ -13584,9 +13570,9 @@ if uploaded_file is not None:
     worksheet244.set_column('F:F', 8.57, center)
     worksheet244.set_column('G:R', 5, center)
     worksheet244.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SURAKARTA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SURAKARTA', title)
     worksheet244.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet244.write('A5', 'LOKASI', header)
     worksheet244.write('B5', 'TOTAL', header)
     worksheet244.merge_range('A4:B4', 'RANK', header)
@@ -13611,10 +13597,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet244.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SURAKARTA', title)
-    worksheet244.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SURAKARTA', title)
+    worksheet244.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet244.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet244.write('A22', 'LOKASI', header)
     worksheet244.write('B22', 'TOTAL', header)
     worksheet244.merge_range('A21:B21', 'RANK', header)
@@ -13639,7 +13625,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 245
-    worksheet245.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet245.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet245.set_column('A:A', 7, center)
     worksheet245.set_column('B:B', 6, center)
@@ -13649,9 +13635,9 @@ if uploaded_file is not None:
     worksheet245.set_column('F:F', 8.57, center)
     worksheet245.set_column('G:R', 5, center)
     worksheet245.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SEMARANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SEMARANG', title)
     worksheet245.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet245.write('A5', 'LOKASI', header)
     worksheet245.write('B5', 'TOTAL', header)
     worksheet245.merge_range('A4:B4', 'RANK', header)
@@ -13676,10 +13662,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet245.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SEMARANG', title)
-    worksheet245.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SEMARANG', title)
+    worksheet245.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet245.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet245.write('A22', 'LOKASI', header)
     worksheet245.write('B22', 'TOTAL', header)
     worksheet245.merge_range('A21:B21', 'RANK', header)
@@ -13704,7 +13690,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 246
-    worksheet246.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet246.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet246.set_column('A:A', 7, center)
     worksheet246.set_column('B:B', 6, center)
@@ -13714,9 +13700,9 @@ if uploaded_file is not None:
     worksheet246.set_column('F:F', 8.57, center)
     worksheet246.set_column('G:R', 5, center)
     worksheet246.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KARTASURA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KARTASURA', title)
     worksheet246.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet246.write('A5', 'LOKASI', header)
     worksheet246.write('B5', 'TOTAL', header)
     worksheet246.merge_range('A4:B4', 'RANK', header)
@@ -13741,10 +13727,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet246.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KARTASURA', title)
-    worksheet246.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KARTASURA', title)
+    worksheet246.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet246.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet246.write('A22', 'LOKASI', header)
     worksheet246.write('B22', 'TOTAL', header)
     worksheet246.merge_range('A21:B21', 'RANK', header)
@@ -13769,7 +13755,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # # worksheet 247
-    # worksheet247.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet247.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet247.set_column('A:A', 7, center)
     # worksheet247.set_column('B:B', 6, center)
@@ -13778,10 +13764,9 @@ if uploaded_file is not None:
     # worksheet247.set_column('E:E', 13.14, left)
     # worksheet247.set_column('F:F', 8.57, center)
     # worksheet247.set_column('G:R', 5, center)
-    # worksheet247.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF JURANG MANGU', title)
+    # worksheet247.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JURANG MANGU', title)
     # worksheet247.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
-    # worksheet247.write('A5', 'LOKASI', header)
-    # worksheet247.write('B5', 'TOTAL', header)
+    # worksheet247.write('A5', 'LOKASI',fr {penilaian}47.{semester}, 'TOTA{tahun}r)
     # worksheet247.merge_range('A4:B4', 'RANK', header)
     # worksheet247.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet247.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -13804,11 +13789,10 @@ if uploaded_file is not None:
     # worksheet247.conditional_format(5,0,row247_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet247.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF JURANG MANGU', title)
-    # worksheet247.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet247.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+    # worksheet247.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF JURANG MANGU', title)
+    # worksheet247.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet247.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
     # worksheet247.write('A22', 'LOKASI', header)
-    # worksheet247.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet247.merge_range('A21:B21', 'RANK', header)
     # worksheet247.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet247.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -13831,7 +13815,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # worksheet 248
-    worksheet248.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet248.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet248.set_column('A:A', 7, center)
     worksheet248.set_column('B:B', 6, center)
@@ -13841,9 +13825,9 @@ if uploaded_file is not None:
     worksheet248.set_column('F:F', 8.57, center)
     worksheet248.set_column('G:R', 5, center)
     worksheet248.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BSD BOULEVARD', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BSD BOULEVARD', title)
     worksheet248.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet248.write('A5', 'LOKASI', header)
     worksheet248.write('B5', 'TOTAL', header)
     worksheet248.merge_range('A4:B4', 'RANK', header)
@@ -13868,10 +13852,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet248.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BSD BOULEVARD', title)
-    worksheet248.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BSD BOULEVARD', title)
+    worksheet248.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet248.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet248.write('A22', 'LOKASI', header)
     worksheet248.write('B22', 'TOTAL', header)
     worksheet248.merge_range('A21:B21', 'RANK', header)
@@ -13896,7 +13880,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 249
-    worksheet249.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet249.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet249.set_column('A:A', 7, center)
     worksheet249.set_column('B:B', 6, center)
@@ -13906,9 +13890,9 @@ if uploaded_file is not None:
     worksheet249.set_column('F:F', 8.57, center)
     worksheet249.set_column('G:R', 5, center)
     worksheet249.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SANGIANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SANGIANG', title)
     worksheet249.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet249.write('A5', 'LOKASI', header)
     worksheet249.write('B5', 'TOTAL', header)
     worksheet249.merge_range('A4:B4', 'RANK', header)
@@ -13933,10 +13917,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet249.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SANGIANG', title)
-    worksheet249.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SANGIANG', title)
+    worksheet249.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet249.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet249.write('A22', 'LOKASI', header)
     worksheet249.write('B22', 'TOTAL', header)
     worksheet249.merge_range('A21:B21', 'RANK', header)
@@ -13961,7 +13945,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 250
-    worksheet250.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet250.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet250.set_column('A:A', 7, center)
     worksheet250.set_column('B:B', 6, center)
@@ -13971,9 +13955,9 @@ if uploaded_file is not None:
     worksheet250.set_column('F:F', 8.57, center)
     worksheet250.set_column('G:R', 5, center)
     worksheet250.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BANJAR WIJAYA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BANJAR WIJAYA', title)
     worksheet250.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet250.write('A5', 'LOKASI', header)
     worksheet250.write('B5', 'TOTAL', header)
     worksheet250.merge_range('A4:B4', 'RANK', header)
@@ -13998,10 +13982,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet250.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BANJAR WIJAYA', title)
-    worksheet250.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BANJAR WIJAYA', title)
+    worksheet250.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet250.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet250.write('A22', 'LOKASI', header)
     worksheet250.write('B22', 'TOTAL', header)
     worksheet250.merge_range('A21:B21', 'RANK', header)
@@ -14026,7 +14010,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # # worksheet 251
-    # worksheet251.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet251.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet251.set_column('A:A', 7, center)
     # worksheet251.set_column('B:B', 6, center)
@@ -14035,10 +14019,9 @@ if uploaded_file is not None:
     # worksheet251.set_column('E:E', 13.14, left)
     # worksheet251.set_column('F:F', 8.57, center)
     # worksheet251.set_column('G:R', 5, center)
-    # worksheet251.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MELATI MAS', title)
+    # worksheet251.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MELATI MAS', title)
     # worksheet251.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
-    # worksheet251.write('A5', 'LOKASI', header)
-    # worksheet251.write('B5', 'TOTAL', header)
+    # worksheet251.write('A5', 'LOKASI',fr {penilaian}51.{semester}, 'TOTA{tahun}r)
     # worksheet251.merge_range('A4:B4', 'RANK', header)
     # worksheet251.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet251.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -14061,11 +14044,10 @@ if uploaded_file is not None:
     # worksheet251.conditional_format(5,0,row251_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet251.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MELATI MAS', title)
-    # worksheet251.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet251.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+    # worksheet251.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF MELATI MAS', title)
+    # worksheet251.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet251.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
     # worksheet251.write('A22', 'LOKASI', header)
-    # worksheet251.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet251.merge_range('A21:B21', 'RANK', header)
     # worksheet251.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet251.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -14088,7 +14070,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # worksheet 252
-    worksheet252.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet252.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet252.set_column('A:A', 7, center)
     worksheet252.set_column('B:B', 6, center)
@@ -14098,9 +14080,9 @@ if uploaded_file is not None:
     worksheet252.set_column('F:F', 8.57, center)
     worksheet252.set_column('G:R', 5, center)
     worksheet252.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIRENDEU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIRENDEU', title)
     worksheet252.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet252.write('A5', 'LOKASI', header)
     worksheet252.write('B5', 'TOTAL', header)
     worksheet252.merge_range('A4:B4', 'RANK', header)
@@ -14125,10 +14107,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet252.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIRENDEU', title)
-    worksheet252.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIRENDEU', title)
+    worksheet252.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet252.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet252.write('A22', 'LOKASI', header)
     worksheet252.write('B22', 'TOTAL', header)
     worksheet252.merge_range('A21:B21', 'RANK', header)
@@ -14152,7 +14134,7 @@ if uploaded_file is not None:
     worksheet252.conditional_format(22, 0, row252+21, 15,
                                     {'type': 'no_errors', 'format': border})
     # # worksheet 253
-    # worksheet253.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet253.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet253.set_column('A:A', 7, center)
     # worksheet253.set_column('B:B', 6, center)
@@ -14161,10 +14143,9 @@ if uploaded_file is not None:
     # worksheet253.set_column('E:E', 13.14, left)
     # worksheet253.set_column('F:F', 8.57, center)
     # worksheet253.set_column('G:R', 5, center)
-    # worksheet253.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KAMPUNG UTAN', title)
+    # worksheet253.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KAMPUNG UTAN', title)
     # worksheet253.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
-    # worksheet253.write('A5', 'LOKASI', header)
-    # worksheet253.write('B5', 'TOTAL', header)
+    # worksheet253.write('A5', 'LOKASI',fr {penilaian}53.{semester}, 'TOTA{tahun}r)
     # worksheet253.merge_range('A4:B4', 'RANK', header)
     # worksheet253.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet253.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -14187,11 +14168,10 @@ if uploaded_file is not None:
     # worksheet253.conditional_format(5,0,row253_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet253.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KAMPUNG UTAN', title)
-    # worksheet253.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet253.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+    # worksheet253.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF KAMPUNG UTAN', title)
+    # worksheet253.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet253.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
     # worksheet253.write('A22', 'LOKASI', header)
-    # worksheet253.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet253.merge_range('A21:B21', 'RANK', header)
     # worksheet253.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet253.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -14214,7 +14194,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # worksheet 254
-    worksheet254.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet254.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet254.set_column('A:A', 7, center)
     worksheet254.set_column('B:B', 6, center)
@@ -14224,9 +14204,9 @@ if uploaded_file is not None:
     worksheet254.set_column('F:F', 8.57, center)
     worksheet254.set_column('G:R', 5, center)
     worksheet254.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF GRAHA RAYA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GRAHA RAYA', title)
     worksheet254.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet254.write('A5', 'LOKASI', header)
     worksheet254.write('B5', 'TOTAL', header)
     worksheet254.merge_range('A4:B4', 'RANK', header)
@@ -14251,10 +14231,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet254.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF GRAHA RAYA', title)
-    worksheet254.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF GRAHA RAYA', title)
+    worksheet254.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet254.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet254.write('A22', 'LOKASI', header)
     worksheet254.write('B22', 'TOTAL', header)
     worksheet254.merge_range('A21:B21', 'RANK', header)
@@ -14279,7 +14259,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 255
-    worksheet255.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet255.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet255.set_column('A:A', 7, center)
     worksheet255.set_column('B:B', 6, center)
@@ -14289,9 +14269,9 @@ if uploaded_file is not None:
     worksheet255.set_column('F:F', 8.57, center)
     worksheet255.set_column('G:R', 5, center)
     worksheet255.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MERPATI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MERPATI', title)
     worksheet255.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet255.write('A5', 'LOKASI', header)
     worksheet255.write('B5', 'TOTAL', header)
     worksheet255.merge_range('A4:B4', 'RANK', header)
@@ -14316,10 +14296,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet255.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MERPATI', title)
-    worksheet255.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MERPATI', title)
+    worksheet255.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet255.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet255.write('A22', 'LOKASI', header)
     worksheet255.write('B22', 'TOTAL', header)
     worksheet255.merge_range('A21:B21', 'RANK', header)
@@ -14344,7 +14324,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 256
-    worksheet256.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet256.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet256.set_column('A:A', 7, center)
     worksheet256.set_column('B:B', 6, center)
@@ -14354,9 +14334,9 @@ if uploaded_file is not None:
     worksheet256.set_column('F:F', 8.57, center)
     worksheet256.set_column('G:R', 5, center)
     worksheet256.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIRUAS', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIRUAS', title)
     worksheet256.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet256.write('A5', 'LOKASI', header)
     worksheet256.write('B5', 'TOTAL', header)
     worksheet256.merge_range('A4:B4', 'RANK', header)
@@ -14381,10 +14361,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet256.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIRUAS', title)
-    worksheet256.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIRUAS', title)
+    worksheet256.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet256.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet256.write('A22', 'LOKASI', header)
     worksheet256.write('B22', 'TOTAL', header)
     worksheet256.merge_range('A21:B21', 'RANK', header)
@@ -14409,7 +14389,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 258
-    worksheet258.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet258.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet258.set_column('A:A', 7, center)
     worksheet258.set_column('B:B', 6, center)
@@ -14419,9 +14399,9 @@ if uploaded_file is not None:
     worksheet258.set_column('F:F', 8.57, center)
     worksheet258.set_column('G:R', 5, center)
     worksheet258.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF LHOKSEUMAWE', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF LHOKSEUMAWE', title)
     worksheet258.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet258.write('A5', 'LOKASI', header)
     worksheet258.write('B5', 'TOTAL', header)
     worksheet258.merge_range('A4:B4', 'RANK', header)
@@ -14446,10 +14426,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet258.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF LHOKSEUMAWE', title)
-    worksheet258.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF LHOKSEUMAWE', title)
+    worksheet258.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet258.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet258.write('A22', 'LOKASI', header)
     worksheet258.write('B22', 'TOTAL', header)
     worksheet258.merge_range('A21:B21', 'RANK', header)
@@ -14474,7 +14454,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 259
-    worksheet259.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet259.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet259.set_column('A:A', 7, center)
     worksheet259.set_column('B:B', 6, center)
@@ -14484,9 +14464,9 @@ if uploaded_file is not None:
     worksheet259.set_column('F:F', 8.57, center)
     worksheet259.set_column('G:R', 5, center)
     worksheet259.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PANAM, PKU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PANAM, PKU', title)
     worksheet259.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet259.write('A5', 'LOKASI', header)
     worksheet259.write('B5', 'TOTAL', header)
     worksheet259.merge_range('A4:B4', 'RANK', header)
@@ -14511,10 +14491,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet259.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PANAM, PKU', title)
-    worksheet259.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PANAM, PKU', title)
+    worksheet259.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet259.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet259.write('A22', 'LOKASI', header)
     worksheet259.write('B22', 'TOTAL', header)
     worksheet259.merge_range('A21:B21', 'RANK', header)
@@ -14539,7 +14519,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 260
-    worksheet260.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet260.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet260.set_column('A:A', 7, center)
     worksheet260.set_column('B:B', 6, center)
@@ -14549,9 +14529,9 @@ if uploaded_file is not None:
     worksheet260.set_column('F:F', 8.57, center)
     worksheet260.set_column('G:R', 5, center)
     worksheet260.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF AM. SANGAJI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF AM. SANGAJI', title)
     worksheet260.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet260.write('A5', 'LOKASI', header)
     worksheet260.write('B5', 'TOTAL', header)
     worksheet260.merge_range('A4:B4', 'RANK', header)
@@ -14576,10 +14556,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet260.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF AM. SANGAJI', title)
-    worksheet260.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF AM. SANGAJI', title)
+    worksheet260.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet260.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet260.write('A22', 'LOKASI', header)
     worksheet260.write('B22', 'TOTAL', header)
     worksheet260.merge_range('A21:B21', 'RANK', header)
@@ -14604,7 +14584,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 261
-    worksheet261.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet261.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet261.set_column('A:A', 7, center)
     worksheet261.set_column('B:B', 6, center)
@@ -14614,9 +14594,9 @@ if uploaded_file is not None:
     worksheet261.set_column('F:F', 8.57, center)
     worksheet261.set_column('G:R', 5, center)
     worksheet261.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF DURI KOSAMBI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF DURI KOSAMBI', title)
     worksheet261.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet261.write('A5', 'LOKASI', header)
     worksheet261.write('B5', 'TOTAL', header)
     worksheet261.merge_range('A4:B4', 'RANK', header)
@@ -14641,10 +14621,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet261.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF DURI KOSAMBI', title)
-    worksheet261.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF DURI KOSAMBI', title)
+    worksheet261.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet261.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet261.write('A22', 'LOKASI', header)
     worksheet261.write('B22', 'TOTAL', header)
     worksheet261.merge_range('A21:B21', 'RANK', header)
@@ -14669,7 +14649,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 262
-    worksheet262.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet262.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet262.set_column('A:A', 7, center)
     worksheet262.set_column('B:B', 6, center)
@@ -14679,9 +14659,9 @@ if uploaded_file is not None:
     worksheet262.set_column('F:F', 8.57, center)
     worksheet262.set_column('G:R', 5, center)
     worksheet262.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CITRA RAYA CIKUPA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CITRA RAYA CIKUPA', title)
     worksheet262.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet262.write('A5', 'LOKASI', header)
     worksheet262.write('B5', 'TOTAL', header)
     worksheet262.merge_range('A4:B4', 'RANK', header)
@@ -14706,10 +14686,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet262.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CITRA RAYA CIKUPA', title)
-    worksheet262.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CITRA RAYA CIKUPA', title)
+    worksheet262.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet262.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet262.write('A22', 'LOKASI', header)
     worksheet262.write('B22', 'TOTAL', header)
     worksheet262.merge_range('A21:B21', 'RANK', header)
@@ -14734,7 +14714,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 263
-    worksheet263.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet263.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet263.set_column('A:A', 7, center)
     worksheet263.set_column('B:B', 6, center)
@@ -14744,9 +14724,9 @@ if uploaded_file is not None:
     worksheet263.set_column('F:F', 8.57, center)
     worksheet263.set_column('G:R', 5, center)
     worksheet263.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF GRAHA PRIMA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GRAHA PRIMA', title)
     worksheet263.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet263.write('A5', 'LOKASI', header)
     worksheet263.write('B5', 'TOTAL', header)
     worksheet263.merge_range('A4:B4', 'RANK', header)
@@ -14771,10 +14751,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet263.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF GRAHA PRIMA', title)
-    worksheet263.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF GRAHA PRIMA', title)
+    worksheet263.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet263.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet263.write('A22', 'LOKASI', header)
     worksheet263.write('B22', 'TOTAL', header)
     worksheet263.merge_range('A21:B21', 'RANK', header)
@@ -14799,7 +14779,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 264
-    worksheet264.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet264.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet264.set_column('A:A', 7, center)
     worksheet264.set_column('B:B', 6, center)
@@ -14809,9 +14789,9 @@ if uploaded_file is not None:
     worksheet264.set_column('F:F', 8.57, center)
     worksheet264.set_column('G:R', 5, center)
     worksheet264.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KARAWANG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KARAWANG', title)
     worksheet264.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet264.write('A5', 'LOKASI', header)
     worksheet264.write('B5', 'TOTAL', header)
     worksheet264.merge_range('A4:B4', 'RANK', header)
@@ -14836,10 +14816,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet264.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KARAWANG', title)
-    worksheet264.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KARAWANG', title)
+    worksheet264.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet264.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet264.write('A22', 'LOKASI', header)
     worksheet264.write('B22', 'TOTAL', header)
     worksheet264.merge_range('A21:B21', 'RANK', header)
@@ -14864,7 +14844,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 265
-    worksheet265.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet265.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet265.set_column('A:A', 7, center)
     worksheet265.set_column('B:B', 6, center)
@@ -14874,9 +14854,9 @@ if uploaded_file is not None:
     worksheet265.set_column('F:F', 8.57, center)
     worksheet265.set_column('G:R', 5, center)
     worksheet265.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TAMAN WISMA ASRI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TAMAN WISMA ASRI', title)
     worksheet265.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet265.write('A5', 'LOKASI', header)
     worksheet265.write('B5', 'TOTAL', header)
     worksheet265.merge_range('A4:B4', 'RANK', header)
@@ -14901,10 +14881,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet265.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TAMAN WISMA ASRI', title)
-    worksheet265.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TAMAN WISMA ASRI', title)
+    worksheet265.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet265.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet265.write('A22', 'LOKASI', header)
     worksheet265.write('B22', 'TOTAL', header)
     worksheet265.merge_range('A21:B21', 'RANK', header)
@@ -14929,7 +14909,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 266
-    worksheet266.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet266.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet266.set_column('A:A', 7, center)
     worksheet266.set_column('B:B', 6, center)
@@ -14939,9 +14919,9 @@ if uploaded_file is not None:
     worksheet266.set_column('F:F', 8.57, center)
     worksheet266.set_column('G:R', 5, center)
     worksheet266.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MANGUN JAYA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MANGUN JAYA', title)
     worksheet266.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet266.write('A5', 'LOKASI', header)
     worksheet266.write('B5', 'TOTAL', header)
     worksheet266.merge_range('A4:B4', 'RANK', header)
@@ -14966,10 +14946,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet266.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MANGUN JAYA', title)
-    worksheet266.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MANGUN JAYA', title)
+    worksheet266.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet266.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet266.write('A22', 'LOKASI', header)
     worksheet266.write('B22', 'TOTAL', header)
     worksheet266.merge_range('A21:B21', 'RANK', header)
@@ -14994,7 +14974,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 267
-    worksheet267.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet267.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet267.set_column('A:A', 7, center)
     worksheet267.set_column('B:B', 6, center)
@@ -15004,9 +14984,9 @@ if uploaded_file is not None:
     worksheet267.set_column('F:F', 8.57, center)
     worksheet267.set_column('G:R', 5, center)
     worksheet267.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MARAKASH / SEKTOR 5', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MARAKASH / SEKTOR 5', title)
     worksheet267.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet267.write('A5', 'LOKASI', header)
     worksheet267.write('B5', 'TOTAL', header)
     worksheet267.merge_range('A4:B4', 'RANK', header)
@@ -15031,10 +15011,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet267.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MARAKASH / SEKTOR 5', title)
-    worksheet267.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MARAKASH / SEKTOR 5', title)
+    worksheet267.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet267.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet267.write('A22', 'LOKASI', header)
     worksheet267.write('B22', 'TOTAL', header)
     worksheet267.merge_range('A21:B21', 'RANK', header)
@@ -15059,7 +15039,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 268
-    worksheet268.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet268.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet268.set_column('A:A', 7, center)
     worksheet268.set_column('B:B', 6, center)
@@ -15069,9 +15049,9 @@ if uploaded_file is not None:
     worksheet268.set_column('F:F', 8.57, center)
     worksheet268.set_column('G:R', 5, center)
     worksheet268.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KEBALEN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KEBALEN', title)
     worksheet268.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet268.write('A5', 'LOKASI', header)
     worksheet268.write('B5', 'TOTAL', header)
     worksheet268.merge_range('A4:B4', 'RANK', header)
@@ -15096,10 +15076,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet268.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KEBALEN', title)
-    worksheet268.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KEBALEN', title)
+    worksheet268.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet268.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet268.write('A22', 'LOKASI', header)
     worksheet268.write('B22', 'TOTAL', header)
     worksheet268.merge_range('A21:B21', 'RANK', header)
@@ -15124,7 +15104,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 269
-    worksheet269.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet269.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet269.set_column('A:A', 7, center)
     worksheet269.set_column('B:B', 6, center)
@@ -15134,9 +15114,9 @@ if uploaded_file is not None:
     worksheet269.set_column('F:F', 8.57, center)
     worksheet269.set_column('G:R', 5, center)
     worksheet269.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF JATI RANGON', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATI RANGON', title)
     worksheet269.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet269.write('A5', 'LOKASI', header)
     worksheet269.write('B5', 'TOTAL', header)
     worksheet269.merge_range('A4:B4', 'RANK', header)
@@ -15161,10 +15141,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet269.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF JATI RANGON', title)
-    worksheet269.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF JATI RANGON', title)
+    worksheet269.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet269.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet269.write('A22', 'LOKASI', header)
     worksheet269.write('B22', 'TOTAL', header)
     worksheet269.merge_range('A21:B21', 'RANK', header)
@@ -15189,7 +15169,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 270
-    worksheet270.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet270.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet270.set_column('A:A', 7, center)
     worksheet270.set_column('B:B', 6, center)
@@ -15199,9 +15179,9 @@ if uploaded_file is not None:
     worksheet270.set_column('F:F', 8.57, center)
     worksheet270.set_column('G:R', 5, center)
     worksheet270.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF JATIBENING', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATIBENING', title)
     worksheet270.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet270.write('A5', 'LOKASI', header)
     worksheet270.write('B5', 'TOTAL', header)
     worksheet270.merge_range('A4:B4', 'RANK', header)
@@ -15226,10 +15206,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet270.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF JATIBENING', title)
-    worksheet270.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF JATIBENING', title)
+    worksheet270.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet270.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet270.write('A22', 'LOKASI', header)
     worksheet270.write('B22', 'TOTAL', header)
     worksheet270.merge_range('A21:B21', 'RANK', header)
@@ -15254,7 +15234,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 271
-    worksheet271.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet271.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet271.set_column('A:A', 7, center)
     worksheet271.set_column('B:B', 6, center)
@@ -15264,9 +15244,9 @@ if uploaded_file is not None:
     worksheet271.set_column('F:F', 8.57, center)
     worksheet271.set_column('G:R', 5, center)
     worksheet271.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF JATIMULYA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATIMULYA', title)
     worksheet271.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet271.write('A5', 'LOKASI', header)
     worksheet271.write('B5', 'TOTAL', header)
     worksheet271.merge_range('A4:B4', 'RANK', header)
@@ -15291,10 +15271,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet271.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF JATIMULYA', title)
-    worksheet271.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF JATIMULYA', title)
+    worksheet271.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet271.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet271.write('A22', 'LOKASI', header)
     worksheet271.write('B22', 'TOTAL', header)
     worksheet271.merge_range('A21:B21', 'RANK', header)
@@ -15319,7 +15299,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 272
-    worksheet272.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet272.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet272.set_column('A:A', 7, center)
     worksheet272.set_column('B:B', 6, center)
@@ -15329,9 +15309,9 @@ if uploaded_file is not None:
     worksheet272.set_column('F:F', 8.57, center)
     worksheet272.set_column('G:R', 5, center)
     worksheet272.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PERUMNAS 3', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PERUMNAS 3', title)
     worksheet272.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet272.write('A5', 'LOKASI', header)
     worksheet272.write('B5', 'TOTAL', header)
     worksheet272.merge_range('A4:B4', 'RANK', header)
@@ -15356,10 +15336,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet272.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PERUMNAS 3', title)
-    worksheet272.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PERUMNAS 3', title)
+    worksheet272.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet272.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet272.write('A22', 'LOKASI', header)
     worksheet272.write('B22', 'TOTAL', header)
     worksheet272.merge_range('A21:B21', 'RANK', header)
@@ -15384,7 +15364,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 273
-    worksheet273.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet273.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet273.set_column('A:A', 7, center)
     worksheet273.set_column('B:B', 6, center)
@@ -15394,9 +15374,9 @@ if uploaded_file is not None:
     worksheet273.set_column('F:F', 8.57, center)
     worksheet273.set_column('G:R', 5, center)
     worksheet273.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF NAROGONG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF NAROGONG', title)
     worksheet273.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet273.write('A5', 'LOKASI', header)
     worksheet273.write('B5', 'TOTAL', header)
     worksheet273.merge_range('A4:B4', 'RANK', header)
@@ -15421,10 +15401,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet273.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF NAROGONG', title)
-    worksheet273.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF NAROGONG', title)
+    worksheet273.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet273.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet273.write('A22', 'LOKASI', header)
     worksheet273.write('B22', 'TOTAL', header)
     worksheet273.merge_range('A21:B21', 'RANK', header)
@@ -15449,7 +15429,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 274
-    worksheet274.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet274.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet274.set_column('A:A', 7, center)
     worksheet274.set_column('B:B', 6, center)
@@ -15459,9 +15439,9 @@ if uploaded_file is not None:
     worksheet274.set_column('F:F', 8.57, center)
     worksheet274.set_column('G:R', 5, center)
     worksheet274.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BEKASI TIMUR REGENCY', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BEKASI TIMUR REGENCY', title)
     worksheet274.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet274.write('A5', 'LOKASI', header)
     worksheet274.write('B5', 'TOTAL', header)
     worksheet274.merge_range('A4:B4', 'RANK', header)
@@ -15486,10 +15466,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet274.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BEKASI TIMUR REGENCY', title)
-    worksheet274.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BEKASI TIMUR REGENCY', title)
+    worksheet274.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet274.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet274.write('A22', 'LOKASI', header)
     worksheet274.write('B22', 'TOTAL', header)
     worksheet274.merge_range('A21:B21', 'RANK', header)
@@ -15514,7 +15494,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 275
-    worksheet275.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet275.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet275.set_column('A:A', 7, center)
     worksheet275.set_column('B:B', 6, center)
@@ -15524,9 +15504,9 @@ if uploaded_file is not None:
     worksheet275.set_column('F:F', 8.57, center)
     worksheet275.set_column('G:R', 5, center)
     worksheet275.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIKARANG PILAR', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIKARANG PILAR', title)
     worksheet275.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet275.write('A5', 'LOKASI', header)
     worksheet275.write('B5', 'TOTAL', header)
     worksheet275.merge_range('A4:B4', 'RANK', header)
@@ -15551,10 +15531,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet275.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIKARANG PILAR', title)
-    worksheet275.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIKARANG PILAR', title)
+    worksheet275.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet275.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet275.write('A22', 'LOKASI', header)
     worksheet275.write('B22', 'TOTAL', header)
     worksheet275.merge_range('A21:B21', 'RANK', header)
@@ -15579,7 +15559,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 276
-    worksheet276.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet276.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet276.set_column('A:A', 7, center)
     worksheet276.set_column('B:B', 6, center)
@@ -15589,9 +15569,9 @@ if uploaded_file is not None:
     worksheet276.set_column('F:F', 8.57, center)
     worksheet276.set_column('G:R', 5, center)
     worksheet276.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIKARANG JABABEKA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIKARANG JABABEKA', title)
     worksheet276.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet276.write('A5', 'LOKASI', header)
     worksheet276.write('B5', 'TOTAL', header)
     worksheet276.merge_range('A4:B4', 'RANK', header)
@@ -15616,10 +15596,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet276.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIKARANG JABABEKA', title)
-    worksheet276.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIKARANG JABABEKA', title)
+    worksheet276.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet276.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet276.write('A22', 'LOKASI', header)
     worksheet276.write('B22', 'TOTAL', header)
     worksheet276.merge_range('A21:B21', 'RANK', header)
@@ -15644,7 +15624,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 277
-    worksheet277.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet277.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet277.set_column('A:A', 7, center)
     worksheet277.set_column('B:B', 6, center)
@@ -15654,9 +15634,9 @@ if uploaded_file is not None:
     worksheet277.set_column('F:F', 8.57, center)
     worksheet277.set_column('G:R', 5, center)
     worksheet277.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PAYAKUMBUH', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PAYAKUMBUH', title)
     worksheet277.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet277.write('A5', 'LOKASI', header)
     worksheet277.write('B5', 'TOTAL', header)
     worksheet277.merge_range('A4:B4', 'RANK', header)
@@ -15681,10 +15661,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet277.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PAYAKUMBUH', title)
-    worksheet277.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PAYAKUMBUH', title)
+    worksheet277.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet277.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet277.write('A22', 'LOKASI', header)
     worksheet277.write('B22', 'TOTAL', header)
     worksheet277.merge_range('A21:B21', 'RANK', header)
@@ -15709,7 +15689,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 278
-    worksheet278.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet278.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet278.set_column('A:A', 7, center)
     worksheet278.set_column('B:B', 6, center)
@@ -15719,9 +15699,9 @@ if uploaded_file is not None:
     worksheet278.set_column('F:F', 8.57, center)
     worksheet278.set_column('G:R', 5, center)
     worksheet278.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MERDUATI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MERDUATI', title)
     worksheet278.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet278.write('A5', 'LOKASI', header)
     worksheet278.write('B5', 'TOTAL', header)
     worksheet278.merge_range('A4:B4', 'RANK', header)
@@ -15746,10 +15726,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet278.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MERDUATI', title)
-    worksheet278.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MERDUATI', title)
+    worksheet278.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet278.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet278.write('A22', 'LOKASI', header)
     worksheet278.write('B22', 'TOTAL', header)
     worksheet278.merge_range('A21:B21', 'RANK', header)
@@ -15774,7 +15754,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 279
-    worksheet279.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet279.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet279.set_column('A:A', 7, center)
     worksheet279.set_column('B:B', 6, center)
@@ -15784,9 +15764,9 @@ if uploaded_file is not None:
     worksheet279.set_column('F:F', 8.57, center)
     worksheet279.set_column('G:R', 5, center)
     worksheet279.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF ANTAPANI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF ANTAPANI', title)
     worksheet279.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet279.write('A5', 'LOKASI', header)
     worksheet279.write('B5', 'TOTAL', header)
     worksheet279.merge_range('A4:B4', 'RANK', header)
@@ -15811,10 +15791,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet279.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF ANTAPANI', title)
-    worksheet279.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF ANTAPANI', title)
+    worksheet279.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet279.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet279.write('A22', 'LOKASI', header)
     worksheet279.write('B22', 'TOTAL', header)
     worksheet279.merge_range('A21:B21', 'RANK', header)
@@ -15839,7 +15819,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 280
-    worksheet280.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet280.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet280.set_column('A:A', 7, center)
     worksheet280.set_column('B:B', 6, center)
@@ -15849,9 +15829,9 @@ if uploaded_file is not None:
     worksheet280.set_column('F:F', 8.57, center)
     worksheet280.set_column('G:R', 5, center)
     worksheet280.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MARGAHAYU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MARGAHAYU', title)
     worksheet280.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet280.write('A5', 'LOKASI', header)
     worksheet280.write('B5', 'TOTAL', header)
     worksheet280.merge_range('A4:B4', 'RANK', header)
@@ -15876,10 +15856,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet280.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MARGAHAYU', title)
-    worksheet280.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MARGAHAYU', title)
+    worksheet280.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet280.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet280.write('A22', 'LOKASI', header)
     worksheet280.write('B22', 'TOTAL', header)
     worksheet280.merge_range('A21:B21', 'RANK', header)
@@ -15904,7 +15884,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # # worksheet 281
-    # worksheet281.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet281.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet281.set_column('A:A', 7, center)
     # worksheet281.set_column('B:B', 6, center)
@@ -15913,10 +15893,9 @@ if uploaded_file is not None:
     # worksheet281.set_column('E:E', 13.14, left)
     # worksheet281.set_column('F:F', 8.57, center)
     # worksheet281.set_column('G:R', 5, center)
-    # worksheet281.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF RAJAWALI', title)
+    # worksheet281.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RAJAWALI', title)
     # worksheet281.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
-    # worksheet281.write('A5', 'LOKASI', header)
-    # worksheet281.write('B5', 'TOTAL', header)
+    # worksheet281.write('A5', 'LOKASI',fr {penilaian}81.{semester}, 'TOTA{tahun}r)
     # worksheet281.merge_range('A4:B4', 'RANK', header)
     # worksheet281.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet281.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -15939,11 +15918,10 @@ if uploaded_file is not None:
     # worksheet281.conditional_format(5,0,row281_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet281.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF RAJAWALI', title)
-    # worksheet281.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet281.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+    # worksheet281.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF RAJAWALI', title)
+    # worksheet281.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet281.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
     # worksheet281.write('A22', 'LOKASI', header)
-    # worksheet281.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet281.merge_range('A21:B21', 'RANK', header)
     # worksheet281.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet281.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -15966,7 +15944,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # worksheet 282
-    worksheet282.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet282.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet282.set_column('A:A', 7, center)
     worksheet282.set_column('B:B', 6, center)
@@ -15976,9 +15954,9 @@ if uploaded_file is not None:
     worksheet282.set_column('F:F', 8.57, center)
     worksheet282.set_column('G:R', 5, center)
     worksheet282.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PAHLAWAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PAHLAWAN', title)
     worksheet282.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet282.write('A5', 'LOKASI', header)
     worksheet282.write('B5', 'TOTAL', header)
     worksheet282.merge_range('A4:B4', 'RANK', header)
@@ -16003,10 +15981,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet282.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PAHLAWAN', title)
-    worksheet282.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PAHLAWAN', title)
+    worksheet282.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet282.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet282.write('A22', 'LOKASI', header)
     worksheet282.write('B22', 'TOTAL', header)
     worksheet282.merge_range('A21:B21', 'RANK', header)
@@ -16031,7 +16009,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 283
-    worksheet283.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet283.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet283.set_column('A:A', 7, center)
     worksheet283.set_column('B:B', 6, center)
@@ -16041,9 +16019,9 @@ if uploaded_file is not None:
     worksheet283.set_column('F:F', 8.57, center)
     worksheet283.set_column('G:R', 5, center)
     worksheet283.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIJERAH', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIJERAH', title)
     worksheet283.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet283.write('A5', 'LOKASI', header)
     worksheet283.write('B5', 'TOTAL', header)
     worksheet283.merge_range('A4:B4', 'RANK', header)
@@ -16068,10 +16046,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet283.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIJERAH', title)
-    worksheet283.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIJERAH', title)
+    worksheet283.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet283.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet283.write('A22', 'LOKASI', header)
     worksheet283.write('B22', 'TOTAL', header)
     worksheet283.merge_range('A21:B21', 'RANK', header)
@@ -16096,7 +16074,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 284
-    worksheet284.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet284.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet284.set_column('A:A', 7, center)
     worksheet284.set_column('B:B', 6, center)
@@ -16106,9 +16084,9 @@ if uploaded_file is not None:
     worksheet284.set_column('F:F', 8.57, center)
     worksheet284.set_column('G:R', 5, center)
     worksheet284.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TEGAL', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TEGAL', title)
     worksheet284.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet284.write('A5', 'LOKASI', header)
     worksheet284.write('B5', 'TOTAL', header)
     worksheet284.merge_range('A4:B4', 'RANK', header)
@@ -16133,10 +16111,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet284.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TEGAL', title)
-    worksheet284.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TEGAL', title)
+    worksheet284.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet284.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet284.write('A22', 'LOKASI', header)
     worksheet284.write('B22', 'TOTAL', header)
     worksheet284.merge_range('A21:B21', 'RANK', header)
@@ -16161,7 +16139,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 285
-    worksheet285.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet285.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet285.set_column('A:A', 7, center)
     worksheet285.set_column('B:B', 6, center)
@@ -16171,9 +16149,9 @@ if uploaded_file is not None:
     worksheet285.set_column('F:F', 8.57, center)
     worksheet285.set_column('G:R', 5, center)
     worksheet285.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MEDAN AREA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MEDAN AREA', title)
     worksheet285.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet285.write('A5', 'LOKASI', header)
     worksheet285.write('B5', 'TOTAL', header)
     worksheet285.merge_range('A4:B4', 'RANK', header)
@@ -16198,10 +16176,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet285.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MEDAN AREA', title)
-    worksheet285.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MEDAN AREA', title)
+    worksheet285.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet285.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet285.write('A22', 'LOKASI', header)
     worksheet285.write('B22', 'TOTAL', header)
     worksheet285.merge_range('A21:B21', 'RANK', header)
@@ -16226,7 +16204,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 286
-    worksheet286.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet286.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet286.set_column('A:A', 7, center)
     worksheet286.set_column('B:B', 6, center)
@@ -16236,9 +16214,9 @@ if uploaded_file is not None:
     worksheet286.set_column('F:F', 8.57, center)
     worksheet286.set_column('G:R', 5, center)
     worksheet286.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MEDAN JOHOR', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MEDAN JOHOR', title)
     worksheet286.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet286.write('A5', 'LOKASI', header)
     worksheet286.write('B5', 'TOTAL', header)
     worksheet286.merge_range('A4:B4', 'RANK', header)
@@ -16263,10 +16241,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet286.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MEDAN JOHOR', title)
-    worksheet286.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MEDAN JOHOR', title)
+    worksheet286.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet286.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet286.write('A22', 'LOKASI', header)
     worksheet286.write('B22', 'TOTAL', header)
     worksheet286.merge_range('A21:B21', 'RANK', header)
@@ -16291,7 +16269,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 287
-    worksheet287.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet287.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet287.set_column('A:A', 7, center)
     worksheet287.set_column('B:B', 6, center)
@@ -16301,9 +16279,9 @@ if uploaded_file is not None:
     worksheet287.set_column('F:F', 8.57, center)
     worksheet287.set_column('G:R', 5, center)
     worksheet287.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF JAMBO TAPE', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JAMBO TAPE', title)
     worksheet287.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet287.write('A5', 'LOKASI', header)
     worksheet287.write('B5', 'TOTAL', header)
     worksheet287.merge_range('A4:B4', 'RANK', header)
@@ -16328,10 +16306,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet287.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF JAMBO TAPE', title)
-    worksheet287.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF JAMBO TAPE', title)
+    worksheet287.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet287.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet287.write('A22', 'LOKASI', header)
     worksheet287.write('B22', 'TOTAL', header)
     worksheet287.merge_range('A21:B21', 'RANK', header)
@@ -16356,7 +16334,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 288
-    worksheet288.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet288.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet288.set_column('A:A', 7, center)
     worksheet288.set_column('B:B', 6, center)
@@ -16366,9 +16344,9 @@ if uploaded_file is not None:
     worksheet288.set_column('F:F', 8.57, center)
     worksheet288.set_column('G:R', 5, center)
     worksheet288.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF THE HOK', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF THE HOK', title)
     worksheet288.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet288.write('A5', 'LOKASI', header)
     worksheet288.write('B5', 'TOTAL', header)
     worksheet288.merge_range('A4:B4', 'RANK', header)
@@ -16393,10 +16371,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet288.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF THE HOK', title)
-    worksheet288.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF THE HOK', title)
+    worksheet288.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet288.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet288.write('A22', 'LOKASI', header)
     worksheet288.write('B22', 'TOTAL', header)
     worksheet288.merge_range('A21:B21', 'RANK', header)
@@ -16421,7 +16399,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 289
-    worksheet289.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet289.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet289.set_column('A:A', 7, center)
     worksheet289.set_column('B:B', 6, center)
@@ -16431,9 +16409,9 @@ if uploaded_file is not None:
     worksheet289.set_column('F:F', 8.57, center)
     worksheet289.set_column('G:R', 5, center)
     worksheet289.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SAIL', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SAIL', title)
     worksheet289.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet289.write('A5', 'LOKASI', header)
     worksheet289.write('B5', 'TOTAL', header)
     worksheet289.merge_range('A4:B4', 'RANK', header)
@@ -16458,10 +16436,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet289.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SAIL', title)
-    worksheet289.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SAIL', title)
+    worksheet289.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet289.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet289.write('A22', 'LOKASI', header)
     worksheet289.write('B22', 'TOTAL', header)
     worksheet289.merge_range('A21:B21', 'RANK', header)
@@ -16486,7 +16464,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 290
-    worksheet290.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet290.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet290.set_column('A:A', 7, center)
     worksheet290.set_column('B:B', 6, center)
@@ -16496,9 +16474,9 @@ if uploaded_file is not None:
     worksheet290.set_column('F:F', 8.57, center)
     worksheet290.set_column('G:R', 5, center)
     worksheet290.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TELANAI JAMBI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TELANAI JAMBI', title)
     worksheet290.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet290.write('A5', 'LOKASI', header)
     worksheet290.write('B5', 'TOTAL', header)
     worksheet290.merge_range('A4:B4', 'RANK', header)
@@ -16523,10 +16501,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet290.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TELANAI JAMBI', title)
-    worksheet290.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TELANAI JAMBI', title)
+    worksheet290.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet290.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet290.write('A22', 'LOKASI', header)
     worksheet290.write('B22', 'TOTAL', header)
     worksheet290.merge_range('A21:B21', 'RANK', header)
@@ -16551,7 +16529,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 291
-    worksheet291.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet291.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet291.set_column('A:A', 7, center)
     worksheet291.set_column('B:B', 6, center)
@@ -16561,9 +16539,9 @@ if uploaded_file is not None:
     worksheet291.set_column('F:F', 8.57, center)
     worksheet291.set_column('G:R', 5, center)
     worksheet291.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SIDOARJO', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SIDOARJO', title)
     worksheet291.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet291.write('A5', 'LOKASI', header)
     worksheet291.write('B5', 'TOTAL', header)
     worksheet291.merge_range('A4:B4', 'RANK', header)
@@ -16588,10 +16566,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet291.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SIDOARJO', title)
-    worksheet291.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SIDOARJO', title)
+    worksheet291.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet291.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet291.write('A22', 'LOKASI', header)
     worksheet291.write('B22', 'TOTAL', header)
     worksheet291.merge_range('A21:B21', 'RANK', header)
@@ -16616,7 +16594,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 292
-    worksheet292.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet292.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet292.set_column('A:A', 7, center)
     worksheet292.set_column('B:B', 6, center)
@@ -16626,9 +16604,9 @@ if uploaded_file is not None:
     worksheet292.set_column('F:F', 8.57, center)
     worksheet292.set_column('G:R', 5, center)
     worksheet292.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PURWOKERTO LOR', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PURWOKERTO LOR', title)
     worksheet292.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet292.write('A5', 'LOKASI', header)
     worksheet292.write('B5', 'TOTAL', header)
     worksheet292.merge_range('A4:B4', 'RANK', header)
@@ -16653,10 +16631,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet292.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PURWOKERTO LOR', title)
-    worksheet292.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PURWOKERTO LOR', title)
+    worksheet292.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet292.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet292.write('A22', 'LOKASI', header)
     worksheet292.write('B22', 'TOTAL', header)
     worksheet292.merge_range('A21:B21', 'RANK', header)
@@ -16681,7 +16659,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 293
-    worksheet293.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet293.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet293.set_column('A:A', 7, center)
     worksheet293.set_column('B:B', 6, center)
@@ -16691,9 +16669,9 @@ if uploaded_file is not None:
     worksheet293.set_column('F:F', 8.57, center)
     worksheet293.set_column('G:R', 5, center)
     worksheet293.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF WAY HALIM', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF WAY HALIM', title)
     worksheet293.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet293.write('A5', 'LOKASI', header)
     worksheet293.write('B5', 'TOTAL', header)
     worksheet293.merge_range('A4:B4', 'RANK', header)
@@ -16718,10 +16696,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet293.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF WAY HALIM', title)
-    worksheet293.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF WAY HALIM', title)
+    worksheet293.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet293.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet293.write('A22', 'LOKASI', header)
     worksheet293.write('B22', 'TOTAL', header)
     worksheet293.merge_range('A21:B21', 'RANK', header)
@@ -16746,7 +16724,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 294
-    worksheet294.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet294.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet294.set_column('A:A', 7, center)
     worksheet294.set_column('B:B', 6, center)
@@ -16756,9 +16734,9 @@ if uploaded_file is not None:
     worksheet294.set_column('F:F', 8.57, center)
     worksheet294.set_column('G:R', 5, center)
     worksheet294.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF METRO', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF METRO', title)
     worksheet294.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet294.write('A5', 'LOKASI', header)
     worksheet294.write('B5', 'TOTAL', header)
     worksheet294.merge_range('A4:B4', 'RANK', header)
@@ -16783,10 +16761,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet294.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF METRO', title)
-    worksheet294.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF METRO', title)
+    worksheet294.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet294.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet294.write('A22', 'LOKASI', header)
     worksheet294.write('B22', 'TOTAL', header)
     worksheet294.merge_range('A21:B21', 'RANK', header)
@@ -16811,7 +16789,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 295
-    worksheet295.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet295.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet295.set_column('A:A', 7, center)
     worksheet295.set_column('B:B', 6, center)
@@ -16821,9 +16799,9 @@ if uploaded_file is not None:
     worksheet295.set_column('F:F', 8.57, center)
     worksheet295.set_column('G:R', 5, center)
     worksheet295.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF RAJABASA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RAJABASA', title)
     worksheet295.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet295.write('A5', 'LOKASI', header)
     worksheet295.write('B5', 'TOTAL', header)
     worksheet295.merge_range('A4:B4', 'RANK', header)
@@ -16848,10 +16826,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet295.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF RAJABASA', title)
-    worksheet295.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF RAJABASA', title)
+    worksheet295.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet295.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet295.write('A22', 'LOKASI', header)
     worksheet295.write('B22', 'TOTAL', header)
     worksheet295.merge_range('A21:B21', 'RANK', header)
@@ -16876,7 +16854,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # # worksheet 296
-    # worksheet296.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet296.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet296.set_column('A:A', 7, center)
     # worksheet296.set_column('B:B', 6, center)
@@ -16885,10 +16863,9 @@ if uploaded_file is not None:
     # worksheet296.set_column('E:E', 13.14, left)
     # worksheet296.set_column('F:F', 8.57, center)
     # worksheet296.set_column('G:R', 5, center)
-    # worksheet296.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KEDATON', title)
+    # worksheet296.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KEDATON', title)
     # worksheet296.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
-    # worksheet296.write('A5', 'LOKASI', header)
-    # worksheet296.write('B5', 'TOTAL', header)
+    # worksheet296.write('A5', 'LOKASI',fr {penilaian}96.{semester}, 'TOTA{tahun}r)
     # worksheet296.merge_range('A4:B4', 'RANK', header)
     # worksheet296.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet296.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -16911,11 +16888,10 @@ if uploaded_file is not None:
     # worksheet296.conditional_format(5,0,row296_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet296.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KEDATON', title)
-    # worksheet296.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet296.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+    # worksheet296.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF KEDATON', title)
+    # worksheet296.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet296.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
     # worksheet296.write('A22', 'LOKASI', header)
-    # worksheet296.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet296.merge_range('A21:B21', 'RANK', header)
     # worksheet296.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet296.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -16938,7 +16914,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # # worksheet 297
-    # worksheet297.insert_image('A1',r'E:\logo resmi nf resize.jpg')
+    # worksheet297.insert_image('A1',r'logo resmi nf resize.jpg')
 
     # worksheet297.set_column('A:A', 7, center)
     # worksheet297.set_column('B:B', 6, center)
@@ -16947,10 +16923,9 @@ if uploaded_file is not None:
     # worksheet297.set_column('E:E', 13.14, left)
     # worksheet297.set_column('F:F', 8.57, center)
     # worksheet297.set_column('G:R', 5, center)
-    # worksheet297.merge_range('A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PALAPA CUT NYAK DIEN', title)
+    # worksheet297.merge_range('A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PALAPA CUT NYAK DIEN', title)
     # worksheet297.merge_range('A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
-    # worksheet297.write('A5', 'LOKASI', header)
-    # worksheet297.write('B5', 'TOTAL', header)
+    # worksheet297.write('A5', 'LOKASI',fr {penilaian}97.{semester}, 'TOTA{tahun}r)
     # worksheet297.merge_range('A4:B4', 'RANK', header)
     # worksheet297.merge_range('C4:C5', 'NOMOR NF', header)
     # worksheet297.merge_range('D4:D5', 'NAMA SISWA', header)
@@ -16973,11 +16948,10 @@ if uploaded_file is not None:
     # worksheet297.conditional_format(5,0,row297_10+4,15,
     #                              {'type': 'no_errors', 'format': border})
 
-    # worksheet297.merge_range('A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PALAPA CUT NYAK DIEN', title)
-    # worksheet297.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
-    # worksheet297.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+    # worksheet297.merge_range('A17:R17', fr'KELAS {kelas} - LOKASI NF PALAPA CUT NYAK DIEN', title)
+    # worksheet297.merge_range('A18:R18', 'PENILAIAN AKHIR SEMEfrS{penilaian}rksheet297.merge_range('A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
     # worksheet297.write('A22', 'LOKASI', header)
-    # worksheet297.write('B22', 'TOTAL', header)
+    # worksheefrt{semester}'B22', {tahun}header)
     # worksheet297.merge_range('A21:B21', 'RANK', header)
     # worksheet297.merge_range('C21:C22', 'NOMOR NF', header)
     # worksheet297.merge_range('D21:D22', 'NAMA SISWA', header)
@@ -17000,7 +16974,7 @@ if uploaded_file is not None:
     #                              {'type': 'no_errors', 'format': border})
 
     # worksheet 298
-    worksheet298.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet298.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet298.set_column('A:A', 7, center)
     worksheet298.set_column('B:B', 6, center)
@@ -17010,9 +16984,9 @@ if uploaded_file is not None:
     worksheet298.set_column('F:F', 8.57, center)
     worksheet298.set_column('G:R', 5, center)
     worksheet298.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PAHOMAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PAHOMAN', title)
     worksheet298.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet298.write('A5', 'LOKASI', header)
     worksheet298.write('B5', 'TOTAL', header)
     worksheet298.merge_range('A4:B4', 'RANK', header)
@@ -17037,10 +17011,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet298.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PAHOMAN', title)
-    worksheet298.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PAHOMAN', title)
+    worksheet298.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet298.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet298.write('A22', 'LOKASI', header)
     worksheet298.write('B22', 'TOTAL', header)
     worksheet298.merge_range('A21:B21', 'RANK', header)
@@ -17065,7 +17039,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 299
-    worksheet299.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet299.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet299.set_column('A:A', 7, center)
     worksheet299.set_column('B:B', 6, center)
@@ -17075,9 +17049,9 @@ if uploaded_file is not None:
     worksheet299.set_column('F:F', 8.57, center)
     worksheet299.set_column('G:R', 5, center)
     worksheet299.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF KEMILING', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KEMILING', title)
     worksheet299.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet299.write('A5', 'LOKASI', header)
     worksheet299.write('B5', 'TOTAL', header)
     worksheet299.merge_range('A4:B4', 'RANK', header)
@@ -17102,10 +17076,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet299.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF KEMILING', title)
-    worksheet299.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF KEMILING', title)
+    worksheet299.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet299.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022-2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}', sub_title)
     worksheet299.write('A22', 'LOKASI', header)
     worksheet299.write('B22', 'TOTAL', header)
     worksheet299.merge_range('A21:B21', 'RANK', header)
@@ -18018,7 +17992,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(16, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'E:\logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -18040,12 +18014,12 @@ if uploaded_file is not None:
     worksheetcover.set_column('G:G', 13, centerCover)
     worksheetcover.merge_range('A1:F3', 'DAFTAR NILAI', titleCover)
     worksheetcover.merge_range(
-        'A4:F5', 'PENILAIAN AKHIR SEMESTER', sub_titleCover)
+        'A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', 'SEMESTER 1 TAHUN 2022-2023', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
     worksheetcover.write('A19', 'NILAI STANDAR', sub_headerCover)
-    worksheetcover.merge_range('F8:G9', '10 SMA IPA', kelasCover)
+    worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
     worksheetcover.conditional_format(26, 0, 21, 3,
@@ -18058,7 +18032,7 @@ if uploaded_file is not None:
                                       {'type': 'no_errors', 'format': borderCover})
 
     # worksheet 530
-    worksheet530.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet530.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet530.set_column('A:A', 7, center)
     worksheet530.set_column('B:B', 6, center)
@@ -18068,9 +18042,9 @@ if uploaded_file is not None:
     worksheet530.set_column('F:F', 8.57, center)
     worksheet530.set_column('G:R', 5, center)
     worksheet530.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF POLSEK DEPOK', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF POLSEK DEPOK', title)
     worksheet530.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet530.write('A5', 'LOKASI', header)
     worksheet530.write('B5', 'TOTAL', header)
     worksheet530.merge_range('A4:B4', 'RANK', header)
@@ -18095,10 +18069,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet530.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF POLSEK DEPOK', title)
-    worksheet530.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF POLSEK DEPOK', title)
+    worksheet530.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet530.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet530.write('A22', 'LOKASI', header)
     worksheet530.write('B22', 'TOTAL', header)
     worksheet530.merge_range('A21:B21', 'RANK', header)
@@ -18123,7 +18097,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 531
-    worksheet531.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet531.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet531.set_column('A:A', 7, center)
     worksheet531.set_column('B:B', 6, center)
@@ -18133,9 +18107,9 @@ if uploaded_file is not None:
     worksheet531.set_column('F:F', 8.57, center)
     worksheet531.set_column('G:R', 5, center)
     worksheet531.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF DEPOK 1', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF DEPOK 1', title)
     worksheet531.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet531.write('A5', 'LOKASI', header)
     worksheet531.write('B5', 'TOTAL', header)
     worksheet531.merge_range('A4:B4', 'RANK', header)
@@ -18160,10 +18134,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet531.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF DEPOK 1', title)
-    worksheet531.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF DEPOK 1', title)
+    worksheet531.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet531.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet531.write('A22', 'LOKASI', header)
     worksheet531.write('B22', 'TOTAL', header)
     worksheet531.merge_range('A21:B21', 'RANK', header)
@@ -18188,7 +18162,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 532
-    worksheet532.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet532.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet532.set_column('A:A', 7, center)
     worksheet532.set_column('B:B', 6, center)
@@ -18198,9 +18172,9 @@ if uploaded_file is not None:
     worksheet532.set_column('F:F', 8.57, center)
     worksheet532.set_column('G:R', 5, center)
     worksheet532.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PROKLAMASI DEPOK 2', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PROKLAMASI DEPOK 2', title)
     worksheet532.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet532.write('A5', 'LOKASI', header)
     worksheet532.write('B5', 'TOTAL', header)
     worksheet532.merge_range('A4:B4', 'RANK', header)
@@ -18225,10 +18199,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet532.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PROKLAMASI DEPOK 2', title)
-    worksheet532.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PROKLAMASI DEPOK 2', title)
+    worksheet532.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet532.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet532.write('A22', 'LOKASI', header)
     worksheet532.write('B22', 'TOTAL', header)
     worksheet532.merge_range('A21:B21', 'RANK', header)
@@ -18253,7 +18227,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 533
-    worksheet533.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet533.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet533.set_column('A:A', 7, center)
     worksheet533.set_column('B:B', 6, center)
@@ -18263,9 +18237,9 @@ if uploaded_file is not None:
     worksheet533.set_column('F:F', 8.57, center)
     worksheet533.set_column('G:R', 5, center)
     worksheet533.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIMANGGIS', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIMANGGIS', title)
     worksheet533.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet533.write('A5', 'LOKASI', header)
     worksheet533.write('B5', 'TOTAL', header)
     worksheet533.merge_range('A4:B4', 'RANK', header)
@@ -18290,10 +18264,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet533.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIMANGGIS', title)
-    worksheet533.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIMANGGIS', title)
+    worksheet533.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet533.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet533.write('A22', 'LOKASI', header)
     worksheet533.write('B22', 'TOTAL', header)
     worksheet533.merge_range('A21:B21', 'RANK', header)
@@ -18318,7 +18292,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 534
-    worksheet534.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet534.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet534.set_column('A:A', 7, center)
     worksheet534.set_column('B:B', 6, center)
@@ -18328,9 +18302,9 @@ if uploaded_file is not None:
     worksheet534.set_column('F:F', 8.57, center)
     worksheet534.set_column('G:R', 5, center)
     worksheet534.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SAWANGAN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SAWANGAN', title)
     worksheet534.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet534.write('A5', 'LOKASI', header)
     worksheet534.write('B5', 'TOTAL', header)
     worksheet534.merge_range('A4:B4', 'RANK', header)
@@ -18355,10 +18329,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet534.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SAWANGAN', title)
-    worksheet534.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SAWANGAN', title)
+    worksheet534.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet534.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet534.write('A22', 'LOKASI', header)
     worksheet534.write('B22', 'TOTAL', header)
     worksheet534.merge_range('A21:B21', 'RANK', header)
@@ -18383,7 +18357,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 535
-    worksheet535.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet535.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet535.set_column('A:A', 7, center)
     worksheet535.set_column('B:B', 6, center)
@@ -18393,9 +18367,9 @@ if uploaded_file is not None:
     worksheet535.set_column('F:F', 8.57, center)
     worksheet535.set_column('G:R', 5, center)
     worksheet535.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BRIMOB', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BRIMOB', title)
     worksheet535.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet535.write('A5', 'LOKASI', header)
     worksheet535.write('B5', 'TOTAL', header)
     worksheet535.merge_range('A4:B4', 'RANK', header)
@@ -18420,10 +18394,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet535.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BRIMOB', title)
-    worksheet535.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BRIMOB', title)
+    worksheet535.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet535.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet535.write('A22', 'LOKASI', header)
     worksheet535.write('B22', 'TOTAL', header)
     worksheet535.merge_range('A21:B21', 'RANK', header)
@@ -18448,7 +18422,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 546
-    worksheet546.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet546.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet546.set_column('A:A', 7, center)
     worksheet546.set_column('B:B', 6, center)
@@ -18458,9 +18432,9 @@ if uploaded_file is not None:
     worksheet546.set_column('F:F', 8.57, center)
     worksheet546.set_column('G:R', 5, center)
     worksheet546.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PAJAJARAN (PPIB)', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PAJAJARAN (PPIB)', title)
     worksheet546.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet546.write('A5', 'LOKASI', header)
     worksheet546.write('B5', 'TOTAL', header)
     worksheet546.merge_range('A4:B4', 'RANK', header)
@@ -18485,10 +18459,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet546.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PAJAJARAN (PPIB)', title)
-    worksheet546.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PAJAJARAN (PPIB)', title)
+    worksheet546.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet546.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet546.write('A22', 'LOKASI', header)
     worksheet546.write('B22', 'TOTAL', header)
     worksheet546.merge_range('A21:B21', 'RANK', header)
@@ -18513,7 +18487,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 547
-    worksheet547.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet547.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet547.set_column('A:A', 7, center)
     worksheet547.set_column('B:B', 6, center)
@@ -18523,9 +18497,9 @@ if uploaded_file is not None:
     worksheet547.set_column('F:F', 8.57, center)
     worksheet547.set_column('G:R', 5, center)
     worksheet547.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SUKASARI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUKASARI', title)
     worksheet547.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet547.write('A5', 'LOKASI', header)
     worksheet547.write('B5', 'TOTAL', header)
     worksheet547.merge_range('A4:B4', 'RANK', header)
@@ -18550,10 +18524,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet547.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SUKASARI', title)
-    worksheet547.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SUKASARI', title)
+    worksheet547.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet547.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet547.write('A22', 'LOKASI', header)
     worksheet547.write('B22', 'TOTAL', header)
     worksheet547.merge_range('A21:B21', 'RANK', header)
@@ -18578,7 +18552,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 548
-    worksheet548.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet548.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet548.set_column('A:A', 7, center)
     worksheet548.set_column('B:B', 6, center)
@@ -18588,9 +18562,9 @@ if uploaded_file is not None:
     worksheet548.set_column('F:F', 8.57, center)
     worksheet548.set_column('G:R', 5, center)
     worksheet548.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF BUBULAK', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BUBULAK', title)
     worksheet548.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet548.write('A5', 'LOKASI', header)
     worksheet548.write('B5', 'TOTAL', header)
     worksheet548.merge_range('A4:B4', 'RANK', header)
@@ -18615,10 +18589,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet548.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF BUBULAK', title)
-    worksheet548.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF BUBULAK', title)
+    worksheet548.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet548.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet548.write('A22', 'LOKASI', header)
     worksheet548.write('B22', 'TOTAL', header)
     worksheet548.merge_range('A21:B21', 'RANK', header)
@@ -18643,7 +18617,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 549
-    worksheet549.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet549.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet549.set_column('A:A', 7, center)
     worksheet549.set_column('B:B', 6, center)
@@ -18653,9 +18627,9 @@ if uploaded_file is not None:
     worksheet549.set_column('F:F', 8.57, center)
     worksheet549.set_column('G:R', 5, center)
     worksheet549.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CITEUREUP', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CITEUREUP', title)
     worksheet549.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet549.write('A5', 'LOKASI', header)
     worksheet549.write('B5', 'TOTAL', header)
     worksheet549.merge_range('A4:B4', 'RANK', header)
@@ -18680,10 +18654,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet549.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CITEUREUP', title)
-    worksheet549.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CITEUREUP', title)
+    worksheet549.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet549.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet549.write('A22', 'LOKASI', header)
     worksheet549.write('B22', 'TOTAL', header)
     worksheet549.merge_range('A21:B21', 'RANK', header)
@@ -18708,7 +18682,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 556
-    worksheet556.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet556.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet556.set_column('A:A', 7, center)
     worksheet556.set_column('B:B', 6, center)
@@ -18718,9 +18692,9 @@ if uploaded_file is not None:
     worksheet556.set_column('F:F', 8.57, center)
     worksheet556.set_column('G:R', 5, center)
     worksheet556.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF YASMIN', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF YASMIN', title)
     worksheet556.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet556.write('A5', 'LOKASI', header)
     worksheet556.write('B5', 'TOTAL', header)
     worksheet556.merge_range('A4:B4', 'RANK', header)
@@ -18745,10 +18719,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet556.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF YASMIN', title)
-    worksheet556.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF YASMIN', title)
+    worksheet556.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet556.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet556.write('A22', 'LOKASI', header)
     worksheet556.write('B22', 'TOTAL', header)
     worksheet556.merge_range('A21:B21', 'RANK', header)
@@ -18773,7 +18747,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 557
-    worksheet557.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet557.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet557.set_column('A:A', 7, center)
     worksheet557.set_column('B:B', 6, center)
@@ -18783,9 +18757,9 @@ if uploaded_file is not None:
     worksheet557.set_column('F:F', 8.57, center)
     worksheet557.set_column('G:R', 5, center)
     worksheet557.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF YOGYA PLAZA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF YOGYA PLAZA', title)
     worksheet557.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet557.write('A5', 'LOKASI', header)
     worksheet557.write('B5', 'TOTAL', header)
     worksheet557.merge_range('A4:B4', 'RANK', header)
@@ -18810,10 +18784,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet557.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF YOGYA PLAZA', title)
-    worksheet557.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF YOGYA PLAZA', title)
+    worksheet557.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet557.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet557.write('A22', 'LOKASI', header)
     worksheet557.write('B22', 'TOTAL', header)
     worksheet557.merge_range('A21:B21', 'RANK', header)
@@ -18838,7 +18812,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 558
-    worksheet558.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet558.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet558.set_column('A:A', 7, center)
     worksheet558.set_column('B:B', 6, center)
@@ -18848,9 +18822,9 @@ if uploaded_file is not None:
     worksheet558.set_column('F:F', 8.57, center)
     worksheet558.set_column('G:R', 5, center)
     worksheet558.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PARUNG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PARUNG', title)
     worksheet558.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet558.write('A5', 'LOKASI', header)
     worksheet558.write('B5', 'TOTAL', header)
     worksheet558.merge_range('A4:B4', 'RANK', header)
@@ -18875,10 +18849,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet558.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PARUNG', title)
-    worksheet558.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PARUNG', title)
+    worksheet558.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet558.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet558.write('A22', 'LOKASI', header)
     worksheet558.write('B22', 'TOTAL', header)
     worksheet558.merge_range('A21:B21', 'RANK', header)
@@ -18903,7 +18877,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 575
-    worksheet575.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet575.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet575.set_column('A:A', 7, center)
     worksheet575.set_column('B:B', 6, center)
@@ -18913,9 +18887,9 @@ if uploaded_file is not None:
     worksheet575.set_column('F:F', 8.57, center)
     worksheet575.set_column('G:R', 5, center)
     worksheet575.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CINERE', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CINERE', title)
     worksheet575.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet575.write('A5', 'LOKASI', header)
     worksheet575.write('B5', 'TOTAL', header)
     worksheet575.merge_range('A4:B4', 'RANK', header)
@@ -18940,10 +18914,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet575.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CINERE', title)
-    worksheet575.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CINERE', title)
+    worksheet575.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet575.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet575.write('A22', 'LOKASI', header)
     worksheet575.write('B22', 'TOTAL', header)
     worksheet575.merge_range('A21:B21', 'RANK', header)
@@ -18968,7 +18942,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 576
-    worksheet576.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet576.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet576.set_column('A:A', 7, center)
     worksheet576.set_column('B:B', 6, center)
@@ -18978,9 +18952,9 @@ if uploaded_file is not None:
     worksheet576.set_column('F:F', 8.57, center)
     worksheet576.set_column('G:R', 5, center)
     worksheet576.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF CIBINONG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIBINONG', title)
     worksheet576.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet576.write('A5', 'LOKASI', header)
     worksheet576.write('B5', 'TOTAL', header)
     worksheet576.merge_range('A4:B4', 'RANK', header)
@@ -19005,10 +18979,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet576.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF CIBINONG', title)
-    worksheet576.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF CIBINONG', title)
+    worksheet576.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet576.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet576.write('A22', 'LOKASI', header)
     worksheet576.write('B22', 'TOTAL', header)
     worksheet576.merge_range('A21:B21', 'RANK', header)
@@ -19032,7 +19006,7 @@ if uploaded_file is not None:
     worksheet576.conditional_format(22, 0, row576+21, 15,
                                     {'type': 'no_errors', 'format': border})
     # worksheet 577
-    worksheet577.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet577.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet577.set_column('A:A', 7, center)
     worksheet577.set_column('B:B', 6, center)
@@ -19042,9 +19016,9 @@ if uploaded_file is not None:
     worksheet577.set_column('F:F', 8.57, center)
     worksheet577.set_column('G:R', 5, center)
     worksheet577.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF VETERAN (RUMAH SAKIT)', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF VETERAN (RUMAH SAKIT)', title)
     worksheet577.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet577.write('A5', 'LOKASI', header)
     worksheet577.write('B5', 'TOTAL', header)
     worksheet577.merge_range('A4:B4', 'RANK', header)
@@ -19069,10 +19043,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet577.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF VETERAN (RUMAH SAKIT)', title)
-    worksheet577.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF VETERAN (RUMAH SAKIT)', title)
+    worksheet577.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet577.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet577.write('A22', 'LOKASI', header)
     worksheet577.write('B22', 'TOTAL', header)
     worksheet577.merge_range('A21:B21', 'RANK', header)
@@ -19097,7 +19071,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 578
-    worksheet578.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet578.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet578.set_column('A:A', 7, center)
     worksheet578.set_column('B:B', 6, center)
@@ -19107,9 +19081,9 @@ if uploaded_file is not None:
     worksheet578.set_column('F:F', 8.57, center)
     worksheet578.set_column('G:R', 5, center)
     worksheet578.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MARTADINATA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MARTADINATA', title)
     worksheet578.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet578.write('A5', 'LOKASI', header)
     worksheet578.write('B5', 'TOTAL', header)
     worksheet578.merge_range('A4:B4', 'RANK', header)
@@ -19134,10 +19108,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet578.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MARTADINATA', title)
-    worksheet578.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MARTADINATA', title)
+    worksheet578.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet578.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet578.write('A22', 'LOKASI', header)
     worksheet578.write('B22', 'TOTAL', header)
     worksheet578.merge_range('A21:B21', 'RANK', header)
@@ -19162,7 +19136,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 588
-    worksheet588.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet588.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet588.set_column('A:A', 7, center)
     worksheet588.set_column('B:B', 6, center)
@@ -19172,9 +19146,9 @@ if uploaded_file is not None:
     worksheet588.set_column('F:F', 8.57, center)
     worksheet588.set_column('G:R', 5, center)
     worksheet588.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF MAHARAJA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MAHARAJA', title)
     worksheet588.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet588.write('A5', 'LOKASI', header)
     worksheet588.write('B5', 'TOTAL', header)
     worksheet588.merge_range('A4:B4', 'RANK', header)
@@ -19199,10 +19173,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet588.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF MAHARAJA', title)
-    worksheet588.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF MAHARAJA', title)
+    worksheet588.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet588.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet588.write('A22', 'LOKASI', header)
     worksheet588.write('B22', 'TOTAL', header)
     worksheet588.merge_range('A21:B21', 'RANK', header)
@@ -19227,7 +19201,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 589
-    worksheet589.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet589.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet589.set_column('A:A', 7, center)
     worksheet589.set_column('B:B', 6, center)
@@ -19237,9 +19211,9 @@ if uploaded_file is not None:
     worksheet589.set_column('F:F', 8.57, center)
     worksheet589.set_column('G:R', 5, center)
     worksheet589.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF WARUNG JAMBU', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF WARUNG JAMBU', title)
     worksheet589.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet589.write('A5', 'LOKASI', header)
     worksheet589.write('B5', 'TOTAL', header)
     worksheet589.merge_range('A4:B4', 'RANK', header)
@@ -19264,10 +19238,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet589.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF WARUNG JAMBU', title)
-    worksheet589.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF WARUNG JAMBU', title)
+    worksheet589.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet589.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet589.write('A22', 'LOKASI', header)
     worksheet589.write('B22', 'TOTAL', header)
     worksheet589.merge_range('A21:B21', 'RANK', header)
@@ -19292,7 +19266,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 594
-    worksheet594.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet594.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet594.set_column('A:A', 7, center)
     worksheet594.set_column('B:B', 6, center)
@@ -19302,9 +19276,9 @@ if uploaded_file is not None:
     worksheet594.set_column('F:F', 8.57, center)
     worksheet594.set_column('G:R', 5, center)
     worksheet594.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF PEMDA CIBINONG', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PEMDA CIBINONG', title)
     worksheet594.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet594.write('A5', 'LOKASI', header)
     worksheet594.write('B5', 'TOTAL', header)
     worksheet594.merge_range('A4:B4', 'RANK', header)
@@ -19329,10 +19303,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet594.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF PEMDA CIBINONG', title)
-    worksheet594.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF PEMDA CIBINONG', title)
+    worksheet594.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet594.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet594.write('A22', 'LOKASI', header)
     worksheet594.write('B22', 'TOTAL', header)
     worksheet594.merge_range('A21:B21', 'RANK', header)
@@ -19357,7 +19331,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 661
-    worksheet661.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet661.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet661.set_column('A:A', 7, center)
     worksheet661.set_column('B:B', 6, center)
@@ -19367,9 +19341,9 @@ if uploaded_file is not None:
     worksheet661.set_column('F:F', 8.57, center)
     worksheet661.set_column('G:R', 5, center)
     worksheet661.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF GAJAH MADA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GAJAH MADA', title)
     worksheet661.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet661.write('A5', 'LOKASI', header)
     worksheet661.write('B5', 'TOTAL', header)
     worksheet661.merge_range('A4:B4', 'RANK', header)
@@ -19394,10 +19368,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet661.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF GAJAH MADA', title)
-    worksheet661.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF GAJAH MADA', title)
+    worksheet661.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet661.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet661.write('A22', 'LOKASI', header)
     worksheet661.write('B22', 'TOTAL', header)
     worksheet661.merge_range('A21:B21', 'RANK', header)
@@ -19422,7 +19396,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 662
-    worksheet662.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet662.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet662.set_column('A:A', 7, center)
     worksheet662.set_column('B:B', 6, center)
@@ -19432,9 +19406,9 @@ if uploaded_file is not None:
     worksheet662.set_column('F:F', 8.57, center)
     worksheet662.set_column('G:R', 5, center)
     worksheet662.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF LOLONG BELANTI', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF LOLONG BELANTI', title)
     worksheet662.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet662.write('A5', 'LOKASI', header)
     worksheet662.write('B5', 'TOTAL', header)
     worksheet662.merge_range('A4:B4', 'RANK', header)
@@ -19459,10 +19433,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet662.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF LOLONG BELANTI', title)
-    worksheet662.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF LOLONG BELANTI', title)
+    worksheet662.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet662.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet662.write('A22', 'LOKASI', header)
     worksheet662.write('B22', 'TOTAL', header)
     worksheet662.merge_range('A21:B21', 'RANK', header)
@@ -19487,7 +19461,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 663
-    worksheet663.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet663.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet663.set_column('A:A', 7, center)
     worksheet663.set_column('B:B', 6, center)
@@ -19497,9 +19471,9 @@ if uploaded_file is not None:
     worksheet663.set_column('F:F', 8.57, center)
     worksheet663.set_column('G:R', 5, center)
     worksheet663.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF SOETOMO', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SOETOMO', title)
     worksheet663.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet663.write('A5', 'LOKASI', header)
     worksheet663.write('B5', 'TOTAL', header)
     worksheet663.merge_range('A4:B4', 'RANK', header)
@@ -19524,10 +19498,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet663.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF SOETOMO', title)
-    worksheet663.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF SOETOMO', title)
+    worksheet663.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet663.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet663.write('A22', 'LOKASI', header)
     worksheet663.write('B22', 'TOTAL', header)
     worksheet663.merge_range('A21:B21', 'RANK', header)
@@ -19552,7 +19526,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     # worksheet 664
-    worksheet664.insert_image('A1', r'E:\logo resmi nf resize.jpg')
+    worksheet664.insert_image('A1', r'logo resmi nf resize.jpg')
 
     worksheet664.set_column('A:A', 7, center)
     worksheet664.set_column('B:B', 6, center)
@@ -19562,9 +19536,9 @@ if uploaded_file is not None:
     worksheet664.set_column('F:F', 8.57, center)
     worksheet664.set_column('G:R', 5, center)
     worksheet664.merge_range(
-        'A1:R1', '10 SISWA KELAS 10 SMA IPA PERINGKAT TERTINGGI NF TAN MALAKA', title)
+        'A1:R1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TAN MALAKA', title)
     worksheet664.merge_range(
-        'A2:R2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:R2', fr'{penilaian} - {semester} TAHUN {tahun}23', sub_title)
     worksheet664.write('A5', 'LOKASI', header)
     worksheet664.write('B5', 'TOTAL', header)
     worksheet664.merge_range('A4:B4', 'RANK', header)
@@ -19589,10 +19563,10 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet664.merge_range(
-        'A17:R17', 'KELAS 10 SMA IPA - LOKASI NF TAN MALAKA', title)
-    worksheet664.merge_range('A18:R18', 'PENILAIAN AKHIR SEMESTER', subTitle)
+        'A17:R17', fr'KELAS {kelas} - LOKASI NF TAN MALAKA', title)
+    worksheet664.merge_range('A18:R18', fr'{penilaian}', subTitle)
     worksheet664.merge_range(
-        'A19:R19', 'SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A19:R19', fr'{semester} TAHUN {tahun}23', sub_title)
     worksheet664.write('A22', 'LOKASI', header)
     worksheet664.write('B22', 'TOTAL', header)
     worksheet664.merge_range('A21:B21', 'RANK', header)
