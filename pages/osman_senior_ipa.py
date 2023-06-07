@@ -1281,7 +1281,10 @@ if uploaded_file is not None:
     wb.save(file_path)
 
     st.success(
-        "File telah disimpan")
+        "File siap diunduh!")
+
+    st.warning(
+        "Jangan lupa untuk membuka file dan save")
 
     # Tombol unduh file
     with open(file_path, "rb") as f:
