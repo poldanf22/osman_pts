@@ -43,7 +43,7 @@ col8 = st.container()
 with col8:
     PENILAIAN = st.selectbox(
         "PENILAIAN",
-        ("--Pilih Penilaian--", "PENILAIAN TENGAH SEMESTER", "PENILAIAN AKHIR SEMESTER", "PENILAIAN AKHIR TAHUN"))
+        ("--Pilih Penilaian--", "PENILAIAN TENGAH SEMESTER", "PENILAIAN AKHIR SEMESTER", "PENILAIAN AKHIR TAHUN", "TES EVALUASI"))
 
 col9 = st.container()
 
