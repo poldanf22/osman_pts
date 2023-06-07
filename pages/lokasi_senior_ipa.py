@@ -886,6 +886,9 @@ if uploaded_file is not None:
     file_name = f"{kelas}_{penilaian}_{semester}_lokasi_101_160.xlsx"
     file_path = tempfile.gettempdir() + '/' + file_name
 
+    # Menyimpan file Excel
+    writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
+
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
                        startrow=10,
@@ -6540,6 +6543,9 @@ if uploaded_file is not None:
     # Path file hasil penyimpanan
     file_name = f"{kelas}_{penilaian}_{semester}_lokasi_162_236.xlsx"
     file_path = tempfile.gettempdir() + '/' + file_name
+
+    # Menyimpan file Excel
+    writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
@@ -12204,6 +12210,9 @@ if uploaded_file is not None:
     file_name = f"{kelas}_{penilaian}_{semester}_lokasi_237_299.xlsx"
     file_path = tempfile.gettempdir() + '/' + file_name
 
+    # Menyimpan file Excel
+    writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
+
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
                        startrow=10,
@@ -17513,6 +17522,9 @@ if uploaded_file is not None:
     # Path file hasil penyimpanan
     file_name = f"{kelas}_{penilaian}_{semester}_lokasi_depok_padang.xlsx"
     file_path = tempfile.gettempdir() + '/' + file_name
+
+    # Menyimpan file Excel
+    writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_benar.to_excel(writer, sheet_name='cover',
