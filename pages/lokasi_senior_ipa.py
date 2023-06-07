@@ -1870,7 +1870,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(15, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
