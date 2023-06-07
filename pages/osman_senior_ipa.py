@@ -1283,11 +1283,11 @@ if uploaded_file is not None:
     st.success(
         "File siap diunduh!")
 
-    st.warning(
-        "Jangan lupa untuk membuka file dan save")
-
     # Tombol unduh file
     with open(file_path, "rb") as f:
         bytes_data = f.read()
     st.download_button(label="Unduh File", data=bytes_data,
                        file_name=path_file)
+
+    st.warning(
+        "Jangan lupa untuk membuka file unduhan dan save")
