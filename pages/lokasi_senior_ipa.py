@@ -17,6 +17,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+st.info("Jika melihat pesan error di paling bawah, silahkan refresh")
 st.title("Olahan untuk Lokasi")
 st.header("SMA, PPLS, RONIN IPA")
 
