@@ -1,8 +1,6 @@
 import streamlit as st
-import pandas as pd
 import openpyxl
 from openpyxl.styles import Font, PatternFill
-import os
 import tempfile
 from PIL import Image
 
