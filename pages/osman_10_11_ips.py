@@ -21,7 +21,7 @@ st.markdown("""
 image = Image.open('logo resmi nf resize.png')
 st.image(image)
 
-st.title("Olah Nilai Standar")
+st.title("Olah Nilai Standar K13")
 st.header("10-11 SMA IPS")
 
 col6 = st.container()
@@ -50,7 +50,7 @@ col9 = st.container()
 with col9:
     KURIKULUM = st.selectbox(
         "KURIKULUM",
-        ("--Pilih Kurikulum--", "K13", "KM"))
+        ("--Pilih Kurikulum--", "K13"))
 
 TAHUN = st.text_input("Masukkan Tahun Ajaran", placeholder="contoh: 2022-2023")
 

@@ -21,7 +21,7 @@ st.markdown("""
 image = Image.open('logo resmi nf resize.png')
 st.image(image)
 
-st.title("Olah Nilai Standar")
+st.title("Olah Nilai Standar K13")
 
 # url = 'https://docs.google.com/document/d/1xjkgcq86pMfLieqwBGTmV0kB6mWO_R1L7042razShlk/edit?usp=sharing'
 
@@ -57,7 +57,7 @@ col9 = st.container()
 with col9:
     KURIKULUM = st.selectbox(
         "KURIKULUM",
-        ("--Pilih Kurikulum--", "K13", "KM"))
+        ("--Pilih Kurikulum--", "K13"))
 
 TAHUN = st.text_input("Masukkan Tahun Ajaran", placeholder="contoh: 2022-2023")
 

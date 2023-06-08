@@ -47,7 +47,7 @@ col9 = st.container()
 with col9:
     KURIKULUM = st.selectbox(
         "KURIKULUM",
-        ("--Pilih Kurikulum--", "K13", "KM"))
+        ("--Pilih Kurikulum--", "K13"))
 
 TAHUN = st.text_input("Masukkan Tahun Ajaran", value="",
                       placeholder="contoh: 2022-2023")
