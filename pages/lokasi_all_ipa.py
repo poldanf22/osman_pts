@@ -1868,6 +1868,7 @@ if uploaded_file is not None:
         'right': 1})
 
     # worksheet cover
+    # sampai baris 16, dari kolom 1, mulai dari baris 10, sampai kolom 3
     worksheetcover.conditional_format(15, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 

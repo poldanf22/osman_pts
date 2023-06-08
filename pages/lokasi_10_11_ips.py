@@ -1903,7 +1903,7 @@ if uploaded_file is not None:
         'right': 1})
 
     # worksheet cover
-    # sampai baris 19, dari kolom 1, mulai dari baris 10, sampai kolom 3
+    # sampai baris 19, dari kolom 1, mulai dari baris 12, sampai kolom 4
     worksheetcover.conditional_format(18, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
@@ -1919,7 +1919,7 @@ if uploaded_file is not None:
     worksheetcover.merge_range('D22:D23', 'TERTINGGI', bodyCover)
     worksheetcover.write('F13', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('F22:F23', 'JUMLAH', sub_header1Cover)
-    worksheetcover.merge_range('F25:F27', 'PESERTA', sub_header1Cover)
+    worksheetcover.merge_range('F25:F26', 'PESERTA', sub_header1Cover)
     worksheetcover.write('G13', 'JUMLAH', bodyCover)
     worksheetcover.set_column('A:A', 25.71, centerCover)
     worksheetcover.set_column('B:B', 15, centerCover)
@@ -1936,7 +1936,7 @@ if uploaded_file is not None:
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
-    # sampai baris 31, dari kolom 1, mulai dari baris 10, sampai kolom 3
+    # sampai baris 31, dari kolom 1, mulai dari baris 22, sampai kolom 4
     worksheetcover.conditional_format(30, 0, 21, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
