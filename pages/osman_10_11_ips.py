@@ -59,37 +59,37 @@ col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 with col1:
     MTK = st.selectbox(
         "JML. SOAL MAT.",
-        (20, 25, 30, 35, 40, 45))
+        (15, 20, 25, 30, 35, 40, 45, 50))
 
 with col2:
     IND = st.selectbox(
         "JML. SOAL IND.",
-        (20, 25, 30, 35, 40, 45))
+        (15, 20, 25, 30, 35, 40, 45, 50))
 
 with col3:
     ENG = st.selectbox(
         "JML. SOAL ENG.",
-        (20, 25, 30, 35, 40, 45))
+        (15, 20, 25, 30, 35, 40, 45, 50))
 
 with col4:
     SEJ = st.selectbox(
         "JML. SOAL SEJ.",
-        (20, 25, 30, 35, 40, 45))
+        (15, 20, 25, 30, 35, 40, 45, 50))
 
 with col5:
     GEO = st.selectbox(
         "JML. SOAL GEO.",
-        (20, 25, 30, 35, 40, 45))
+        (15, 20, 25, 30, 35, 40, 45, 50))
 
 with col6:
     EKO = st.selectbox(
         "JML. SOAL EKO.",
-        (20, 25, 30, 35, 40, 45))
+        (15, 20, 25, 30, 35, 40, 45, 50))
 
 with col7:
     SOS = st.selectbox(
         "JML. SOAL SOS.",
-        (20, 25, 30, 35, 40, 45))
+        (15, 20, 25, 30, 35, 40, 45, 50))
 
 
 JML_SOAL_MAT = MTK
