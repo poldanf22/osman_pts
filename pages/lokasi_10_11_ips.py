@@ -1904,7 +1904,7 @@ if uploaded_file is not None:
 
     # worksheet cover
     # sampai baris 19, dari kolom 1, mulai dari baris 10, sampai kolom 3
-    worksheetcover.conditional_format(15, 0, 11, 3,
+    worksheetcover.conditional_format(18, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
     worksheetcover.insert_image('F1', r'logo nf.jpg')
@@ -1937,13 +1937,13 @@ if uploaded_file is not None:
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
     # sampai baris 31, dari kolom 1, mulai dari baris 10, sampai kolom 3
-    worksheetcover.conditional_format(25, 0, 21, 3,
+    worksheetcover.conditional_format(30, 0, 21, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(16, 6, 13, 5,
+    worksheetcover.conditional_format(19, 6, 13, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(21, 5, 21, 5,
+    worksheetcover.conditional_format(23, 5, 21, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
     # worksheet 101
