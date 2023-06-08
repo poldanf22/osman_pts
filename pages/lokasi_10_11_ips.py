@@ -1943,7 +1943,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(19, 6, 13, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(22, 5, 21, 5,
+    worksheetcover.conditional_format(23, 5, 23, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
     # worksheet 101

@@ -157,6 +157,7 @@ if uploaded_file is not None:
 
     ws['AB{}'.format(r)] = "=ROUND(MAX(AB2:AB{}),2)".format(q)
     ws['AC{}'.format(r)] = "=MAX(AC2:AC{})".format(q)
+    ws['AD{}'.format(r)] = "=MAX(AD2:AD{})".format(q)
 
     ws['G{}'.format(u)] = "=MIN(G2:G{})".format(q)
     ws['H{}'.format(u)] = "=MIN(H2:H{})".format(q)
