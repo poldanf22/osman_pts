@@ -6012,64 +6012,63 @@ if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
 
     # 89
-    r = df.shape[0]-4
+    r = df.shape[0]-5
     # 90
-    s = df.shape[0]-3
+    s = df.shape[0]-4
     # 91
-    t = df.shape[0]-2
+    t = df.shape[0]-3
     # 92
-    u = df.shape[0]-1
+    u = df.shape[0]-2
 
     # JUMLAH PESERTA
     peserta = df.iloc[r, 23]
 
     # rata-rata jumlah benar
-    rata_mat = df.iloc[r, 6]
-    rata_ind = df.iloc[r, 7]
-    rata_eng = df.iloc[r, 8]
-    rata_ipa = df.iloc[r, 9]
-    rata_ips = df.iloc[r, 10]
-    rata_jml = df.iloc[r, 11]
+    rata_mat = df.iloc[r, 156]
+    rata_ind = df.iloc[r, 157]
+    rata_eng = df.iloc[r, 158]
+    rata_ipa = df.iloc[r, 159]
+    rata_ips = df.iloc[r, 160]
+    rata_jml = df.iloc[r, 161]
 
     # rata-rata nilai standar
-    rata_Smat = df.iloc[t, 17]
-    rata_Sind = df.iloc[t, 18]
-    rata_Seng = df.iloc[t, 19]
-    rata_Sipa = df.iloc[t, 20]
-    rata_Sips = df.iloc[t, 21]
-    rata_Sjml = df.iloc[t, 22]
+    rata_Smat = df.iloc[t, 167]
+    rata_Sind = df.iloc[t, 168]
+    rata_Seng = df.iloc[t, 169]
+    rata_Sipa = df.iloc[t, 170]
+    rata_Sips = df.iloc[t, 171]
+    rata_Sjml = df.iloc[t, 172]
 
-    # max jumlah benar
-    max_mat = df.iloc[t, 6]
-    max_ind = df.iloc[t, 7]
-    max_eng = df.iloc[t, 8]
-    max_ipa = df.iloc[t, 9]
-    max_ips = df.iloc[t, 10]
-    max_jml = df.iloc[t, 11]
+    max_mat = df.iloc[t, 156]
+    max_ind = df.iloc[t, 157]
+    max_eng = df.iloc[t, 158]
+    max_ipa = df.iloc[t, 159]
+    max_ips = df.iloc[t, 160]
+    max_jml = df.iloc[t, 161]
 
     # max nilai standar
-    max_Smat = df.iloc[r, 17]
-    max_Sind = df.iloc[r, 18]
-    max_Seng = df.iloc[r, 19]
-    max_Sipa = df.iloc[r, 20]
-    max_Sips = df.iloc[r, 21]
-    max_Sjml = df.iloc[r, 22]
+    max_Smat = df.iloc[r, 167]
+    max_Sind = df.iloc[r, 168]
+    max_Seng = df.iloc[r, 169]
+    max_Sipa = df.iloc[r, 170]
+    max_Sips = df.iloc[r, 171]
+    max_Sjml = df.iloc[r, 172]
 
     # min jumlah benar
-    min_mat = df.iloc[u, 6]
-    min_ind = df.iloc[u, 7]
-    min_eng = df.iloc[u, 8]
-    min_ipa = df.iloc[u, 9]
-    min_ips = df.iloc[u, 10]
-    min_jml = df.iloc[u, 11]
+    min_mat = df.iloc[u, 156]
+    min_ind = df.iloc[u, 157]
+    min_eng = df.iloc[u, 158]
+    min_ipa = df.iloc[u, 159]
+    min_ips = df.iloc[u, 160]
+    min_jml = df.iloc[u, 161]
 
     # min nilai standar
-    min_Smat = df.iloc[s, 17]
-    min_Sind = df.iloc[s, 18]
-    min_Seng = df.iloc[s, 19]
-    min_Sipa = df.iloc[s, 20]
-    min_Sips = df.iloc[s, 21]
-    min_Sjml = df.iloc[s, 22]
+    min_Smat = df.iloc[s, 167]
+    min_Sind = df.iloc[s, 168]
+    min_Seng = df.iloc[s, 169]
+    min_Sipa = df.iloc[s, 170]
+    min_Sips = df.iloc[s, 171]
+    min_Sjml = df.iloc[s, 172]
 
     data_jml_benar = {'BIDANG STUDI': ['MATEMATIKA (MAT)', 'B. INDONESIA (IND)', 'B. INGGRIS (ENG)', 'IPA', 'IPS', 'JUMLAH (JML)'],
                       'TERENDAH': [min_mat, min_ind, min_eng, min_ipa, min_ips, min_jml],
@@ -7802,7 +7801,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(16, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'logo resmi nf.png')
+    worksheetcover.insert_image('F1', r'logo nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -11928,64 +11927,63 @@ if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
 
     # 89
-    r = df.shape[0]-4
+    r = df.shape[0]-5
     # 90
-    s = df.shape[0]-3
+    s = df.shape[0]-4
     # 91
-    t = df.shape[0]-2
+    t = df.shape[0]-3
     # 92
-    u = df.shape[0]-1
+    u = df.shape[0]-2
 
     # JUMLAH PESERTA
     peserta = df.iloc[r, 23]
 
     # rata-rata jumlah benar
-    rata_mat = df.iloc[r, 6]
-    rata_ind = df.iloc[r, 7]
-    rata_eng = df.iloc[r, 8]
-    rata_ipa = df.iloc[r, 9]
-    rata_ips = df.iloc[r, 10]
-    rata_jml = df.iloc[r, 11]
+    rata_mat = df.iloc[r, 156]
+    rata_ind = df.iloc[r, 157]
+    rata_eng = df.iloc[r, 158]
+    rata_ipa = df.iloc[r, 159]
+    rata_ips = df.iloc[r, 160]
+    rata_jml = df.iloc[r, 161]
 
     # rata-rata nilai standar
-    rata_Smat = df.iloc[t, 17]
-    rata_Sind = df.iloc[t, 18]
-    rata_Seng = df.iloc[t, 19]
-    rata_Sipa = df.iloc[t, 20]
-    rata_Sips = df.iloc[t, 21]
-    rata_Sjml = df.iloc[t, 22]
+    rata_Smat = df.iloc[t, 167]
+    rata_Sind = df.iloc[t, 168]
+    rata_Seng = df.iloc[t, 169]
+    rata_Sipa = df.iloc[t, 170]
+    rata_Sips = df.iloc[t, 171]
+    rata_Sjml = df.iloc[t, 172]
 
-    # max jumlah benar
-    max_mat = df.iloc[t, 6]
-    max_ind = df.iloc[t, 7]
-    max_eng = df.iloc[t, 8]
-    max_ipa = df.iloc[t, 9]
-    max_ips = df.iloc[t, 10]
-    max_jml = df.iloc[t, 11]
+    max_mat = df.iloc[t, 156]
+    max_ind = df.iloc[t, 157]
+    max_eng = df.iloc[t, 158]
+    max_ipa = df.iloc[t, 159]
+    max_ips = df.iloc[t, 160]
+    max_jml = df.iloc[t, 161]
 
     # max nilai standar
-    max_Smat = df.iloc[r, 17]
-    max_Sind = df.iloc[r, 18]
-    max_Seng = df.iloc[r, 19]
-    max_Sipa = df.iloc[r, 20]
-    max_Sips = df.iloc[r, 21]
-    max_Sjml = df.iloc[r, 22]
+    max_Smat = df.iloc[r, 167]
+    max_Sind = df.iloc[r, 168]
+    max_Seng = df.iloc[r, 169]
+    max_Sipa = df.iloc[r, 170]
+    max_Sips = df.iloc[r, 171]
+    max_Sjml = df.iloc[r, 172]
 
     # min jumlah benar
-    min_mat = df.iloc[u, 6]
-    min_ind = df.iloc[u, 7]
-    min_eng = df.iloc[u, 8]
-    min_ipa = df.iloc[u, 9]
-    min_ips = df.iloc[u, 10]
-    min_jml = df.iloc[u, 11]
+    min_mat = df.iloc[u, 156]
+    min_ind = df.iloc[u, 157]
+    min_eng = df.iloc[u, 158]
+    min_ipa = df.iloc[u, 159]
+    min_ips = df.iloc[u, 160]
+    min_jml = df.iloc[u, 161]
 
     # min nilai standar
-    min_Smat = df.iloc[s, 17]
-    min_Sind = df.iloc[s, 18]
-    min_Seng = df.iloc[s, 19]
-    min_Sipa = df.iloc[s, 20]
-    min_Sips = df.iloc[s, 21]
-    min_Sjml = df.iloc[s, 22]
+    min_Smat = df.iloc[s, 167]
+    min_Sind = df.iloc[s, 168]
+    min_Seng = df.iloc[s, 169]
+    min_Sipa = df.iloc[s, 170]
+    min_Sips = df.iloc[s, 171]
+    min_Sjml = df.iloc[s, 172]
 
     data_jml_benar = {'BIDANG STUDI': ['MATEMATIKA (MAT)', 'B. INDONESIA (IND)', 'B. INGGRIS (ENG)', 'IPA', 'IPS', 'JUMLAH (JML)'],
                       'TERENDAH': [min_mat, min_ind, min_eng, min_ipa, min_ips, min_jml],
@@ -13718,7 +13716,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(16, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'logo resmi nf.png')
+    worksheetcover.insert_image('F1', r'logo nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -17844,64 +17842,63 @@ if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
 
     # 89
-    r = df.shape[0]-4
+    r = df.shape[0]-5
     # 90
-    s = df.shape[0]-3
+    s = df.shape[0]-4
     # 91
-    t = df.shape[0]-2
+    t = df.shape[0]-3
     # 92
-    u = df.shape[0]-1
+    u = df.shape[0]-2
 
     # JUMLAH PESERTA
     peserta = df.iloc[r, 23]
 
     # rata-rata jumlah benar
-    rata_mat = df.iloc[r, 6]
-    rata_ind = df.iloc[r, 7]
-    rata_eng = df.iloc[r, 8]
-    rata_ipa = df.iloc[r, 9]
-    rata_ips = df.iloc[r, 10]
-    rata_jml = df.iloc[r, 11]
+    rata_mat = df.iloc[r, 156]
+    rata_ind = df.iloc[r, 157]
+    rata_eng = df.iloc[r, 158]
+    rata_ipa = df.iloc[r, 159]
+    rata_ips = df.iloc[r, 160]
+    rata_jml = df.iloc[r, 161]
 
     # rata-rata nilai standar
-    rata_Smat = df.iloc[t, 17]
-    rata_Sind = df.iloc[t, 18]
-    rata_Seng = df.iloc[t, 19]
-    rata_Sipa = df.iloc[t, 20]
-    rata_Sips = df.iloc[t, 21]
-    rata_Sjml = df.iloc[t, 22]
+    rata_Smat = df.iloc[t, 167]
+    rata_Sind = df.iloc[t, 168]
+    rata_Seng = df.iloc[t, 169]
+    rata_Sipa = df.iloc[t, 170]
+    rata_Sips = df.iloc[t, 171]
+    rata_Sjml = df.iloc[t, 172]
 
-    # max jumlah benar
-    max_mat = df.iloc[t, 6]
-    max_ind = df.iloc[t, 7]
-    max_eng = df.iloc[t, 8]
-    max_ipa = df.iloc[t, 9]
-    max_ips = df.iloc[t, 10]
-    max_jml = df.iloc[t, 11]
+    max_mat = df.iloc[t, 156]
+    max_ind = df.iloc[t, 157]
+    max_eng = df.iloc[t, 158]
+    max_ipa = df.iloc[t, 159]
+    max_ips = df.iloc[t, 160]
+    max_jml = df.iloc[t, 161]
 
     # max nilai standar
-    max_Smat = df.iloc[r, 17]
-    max_Sind = df.iloc[r, 18]
-    max_Seng = df.iloc[r, 19]
-    max_Sipa = df.iloc[r, 20]
-    max_Sips = df.iloc[r, 21]
-    max_Sjml = df.iloc[r, 22]
+    max_Smat = df.iloc[r, 167]
+    max_Sind = df.iloc[r, 168]
+    max_Seng = df.iloc[r, 169]
+    max_Sipa = df.iloc[r, 170]
+    max_Sips = df.iloc[r, 171]
+    max_Sjml = df.iloc[r, 172]
 
     # min jumlah benar
-    min_mat = df.iloc[u, 6]
-    min_ind = df.iloc[u, 7]
-    min_eng = df.iloc[u, 8]
-    min_ipa = df.iloc[u, 9]
-    min_ips = df.iloc[u, 10]
-    min_jml = df.iloc[u, 11]
+    min_mat = df.iloc[u, 156]
+    min_ind = df.iloc[u, 157]
+    min_eng = df.iloc[u, 158]
+    min_ipa = df.iloc[u, 159]
+    min_ips = df.iloc[u, 160]
+    min_jml = df.iloc[u, 161]
 
     # min nilai standar
-    min_Smat = df.iloc[s, 17]
-    min_Sind = df.iloc[s, 18]
-    min_Seng = df.iloc[s, 19]
-    min_Sipa = df.iloc[s, 20]
-    min_Sips = df.iloc[s, 21]
-    min_Sjml = df.iloc[s, 22]
+    min_Smat = df.iloc[s, 167]
+    min_Sind = df.iloc[s, 168]
+    min_Seng = df.iloc[s, 169]
+    min_Sipa = df.iloc[s, 170]
+    min_Sips = df.iloc[s, 171]
+    min_Sjml = df.iloc[s, 172]
 
     data_jml_benar = {'BIDANG STUDI': ['MATEMATIKA (MAT)', 'B. INDONESIA (IND)', 'B. INGGRIS (ENG)', 'IPA', 'IPS', 'JUMLAH (JML)'],
                       'TERENDAH': [min_mat, min_ind, min_eng, min_ipa, min_ips, min_jml],
@@ -18724,7 +18721,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(16, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'logo resmi nf.png')
+    worksheetcover.insert_image('F1', r'logo nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
