@@ -863,16 +863,16 @@ if uploaded_file is not None:
 	row160_10=sort160_10.shape[0]
 	row160=sort160.shape[0]
 
-	# Create a Pandas Excel writer using XlsxWriter as the engine.
-	 # Path file hasil penyimpanan
-    file_name = f"{kelas}_{penilaian}_{semester}_lokasi_101_160.xlsx"
-    file_path = tempfile.gettempdir() + '/' + file_name
+    # Create a Pandas Excel writer using XlsxWriter as the engine.
+    # Path file hasil penyimpanan
+file_name = f"{kelas}_{penilaian}_{semester}_lokasi_101_160.xlsx"
+file_path = tempfile.gettempdir() + '/' + file_name
 
     # Menyimpan file Excel
-    writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
+writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
 
 	# Convert the dataframe to an XlsxWriter Excel object cover.
-	jml_benar.to_excel(writer, sheet_name='cover',
+jml_benar.to_excel(writer, sheet_name='cover',
 	                   startrow = 10,
 	                   startcol = 0,
 	                   index = False,
