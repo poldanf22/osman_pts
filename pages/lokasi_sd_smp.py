@@ -6089,7 +6089,7 @@ if uploaded_file is not None:
     jml_peserta = pd.DataFrame(data_jml_peserta)
 
     data_jml_soal = {'BIDANG STUDI': ['MAT', 'IND', 'ENG', 'IPA', 'IPS'],
-                     'JUMLAH': [25, 40, 30, 40, 30]}
+                     'JUMLAH': [JML_SOAL_MAT, JML_SOAL_IND, JML_SOAL_ENG, JML_SOAL_IPA, JML_SOAL_IPS]}
 
     jml_soal = pd.DataFrame(data_jml_soal)
 
@@ -12004,7 +12004,7 @@ if uploaded_file is not None:
     jml_peserta = pd.DataFrame(data_jml_peserta)
 
     data_jml_soal = {'BIDANG STUDI': ['MAT', 'IND', 'ENG', 'IPA', 'IPS'],
-                     'JUMLAH': [25, 40, 30, 40, 30]}
+                     'JUMLAH': [JML_SOAL_MAT, JML_SOAL_IND, JML_SOAL_ENG, JML_SOAL_IPA, JML_SOAL_IPS]}
 
     jml_soal = pd.DataFrame(data_jml_soal)
 
@@ -17919,7 +17919,7 @@ if uploaded_file is not None:
     jml_peserta = pd.DataFrame(data_jml_peserta)
 
     data_jml_soal = {'BIDANG STUDI': ['MAT', 'IND', 'ENG', 'IPA', 'IPS'],
-                     'JUMLAH': [25, 40, 30, 40, 30]}
+                     'JUMLAH': [JML_SOAL_MAT, JML_SOAL_IND, JML_SOAL_ENG, JML_SOAL_IPA, JML_SOAL_IPS]}
 
     jml_soal = pd.DataFrame(data_jml_soal)
 

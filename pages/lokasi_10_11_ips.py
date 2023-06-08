@@ -1930,7 +1930,7 @@ if uploaded_file is not None:
     worksheetcover.merge_range('A1:F3', 'DAFTAR NILAI', titleCover)
     worksheetcover.merge_range('A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun} ({kurikulum})', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
     worksheetcover.write('A21', 'NILAI STANDAR', sub_headerCover)
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
@@ -8285,6 +8285,7 @@ if uploaded_file is not None:
         'right': 1})
 
     # worksheet cover
+    # sampai baris 19, dari kolom 1, mulai dari baris 12, sampai kolom 4
     worksheetcover.conditional_format(18, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
@@ -8294,10 +8295,10 @@ if uploaded_file is not None:
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
     worksheetcover.merge_range('C10:C11', 'RATA-RATA', bodyCover)
     worksheetcover.merge_range('D10:D11', 'TERTINGGI', bodyCover)
-    worksheetcover.merge_range('A20:A21', 'BIDANG STUDI', bodyCover)
-    worksheetcover.merge_range('B20:B21', 'TERENDAH', bodyCover)
-    worksheetcover.merge_range('C20:C21', 'RATA-RATA', bodyCover)
-    worksheetcover.merge_range('D20:D21', 'TERTINGGI', bodyCover)
+    worksheetcover.merge_range('A22:A23', 'BIDANG STUDI', bodyCover)
+    worksheetcover.merge_range('B22:B23', 'TERENDAH', bodyCover)
+    worksheetcover.merge_range('C22:C23', 'RATA-RATA', bodyCover)
+    worksheetcover.merge_range('D22:D23', 'TERTINGGI', bodyCover)
     worksheetcover.write('F13', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('F22:F23', 'JUMLAH', sub_header1Cover)
     worksheetcover.merge_range('F25:F26', 'PESERTA', sub_header1Cover)
@@ -8311,12 +8312,13 @@ if uploaded_file is not None:
     worksheetcover.merge_range('A1:F3', 'DAFTAR NILAI', titleCover)
     worksheetcover.merge_range('A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun} ({kurikulum})', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
-    worksheetcover.write('A19', 'NILAI STANDAR', sub_headerCover)
+    worksheetcover.write('A21', 'NILAI STANDAR', sub_headerCover)
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
+    # sampai baris 31, dari kolom 1, mulai dari baris 22, sampai kolom 4
     worksheetcover.conditional_format(30, 0, 21, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
@@ -13686,7 +13688,7 @@ if uploaded_file is not None:
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
     # Path file hasil penyimpanan
-    file_name = f"{kelas}_{penilaian}_{semester}_lokasi_101_160.xlsx"
+    file_name = f"{kelas}_{penilaian}_{semester}_lokasi_237_299.xlsx"
     file_path = tempfile.gettempdir() + '/' + file_name
 
     # Menyimpan file Excel
@@ -14685,6 +14687,7 @@ if uploaded_file is not None:
         'right': 1})
 
     # worksheet cover
+    # sampai baris 19, dari kolom 1, mulai dari baris 12, sampai kolom 4
     worksheetcover.conditional_format(18, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
@@ -14694,10 +14697,10 @@ if uploaded_file is not None:
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
     worksheetcover.merge_range('C10:C11', 'RATA-RATA', bodyCover)
     worksheetcover.merge_range('D10:D11', 'TERTINGGI', bodyCover)
-    worksheetcover.merge_range('A20:A21', 'BIDANG STUDI', bodyCover)
-    worksheetcover.merge_range('B20:B21', 'TERENDAH', bodyCover)
-    worksheetcover.merge_range('C20:C21', 'RATA-RATA', bodyCover)
-    worksheetcover.merge_range('D20:D21', 'TERTINGGI', bodyCover)
+    worksheetcover.merge_range('A22:A23', 'BIDANG STUDI', bodyCover)
+    worksheetcover.merge_range('B22:B23', 'TERENDAH', bodyCover)
+    worksheetcover.merge_range('C22:C23', 'RATA-RATA', bodyCover)
+    worksheetcover.merge_range('D22:D23', 'TERTINGGI', bodyCover)
     worksheetcover.write('F13', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('F22:F23', 'JUMLAH', sub_header1Cover)
     worksheetcover.merge_range('F25:F26', 'PESERTA', sub_header1Cover)
@@ -14711,12 +14714,13 @@ if uploaded_file is not None:
     worksheetcover.merge_range('A1:F3', 'DAFTAR NILAI', titleCover)
     worksheetcover.merge_range('A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun} ({kurikulum})', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
-    worksheetcover.write('A19', 'NILAI STANDAR', sub_headerCover)
+    worksheetcover.write('A21', 'NILAI STANDAR', sub_headerCover)
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
+    # sampai baris 31, dari kolom 1, mulai dari baris 22, sampai kolom 4
     worksheetcover.conditional_format(30, 0, 21, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
@@ -19729,7 +19733,7 @@ if uploaded_file is not None:
 
     # Create a Pandas Excel writer using XlsxWriter as the engine.
     # Path file hasil penyimpanan
-    file_name = f"{kelas}_{penilaian}_{semester}_lokasi_101_160.xlsx"
+    file_name = f"{kelas}_{penilaian}_{semester}_lokasi_depok_padang.xlsx"
     file_path = tempfile.gettempdir() + '/' + file_name
 
     # Menyimpan file Excel
@@ -20224,6 +20228,7 @@ if uploaded_file is not None:
         'right': 1})
 
     # worksheet cover
+    # sampai baris 19, dari kolom 1, mulai dari baris 12, sampai kolom 4
     worksheetcover.conditional_format(18, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
@@ -20233,10 +20238,10 @@ if uploaded_file is not None:
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
     worksheetcover.merge_range('C10:C11', 'RATA-RATA', bodyCover)
     worksheetcover.merge_range('D10:D11', 'TERTINGGI', bodyCover)
-    worksheetcover.merge_range('A20:A21', 'BIDANG STUDI', bodyCover)
-    worksheetcover.merge_range('B20:B21', 'TERENDAH', bodyCover)
-    worksheetcover.merge_range('C20:C21', 'RATA-RATA', bodyCover)
-    worksheetcover.merge_range('D20:D21', 'TERTINGGI', bodyCover)
+    worksheetcover.merge_range('A22:A23', 'BIDANG STUDI', bodyCover)
+    worksheetcover.merge_range('B22:B23', 'TERENDAH', bodyCover)
+    worksheetcover.merge_range('C22:C23', 'RATA-RATA', bodyCover)
+    worksheetcover.merge_range('D22:D23', 'TERTINGGI', bodyCover)
     worksheetcover.write('F13', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('F22:F23', 'JUMLAH', sub_header1Cover)
     worksheetcover.merge_range('F25:F26', 'PESERTA', sub_header1Cover)
@@ -20250,12 +20255,13 @@ if uploaded_file is not None:
     worksheetcover.merge_range('A1:F3', 'DAFTAR NILAI', titleCover)
     worksheetcover.merge_range('A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun} ({kurikulum})', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
-    worksheetcover.write('A19', 'NILAI STANDAR', sub_headerCover)
+    worksheetcover.write('A21', 'NILAI STANDAR', sub_headerCover)
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
+    # sampai baris 31, dari kolom 1, mulai dari baris 22, sampai kolom 4
     worksheetcover.conditional_format(30, 0, 21, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 

@@ -84,7 +84,7 @@ kelas = KELAS.replace(" ", "")
 semester = SEMESTER
 tahun = TAHUN
 penilaian = PENILAIAN
-kurikulum = KURIKULUM.lower()
+kurikulum = KURIKULUM
 
 uploaded_file = st.file_uploader(
     'Letakkan file excel NILAI STANDAR [LOKASI 101-160]', type='xlsx')
@@ -1896,7 +1896,7 @@ if uploaded_file is not None:
     worksheetcover.merge_range(
         'A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun} ({kurikulum})', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
     worksheetcover.write('A19', 'NILAI STANDAR', sub_headerCover)
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
@@ -7525,7 +7525,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(15, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -7549,7 +7549,7 @@ if uploaded_file is not None:
     worksheetcover.merge_range(
         'A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun} ({kurikulum})', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
     worksheetcover.write('A19', 'NILAI STANDAR', sub_headerCover)
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
@@ -13197,7 +13197,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(15, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -13221,7 +13221,7 @@ if uploaded_file is not None:
     worksheetcover.merge_range(
         'A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun} ({kurikulum})', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
     worksheetcover.write('A19', 'NILAI STANDAR', sub_headerCover)
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
@@ -17994,7 +17994,7 @@ if uploaded_file is not None:
     worksheetcover.conditional_format(15, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
+    worksheetcover.insert_image('F1', r'logo nf.jpg')
 
     worksheetcover.merge_range('A10:A11', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
@@ -18018,7 +18018,7 @@ if uploaded_file is not None:
     worksheetcover.merge_range(
         'A4:F5', fr'{penilaian}', sub_titleCover)
     worksheetcover.merge_range(
-        'A6:F7', fr'{semester} TAHUN {tahun}', headerCover)
+        'A6:F7', fr'{semester} TAHUN {tahun} ({kurikulum})', headerCover)
     worksheetcover.write('A9', 'JUMLAH BENAR', sub_headerCover)
     worksheetcover.write('A19', 'NILAI STANDAR', sub_headerCover)
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
