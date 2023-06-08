@@ -7522,7 +7522,7 @@ if uploaded_file is not None:
         'right': 1})
 
     # worksheet cover
-    worksheetcover.conditional_format(16, 0, 11, 3,
+    worksheetcover.conditional_format(15, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
     worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
@@ -7555,10 +7555,10 @@ if uploaded_file is not None:
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
-    worksheetcover.conditional_format(26, 0, 21, 3,
+    worksheetcover.conditional_format(25, 0, 21, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(17, 6, 13, 5,
+    worksheetcover.conditional_format(16, 6, 13, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
     worksheetcover.conditional_format(21, 5, 21, 5,
@@ -13194,7 +13194,7 @@ if uploaded_file is not None:
         'right': 1})
 
     # worksheet cover
-    worksheetcover.conditional_format(16, 0, 11, 3,
+    worksheetcover.conditional_format(15, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
     worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
@@ -13227,10 +13227,10 @@ if uploaded_file is not None:
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
-    worksheetcover.conditional_format(26, 0, 21, 3,
+    worksheetcover.conditional_format(25, 0, 21, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(17, 6, 13, 5,
+    worksheetcover.conditional_format(16, 6, 13, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
     worksheetcover.conditional_format(21, 5, 21, 5,
@@ -17991,7 +17991,7 @@ if uploaded_file is not None:
         'right': 1})
 
     # worksheet cover
-    worksheetcover.conditional_format(16, 0, 11, 3,
+    worksheetcover.conditional_format(15, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
     worksheetcover.insert_image('F1', r'logo resmi nf.jpg')
@@ -18024,10 +18024,10 @@ if uploaded_file is not None:
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
-    worksheetcover.conditional_format(26, 0, 21, 3,
+    worksheetcover.conditional_format(25, 0, 21, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(17, 6, 13, 5,
+    worksheetcover.conditional_format(16, 6, 13, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
     worksheetcover.conditional_format(21, 5, 21, 5,

@@ -8285,7 +8285,7 @@ if uploaded_file is not None:
         'right': 1})
 
     # worksheet cover
-    worksheetcover.conditional_format(16, 0, 11, 3,
+    worksheetcover.conditional_format(18, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
     worksheetcover.insert_image('F1', r'logo nf.jpg')
@@ -8299,8 +8299,8 @@ if uploaded_file is not None:
     worksheetcover.merge_range('C20:C21', 'RATA-RATA', bodyCover)
     worksheetcover.merge_range('D20:D21', 'TERTINGGI', bodyCover)
     worksheetcover.write('F13', 'BIDANG STUDI', bodyCover)
-    worksheetcover.merge_range('F20:F21', 'JUMLAH', sub_header1Cover)
-    worksheetcover.merge_range('F23:F24', 'PESERTA', sub_header1Cover)
+    worksheetcover.merge_range('F22:F23', 'JUMLAH', sub_header1Cover)
+    worksheetcover.merge_range('F25:F26', 'PESERTA', sub_header1Cover)
     worksheetcover.write('G13', 'JUMLAH', bodyCover)
     worksheetcover.set_column('A:A', 25.71, centerCover)
     worksheetcover.set_column('B:B', 15, centerCover)
@@ -8317,13 +8317,13 @@ if uploaded_file is not None:
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
-    worksheetcover.conditional_format(26, 0, 21, 3,
+    worksheetcover.conditional_format(30, 0, 21, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(17, 6, 13, 5,
+    worksheetcover.conditional_format(19, 6, 13, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(21, 5, 21, 5,
+    worksheetcover.conditional_format(23, 5, 23, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
     # # worksheet 161
@@ -14685,7 +14685,7 @@ if uploaded_file is not None:
         'right': 1})
 
     # worksheet cover
-    worksheetcover.conditional_format(15, 0, 11, 3,
+    worksheetcover.conditional_format(18, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
     worksheetcover.insert_image('F1', r'logo nf.jpg')
@@ -14699,8 +14699,8 @@ if uploaded_file is not None:
     worksheetcover.merge_range('C20:C21', 'RATA-RATA', bodyCover)
     worksheetcover.merge_range('D20:D21', 'TERTINGGI', bodyCover)
     worksheetcover.write('F13', 'BIDANG STUDI', bodyCover)
-    worksheetcover.merge_range('F20:F21', 'JUMLAH', sub_header1Cover)
-    worksheetcover.merge_range('F23:F24', 'PESERTA', sub_header1Cover)
+    worksheetcover.merge_range('F22:F23', 'JUMLAH', sub_header1Cover)
+    worksheetcover.merge_range('F25:F26', 'PESERTA', sub_header1Cover)
     worksheetcover.write('G13', 'JUMLAH', bodyCover)
     worksheetcover.set_column('A:A', 25.71, centerCover)
     worksheetcover.set_column('B:B', 15, centerCover)
@@ -14717,13 +14717,13 @@ if uploaded_file is not None:
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
-    worksheetcover.conditional_format(25, 0, 21, 3,
+    worksheetcover.conditional_format(30, 0, 21, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(16, 6, 13, 5,
+    worksheetcover.conditional_format(19, 6, 13, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(21, 5, 21, 5,
+    worksheetcover.conditional_format(23, 5, 23, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
     # worksheet 237
@@ -20224,7 +20224,7 @@ if uploaded_file is not None:
         'right': 1})
 
     # worksheet cover
-    worksheetcover.conditional_format(16, 0, 11, 3,
+    worksheetcover.conditional_format(18, 0, 11, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
     worksheetcover.insert_image('F1', r'logo nf.jpg')
@@ -20238,8 +20238,8 @@ if uploaded_file is not None:
     worksheetcover.merge_range('C20:C21', 'RATA-RATA', bodyCover)
     worksheetcover.merge_range('D20:D21', 'TERTINGGI', bodyCover)
     worksheetcover.write('F13', 'BIDANG STUDI', bodyCover)
-    worksheetcover.merge_range('F20:F21', 'JUMLAH', sub_header1Cover)
-    worksheetcover.merge_range('F23:F24', 'PESERTA', sub_header1Cover)
+    worksheetcover.merge_range('F22:F23', 'JUMLAH', sub_header1Cover)
+    worksheetcover.merge_range('F25:F26', 'PESERTA', sub_header1Cover)
     worksheetcover.write('G13', 'JUMLAH', bodyCover)
     worksheetcover.set_column('A:A', 25.71, centerCover)
     worksheetcover.set_column('B:B', 15, centerCover)
@@ -20256,13 +20256,13 @@ if uploaded_file is not None:
     worksheetcover.merge_range('F8:G9', fr'{kelas}', kelasCover)
     worksheetcover.merge_range('F11:G12', 'JUMLAH SOAL', sub_header1Cover)
 
-    worksheetcover.conditional_format(26, 0, 21, 3,
+    worksheetcover.conditional_format(30, 0, 21, 3,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(17, 6, 13, 5,
+    worksheetcover.conditional_format(19, 6, 13, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
-    worksheetcover.conditional_format(21, 5, 21, 5,
+    worksheetcover.conditional_format(23, 5, 23, 5,
                                       {'type': 'no_errors', 'format': borderCover})
 
     # worksheet 530
