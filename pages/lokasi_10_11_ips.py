@@ -102,7 +102,7 @@ kelas = KELAS.replace(" ", "")
 semester = SEMESTER
 tahun = TAHUN
 penilaian = PENILAIAN
-kurikulum = KURIKULUM()
+kurikulum = KURIKULUM
 
 uploaded_file = st.file_uploader(
     'Letakkan file excel NILAI STANDAR [LOKASI 101-160]', type='xlsx')
