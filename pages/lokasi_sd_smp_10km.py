@@ -85,11 +85,11 @@ JML_SOAL_ENG = ENG
 JML_SOAL_IPA = IPA
 JML_SOAL_IPS = IPS
 
-kelas = KELAS.replace(" ", "")
+kelas = KELAS
 semester = SEMESTER
 tahun = TAHUN
 penilaian = PENILAIAN
-kurikulum = KURIKULUM.lower()
+kurikulum = KURIKULUM
 
 uploaded_file = st.file_uploader(
     'Letakkan file excel NILAI STANDAR [LOKASI 101-160]', type='xlsx')

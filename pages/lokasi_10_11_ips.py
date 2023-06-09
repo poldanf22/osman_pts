@@ -98,7 +98,7 @@ JML_SOAL_GEO = GEO
 JML_SOAL_EKO = EKO
 JML_SOAL_SOS = SOS
 
-kelas = KELAS.replace(" ", "")
+kelas = KELAS
 semester = SEMESTER
 tahun = TAHUN
 penilaian = PENILAIAN
