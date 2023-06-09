@@ -14743,7 +14743,7 @@ if uploaded_file is not None:
     worksheet237.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TASIKMALAYA', title)
     worksheet237.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet237.write('A5', 'LOKASI', header)
     worksheet237.write('B5', 'TOTAL', header)
     worksheet237.merge_range('A4:B4', 'RANK', header)
@@ -14820,7 +14820,7 @@ if uploaded_file is not None:
     worksheet238.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUBANG', title)
     worksheet238.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet238.write('A5', 'LOKASI', header)
     worksheet238.write('B5', 'TOTAL', header)
     worksheet238.merge_range('A4:B4', 'RANK', header)
@@ -14897,7 +14897,7 @@ if uploaded_file is not None:
     worksheet240.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUMEDANG', title)
     worksheet240.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet240.write('A5', 'LOKASI', header)
     worksheet240.write('B5', 'TOTAL', header)
     worksheet240.merge_range('A4:B4', 'RANK', header)
@@ -14974,7 +14974,7 @@ if uploaded_file is not None:
     worksheet241.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MAJALENGKA', title)
     worksheet241.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet241.write('A5', 'LOKASI', header)
     worksheet241.write('B5', 'TOTAL', header)
     worksheet241.merge_range('A4:B4', 'RANK', header)
@@ -15051,7 +15051,7 @@ if uploaded_file is not None:
     worksheet243.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PURBALINGGA', title)
     worksheet243.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet243.write('A5', 'LOKASI', header)
     worksheet243.write('B5', 'TOTAL', header)
     worksheet243.merge_range('A4:B4', 'RANK', header)
@@ -15128,7 +15128,7 @@ if uploaded_file is not None:
     worksheet244.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SURAKARTA', title)
     worksheet244.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet244.write('A5', 'LOKASI', header)
     worksheet244.write('B5', 'TOTAL', header)
     worksheet244.merge_range('A4:B4', 'RANK', header)
@@ -15205,7 +15205,7 @@ if uploaded_file is not None:
     worksheet245.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SEMARANG', title)
     worksheet245.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet245.write('A5', 'LOKASI', header)
     worksheet245.write('B5', 'TOTAL', header)
     worksheet245.merge_range('A4:B4', 'RANK', header)
@@ -15282,7 +15282,7 @@ if uploaded_file is not None:
     worksheet246.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KARTASURA', title)
     worksheet246.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet246.write('A5', 'LOKASI', header)
     worksheet246.write('B5', 'TOTAL', header)
     worksheet246.merge_range('A4:B4', 'RANK', header)
@@ -15357,7 +15357,7 @@ if uploaded_file is not None:
     # worksheet247.set_column('F:F', 8.57, center)
     # worksheet247.set_column('G:V', 5, center)
     # worksheet247.merge_range('A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JURANG MANGU', title)
-    # worksheet247.merge_range('A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+    # worksheet247.merge_range('A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     # worksheet247.write('A5', 'LOKASI', header)
     # worksheet247.write('B5', 'TOTAL', header)
     # worksheet247.merge_range('A4:B4', 'RANK', header)
@@ -15432,7 +15432,7 @@ if uploaded_file is not None:
     worksheet248.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BSD BOULEVARD', title)
     worksheet248.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet248.write('A5', 'LOKASI', header)
     worksheet248.write('B5', 'TOTAL', header)
     worksheet248.merge_range('A4:B4', 'RANK', header)
@@ -15509,7 +15509,7 @@ if uploaded_file is not None:
     worksheet249.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SANGIANG', title)
     worksheet249.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet249.write('A5', 'LOKASI', header)
     worksheet249.write('B5', 'TOTAL', header)
     worksheet249.merge_range('A4:B4', 'RANK', header)
@@ -15586,7 +15586,7 @@ if uploaded_file is not None:
     worksheet250.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BANJAR WIJAYA', title)
     worksheet250.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet250.write('A5', 'LOKASI', header)
     worksheet250.write('B5', 'TOTAL', header)
     worksheet250.merge_range('A4:B4', 'RANK', header)
@@ -15661,7 +15661,7 @@ if uploaded_file is not None:
     # worksheet251.set_column('F:F', 8.57, center)
     # worksheet251.set_column('G:V', 5, center)
     # worksheet251.merge_range('A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MELATI MAS', title)
-    # worksheet251.merge_range('A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+    # worksheet251.merge_range('A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     # worksheet251.write('A5', 'LOKASI', header)
     # worksheet251.write('B5', 'TOTAL', header)
     # worksheet251.merge_range('A4:B4', 'RANK', header)
@@ -15736,7 +15736,7 @@ if uploaded_file is not None:
     worksheet252.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIRENDEU', title)
     worksheet252.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet252.write('A5', 'LOKASI', header)
     worksheet252.write('B5', 'TOTAL', header)
     worksheet252.merge_range('A4:B4', 'RANK', header)
@@ -15810,7 +15810,7 @@ if uploaded_file is not None:
     # worksheet253.set_column('F:F', 8.57, center)
     # worksheet253.set_column('G:V', 5, center)
     # worksheet253.merge_range('A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KAMPUNG UTAN', title)
-    # worksheet253.merge_range('A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+    # worksheet253.merge_range('A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     # worksheet253.write('A5', 'LOKASI', header)
     # worksheet253.write('B5', 'TOTAL', header)
     # worksheet253.merge_range('A4:B4', 'RANK', header)
@@ -15885,7 +15885,7 @@ if uploaded_file is not None:
     worksheet254.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GRAHA RAYA', title)
     worksheet254.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet254.write('A5', 'LOKASI', header)
     worksheet254.write('B5', 'TOTAL', header)
     worksheet254.merge_range('A4:B4', 'RANK', header)
@@ -15962,7 +15962,7 @@ if uploaded_file is not None:
     worksheet255.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MERPATI', title)
     worksheet255.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet255.write('A5', 'LOKASI', header)
     worksheet255.write('B5', 'TOTAL', header)
     worksheet255.merge_range('A4:B4', 'RANK', header)
@@ -16039,7 +16039,7 @@ if uploaded_file is not None:
     worksheet256.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIRUAS', title)
     worksheet256.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet256.write('A5', 'LOKASI', header)
     worksheet256.write('B5', 'TOTAL', header)
     worksheet256.merge_range('A4:B4', 'RANK', header)
@@ -16116,7 +16116,7 @@ if uploaded_file is not None:
     worksheet258.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF LHOKSEUMAWE', title)
     worksheet258.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet258.write('A5', 'LOKASI', header)
     worksheet258.write('B5', 'TOTAL', header)
     worksheet258.merge_range('A4:B4', 'RANK', header)
@@ -16193,7 +16193,7 @@ if uploaded_file is not None:
     worksheet259.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PANAM, PKU', title)
     worksheet259.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet259.write('A5', 'LOKASI', header)
     worksheet259.write('B5', 'TOTAL', header)
     worksheet259.merge_range('A4:B4', 'RANK', header)
@@ -16270,7 +16270,7 @@ if uploaded_file is not None:
     worksheet260.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF AM. SANGAJI', title)
     worksheet260.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet260.write('A5', 'LOKASI', header)
     worksheet260.write('B5', 'TOTAL', header)
     worksheet260.merge_range('A4:B4', 'RANK', header)
@@ -16347,7 +16347,7 @@ if uploaded_file is not None:
     worksheet261.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF DURI KOSAMBI', title)
     worksheet261.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet261.write('A5', 'LOKASI', header)
     worksheet261.write('B5', 'TOTAL', header)
     worksheet261.merge_range('A4:B4', 'RANK', header)
@@ -16424,7 +16424,7 @@ if uploaded_file is not None:
     worksheet262.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CITRA RAYA CIKUPA', title)
     worksheet262.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet262.write('A5', 'LOKASI', header)
     worksheet262.write('B5', 'TOTAL', header)
     worksheet262.merge_range('A4:B4', 'RANK', header)
@@ -16501,7 +16501,7 @@ if uploaded_file is not None:
     worksheet263.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GRAHA PRIMA', title)
     worksheet263.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet263.write('A5', 'LOKASI', header)
     worksheet263.write('B5', 'TOTAL', header)
     worksheet263.merge_range('A4:B4', 'RANK', header)
@@ -16578,7 +16578,7 @@ if uploaded_file is not None:
     worksheet264.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KARAWANG', title)
     worksheet264.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet264.write('A5', 'LOKASI', header)
     worksheet264.write('B5', 'TOTAL', header)
     worksheet264.merge_range('A4:B4', 'RANK', header)
@@ -16655,7 +16655,7 @@ if uploaded_file is not None:
     worksheet265.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TAMAN WISMA ASRI', title)
     worksheet265.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet265.write('A5', 'LOKASI', header)
     worksheet265.write('B5', 'TOTAL', header)
     worksheet265.merge_range('A4:B4', 'RANK', header)
@@ -16732,7 +16732,7 @@ if uploaded_file is not None:
     worksheet266.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MANGUN JAYA', title)
     worksheet266.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet266.write('A5', 'LOKASI', header)
     worksheet266.write('B5', 'TOTAL', header)
     worksheet266.merge_range('A4:B4', 'RANK', header)
@@ -16809,7 +16809,7 @@ if uploaded_file is not None:
     worksheet267.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MARAKASH / SEKTOR 5', title)
     worksheet267.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet267.write('A5', 'LOKASI', header)
     worksheet267.write('B5', 'TOTAL', header)
     worksheet267.merge_range('A4:B4', 'RANK', header)
@@ -16886,7 +16886,7 @@ if uploaded_file is not None:
     worksheet268.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KEBALEN', title)
     worksheet268.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet268.write('A5', 'LOKASI', header)
     worksheet268.write('B5', 'TOTAL', header)
     worksheet268.merge_range('A4:B4', 'RANK', header)
@@ -16963,7 +16963,7 @@ if uploaded_file is not None:
     worksheet269.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATI RANGON', title)
     worksheet269.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet269.write('A5', 'LOKASI', header)
     worksheet269.write('B5', 'TOTAL', header)
     worksheet269.merge_range('A4:B4', 'RANK', header)
@@ -17040,7 +17040,7 @@ if uploaded_file is not None:
     worksheet270.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATIBENING', title)
     worksheet270.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet270.write('A5', 'LOKASI', header)
     worksheet270.write('B5', 'TOTAL', header)
     worksheet270.merge_range('A4:B4', 'RANK', header)
@@ -17117,7 +17117,7 @@ if uploaded_file is not None:
     worksheet271.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATIMULYA', title)
     worksheet271.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet271.write('A5', 'LOKASI', header)
     worksheet271.write('B5', 'TOTAL', header)
     worksheet271.merge_range('A4:B4', 'RANK', header)
@@ -17194,7 +17194,7 @@ if uploaded_file is not None:
     worksheet272.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PERUMNAS 3', title)
     worksheet272.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet272.write('A5', 'LOKASI', header)
     worksheet272.write('B5', 'TOTAL', header)
     worksheet272.merge_range('A4:B4', 'RANK', header)
@@ -17271,7 +17271,7 @@ if uploaded_file is not None:
     worksheet273.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF NAROGONG', title)
     worksheet273.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet273.write('A5', 'LOKASI', header)
     worksheet273.write('B5', 'TOTAL', header)
     worksheet273.merge_range('A4:B4', 'RANK', header)
@@ -17348,7 +17348,7 @@ if uploaded_file is not None:
     worksheet274.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BEKASI TIMUR REGENCY', title)
     worksheet274.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet274.write('A5', 'LOKASI', header)
     worksheet274.write('B5', 'TOTAL', header)
     worksheet274.merge_range('A4:B4', 'RANK', header)
@@ -17425,7 +17425,7 @@ if uploaded_file is not None:
     worksheet275.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIKARANG PILAR', title)
     worksheet275.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet275.write('A5', 'LOKASI', header)
     worksheet275.write('B5', 'TOTAL', header)
     worksheet275.merge_range('A4:B4', 'RANK', header)
@@ -17502,7 +17502,7 @@ if uploaded_file is not None:
     worksheet276.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIKARANG JABABEKA', title)
     worksheet276.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet276.write('A5', 'LOKASI', header)
     worksheet276.write('B5', 'TOTAL', header)
     worksheet276.merge_range('A4:B4', 'RANK', header)
@@ -17579,7 +17579,7 @@ if uploaded_file is not None:
     worksheet277.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PAYAKUMBUH', title)
     worksheet277.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet277.write('A5', 'LOKASI', header)
     worksheet277.write('B5', 'TOTAL', header)
     worksheet277.merge_range('A4:B4', 'RANK', header)
@@ -17656,7 +17656,7 @@ if uploaded_file is not None:
     worksheet278.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MERDUATI', title)
     worksheet278.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet278.write('A5', 'LOKASI', header)
     worksheet278.write('B5', 'TOTAL', header)
     worksheet278.merge_range('A4:B4', 'RANK', header)
@@ -17733,7 +17733,7 @@ if uploaded_file is not None:
     worksheet279.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF ANTAPANI', title)
     worksheet279.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet279.write('A5', 'LOKASI', header)
     worksheet279.write('B5', 'TOTAL', header)
     worksheet279.merge_range('A4:B4', 'RANK', header)
@@ -20284,7 +20284,7 @@ if uploaded_file is not None:
     worksheet530.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF POLSEK DEPOK', title)
     worksheet530.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet530.write('A5', 'LOKASI', header)
     worksheet530.write('B5', 'TOTAL', header)
     worksheet530.merge_range('A4:B4', 'RANK', header)
@@ -20361,7 +20361,7 @@ if uploaded_file is not None:
     worksheet531.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF DEPOK 1', title)
     worksheet531.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet531.write('A5', 'LOKASI', header)
     worksheet531.write('B5', 'TOTAL', header)
     worksheet531.merge_range('A4:B4', 'RANK', header)
@@ -20438,7 +20438,7 @@ if uploaded_file is not None:
     worksheet532.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PROKLAMASI DEPOK 2', title)
     worksheet532.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet532.write('A5', 'LOKASI', header)
     worksheet532.write('B5', 'TOTAL', header)
     worksheet532.merge_range('A4:B4', 'RANK', header)
@@ -20515,7 +20515,7 @@ if uploaded_file is not None:
     worksheet533.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIMANGGIS', title)
     worksheet533.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet533.write('A5', 'LOKASI', header)
     worksheet533.write('B5', 'TOTAL', header)
     worksheet533.merge_range('A4:B4', 'RANK', header)
@@ -20592,7 +20592,7 @@ if uploaded_file is not None:
     worksheet534.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SAWANGAN', title)
     worksheet534.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet534.write('A5', 'LOKASI', header)
     worksheet534.write('B5', 'TOTAL', header)
     worksheet534.merge_range('A4:B4', 'RANK', header)
@@ -20669,7 +20669,7 @@ if uploaded_file is not None:
     worksheet535.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BRIMOB', title)
     worksheet535.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet535.write('A5', 'LOKASI', header)
     worksheet535.write('B5', 'TOTAL', header)
     worksheet535.merge_range('A4:B4', 'RANK', header)
@@ -20746,7 +20746,7 @@ if uploaded_file is not None:
     worksheet546.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PAJAJARAN (PPIB)', title)
     worksheet546.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet546.write('A5', 'LOKASI', header)
     worksheet546.write('B5', 'TOTAL', header)
     worksheet546.merge_range('A4:B4', 'RANK', header)
@@ -20823,7 +20823,7 @@ if uploaded_file is not None:
     worksheet547.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUKASARI', title)
     worksheet547.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet547.write('A5', 'LOKASI', header)
     worksheet547.write('B5', 'TOTAL', header)
     worksheet547.merge_range('A4:B4', 'RANK', header)
@@ -20900,7 +20900,7 @@ if uploaded_file is not None:
     worksheet548.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BUBULAK', title)
     worksheet548.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet548.write('A5', 'LOKASI', header)
     worksheet548.write('B5', 'TOTAL', header)
     worksheet548.merge_range('A4:B4', 'RANK', header)
@@ -20977,7 +20977,7 @@ if uploaded_file is not None:
     worksheet549.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CITEUREUP', title)
     worksheet549.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet549.write('A5', 'LOKASI', header)
     worksheet549.write('B5', 'TOTAL', header)
     worksheet549.merge_range('A4:B4', 'RANK', header)
@@ -21054,7 +21054,7 @@ if uploaded_file is not None:
     worksheet556.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF YASMIN', title)
     worksheet556.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet556.write('A5', 'LOKASI', header)
     worksheet556.write('B5', 'TOTAL', header)
     worksheet556.merge_range('A4:B4', 'RANK', header)
@@ -21131,7 +21131,7 @@ if uploaded_file is not None:
     worksheet557.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF YOGYA PLAZA', title)
     worksheet557.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet557.write('A5', 'LOKASI', header)
     worksheet557.write('B5', 'TOTAL', header)
     worksheet557.merge_range('A4:B4', 'RANK', header)
@@ -21208,7 +21208,7 @@ if uploaded_file is not None:
     worksheet558.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PARUNG', title)
     worksheet558.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet558.write('A5', 'LOKASI', header)
     worksheet558.write('B5', 'TOTAL', header)
     worksheet558.merge_range('A4:B4', 'RANK', header)
@@ -21285,7 +21285,7 @@ if uploaded_file is not None:
     worksheet575.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CINERE', title)
     worksheet575.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet575.write('A5', 'LOKASI', header)
     worksheet575.write('B5', 'TOTAL', header)
     worksheet575.merge_range('A4:B4', 'RANK', header)
@@ -21362,7 +21362,7 @@ if uploaded_file is not None:
     worksheet576.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIBINONG', title)
     worksheet576.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet576.write('A5', 'LOKASI', header)
     worksheet576.write('B5', 'TOTAL', header)
     worksheet576.merge_range('A4:B4', 'RANK', header)
@@ -21438,7 +21438,7 @@ if uploaded_file is not None:
     worksheet577.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF VETERAN (RUMAH SAKIT)', title)
     worksheet577.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet577.write('A5', 'LOKASI', header)
     worksheet577.write('B5', 'TOTAL', header)
     worksheet577.merge_range('A4:B4', 'RANK', header)
@@ -21515,7 +21515,7 @@ if uploaded_file is not None:
     worksheet578.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MARTADINATA', title)
     worksheet578.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet578.write('A5', 'LOKASI', header)
     worksheet578.write('B5', 'TOTAL', header)
     worksheet578.merge_range('A4:B4', 'RANK', header)
@@ -21592,7 +21592,7 @@ if uploaded_file is not None:
     worksheet588.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MAHARAJA', title)
     worksheet588.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet588.write('A5', 'LOKASI', header)
     worksheet588.write('B5', 'TOTAL', header)
     worksheet588.merge_range('A4:B4', 'RANK', header)
@@ -21669,7 +21669,7 @@ if uploaded_file is not None:
     worksheet589.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF WARUNG JAMBU', title)
     worksheet589.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet589.write('A5', 'LOKASI', header)
     worksheet589.write('B5', 'TOTAL', header)
     worksheet589.merge_range('A4:B4', 'RANK', header)
@@ -21746,7 +21746,7 @@ if uploaded_file is not None:
     worksheet594.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PEMDA CIBINONG', title)
     worksheet594.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet594.write('A5', 'LOKASI', header)
     worksheet594.write('B5', 'TOTAL', header)
     worksheet594.merge_range('A4:B4', 'RANK', header)
@@ -21823,7 +21823,7 @@ if uploaded_file is not None:
     worksheet661.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GAJAH MADA', title)
     worksheet661.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet661.write('A5', 'LOKASI', header)
     worksheet661.write('B5', 'TOTAL', header)
     worksheet661.merge_range('A4:B4', 'RANK', header)
@@ -21900,7 +21900,7 @@ if uploaded_file is not None:
     worksheet662.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF LOLONG BELANTI', title)
     worksheet662.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet662.write('A5', 'LOKASI', header)
     worksheet662.write('B5', 'TOTAL', header)
     worksheet662.merge_range('A4:B4', 'RANK', header)
@@ -21977,7 +21977,7 @@ if uploaded_file is not None:
     worksheet663.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SOETOMO', title)
     worksheet663.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet663.write('A5', 'LOKASI', header)
     worksheet663.write('B5', 'TOTAL', header)
     worksheet663.merge_range('A4:B4', 'RANK', header)
@@ -22054,7 +22054,7 @@ if uploaded_file is not None:
     worksheet664.merge_range(
         'A1:V1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TAN MALAKA', title)
     worksheet664.merge_range(
-        'A2:V2', 'PENILAIAN AKHIR SEMESTER - SEMESTER 1 TAHUN 2022 - 2023', sub_title)
+        'A2:V2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet664.write('A5', 'LOKASI', header)
     worksheet664.write('B5', 'TOTAL', header)
     worksheet664.merge_range('A4:B4', 'RANK', header)
