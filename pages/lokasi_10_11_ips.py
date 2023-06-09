@@ -102,7 +102,7 @@ kelas = KELAS.replace(" ", "")
 semester = SEMESTER
 tahun = TAHUN
 penilaian = PENILAIAN
-kurikulum = KURIKULUM.lower()
+kurikulum = KURIKULUM()
 
 uploaded_file = st.file_uploader(
     'Letakkan file excel NILAI STANDAR [LOKASI 101-160]', type='xlsx')
@@ -7315,14 +7315,14 @@ if uploaded_file is not None:
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     n_standar.to_excel(writer, sheet_name='cover',
-                       startrow=21,
+                       startrow=23,
                        startcol=0,
                        index=False,
                        header=False)
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_peserta.to_excel(writer, sheet_name='cover',
-                         startrow=21,
+                         startrow=23,
                          startcol=5,
                          index=False,
                          header=False)
@@ -13703,14 +13703,14 @@ if uploaded_file is not None:
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     n_standar.to_excel(writer, sheet_name='cover',
-                       startrow=21,
+                       startrow=23,
                        startcol=0,
                        index=False,
                        header=False)
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_peserta.to_excel(writer, sheet_name='cover',
-                         startrow=21,
+                         startrow=23,
                          startcol=5,
                          index=False,
                          header=False)
@@ -19748,14 +19748,14 @@ if uploaded_file is not None:
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     n_standar.to_excel(writer, sheet_name='cover',
-                       startrow=21,
+                       startrow=23,
                        startcol=0,
                        index=False,
                        header=False)
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_peserta.to_excel(writer, sheet_name='cover',
-                         startrow=21,
+                         startrow=23,
                          startcol=5,
                          index=False,
                          header=False)
