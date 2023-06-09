@@ -21,7 +21,7 @@ st.markdown("""
 image = Image.open('logo resmi nf resize.png')
 st.image(image)
 
-st.title("Olah Nilai Standar K13")
+st.title("Olah Nilai Standar")
 st.header("11 SMA KM")
 
 col6 = st.container()
@@ -54,7 +54,8 @@ with col9:
 
 TAHUN = st.text_input("Masukkan Tahun Ajaran", placeholder="contoh: 2022-2023")
 
-col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11 = st.columns(
+    7)
 
 with col1:
     MTW = st.selectbox(
@@ -220,13 +221,17 @@ if uploaded_file is not None:
 
     # Jumlah Soal
     ws['F{}'.format(v)] = 'JUMLAH SOAL'
-    ws['G{}'.format(v)] = JML_SOAL_MAT
-    ws['H{}'.format(v)] = JML_SOAL_IND
-    ws['I{}'.format(v)] = JML_SOAL_ENG
-    ws['J{}'.format(v)] = JML_SOAL_SEJ
-    ws['K{}'.format(v)] = JML_SOAL_GEO
-    ws['L{}'.format(v)] = JML_SOAL_EKO
-    ws['M{}'.format(v)] = JML_SOAL_SOS
+    ws['G{}'.format(v)] = JML_SOAL_MAW
+    ws['H{}'.format(v)] = JML_SOAL_MAP
+    ws['I{}'.format(v)] = JML_SOAL_IND
+    ws['J{}'.format(v)] = JML_SOAL_ENG
+    ws['K{}'.format(v)] = JML_SOAL_SEJ
+    ws['L{}'.format(v)] = JML_SOAL_GEO
+    ws['M{}'.format(v)] = JML_SOAL_EKO
+    ws['N{}'.format(v)] = JML_SOAL_SOS
+    ws['O{}'.format(v)] = JML_SOAL_FIS
+    ws['P{}'.format(v)] = JML_SOAL_KIM
+    ws['Q{}'.format(v)] = JML_SOAL_BIO
 
     # new
     # iterasi 1 rata-rata - 1
