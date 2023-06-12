@@ -54,8 +54,8 @@ with col9:
 
 TAHUN = st.text_input("Masukkan Tahun Ajaran", placeholder="contoh: 2022-2023")
 
-col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11 = st.columns(
-    11)
+col1, col2, col3, col4, col5, col6 = st.columns(
+    6)
 
 with col1:
     MTW = st.selectbox(
@@ -86,6 +86,8 @@ with col6:
     GEO = st.selectbox(
         "JML. SOAL GEO.",
         (15, 20, 25, 30, 35, 40, 45, 50))
+
+col7, col8, col9, col10, col11 = st.columns(5)
 
 with col7:
     EKO = st.selectbox(
