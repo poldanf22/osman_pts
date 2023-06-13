@@ -1302,6 +1302,24 @@ if uploaded_file is not None:
         fill_type='solid', start_color='00FF6600', end_color='00FF6600')
 
     for row in range(2, q+1):
+        ws['BD{}'.format(row)] = '=B{}'.format(row)
+        ws['BE{}'.format(row)] = '=C{}'.format(row, row)
+        ws['BF{}'.format(row)] = '=D{}'.format(row, row)
+        ws['BG{}'.format(row)] = '=E{}'.format(row, row)
+        ws['BH{}'.format(row)] = '=F{}'.format(row, row)
+
+        ws['BI{}'.format(row)] = '=IF(G{}="","",G{})'.format(row, row)
+        ws['BJ{}'.format(row)] = '=IF(H{}="","",H{})'.format(row, row)
+        ws['BK{}'.format(row)] = '=IF(I{}="","",I{})'.format(row, row)
+        ws['BL{}'.format(row)] = '=IF(J{}="","",J{})'.format(row, row)
+        ws['BM{}'.format(row)] = '=IF(K{}="","",K{})'.format(row, row)
+        ws['BN{}'.format(row)] = '=IF(L{}="","",L{})'.format(row, row)
+        ws['BO{}'.format(row)] = '=IF(M{}="","",M{})'.format(row, row)
+        ws['BP{}'.format(row)] = '=IF(N{}="","",N{})'.format(row, row)
+        ws['BQ{}'.format(row)] = '=IF(O{}="","",O{})'.format(row, row)
+        ws['BR{}'.format(row)] = '=IF(P{}="","",P{})'.format(row, row)
+        ws['BS{}'.format(row)] = '=IF(Q{}="","",Q{})'.format(row, row)
+        ws['BT{}'.format(row)] = '=IF(R{}="","",R{})'.format(row, row)
         ws['BU{}'.format(
             row)] = '=IFERROR(ROUND(IF(BI{}="","",(BI{}-BI${})/BI${}),2),"")'.format(row, row, r, s)
         ws['BV{}'.format(
@@ -1588,6 +1606,24 @@ if uploaded_file is not None:
         fill_type='solid', start_color='00FF6600', end_color='00FF6600')
 
     for row in range(2, q+1):
+        ws['DF{}'.format(row)] = '=B{}'.format(row)
+        ws['DG{}'.format(row)] = '=C{}'.format(row, row)
+        ws['DH{}'.format(row)] = '=D{}'.format(row, row)
+        ws['DI{}'.format(row)] = '=E{}'.format(row, row)
+        ws['DJ{}'.format(row)] = '=F{}'.format(row, row)
+
+        ws['DK{}'.format(row)] = '=IF(G{}="","",G{})'.format(row, row)
+        ws['DL{}'.format(row)] = '=IF(H{}="","",H{})'.format(row, row)
+        ws['DM{}'.format(row)] = '=IF(I{}="","",I{})'.format(row, row)
+        ws['DN{}'.format(row)] = '=IF(J{}="","",J{})'.format(row, row)
+        ws['DO{}'.format(row)] = '=IF(K{}="","",K{})'.format(row, row)
+        ws['DP{}'.format(row)] = '=IF(L{}="","",L{})'.format(row, row)
+        ws['DQ{}'.format(row)] = '=IF(M{}="","",M{})'.format(row, row)
+        ws['DR{}'.format(row)] = '=IF(N{}="","",N{})'.format(row, row)
+        ws['DS{}'.format(row)] = '=IF(O{}="","",O{})'.format(row, row)
+        ws['DT{}'.format(row)] = '=IF(P{}="","",P{})'.format(row, row)
+        ws['DU{}'.format(row)] = '=IF(Q{}="","",Q{})'.format(row, row)
+        ws['DV{}'.format(row)] = '=IF(R{}="","",R{})'.format(row, row)
         ws['DW{}'.format(
             row)] = '=IFERROR(ROUND(IF(DK{}="","",(DK{}-DK${})/DK${}),2),"")'.format(row, row, r, s)
         ws['DX{}'.format(
@@ -1874,6 +1910,24 @@ if uploaded_file is not None:
         fill_type='solid', start_color='00FF6600', end_color='00FF6600')
 
     for row in range(2, q+1):
+        ws['FH{}'.format(row)] = '=B{}'.format(row)
+        ws['FI{}'.format(row)] = '=C{}'.format(row, row)
+        ws['FJ{}'.format(row)] = '=D{}'.format(row, row)
+        ws['FK{}'.format(row)] = '=E{}'.format(row, row)
+        ws['FL{}'.format(row)] = '=F{}'.format(row, row)
+
+        ws['FM{}'.format(row)] = '=IF(G{}="","",G{})'.format(row, row)
+        ws['FN{}'.format(row)] = '=IF(H{}="","",H{})'.format(row, row)
+        ws['FO{}'.format(row)] = '=IF(I{}="","",I{})'.format(row, row)
+        ws['FP{}'.format(row)] = '=IF(J{}="","",J{})'.format(row, row)
+        ws['FQ{}'.format(row)] = '=IF(K{}="","",K{})'.format(row, row)
+        ws['FR{}'.format(row)] = '=IF(L{}="","",L{})'.format(row, row)
+        ws['FS{}'.format(row)] = '=IF(M{}="","",M{})'.format(row, row)
+        ws['FT{}'.format(row)] = '=IF(N{}="","",N{})'.format(row, row)
+        ws['FU{}'.format(row)] = '=IF(O{}="","",O{})'.format(row, row)
+        ws['FV{}'.format(row)] = '=IF(P{}="","",P{})'.format(row, row)
+        ws['FW{}'.format(row)] = '=IF(Q{}="","",Q{})'.format(row, row)
+        ws['FX{}'.format(row)] = '=IF(R{}="","",R{})'.format(row, row)
         ws['FY{}'.format(
             row)] = '=IFERROR(ROUND(IF(FM{}="","",(FM{}-FM${})/FM${}),2),"")'.format(row, row, r, s)
         ws['FZ{}'.format(
@@ -2160,6 +2214,24 @@ if uploaded_file is not None:
         fill_type='solid', start_color='00FF6600', end_color='00FF6600')
 
     for row in range(2, q+1):
+        ws['HJ{}'.format(row)] = '=B{}'.format(row)
+        ws['HK{}'.format(row)] = '=C{}'.format(row, row)
+        ws['HL{}'.format(row)] = '=D{}'.format(row, row)
+        ws['HM{}'.format(row)] = '=E{}'.format(row, row)
+        ws['HN{}'.format(row)] = '=F{}'.format(row, row)
+
+        ws['HO{}'.format(row)] = '=IF(G{}="","",G{})'.format(row, row)
+        ws['HP{}'.format(row)] = '=IF(H{}="","",H{})'.format(row, row)
+        ws['HQ{}'.format(row)] = '=IF(I{}="","",I{})'.format(row, row)
+        ws['HR{}'.format(row)] = '=IF(J{}="","",J{})'.format(row, row)
+        ws['HS{}'.format(row)] = '=IF(K{}="","",K{})'.format(row, row)
+        ws['HT{}'.format(row)] = '=IF(L{}="","",L{})'.format(row, row)
+        ws['HU{}'.format(row)] = '=IF(M{}="","",M{})'.format(row, row)
+        ws['HV{}'.format(row)] = '=IF(N{}="","",N{})'.format(row, row)
+        ws['HW{}'.format(row)] = '=IF(O{}="","",O{})'.format(row, row)
+        ws['HX{}'.format(row)] = '=IF(P{}="","",P{})'.format(row, row)
+        ws['HY{}'.format(row)] = '=IF(Q{}="","",Q{})'.format(row, row)
+        ws['HZ{}'.format(row)] = '=IF(R{}="","",R{})'.format(row, row)
         ws['IA{}'.format(
             row)] = '=IFERROR(ROUND(IF(HO{}="","",(HO{}-HO${})/HO${}),2),"")'.format(row, row, r, s)
         ws['IB{}'.format(
@@ -2446,6 +2518,24 @@ if uploaded_file is not None:
         fill_type='solid', start_color='00FF6600', end_color='00FF6600')
 
     for row in range(2, q+1):
+        ws['JL{}'.format(row)] = '=B{}'.format(row)
+        ws['JM{}'.format(row)] = '=C{}'.format(row, row)
+        ws['JN{}'.format(row)] = '=D{}'.format(row, row)
+        ws['JO{}'.format(row)] = '=E{}'.format(row, row)
+        ws['JP{}'.format(row)] = '=F{}'.format(row, row)
+
+        ws['JQ{}'.format(row)] = '=IF(G{}="","",G{})'.format(row, row)
+        ws['JR{}'.format(row)] = '=IF(H{}="","",H{})'.format(row, row)
+        ws['JS{}'.format(row)] = '=IF(I{}="","",I{})'.format(row, row)
+        ws['JT{}'.format(row)] = '=IF(J{}="","",J{})'.format(row, row)
+        ws['JU{}'.format(row)] = '=IF(K{}="","",K{})'.format(row, row)
+        ws['JV{}'.format(row)] = '=IF(L{}="","",L{})'.format(row, row)
+        ws['JW{}'.format(row)] = '=IF(M{}="","",M{})'.format(row, row)
+        ws['JX{}'.format(row)] = '=IF(N{}="","",N{})'.format(row, row)
+        ws['JY{}'.format(row)] = '=IF(O{}="","",O{})'.format(row, row)
+        ws['JZ{}'.format(row)] = '=IF(P{}="","",P{})'.format(row, row)
+        ws['KA{}'.format(row)] = '=IF(Q{}="","",Q{})'.format(row, row)
+        ws['KB{}'.format(row)] = '=IF(R{}="","",R{})'.format(row, row)
         ws['KC{}'.format(
             row)] = '=IFERROR(ROUND(IF(JQ{}="","",(JQ{}-JQ${})/JQ${}),2),"")'.format(row, row, r, s)
         ws['KD{}'.format(
