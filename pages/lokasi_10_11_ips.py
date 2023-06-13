@@ -1828,7 +1828,7 @@ if uploaded_file is not None:
         'border': 1,
         'align': 'center',
         'valign': 'vcenter',
-        'font_size': 40,
+        'font_size': 37,
         'font_name': 'Arial Rounded MT Bold'})
     borderCover = workbook.add_format({
         'bottom': 1,
@@ -8209,7 +8209,7 @@ if uploaded_file is not None:
         'border': 1,
         'align': 'center',
         'valign': 'vcenter',
-        'font_size': 40,
+        'font_size': 37,
         'font_name': 'Arial Rounded MT Bold'})
     borderCover = workbook.add_format({
         'bottom': 1,
@@ -14611,7 +14611,7 @@ if uploaded_file is not None:
         'border': 1,
         'align': 'center',
         'valign': 'vcenter',
-        'font_size': 40,
+        'font_size': 37,
         'font_name': 'Arial Rounded MT Bold'})
     borderCover = workbook.add_format({
         'bottom': 1,
@@ -20152,7 +20152,7 @@ if uploaded_file is not None:
         'border': 1,
         'align': 'center',
         'valign': 'vcenter',
-        'font_size': 40,
+        'font_size': 37,
         'font_name': 'Arial Rounded MT Bold'})
     borderCover = workbook.add_format({
         'bottom': 1,
