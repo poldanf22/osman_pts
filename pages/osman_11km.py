@@ -1374,27 +1374,27 @@ if uploaded_file is not None:
             row)] = '=IF(CR{}="","",COUNTIFS($BH$2:$BH${},BH{},$CR$2:$CR${},"<"&CR{})+1)'.format(row, q, row, q, row)
 
     # TAMBAHAN
-        ws['CT{}'.format(row)] = '=IF($BI${}=20,IF(AND(BI{}>3,CF{}=20),1,""),IF($BI${}=25,IF(AND(BI{}>4,CF{}=20),1,""),IF($BI${}=30,IF(AND(BI{}>5,CF{}=20),1,""),IF($BI${}=35,IF(AND(BI{}>6,CF{}=20),1,""),IF($BI${}=40,IF(AND(BI{}>7,CF{}=20),1,""),IF($BI${}=45,IF(AND(BI{}>8,CF{}=20),1,"")))))))'.format(
+        ws['CT{}'.format(row)] = '=IF($G${}=20,IF(AND(G{}>3,CF{}=20),1,""),IF($G${}=25,IF(AND(G{}>4,CF{}=20),1,""),IF($G${}=30,IF(AND(G{}>5,CF{}=20),1,""),IF($G${}=35,IF(AND(G{}>6,CF{}=20),1,""),IF($G${}=40,IF(AND(G{}>7,CF{}=20),1,""),IF($G${}=45,IF(AND(G{}>8,CF{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['CU{}'.format(row)] = '=IF($BJ${}=20,IF(AND(BJ{}>3,CG{}=20),1,""),IF($BJ${}=25,IF(AND(BJ{}>4,CG{}=20),1,""),IF($BJ${}=30,IF(AND(BJ{}>5,CG{}=20),1,""),IF($BJ${}=35,IF(AND(BJ{}>6,CG{}=20),1,""),IF($BJ${}=40,IF(AND(BJ{}>7,CG{}=20),1,""),IF($BJ${}=45,IF(AND(BJ{}>8,CG{}=20),1,"")))))))'.format(
+        ws['CU{}'.format(row)] = '=IF($H${}=20,IF(AND(H{}>3,CG{}=20),1,""),IF($H${}=25,IF(AND(H{}>4,CG{}=20),1,""),IF($H${}=30,IF(AND(H{}>5,CG{}=20),1,""),IF($H${}=35,IF(AND(H{}>6,CG{}=20),1,""),IF($H${}=40,IF(AND(H{}>7,CG{}=20),1,""),IF($H${}=45,IF(AND(H{}>8,CG{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['CV{}'.format(row)] = '=IF($BK${}=20,IF(AND(BK{}>3,CH{}=20),1,""),IF($BK${}=25,IF(AND(BK{}>4,CH{}=20),1,""),IF($BK${}=30,IF(AND(BK{}>5,CH{}=20),1,""),IF($BK${}=35,IF(AND(BK{}>6,CH{}=20),1,""),IF($BK${}=40,IF(AND(BK{}>7,CH{}=20),1,""),IF($BK${}=45,IF(AND(BK{}>8,CH{}=20),1,"")))))))'.format(
+        ws['CV{}'.format(row)] = '=IF($I${}=20,IF(AND(I{}>3,CH{}=20),1,""),IF($I${}=25,IF(AND(I{}>4,CH{}=20),1,""),IF($I${}=30,IF(AND(I{}>5,CH{}=20),1,""),IF($I${}=35,IF(AND(I{}>6,CH{}=20),1,""),IF($I${}=40,IF(AND(I{}>7,CH{}=20),1,""),IF($I${}=45,IF(AND(I{}>8,CH{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['CW{}'.format(row)] = '=IF($BL${}=20,IF(AND(BL{}>3,CI{}=20),1,""),IF($BL${}=25,IF(AND(BL{}>4,CI{}=20),1,""),IF($BL${}=30,IF(AND(BL{}>5,CI{}=20),1,""),IF($BL${}=35,IF(AND(BL{}>6,CI{}=20),1,""),IF($BL${}=40,IF(AND(BL{}>7,CI{}=20),1,""),IF($BL${}=45,IF(AND(BL{}>8,CI{}=20),1,"")))))))'.format(
+        ws['CW{}'.format(row)] = '=IF($J${}=20,IF(AND(J{}>3,CI{}=20),1,""),IF($J${}=25,IF(AND(J{}>4,CI{}=20),1,""),IF($J${}=30,IF(AND(J{}>5,CI{}=20),1,""),IF($J${}=35,IF(AND(J{}>6,CI{}=20),1,""),IF($J${}=40,IF(AND(J{}>7,CI{}=20),1,""),IF($J${}=45,IF(AND(J{}>8,CI{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['CX{}'.format(row)] = '=IF($BM${}=20,IF(AND(BM{}>3,CJ{}=20),1,""),IF($BM${}=25,IF(AND(BM{}>4,CJ{}=20),1,""),IF($BM${}=30,IF(AND(BM{}>5,CJ{}=20),1,""),IF($BM${}=35,IF(AND(BM{}>6,CJ{}=20),1,""),IF($BM${}=40,IF(AND(BM{}>7,CJ{}=20),1,""),IF($BM${}=45,IF(AND(BM{}>8,CJ{}=20),1,"")))))))'.format(
+        ws['CX{}'.format(row)] = '=IF($K${}=20,IF(AND(K{}>3,CJ{}=20),1,""),IF($K${}=25,IF(AND(K{}>4,CJ{}=20),1,""),IF($K${}=30,IF(AND(K{}>5,CJ{}=20),1,""),IF($K${}=35,IF(AND(K{}>6,CJ{}=20),1,""),IF($K${}=40,IF(AND(K{}>7,CJ{}=20),1,""),IF($K${}=45,IF(AND(K{}>8,CJ{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['CY{}'.format(row)] = '=IF($BN${}=20,IF(AND(BN{}>3,CK{}=20),1,""),IF($BN${}=25,IF(AND(BN{}>4,CK{}=20),1,""),IF($BN${}=30,IF(AND(BN{}>5,CK{}=20),1,""),IF($BN${}=35,IF(AND(BN{}>6,CK{}=20),1,""),IF($BN${}=40,IF(AND(BN{}>7,CK{}=20),1,""),IF($BN${}=45,IF(AND(BN{}>8,CK{}=20),1,"")))))))'.format(
+        ws['CY{}'.format(row)] = '=IF($L${}=20,IF(AND(L{}>3,CK{}=20),1,""),IF($L${}=25,IF(AND(L{}>4,CK{}=20),1,""),IF($L${}=30,IF(AND(L{}>5,CK{}=20),1,""),IF($L${}=35,IF(AND(L{}>6,CK{}=20),1,""),IF($L${}=40,IF(AND(L{}>7,CK{}=20),1,""),IF($L${}=45,IF(AND(L{}>8,CK{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['CZ{}'.format(row)] = '=IF($BO${}=20,IF(AND(BO{}>3,CL{}=20),1,""),IF($BO${}=25,IF(AND(BO{}>4,CL{}=20),1,""),IF($BO${}=30,IF(AND(BO{}>5,CL{}=20),1,""),IF($BO${}=35,IF(AND(BO{}>6,CL{}=20),1,""),IF($BO${}=40,IF(AND(BO{}>7,CL{}=20),1,""),IF($BO${}=45,IF(AND(BO{}>8,CL{}=20),1,"")))))))'.format(
+        ws['CZ{}'.format(row)] = '=IF($M${}=20,IF(AND(M{}>3,CL{}=20),1,""),IF($M${}=25,IF(AND(M{}>4,CL{}=20),1,""),IF($M${}=30,IF(AND(M{}>5,CL{}=20),1,""),IF($M${}=35,IF(AND(M{}>6,CL{}=20),1,""),IF($M${}=40,IF(AND(M{}>7,CL{}=20),1,""),IF($M${}=45,IF(AND(M{}>8,CL{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['DA{}'.format(row)] = '=IF($BP${}=20,IF(AND(BP{}>3,CM{}=20),1,""),IF($BP${}=25,IF(AND(BP{}>4,CM{}=20),1,""),IF($BP${}=30,IF(AND(BP{}>5,CM{}=20),1,""),IF($BP${}=35,IF(AND(BP{}>6,CM{}=20),1,""),IF($BP${}=40,IF(AND(BP{}>7,CM{}=20),1,""),IF($BP${}=45,IF(AND(BP{}>8,CM{}=20),1,"")))))))'.format(
+        ws['DA{}'.format(row)] = '=IF($N${}=20,IF(AND(N{}>3,CM{}=20),1,""),IF($N${}=25,IF(AND(N{}>4,CM{}=20),1,""),IF($N${}=30,IF(AND(N{}>5,CM{}=20),1,""),IF($N${}=35,IF(AND(N{}>6,CM{}=20),1,""),IF($N${}=40,IF(AND(N{}>7,CM{}=20),1,""),IF($N${}=45,IF(AND(N{}>8,CM{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['DB{}'.format(row)] = '=IF($BQ${}=20,IF(AND(BQ{}>3,CN{}=20),1,""),IF($BQ${}=25,IF(AND(BQ{}>4,CN{}=20),1,""),IF($BQ${}=30,IF(AND(BQ{}>5,CN{}=20),1,""),IF($BQ${}=35,IF(AND(BQ{}>6,CN{}=20),1,""),IF($BQ${}=40,IF(AND(BQ{}>7,CN{}=20),1,""),IF($BQ${}=45,IF(AND(BQ{}>8,CN{}=20),1,"")))))))'.format(
+        ws['DB{}'.format(row)] = '=IF($O${}=20,IF(AND(O{}>3,CN{}=20),1,""),IF($O${}=25,IF(AND(O{}>4,CN{}=20),1,""),IF($O${}=30,IF(AND(O{}>5,CN{}=20),1,""),IF($O${}=35,IF(AND(O{}>6,CN{}=20),1,""),IF($O${}=40,IF(AND(O{}>7,CN{}=20),1,""),IF($O${}=45,IF(AND(O{}>8,CN{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['DC{}'.format(row)] = '=IF($BR${}=20,IF(AND(BR{}>3,CO{}=20),1,""),IF($BR${}=25,IF(AND(BR{}>4,CO{}=20),1,""),IF($BR${}=30,IF(AND(BR{}>5,CO{}=20),1,""),IF($BR${}=35,IF(AND(BR{}>6,CO{}=20),1,""),IF($BR${}=40,IF(AND(BR{}>7,CO{}=20),1,""),IF($BR${}=45,IF(AND(BR{}>8,CO{}=20),1,"")))))))'.format(
+        ws['DC{}'.format(row)] = '=IF($P${}=20,IF(AND(P{}>3,CO{}=20),1,""),IF($P${}=25,IF(AND(P{}>4,CO{}=20),1,""),IF($P${}=30,IF(AND(P{}>5,CO{}=20),1,""),IF($P${}=35,IF(AND(P{}>6,CO{}=20),1,""),IF($P${}=40,IF(AND(P{}>7,CO{}=20),1,""),IF($P${}=45,IF(AND(P{}>8,CO{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['DD{}'.format(row)] = '=IF($BS${}=20,IF(AND(BS{}>3,CP{}=20),1,""),IF($BS${}=25,IF(AND(BS{}>4,CP{}=20),1,""),IF($BS${}=30,IF(AND(BS{}>5,CP{}=20),1,""),IF($BS${}=35,IF(AND(BS{}>6,CP{}=20),1,""),IF($BS${}=40,IF(AND(BS{}>7,CP{}=20),1,""),IF($BS${}=45,IF(AND(BS{}>8,CP{}=20),1,"")))))))'.format(
+        ws['DD{}'.format(row)] = '=IF($Q${}=20,IF(AND(Q{}>3,CP{}=20),1,""),IF($Q${}=25,IF(AND(Q{}>4,CP{}=20),1,""),IF($Q${}=30,IF(AND(Q{}>5,CP{}=20),1,""),IF($Q${}=35,IF(AND(Q{}>6,CP{}=20),1,""),IF($Q${}=40,IF(AND(Q{}>7,CP{}=20),1,""),IF($Q${}=45,IF(AND(Q{}>8,CP{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
 
     # Z Score [3]
@@ -1678,27 +1678,27 @@ if uploaded_file is not None:
             row)] = '=IF(ET{}="","",COUNTIFS($DJ$2:$DJ${},DJ{},$ET$2:$ET${},"<"&ET{})+1)'.format(row, q, row, q, row)
 
     # TAMBAHAN
-        ws['EV{}'.format(row)] = '=IF($DK${}=20,IF(AND(DK{}>3,EH{}=20),1,""),IF($DK${}=25,IF(AND(DK{}>4,EH{}=20),1,""),IF($DK${}=30,IF(AND(DK{}>5,EH{}=20),1,""),IF($DK${}=35,IF(AND(DK{}>6,EH{}=20),1,""),IF($DK${}=40,IF(AND(DK{}>7,EH{}=20),1,""),IF($DK${}=45,IF(AND(DK{}>8,EH{}=20),1,"")))))))'.format(
+        ws['EV{}'.format(row)] = '=IF($G${}=20,IF(AND(G{}>3,EH{}=20),1,""),IF($G${}=25,IF(AND(G{}>4,EH{}=20),1,""),IF($G${}=30,IF(AND(G{}>5,EH{}=20),1,""),IF($G${}=35,IF(AND(G{}>6,EH{}=20),1,""),IF($G${}=40,IF(AND(G{}>7,EH{}=20),1,""),IF($G${}=45,IF(AND(G{}>8,EH{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['EW{}'.format(row)] = '=IF($DL${}=20,IF(AND(DL{}>3,EI{}=20),1,""),IF($DL${}=25,IF(AND(DL{}>4,EI{}=20),1,""),IF($DL${}=30,IF(AND(DL{}>5,EI{}=20),1,""),IF($DL${}=35,IF(AND(DL{}>6,EI{}=20),1,""),IF($DL${}=40,IF(AND(DL{}>7,EI{}=20),1,""),IF($DL${}=45,IF(AND(DL{}>8,EI{}=20),1,"")))))))'.format(
+        ws['EW{}'.format(row)] = '=IF($H${}=20,IF(AND(H{}>3,EI{}=20),1,""),IF($H${}=25,IF(AND(H{}>4,EI{}=20),1,""),IF($H${}=30,IF(AND(H{}>5,EI{}=20),1,""),IF($H${}=35,IF(AND(H{}>6,EI{}=20),1,""),IF($H${}=40,IF(AND(H{}>7,EI{}=20),1,""),IF($H${}=45,IF(AND(H{}>8,EI{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['EX{}'.format(row)] = '=IF($DM${}=20,IF(AND(DM{}>3,EJ{}=20),1,""),IF($DM${}=25,IF(AND(DM{}>4,EJ{}=20),1,""),IF($DM${}=30,IF(AND(DM{}>5,EJ{}=20),1,""),IF($DM${}=35,IF(AND(DM{}>6,EJ{}=20),1,""),IF($DM${}=40,IF(AND(DM{}>7,EJ{}=20),1,""),IF($DM${}=45,IF(AND(DM{}>8,EJ{}=20),1,"")))))))'.format(
+        ws['EX{}'.format(row)] = '=IF($I${}=20,IF(AND(I{}>3,EJ{}=20),1,""),IF($I${}=25,IF(AND(I{}>4,EJ{}=20),1,""),IF($I${}=30,IF(AND(I{}>5,EJ{}=20),1,""),IF($I${}=35,IF(AND(I{}>6,EJ{}=20),1,""),IF($I${}=40,IF(AND(I{}>7,EJ{}=20),1,""),IF($I${}=45,IF(AND(I{}>8,EJ{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['EY{}'.format(row)] = '=IF($DN${}=20,IF(AND(DN{}>3,EK{}=20),1,""),IF($DN${}=25,IF(AND(DN{}>4,EK{}=20),1,""),IF($DN${}=30,IF(AND(DN{}>5,EK{}=20),1,""),IF($DN${}=35,IF(AND(DN{}>6,EK{}=20),1,""),IF($DN${}=40,IF(AND(DN{}>7,EK{}=20),1,""),IF($DN${}=45,IF(AND(DN{}>8,EK{}=20),1,"")))))))'.format(
+        ws['EY{}'.format(row)] = '=IF($J${}=20,IF(AND(J{}>3,EK{}=20),1,""),IF($J${}=25,IF(AND(J{}>4,EK{}=20),1,""),IF($J${}=30,IF(AND(J{}>5,EK{}=20),1,""),IF($J${}=35,IF(AND(J{}>6,EK{}=20),1,""),IF($J${}=40,IF(AND(J{}>7,EK{}=20),1,""),IF($J${}=45,IF(AND(J{}>8,EK{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['EZ{}'.format(row)] = '=IF($DO${}=20,IF(AND(DO{}>3,EL{}=20),1,""),IF($DO${}=25,IF(AND(DO{}>4,EL{}=20),1,""),IF($DO${}=30,IF(AND(DO{}>5,EL{}=20),1,""),IF($DO${}=35,IF(AND(DO{}>6,EL{}=20),1,""),IF($DO${}=40,IF(AND(DO{}>7,EL{}=20),1,""),IF($DO${}=45,IF(AND(DO{}>8,EL{}=20),1,"")))))))'.format(
+        ws['EZ{}'.format(row)] = '=IF($K${}=20,IF(AND(K{}>3,EL{}=20),1,""),IF($K${}=25,IF(AND(K{}>4,EL{}=20),1,""),IF($K${}=30,IF(AND(K{}>5,EL{}=20),1,""),IF($K${}=35,IF(AND(K{}>6,EL{}=20),1,""),IF($K${}=40,IF(AND(K{}>7,EL{}=20),1,""),IF($K${}=45,IF(AND(K{}>8,EL{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['FA{}'.format(row)] = '=IF($DP${}=20,IF(AND(DP{}>3,EM{}=20),1,""),IF($DP${}=25,IF(AND(DP{}>4,EM{}=20),1,""),IF($DP${}=30,IF(AND(DP{}>5,EM{}=20),1,""),IF($DP${}=35,IF(AND(DP{}>6,EM{}=20),1,""),IF($DP${}=40,IF(AND(DP{}>7,EM{}=20),1,""),IF($DP${}=45,IF(AND(DP{}>8,EM{}=20),1,"")))))))'.format(
+        ws['FA{}'.format(row)] = '=IF($L${}=20,IF(AND(L{}>3,EM{}=20),1,""),IF($L${}=25,IF(AND(L{}>4,EM{}=20),1,""),IF($L${}=30,IF(AND(L{}>5,EM{}=20),1,""),IF($L${}=35,IF(AND(L{}>6,EM{}=20),1,""),IF($L${}=40,IF(AND(L{}>7,EM{}=20),1,""),IF($L${}=45,IF(AND(L{}>8,EM{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['FB{}'.format(row)] = '=IF($DQ${}=20,IF(AND(DQ{}>3,EN{}=20),1,""),IF($DQ${}=25,IF(AND(DQ{}>4,EN{}=20),1,""),IF($DQ${}=30,IF(AND(DQ{}>5,EN{}=20),1,""),IF($DQ${}=35,IF(AND(DQ{}>6,EN{}=20),1,""),IF($DQ${}=40,IF(AND(DQ{}>7,EN{}=20),1,""),IF($DQ${}=45,IF(AND(DQ{}>8,EN{}=20),1,"")))))))'.format(
+        ws['FB{}'.format(row)] = '=IF($M${}=20,IF(AND(M{}>3,EN{}=20),1,""),IF($M${}=25,IF(AND(M{}>4,EN{}=20),1,""),IF($M${}=30,IF(AND(M{}>5,EN{}=20),1,""),IF($M${}=35,IF(AND(M{}>6,EN{}=20),1,""),IF($M${}=40,IF(AND(M{}>7,EN{}=20),1,""),IF($M${}=45,IF(AND(M{}>8,EN{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['FC{}'.format(row)] = '=IF($DR${}=20,IF(AND(DR{}>3,EO{}=20),1,""),IF($DR${}=25,IF(AND(DR{}>4,EO{}=20),1,""),IF($DR${}=30,IF(AND(DR{}>5,EO{}=20),1,""),IF($DR${}=35,IF(AND(DR{}>6,EO{}=20),1,""),IF($DR${}=40,IF(AND(DR{}>7,EO{}=20),1,""),IF($DR${}=45,IF(AND(DR{}>8,EO{}=20),1,"")))))))'.format(
+        ws['FC{}'.format(row)] = '=IF($N${}=20,IF(AND(N{}>3,EO{}=20),1,""),IF($N${}=25,IF(AND(N{}>4,EO{}=20),1,""),IF($N${}=30,IF(AND(N{}>5,EO{}=20),1,""),IF($N${}=35,IF(AND(N{}>6,EO{}=20),1,""),IF($N${}=40,IF(AND(N{}>7,EO{}=20),1,""),IF($N${}=45,IF(AND(N{}>8,EO{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['FD{}'.format(row)] = '=IF($DS${}=20,IF(AND(DS{}>3,EP{}=20),1,""),IF($DS${}=25,IF(AND(DS{}>4,EP{}=20),1,""),IF($DS${}=30,IF(AND(DS{}>5,EP{}=20),1,""),IF($DS${}=35,IF(AND(DS{}>6,EP{}=20),1,""),IF($DS${}=40,IF(AND(DS{}>7,EP{}=20),1,""),IF($DS${}=45,IF(AND(DS{}>8,EP{}=20),1,"")))))))'.format(
+        ws['FD{}'.format(row)] = '=IF($O${}=20,IF(AND(O{}>3,EP{}=20),1,""),IF($O${}=25,IF(AND(O{}>4,EP{}=20),1,""),IF($O${}=30,IF(AND(O{}>5,EP{}=20),1,""),IF($O${}=35,IF(AND(O{}>6,EP{}=20),1,""),IF($O${}=40,IF(AND(O{}>7,EP{}=20),1,""),IF($O${}=45,IF(AND(O{}>8,EP{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['FE{}'.format(row)] = '=IF($DT${}=20,IF(AND(DT{}>3,EQ{}=20),1,""),IF($DT${}=25,IF(AND(DT{}>4,EQ{}=20),1,""),IF($DT${}=30,IF(AND(DT{}>5,EQ{}=20),1,""),IF($DT${}=35,IF(AND(DT{}>6,EQ{}=20),1,""),IF($DT${}=40,IF(AND(DT{}>7,EQ{}=20),1,""),IF($DT${}=45,IF(AND(DT{}>8,EQ{}=20),1,"")))))))'.format(
+        ws['FE{}'.format(row)] = '=IF($P${}=20,IF(AND(P{}>3,EQ{}=20),1,""),IF($P${}=25,IF(AND(P{}>4,EQ{}=20),1,""),IF($P${}=30,IF(AND(P{}>5,EQ{}=20),1,""),IF($P${}=35,IF(AND(P{}>6,EQ{}=20),1,""),IF($P${}=40,IF(AND(P{}>7,EQ{}=20),1,""),IF($P${}=45,IF(AND(P{}>8,EQ{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['FF{}'.format(row)] = '=IF($DU${}=20,IF(AND(DU{}>3,ER{}=20),1,""),IF($DU${}=25,IF(AND(DU{}>4,ER{}=20),1,""),IF($DU${}=30,IF(AND(DU{}>5,ER{}=20),1,""),IF($DU${}=35,IF(AND(DU{}>6,ER{}=20),1,""),IF($DU${}=40,IF(AND(DU{}>7,ER{}=20),1,""),IF($DU${}=45,IF(AND(DU{}>8,ER{}=20),1,"")))))))'.format(
+        ws['FF{}'.format(row)] = '=IF($Q${}=20,IF(AND(Q{}>3,ER{}=20),1,""),IF($Q${}=25,IF(AND(Q{}>4,ER{}=20),1,""),IF($Q${}=30,IF(AND(Q{}>5,ER{}=20),1,""),IF($Q${}=35,IF(AND(Q{}>6,ER{}=20),1,""),IF($Q${}=40,IF(AND(Q{}>7,ER{}=20),1,""),IF($Q${}=45,IF(AND(Q{}>8,ER{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
 
     # Z Score [4]
@@ -1982,27 +1982,27 @@ if uploaded_file is not None:
             row)] = '=IF(GV{}="","",COUNTIFS($FL$2:$FL${},FL{},$GV$2:$GV${},"<"&GV{})+1)'.format(row, q, row, q, row)
 
     # TAMBAHAN
-        ws['GX{}'.format(row)] = '=IF($FM${}=20,IF(AND(FM{}>3,GJ{}=20),1,""),IF($FM${}=25,IF(AND(FM{}>4,GJ{}=20),1,""),IF($FM${}=30,IF(AND(FM{}>5,GJ{}=20),1,""),IF($FM${}=35,IF(AND(FM{}>6,GJ{}=20),1,""),IF($FM${}=40,IF(AND(FM{}>7,GJ{}=20),1,""),IF($FM${}=45,IF(AND(FM{}>8,GJ{}=20),1,"")))))))'.format(
+        ws['GX{}'.format(row)] = '=IF($G${}=20,IF(AND(G{}>3,GJ{}=20),1,""),IF($G${}=25,IF(AND(G{}>4,GJ{}=20),1,""),IF($G${}=30,IF(AND(G{}>5,GJ{}=20),1,""),IF($G${}=35,IF(AND(G{}>6,GJ{}=20),1,""),IF($G${}=40,IF(AND(G{}>7,GJ{}=20),1,""),IF($G${}=45,IF(AND(G{}>8,GJ{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['GY{}'.format(row)] = '=IF($FN${}=20,IF(AND(FN{}>3,GK{}=20),1,""),IF($FN${}=25,IF(AND(FN{}>4,GK{}=20),1,""),IF($FN${}=30,IF(AND(FN{}>5,GK{}=20),1,""),IF($FN${}=35,IF(AND(FN{}>6,GK{}=20),1,""),IF($FN${}=40,IF(AND(FN{}>7,GK{}=20),1,""),IF($FN${}=45,IF(AND(FN{}>8,GK{}=20),1,"")))))))'.format(
+        ws['GY{}'.format(row)] = '=IF($H${}=20,IF(AND(H{}>3,GK{}=20),1,""),IF($H${}=25,IF(AND(H{}>4,GK{}=20),1,""),IF($H${}=30,IF(AND(H{}>5,GK{}=20),1,""),IF($H${}=35,IF(AND(H{}>6,GK{}=20),1,""),IF($H${}=40,IF(AND(H{}>7,GK{}=20),1,""),IF($H${}=45,IF(AND(H{}>8,GK{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['GZ{}'.format(row)] = '=IF($FO${}=20,IF(AND(FO{}>3,GL{}=20),1,""),IF($FO${}=25,IF(AND(FO{}>4,GL{}=20),1,""),IF($FO${}=30,IF(AND(FO{}>5,GL{}=20),1,""),IF($FO${}=35,IF(AND(FO{}>6,GL{}=20),1,""),IF($FO${}=40,IF(AND(FO{}>7,GL{}=20),1,""),IF($FO${}=45,IF(AND(FO{}>8,GL{}=20),1,"")))))))'.format(
+        ws['GZ{}'.format(row)] = '=IF($I${}=20,IF(AND(I{}>3,GL{}=20),1,""),IF($I${}=25,IF(AND(I{}>4,GL{}=20),1,""),IF($I${}=30,IF(AND(I{}>5,GL{}=20),1,""),IF($I${}=35,IF(AND(I{}>6,GL{}=20),1,""),IF($I${}=40,IF(AND(I{}>7,GL{}=20),1,""),IF($I${}=45,IF(AND(I{}>8,GL{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['HA{}'.format(row)] = '=IF($FP${}=20,IF(AND(FP{}>3,GM{}=20),1,""),IF($FP${}=25,IF(AND(FP{}>4,GM{}=20),1,""),IF($FP${}=30,IF(AND(FP{}>5,GM{}=20),1,""),IF($FP${}=35,IF(AND(FP{}>6,GM{}=20),1,""),IF($FP${}=40,IF(AND(FP{}>7,GM{}=20),1,""),IF($FP${}=45,IF(AND(FP{}>8,GM{}=20),1,"")))))))'.format(
+        ws['HA{}'.format(row)] = '=IF($J${}=20,IF(AND(J{}>3,GM{}=20),1,""),IF($J${}=25,IF(AND(J{}>4,GM{}=20),1,""),IF($J${}=30,IF(AND(J{}>5,GM{}=20),1,""),IF($J${}=35,IF(AND(J{}>6,GM{}=20),1,""),IF($J${}=40,IF(AND(J{}>7,GM{}=20),1,""),IF($J${}=45,IF(AND(J{}>8,GM{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['HB{}'.format(row)] = '=IF($FQ${}=20,IF(AND(FQ{}>3,GN{}=20),1,""),IF($FQ${}=25,IF(AND(FQ{}>4,GN{}=20),1,""),IF($FQ${}=30,IF(AND(FQ{}>5,GN{}=20),1,""),IF($FQ${}=35,IF(AND(FQ{}>6,GN{}=20),1,""),IF($FQ${}=40,IF(AND(FQ{}>7,GN{}=20),1,""),IF($FQ${}=45,IF(AND(FQ{}>8,GN{}=20),1,"")))))))'.format(
+        ws['HB{}'.format(row)] = '=IF($K${}=20,IF(AND(K{}>3,GN{}=20),1,""),IF($K${}=25,IF(AND(K{}>4,GN{}=20),1,""),IF($K${}=30,IF(AND(K{}>5,GN{}=20),1,""),IF($K${}=35,IF(AND(K{}>6,GN{}=20),1,""),IF($K${}=40,IF(AND(K{}>7,GN{}=20),1,""),IF($K${}=45,IF(AND(K{}>8,GN{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['HC{}'.format(row)] = '=IF($FR${}=20,IF(AND(FR{}>3,GO{}=20),1,""),IF($FR${}=25,IF(AND(FR{}>4,GO{}=20),1,""),IF($FR${}=30,IF(AND(FR{}>5,GO{}=20),1,""),IF($FR${}=35,IF(AND(FR{}>6,GO{}=20),1,""),IF($FR${}=40,IF(AND(FR{}>7,GO{}=20),1,""),IF($FR${}=45,IF(AND(FR{}>8,GO{}=20),1,"")))))))'.format(
+        ws['HC{}'.format(row)] = '=IF($L${}=20,IF(AND(L{}>3,GO{}=20),1,""),IF($L${}=25,IF(AND(L{}>4,GO{}=20),1,""),IF($L${}=30,IF(AND(L{}>5,GO{}=20),1,""),IF($L${}=35,IF(AND(L{}>6,GO{}=20),1,""),IF($L${}=40,IF(AND(L{}>7,GO{}=20),1,""),IF($L${}=45,IF(AND(L{}>8,GO{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['HD{}'.format(row)] = '=IF($FS${}=20,IF(AND(FS{}>3,GP{}=20),1,""),IF($FS${}=25,IF(AND(FS{}>4,GP{}=20),1,""),IF($FS${}=30,IF(AND(FS{}>5,GP{}=20),1,""),IF($FS${}=35,IF(AND(FS{}>6,GP{}=20),1,""),IF($FS${}=40,IF(AND(FS{}>7,GP{}=20),1,""),IF($FS${}=45,IF(AND(FS{}>8,GP{}=20),1,"")))))))'.format(
+        ws['HD{}'.format(row)] = '=IF($M${}=20,IF(AND(M{}>3,GP{}=20),1,""),IF($M${}=25,IF(AND(M{}>4,GP{}=20),1,""),IF($M${}=30,IF(AND(M{}>5,GP{}=20),1,""),IF($M${}=35,IF(AND(M{}>6,GP{}=20),1,""),IF($M${}=40,IF(AND(M{}>7,GP{}=20),1,""),IF($M${}=45,IF(AND(M{}>8,GP{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['HE{}'.format(row)] = '=IF($FT${}=20,IF(AND(FT{}>3,GQ{}=20),1,""),IF($FT${}=25,IF(AND(FT{}>4,GQ{}=20),1,""),IF($FT${}=30,IF(AND(FT{}>5,GQ{}=20),1,""),IF($FT${}=35,IF(AND(FT{}>6,GQ{}=20),1,""),IF($FT${}=40,IF(AND(FT{}>7,GQ{}=20),1,""),IF($FT${}=45,IF(AND(FT{}>8,GQ{}=20),1,"")))))))'.format(
+        ws['HE{}'.format(row)] = '=IF($N${}=20,IF(AND(N{}>3,GQ{}=20),1,""),IF($N${}=25,IF(AND(N{}>4,GQ{}=20),1,""),IF($N${}=30,IF(AND(N{}>5,GQ{}=20),1,""),IF($N${}=35,IF(AND(N{}>6,GQ{}=20),1,""),IF($N${}=40,IF(AND(N{}>7,GQ{}=20),1,""),IF($N${}=45,IF(AND(N{}>8,GQ{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['HF{}'.format(row)] = '=IF($FU${}=20,IF(AND(FU{}>3,GR{}=20),1,""),IF($FU${}=25,IF(AND(FU{}>4,GR{}=20),1,""),IF($FU${}=30,IF(AND(FU{}>5,GR{}=20),1,""),IF($FU${}=35,IF(AND(FU{}>6,GR{}=20),1,""),IF($FU${}=40,IF(AND(FU{}>7,GR{}=20),1,""),IF($FU${}=45,IF(AND(FU{}>8,GR{}=20),1,"")))))))'.format(
+        ws['HF{}'.format(row)] = '=IF($O${}=20,IF(AND(O{}>3,GR{}=20),1,""),IF($O${}=25,IF(AND(O{}>4,GR{}=20),1,""),IF($O${}=30,IF(AND(O{}>5,GR{}=20),1,""),IF($O${}=35,IF(AND(O{}>6,GR{}=20),1,""),IF($O${}=40,IF(AND(O{}>7,GR{}=20),1,""),IF($O${}=45,IF(AND(O{}>8,GR{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['HG{}'.format(row)] = '=IF($FV${}=20,IF(AND(FV{}>3,GS{}=20),1,""),IF($FV${}=25,IF(AND(FV{}>4,GS{}=20),1,""),IF($FV${}=30,IF(AND(FV{}>5,GS{}=20),1,""),IF($FV${}=35,IF(AND(FV{}>6,GS{}=20),1,""),IF($FV${}=40,IF(AND(FV{}>7,GS{}=20),1,""),IF($FV${}=45,IF(AND(FV{}>8,GS{}=20),1,"")))))))'.format(
+        ws['HG{}'.format(row)] = '=IF($P${}=20,IF(AND(P{}>3,GS{}=20),1,""),IF($P${}=25,IF(AND(P{}>4,GS{}=20),1,""),IF($P${}=30,IF(AND(P{}>5,GS{}=20),1,""),IF($P${}=35,IF(AND(P{}>6,GS{}=20),1,""),IF($P${}=40,IF(AND(P{}>7,GS{}=20),1,""),IF($P${}=45,IF(AND(P{}>8,GS{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['HH{}'.format(row)] = '=IF($FW${}=20,IF(AND(FW{}>3,GT{}=20),1,""),IF($FW${}=25,IF(AND(FW{}>4,GT{}=20),1,""),IF($FW${}=30,IF(AND(FW{}>5,GT{}=20),1,""),IF($FW${}=35,IF(AND(FW{}>6,GT{}=20),1,""),IF($FW${}=40,IF(AND(FW{}>7,GT{}=20),1,""),IF($FW${}=45,IF(AND(FW{}>8,GT{}=20),1,"")))))))'.format(
+        ws['HH{}'.format(row)] = '=IF($Q${}=20,IF(AND(Q{}>3,GT{}=20),1,""),IF($Q${}=25,IF(AND(Q{}>4,GT{}=20),1,""),IF($Q${}=30,IF(AND(Q{}>5,GT{}=20),1,""),IF($Q${}=35,IF(AND(Q{}>6,GT{}=20),1,""),IF($Q${}=40,IF(AND(Q{}>7,GT{}=20),1,""),IF($Q${}=45,IF(AND(Q{}>8,GT{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
 
     # Z Score [5]
@@ -2286,27 +2286,27 @@ if uploaded_file is not None:
             row)] = '=IF(IY{}="","",COUNTIFS($HN$2:$HN${},HN{},$IY$2:$IY${},"<"&IY{})+1)'.format(row, q, row, q, row)
 
     # TAMBAHAN
-        ws['IZ{}'.format(row)] = '=IF($HO${}=20,IF(AND(HO{}>3,IL{}=20),1,""),IF($HO${}=25,IF(AND(HO{}>4,IL{}=20),1,""),IF($HO${}=30,IF(AND(HO{}>5,IL{}=20),1,""),IF($HO${}=35,IF(AND(HO{}>6,IL{}=20),1,""),IF($HO${}=40,IF(AND(HO{}>7,IL{}=20),1,""),IF($HO${}=45,IF(AND(HO{}>8,IL{}=20),1,"")))))))'.format(
+        ws['IZ{}'.format(row)] = '=IF($G${}=20,IF(AND(G{}>3,IL{}=20),1,""),IF($G${}=25,IF(AND(G{}>4,IL{}=20),1,""),IF($G${}=30,IF(AND(G{}>5,IL{}=20),1,""),IF($G${}=35,IF(AND(G{}>6,IL{}=20),1,""),IF($G${}=40,IF(AND(G{}>7,IL{}=20),1,""),IF($G${}=45,IF(AND(G{}>8,IL{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['JA{}'.format(row)] = '=IF($HP${}=20,IF(AND(HP{}>3,IM{}=20),1,""),IF($HP${}=25,IF(AND(HP{}>4,IM{}=20),1,""),IF($HP${}=30,IF(AND(HP{}>5,IM{}=20),1,""),IF($HP${}=35,IF(AND(HP{}>6,IM{}=20),1,""),IF($HP${}=40,IF(AND(HP{}>7,IM{}=20),1,""),IF($HP${}=45,IF(AND(HP{}>8,IM{}=20),1,"")))))))'.format(
+        ws['JA{}'.format(row)] = '=IF($H${}=20,IF(AND(H{}>3,IM{}=20),1,""),IF($H${}=25,IF(AND(H{}>4,IM{}=20),1,""),IF($H${}=30,IF(AND(H{}>5,IM{}=20),1,""),IF($H${}=35,IF(AND(H{}>6,IM{}=20),1,""),IF($H${}=40,IF(AND(H{}>7,IM{}=20),1,""),IF($H${}=45,IF(AND(H{}>8,IM{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['JB{}'.format(row)] = '=IF($HQ${}=20,IF(AND(HQ{}>3,IN{}=20),1,""),IF($HQ${}=25,IF(AND(HQ{}>4,IN{}=20),1,""),IF($HQ${}=30,IF(AND(HQ{}>5,IN{}=20),1,""),IF($HQ${}=35,IF(AND(HQ{}>6,IN{}=20),1,""),IF($HQ${}=40,IF(AND(HQ{}>7,IN{}=20),1,""),IF($HQ${}=45,IF(AND(HQ{}>8,IN{}=20),1,"")))))))'.format(
+        ws['JB{}'.format(row)] = '=IF($I${}=20,IF(AND(I{}>3,IN{}=20),1,""),IF($I${}=25,IF(AND(I{}>4,IN{}=20),1,""),IF($I${}=30,IF(AND(I{}>5,IN{}=20),1,""),IF($I${}=35,IF(AND(I{}>6,IN{}=20),1,""),IF($I${}=40,IF(AND(I{}>7,IN{}=20),1,""),IF($I${}=45,IF(AND(I{}>8,IN{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['JC{}'.format(row)] = '=IF($HR${}=20,IF(AND(HR{}>3,IO{}=20),1,""),IF($HR${}=25,IF(AND(HR{}>4,IO{}=20),1,""),IF($HR${}=30,IF(AND(HR{}>5,IO{}=20),1,""),IF($HR${}=35,IF(AND(HR{}>6,IO{}=20),1,""),IF($HR${}=40,IF(AND(HR{}>7,IO{}=20),1,""),IF($HR${}=45,IF(AND(HR{}>8,IO{}=20),1,"")))))))'.format(
+        ws['JC{}'.format(row)] = '=IF($J${}=20,IF(AND(J{}>3,IO{}=20),1,""),IF($J${}=25,IF(AND(J{}>4,IO{}=20),1,""),IF($J${}=30,IF(AND(J{}>5,IO{}=20),1,""),IF($J${}=35,IF(AND(J{}>6,IO{}=20),1,""),IF($J${}=40,IF(AND(J{}>7,IO{}=20),1,""),IF($J${}=45,IF(AND(J{}>8,IO{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['JD{}'.format(row)] = '=IF($HS${}=20,IF(AND(HS{}>3,IP{}=20),1,""),IF($HS${}=25,IF(AND(HS{}>4,IP{}=20),1,""),IF($HS${}=30,IF(AND(HS{}>5,IP{}=20),1,""),IF($HS${}=35,IF(AND(HS{}>6,IP{}=20),1,""),IF($HS${}=40,IF(AND(HS{}>7,IP{}=20),1,""),IF($HS${}=45,IF(AND(HS{}>8,IP{}=20),1,"")))))))'.format(
+        ws['JD{}'.format(row)] = '=IF($K${}=20,IF(AND(K{}>3,IP{}=20),1,""),IF($K${}=25,IF(AND(K{}>4,IP{}=20),1,""),IF($K${}=30,IF(AND(K{}>5,IP{}=20),1,""),IF($K${}=35,IF(AND(K{}>6,IP{}=20),1,""),IF($K${}=40,IF(AND(K{}>7,IP{}=20),1,""),IF($K${}=45,IF(AND(K{}>8,IP{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['JE{}'.format(row)] = '=IF($HT${}=20,IF(AND(HT{}>3,IQ{}=20),1,""),IF($HT${}=25,IF(AND(HT{}>4,IQ{}=20),1,""),IF($HT${}=30,IF(AND(HT{}>5,IQ{}=20),1,""),IF($HT${}=35,IF(AND(HT{}>6,IQ{}=20),1,""),IF($HT${}=40,IF(AND(HT{}>7,IQ{}=20),1,""),IF($HT${}=45,IF(AND(HT{}>8,IQ{}=20),1,"")))))))'.format(
+        ws['JE{}'.format(row)] = '=IF($L${}=20,IF(AND(L{}>3,IQ{}=20),1,""),IF($L${}=25,IF(AND(L{}>4,IQ{}=20),1,""),IF($L${}=30,IF(AND(L{}>5,IQ{}=20),1,""),IF($L${}=35,IF(AND(L{}>6,IQ{}=20),1,""),IF($L${}=40,IF(AND(L{}>7,IQ{}=20),1,""),IF($L${}=45,IF(AND(L{}>8,IQ{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['JF{}'.format(row)] = '=IF($HU${}=20,IF(AND(HU{}>3,IR{}=20),1,""),IF($HU${}=25,IF(AND(HU{}>4,IR{}=20),1,""),IF($HU${}=30,IF(AND(HU{}>5,IR{}=20),1,""),IF($HU${}=35,IF(AND(HU{}>6,IR{}=20),1,""),IF($HU${}=40,IF(AND(HU{}>7,IR{}=20),1,""),IF($HU${}=45,IF(AND(HU{}>8,IR{}=20),1,"")))))))'.format(
+        ws['JF{}'.format(row)] = '=IF($M${}=20,IF(AND(M{}>3,IR{}=20),1,""),IF($M${}=25,IF(AND(M{}>4,IR{}=20),1,""),IF($M${}=30,IF(AND(M{}>5,IR{}=20),1,""),IF($M${}=35,IF(AND(M{}>6,IR{}=20),1,""),IF($M${}=40,IF(AND(M{}>7,IR{}=20),1,""),IF($M${}=45,IF(AND(M{}>8,IR{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['JG{}'.format(row)] = '=IF($HV${}=20,IF(AND(HV{}>3,IS{}=20),1,""),IF($HV${}=25,IF(AND(HV{}>4,IS{}=20),1,""),IF($HV${}=30,IF(AND(HV{}>5,IS{}=20),1,""),IF($HV${}=35,IF(AND(HV{}>6,IS{}=20),1,""),IF($HV${}=40,IF(AND(HV{}>7,IS{}=20),1,""),IF($HV${}=45,IF(AND(HV{}>8,IS{}=20),1,"")))))))'.format(
+        ws['JG{}'.format(row)] = '=IF($N${}=20,IF(AND(N{}>3,IS{}=20),1,""),IF($N${}=25,IF(AND(N{}>4,IS{}=20),1,""),IF($N${}=30,IF(AND(N{}>5,IS{}=20),1,""),IF($N${}=35,IF(AND(N{}>6,IS{}=20),1,""),IF($N${}=40,IF(AND(N{}>7,IS{}=20),1,""),IF($N${}=45,IF(AND(N{}>8,IS{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['JH{}'.format(row)] = '=IF($HW${}=20,IF(AND(HW{}>3,IT{}=20),1,""),IF($HW${}=25,IF(AND(HW{}>4,IT{}=20),1,""),IF($HW${}=30,IF(AND(HW{}>5,IT{}=20),1,""),IF($HW${}=35,IF(AND(HW{}>6,IT{}=20),1,""),IF($HW${}=40,IF(AND(HW{}>7,IT{}=20),1,""),IF($HW${}=45,IF(AND(HW{}>8,IT{}=20),1,"")))))))'.format(
+        ws['JH{}'.format(row)] = '=IF($O${}=20,IF(AND(O{}>3,IT{}=20),1,""),IF($O${}=25,IF(AND(O{}>4,IT{}=20),1,""),IF($O${}=30,IF(AND(O{}>5,IT{}=20),1,""),IF($O${}=35,IF(AND(O{}>6,IT{}=20),1,""),IF($O${}=40,IF(AND(O{}>7,IT{}=20),1,""),IF($O${}=45,IF(AND(O{}>8,IT{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['JI{}'.format(row)] = '=IF($HX${}=20,IF(AND(HX{}>3,IU{}=20),1,""),IF($HX${}=25,IF(AND(HX{}>4,IU{}=20),1,""),IF($HX${}=30,IF(AND(HX{}>5,IU{}=20),1,""),IF($HX${}=35,IF(AND(HX{}>6,IU{}=20),1,""),IF($HX${}=40,IF(AND(HX{}>7,IU{}=20),1,""),IF($HX${}=45,IF(AND(HX{}>8,IU{}=20),1,"")))))))'.format(
+        ws['JI{}'.format(row)] = '=IF($P${}=20,IF(AND(P{}>3,IU{}=20),1,""),IF($P${}=25,IF(AND(P{}>4,IU{}=20),1,""),IF($P${}=30,IF(AND(P{}>5,IU{}=20),1,""),IF($P${}=35,IF(AND(P{}>6,IU{}=20),1,""),IF($P${}=40,IF(AND(P{}>7,IU{}=20),1,""),IF($P${}=45,IF(AND(P{}>8,IU{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['JJ{}'.format(row)] = '=IF($FW${}=20,IF(AND(FW{}>3,IV{}=20),1,""),IF($FW${}=25,IF(AND(FW{}>4,IV{}=20),1,""),IF($FW${}=30,IF(AND(FW{}>5,IV{}=20),1,""),IF($FW${}=35,IF(AND(FW{}>6,IV{}=20),1,""),IF($FW${}=40,IF(AND(FW{}>7,IV{}=20),1,""),IF($FW${}=45,IF(AND(FW{}>8,IV{}=20),1,"")))))))'.format(
+        ws['JJ{}'.format(row)] = '=IF($Q${}=20,IF(AND(Q{}>3,IV{}=20),1,""),IF($Q${}=25,IF(AND(Q{}>4,IV{}=20),1,""),IF($Q${}=30,IF(AND(Q{}>5,IV{}=20),1,""),IF($Q${}=35,IF(AND(Q{}>6,IV{}=20),1,""),IF($Q${}=40,IF(AND(Q{}>7,IV{}=20),1,""),IF($Q${}=45,IF(AND(Q{}>8,IV{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
 
     # Z Score
@@ -2590,27 +2590,27 @@ if uploaded_file is not None:
             row)] = '=IF(KZ{}="","",COUNTIFS($JP$2:$JP${},JP{},$KZ$2:$KZ${},"<"&KZ{})+1)'.format(row, q, row, q, row)
 
     # TAMBAHAN
-        ws['LB{}'.format(row)] = '=IF($JQ${}=20,IF(AND(JQ{}>3,KN{}=20),1,""),IF($JQ${}=25,IF(AND(JQ{}>4,KN{}=20),1,""),IF($JQ${}=30,IF(AND(JQ{}>5,KN{}=20),1,""),IF($JQ${}=35,IF(AND(JQ{}>6,KN{}=20),1,""),IF($JQ${}=40,IF(AND(JQ{}>7,KN{}=20),1,""),IF($JQ${}=45,IF(AND(JQ{}>8,KN{}=20),1,"")))))))'.format(
+        ws['LB{}'.format(row)] = '=IF($G${}=20,IF(AND(G{}>3,KN{}=20),1,""),IF($G${}=25,IF(AND(G{}>4,KN{}=20),1,""),IF($G${}=30,IF(AND(G{}>5,KN{}=20),1,""),IF($G${}=35,IF(AND(G{}>6,KN{}=20),1,""),IF($G${}=40,IF(AND(G{}>7,KN{}=20),1,""),IF($G${}=45,IF(AND(G{}>8,KN{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['LC{}'.format(row)] = '=IF($JR${}=20,IF(AND(JR{}>3,KO{}=20),1,""),IF($JR${}=25,IF(AND(JR{}>4,KO{}=20),1,""),IF($JR${}=30,IF(AND(JR{}>5,KO{}=20),1,""),IF($JR${}=35,IF(AND(JR{}>6,KO{}=20),1,""),IF($JR${}=40,IF(AND(JR{}>7,KO{}=20),1,""),IF($JR${}=45,IF(AND(JR{}>8,KO{}=20),1,"")))))))'.format(
+        ws['LC{}'.format(row)] = '=IF($H${}=20,IF(AND(H{}>3,KO{}=20),1,""),IF($H${}=25,IF(AND(H{}>4,KO{}=20),1,""),IF($H${}=30,IF(AND(H{}>5,KO{}=20),1,""),IF($H${}=35,IF(AND(H{}>6,KO{}=20),1,""),IF($H${}=40,IF(AND(H{}>7,KO{}=20),1,""),IF($H${}=45,IF(AND(H{}>8,KO{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['LD{}'.format(row)] = '=IF($JS${}=20,IF(AND(JS{}>3,KP{}=20),1,""),IF($JS${}=25,IF(AND(JS{}>4,KP{}=20),1,""),IF($JS${}=30,IF(AND(JS{}>5,KP{}=20),1,""),IF($JS${}=35,IF(AND(JS{}>6,KP{}=20),1,""),IF($JS${}=40,IF(AND(JS{}>7,KP{}=20),1,""),IF($JS${}=45,IF(AND(JS{}>8,KP{}=20),1,"")))))))'.format(
+        ws['LD{}'.format(row)] = '=IF($I${}=20,IF(AND(I{}>3,KP{}=20),1,""),IF($I${}=25,IF(AND(I{}>4,KP{}=20),1,""),IF($I${}=30,IF(AND(I{}>5,KP{}=20),1,""),IF($I${}=35,IF(AND(I{}>6,KP{}=20),1,""),IF($I${}=40,IF(AND(I{}>7,KP{}=20),1,""),IF($I${}=45,IF(AND(I{}>8,KP{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['LE{}'.format(row)] = '=IF($JT${}=20,IF(AND(JT{}>3,KQ{}=20),1,""),IF($JT${}=25,IF(AND(JT{}>4,KQ{}=20),1,""),IF($JT${}=30,IF(AND(JT{}>5,KQ{}=20),1,""),IF($JT${}=35,IF(AND(JT{}>6,KQ{}=20),1,""),IF($JT${}=40,IF(AND(JT{}>7,KQ{}=20),1,""),IF($JT${}=45,IF(AND(JT{}>8,KQ{}=20),1,"")))))))'.format(
+        ws['LE{}'.format(row)] = '=IF($J${}=20,IF(AND(J{}>3,KQ{}=20),1,""),IF($J${}=25,IF(AND(J{}>4,KQ{}=20),1,""),IF($J${}=30,IF(AND(J{}>5,KQ{}=20),1,""),IF($J${}=35,IF(AND(J{}>6,KQ{}=20),1,""),IF($J${}=40,IF(AND(J{}>7,KQ{}=20),1,""),IF($J${}=45,IF(AND(J{}>8,KQ{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['LF{}'.format(row)] = '=IF($JU${}=20,IF(AND(JU{}>3,KR{}=20),1,""),IF($JU${}=25,IF(AND(JU{}>4,KR{}=20),1,""),IF($JU${}=30,IF(AND(JU{}>5,KR{}=20),1,""),IF($JU${}=35,IF(AND(JU{}>6,KR{}=20),1,""),IF($JU${}=40,IF(AND(JU{}>7,KR{}=20),1,""),IF($JU${}=45,IF(AND(JU{}>8,KR{}=20),1,"")))))))'.format(
+        ws['LF{}'.format(row)] = '=IF($K${}=20,IF(AND(K{}>3,KR{}=20),1,""),IF($K${}=25,IF(AND(K{}>4,KR{}=20),1,""),IF($K${}=30,IF(AND(K{}>5,KR{}=20),1,""),IF($K${}=35,IF(AND(K{}>6,KR{}=20),1,""),IF($K${}=40,IF(AND(K{}>7,KR{}=20),1,""),IF($K${}=45,IF(AND(K{}>8,KR{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['LG{}'.format(row)] = '=IF($JV${}=20,IF(AND(JV{}>3,KS{}=20),1,""),IF($JV${}=25,IF(AND(JV{}>4,KS{}=20),1,""),IF($JV${}=30,IF(AND(JV{}>5,KS{}=20),1,""),IF($JV${}=35,IF(AND(JV{}>6,KS{}=20),1,""),IF($JV${}=40,IF(AND(JV{}>7,KS{}=20),1,""),IF($JV${}=45,IF(AND(JV{}>8,KS{}=20),1,"")))))))'.format(
+        ws['LG{}'.format(row)] = '=IF($L${}=20,IF(AND(L{}>3,KS{}=20),1,""),IF($L${}=25,IF(AND(L{}>4,KS{}=20),1,""),IF($L${}=30,IF(AND(L{}>5,KS{}=20),1,""),IF($L${}=35,IF(AND(L{}>6,KS{}=20),1,""),IF($L${}=40,IF(AND(L{}>7,KS{}=20),1,""),IF($L${}=45,IF(AND(L{}>8,KS{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['LH{}'.format(row)] = '=IF($JW${}=20,IF(AND(JW{}>3,KT{}=20),1,""),IF($JW${}=25,IF(AND(JW{}>4,KT{}=20),1,""),IF($JW${}=30,IF(AND(JW{}>5,KT{}=20),1,""),IF($JW${}=35,IF(AND(JW{}>6,KT{}=20),1,""),IF($JW${}=40,IF(AND(JW{}>7,KT{}=20),1,""),IF($JW${}=45,IF(AND(JW{}>8,KT{}=20),1,"")))))))'.format(
+        ws['LH{}'.format(row)] = '=IF($M${}=20,IF(AND(M{}>3,KT{}=20),1,""),IF($M${}=25,IF(AND(M{}>4,KT{}=20),1,""),IF($M${}=30,IF(AND(M{}>5,KT{}=20),1,""),IF($M${}=35,IF(AND(M{}>6,KT{}=20),1,""),IF($M${}=40,IF(AND(M{}>7,KT{}=20),1,""),IF($M${}=45,IF(AND(M{}>8,KT{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['LI{}'.format(row)] = '=IF($JX${}=20,IF(AND(JX{}>3,KU{}=20),1,""),IF($JX${}=25,IF(AND(JX{}>4,KU{}=20),1,""),IF($JX${}=30,IF(AND(JX{}>5,KU{}=20),1,""),IF($JX${}=35,IF(AND(JX{}>6,KU{}=20),1,""),IF($JX${}=40,IF(AND(JX{}>7,KU{}=20),1,""),IF($JX${}=45,IF(AND(JX{}>8,KU{}=20),1,"")))))))'.format(
+        ws['LI{}'.format(row)] = '=IF($N${}=20,IF(AND(N{}>3,KU{}=20),1,""),IF($N${}=25,IF(AND(N{}>4,KU{}=20),1,""),IF($N${}=30,IF(AND(N{}>5,KU{}=20),1,""),IF($N${}=35,IF(AND(N{}>6,KU{}=20),1,""),IF($N${}=40,IF(AND(N{}>7,KU{}=20),1,""),IF($N${}=45,IF(AND(N{}>8,KU{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['LJ{}'.format(row)] = '=IF($JY${}=20,IF(AND(JY{}>3,KV{}=20),1,""),IF($JY${}=25,IF(AND(JY{}>4,KV{}=20),1,""),IF($JY${}=30,IF(AND(JY{}>5,KV{}=20),1,""),IF($JY${}=35,IF(AND(JY{}>6,KV{}=20),1,""),IF($JY${}=40,IF(AND(JY{}>7,KV{}=20),1,""),IF($JY${}=45,IF(AND(JY{}>8,KV{}=20),1,"")))))))'.format(
+        ws['LJ{}'.format(row)] = '=IF($O${}=20,IF(AND(O{}>3,KV{}=20),1,""),IF($O${}=25,IF(AND(O{}>4,KV{}=20),1,""),IF($O${}=30,IF(AND(O{}>5,KV{}=20),1,""),IF($O${}=35,IF(AND(O{}>6,KV{}=20),1,""),IF($O${}=40,IF(AND(O{}>7,KV{}=20),1,""),IF($O${}=45,IF(AND(O{}>8,KV{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['LK{}'.format(row)] = '=IF($JZ${}=20,IF(AND(JZ{}>3,KW{}=20),1,""),IF($JZ${}=25,IF(AND(JZ{}>4,KW{}=20),1,""),IF($JZ${}=30,IF(AND(JZ{}>5,KW{}=20),1,""),IF($JZ${}=35,IF(AND(JZ{}>6,KW{}=20),1,""),IF($JZ${}=40,IF(AND(JZ{}>7,KW{}=20),1,""),IF($JZ${}=45,IF(AND(JZ{}>8,KW{}=20),1,"")))))))'.format(
+        ws['LK{}'.format(row)] = '=IF($P${}=20,IF(AND(P{}>3,KW{}=20),1,""),IF($P${}=25,IF(AND(P{}>4,KW{}=20),1,""),IF($P${}=30,IF(AND(P{}>5,KW{}=20),1,""),IF($P${}=35,IF(AND(P{}>6,KW{}=20),1,""),IF($P${}=40,IF(AND(P{}>7,KW{}=20),1,""),IF($P${}=45,IF(AND(P{}>8,KW{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-        ws['LL{}'.format(row)] = '=IF($FW${}=20,IF(AND(FW{}>3,KX{}=20),1,""),IF($FW${}=25,IF(AND(FW{}>4,KX{}=20),1,""),IF($FW${}=30,IF(AND(FW{}>5,KX{}=20),1,""),IF($FW${}=35,IF(AND(FW{}>6,KX{}=20),1,""),IF($FW${}=40,IF(AND(FW{}>7,KX{}=20),1,""),IF($FW${}=45,IF(AND(FW{}>8,KX{}=20),1,"")))))))'.format(
+        ws['LL{}'.format(row)] = '=IF($Q${}=20,IF(AND(Q{}>3,KX{}=20),1,""),IF($Q${}=25,IF(AND(Q{}>4,KX{}=20),1,""),IF($Q${}=30,IF(AND(Q{}>5,KX{}=20),1,""),IF($Q${}=35,IF(AND(Q{}>6,KX{}=20),1,""),IF($Q${}=40,IF(AND(Q{}>7,KX{}=20),1,""),IF($Q${}=45,IF(AND(Q{}>8,KX{}=20),1,"")))))))'.format(
             v, row, row, v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
 
     # Mengubah 'KELAS' sesuai dengan nilai yang dipilih dari selectbox 'KELAS'
