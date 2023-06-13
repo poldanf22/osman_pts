@@ -985,14 +985,14 @@ if uploaded_file is not None:
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     n_standar.to_excel(writer, sheet_name='cover',
-                       startrow=23,
+                       startrow=27,
                        startcol=0,
                        index=False,
                        header=False)
 
     # Convert the dataframe to an XlsxWriter Excel object cover.
     jml_peserta.to_excel(writer, sheet_name='cover',
-                         startrow=23,
+                         startrow=27,
                          startcol=5,
                          index=False,
                          header=False)
@@ -1964,10 +1964,10 @@ if uploaded_file is not None:
     worksheetcover.merge_range('B10:B11', 'TERENDAH', bodyCover)
     worksheetcover.merge_range('C10:C11', 'RATA-RATA', bodyCover)
     worksheetcover.merge_range('D10:D11', 'TERTINGGI', bodyCover)
-    worksheetcover.merge_range('A22:A23', 'BIDANG STUDI', bodyCover)
-    worksheetcover.merge_range('B22:B23', 'TERENDAH', bodyCover)
-    worksheetcover.merge_range('C22:C23', 'RATA-RATA', bodyCover)
-    worksheetcover.merge_range('D22:D23', 'TERTINGGI', bodyCover)
+    worksheetcover.merge_range('A26:A27', 'BIDANG STUDI', bodyCover)
+    worksheetcover.merge_range('B26:B27', 'TERENDAH', bodyCover)
+    worksheetcover.merge_range('C26:C27', 'RATA-RATA', bodyCover)
+    worksheetcover.merge_range('D26:D27', 'TERTINGGI', bodyCover)
     worksheetcover.write('F13', 'BIDANG STUDI', bodyCover)
     worksheetcover.merge_range('F26:F27', 'JUMLAH', sub_header1Cover)
     worksheetcover.merge_range('F29:F30', 'PESERTA', sub_header1Cover)
