@@ -255,7 +255,7 @@ if uploaded_file is not None:
     jml_soal = pd.DataFrame(data_jml_soal)
 
     df = df[['LOKASI', 'RANK LOK.', 'RANK NAS.', 'NOMOR NF', 'NAMA SISWA', 'NAMA SEKOLAH', 'KELAS', 'MAW', 'MAP', 'IND',
-             'ENG', 'SEJ', 'GEO', 'EKO', 'SOS', 'FIS', 'KIM', 'BIO', 'JML', 'S_MAT', 'S_IND', 'S_ENG', 'S_SEJ', 'S_GEO', 'S_EKO', 'S_SOS', 'S_FIS', 'S_KIM', 'S_BIO', 'S_JML']]
+             'ENG', 'SEJ', 'GEO', 'EKO', 'SOS', 'FIS', 'KIM', 'BIO', 'JML', 'S_MAW', 'S_MAP', 'S_IND', 'S_ENG', 'S_SEJ', 'S_GEO', 'S_EKO', 'S_SOS', 'S_FIS', 'S_KIM', 'S_BIO', 'S_JML']]
 
     # sort setiap lokasi
     sort101 = df[df['LOKASI'] == 101]
