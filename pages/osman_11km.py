@@ -889,7 +889,7 @@ if uploaded_file is not None:
     ws['KO{}'.format(t)] = "=ROUND(AVERAGE(KO2:KO{}),2)".format(q)
     # NILAI STANDAR IND
     ws['KP{}'.format(r)] = "=MAX(KP2:KP{})".format(q)
-    ws['KP{}'.format(s)] = "=MKP(KP2:KP{})".format(q)
+    ws['KP{}'.format(s)] = "=MIN(KP2:KP{})".format(q)
     ws['KP{}'.format(t)] = "=ROUND(AVERAGE(KP2:KP{}),2)".format(q)
     # NILAI STANDAR ENG
     ws['KQ{}'.format(r)] = "=MAX(KQ2:KQ{})".format(q)
@@ -2417,7 +2417,7 @@ if uploaded_file is not None:
         ws['IX{}'.format(row)] = '=IF(IW{}="","",RANK(IW{},$IW$2:$IW${}))'.format(
             row, row, q)
         ws['IY{}'.format(
-            row)] = '=IF(IY{}="","",COUNTIFS($HN$2:$HN${},HN{},$IY$2:$IY${},"<"&IY{})+1)'.format(row, q, row, q, row)
+            row)] = '=IF(IX{}="","",COUNTIFS($HN$2:$HN${},HN{},$IX$2:$IX${},"<"&IX{})+1)'.format(row, q, row, q, row)
 
     # TAMBAHAN
         ws['IZ{}'.format(row)] = '=IF($G${}=20,IF(AND(G{}>3,IL{}=20),1,""),IF($G${}=25,IF(AND(G{}>4,IL{}=20),1,""),IF($G${}=30,IF(AND(G{}>5,IL{}=20),1,""),IF($G${}=35,IF(AND(G{}>6,IL{}=20),1,""),IF($G${}=40,IF(AND(G{}>7,IL{}=20),1,""),IF($G${}=45,IF(AND(G{}>8,IL{}=20),1,"")))))))'.format(
