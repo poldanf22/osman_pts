@@ -2215,89 +2215,89 @@ if uploaded_file is not None:
 
     # FILL
     ws['HJ1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HK1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HL1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HM1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HN1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HO1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HP1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HQ1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HR1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HS1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HT1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HU1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HV1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HW1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HX1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HY1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['HZ1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IA1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IB1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IC1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['ID1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IE1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IF1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IG1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IH1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['II1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IJ1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IK1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IL1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IM1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IN1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IO1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IP1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IQ1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IR1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IS1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IT1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IU1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IV1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IW1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IX1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['IY1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
 
     # tambahan
     ws['IZ1'] = 'MAW_20_A'
@@ -2325,27 +2325,27 @@ if uploaded_file is not None:
     ws['JJ1'].font = Font(bold=False, name='Calibri', size=11)
 
     ws['IZ1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['JA1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['JB1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['JC1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['JD1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['JE1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['JF1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['JG1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['JH1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['JI1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
     ws['JJ1'].fill = PatternFill(
-        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
+        fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
 
     for row in range(2, q+1):
         ws['HJ{}'.format(row)] = '=B{}'.format(row)
@@ -2519,89 +2519,89 @@ if uploaded_file is not None:
 
     # FILL
     ws['JL1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JM1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JN1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JO1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JP1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JQ1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JR1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JS1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JT1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JU1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JV1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JW1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JX1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JY1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['JZ1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KA1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KB1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KC1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KD1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KE1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KF1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KG1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KH1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KI1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KJ1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KK1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KL1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KM1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KN1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KO1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KP1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KQ1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KR1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KS1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KT1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KU1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KV1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KW1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KX1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KY1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['KZ1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['LA1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
 
     # tambahan
     ws['LB1'] = 'MAW_20_A'
@@ -2629,27 +2629,27 @@ if uploaded_file is not None:
     ws['LL1'].font = Font(bold=False, name='Calibri', size=11)
 
     ws['LB1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['LC1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['LD1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['LE1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['LF1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['LG1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['LH1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['LI1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['LJ1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['LK1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
     ws['LL1'].fill = PatternFill(
-        fill_type='solid', start_color='00FF6600', end_color='00FF6600')
+        fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
 
     for row in range(2, q+1):
         ws['JL{}'.format(row)] = '=B{}'.format(row)
