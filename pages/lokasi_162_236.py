@@ -1,3 +1,60 @@
+# NAMA LOKASI 162-236
+lok_162 = 'PUNTI KAYU'
+lok_163 = 'SUKAMTO'
+lok_164 = 'BUKIT BESAR'
+lok_165 = 'SUDIRMAN'
+lok_167 = 'CILANGKAP'
+lok_168 = 'HALIM'
+lok_169 = 'TANAH MERDEKA'
+lok_171 = 'CIPUTAT'
+lok_173 = 'SALEMBA'
+lok_174 = 'CIPINANG'
+lok_175 = 'KRAMAT ASEM'
+lok_176 = 'PANGKALAN ASEM'
+lok_177 = 'PAMULANG 2'
+lok_178 = 'PURI BETA LARANGAN'
+lok_179 = 'CEGER'
+lok_180 = 'SMA KOMPLEK'
+lok_181 = 'GAYUNGSARI'
+lok_182 = 'TUPAREV'
+lok_183 = 'PERUMNAS KLENDER'
+lok_184 = 'KARANG AKHIR'
+lok_185 = 'SIMPANG TIGA'
+lok_186 = 'RUKO PCI'
+lok_187 = 'KRAMATWATU'
+lok_189 = 'CIPINANG'
+lok_190 = 'BOJONG GEDE'
+lok_191 = 'POMAD'
+lok_192 = 'CONDET'
+lok_193 = 'JOMBANG'
+lok_194 = 'KEMAYORAN'
+lok_195 = 'KALISARI'
+lok_196 = 'PAMULANG 1'
+lok_197 = 'PANDEGLANG BARU'
+lok_198 = 'RUNGKUT'
+lok_199 = 'CIOMAS'
+lok_201 = 'SUNTER JAYA'
+lok_202 = 'PENGGILINGAN'
+lok_203 = 'GORONTALO'
+lok_210 = 'KOPO'
+lok_211 = 'VILA INDAH PERMAI'
+lok_212 = 'CISAUK'
+lok_216 = 'RADIO DALAM'
+lok_217 = 'KALIBATA CITY'
+lok_218 = 'JAGAKARSA'
+lok_219 = 'TEBET'
+lok_220 = 'PADALARANG'
+lok_226 = 'KEBON JERUK'
+lok_227 = 'MERUYA SELATAN'
+lok_228 = 'TANJUNG DUREN'
+lok_229 = 'TOMANG'
+lok_230 = 'KERADENAN'
+lok_231 = 'RA KOSASIH SUKABUMI'
+lok_233 = 'BANGBARUNG'
+lok_234 = 'LIMUS PRATAMA'
+lok_235 = 'CIKARET CIBINONG'
+lok_236 = 'GARUT'
+
 uploaded_file = st.file_uploader(
     'Letakkan file excel NILAI STANDAR [LOKASI 162-236]', type='xlsx')
 
@@ -1876,7 +1933,7 @@ if uploaded_file is not None:
     worksheet162.set_column('F:F', 8.57, center)
     worksheet162.set_column('G:V', 5, center)
     worksheet162.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TAMAN MARGASATWA', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_162}', title)
     worksheet162.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet162.write('A5', 'LOKASI', header)
@@ -1917,7 +1974,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet162.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF TAMAN MARGASATWA', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_162}', title)
     worksheet162.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet162.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -1969,7 +2026,7 @@ if uploaded_file is not None:
     worksheet163.set_column('F:F', 8.57, center)
     worksheet163.set_column('G:V', 5, center)
     worksheet163.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CEMPAKA', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_163}', title)
     worksheet163.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet163.write('A5', 'LOKASI', header)
@@ -2010,7 +2067,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet163.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF CEMPAKA', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_163}', title)
     worksheet163.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet163.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -2062,7 +2119,7 @@ if uploaded_file is not None:
     worksheet164.set_column('F:F', 8.57, center)
     worksheet164.set_column('G:V', 5, center)
     worksheet164.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PANGKALAN JATI', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_164}', title)
     worksheet164.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet164.write('A5', 'LOKASI', header)
@@ -2103,7 +2160,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet164.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF PANGKALAN JATI', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_164}', title)
     worksheet164.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet164.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -2236,7 +2293,7 @@ if uploaded_file is not None:
     worksheet165.set_column('F:F', 8.57, center)
     worksheet165.set_column('G:V', 5, center)
     worksheet165.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BUARAN', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_165}', title)
     worksheet165.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet165.write('A5', 'LOKASI', header)
@@ -2277,7 +2334,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet165.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF BUARAN', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_165}', title)
     worksheet165.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet165.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -2329,7 +2386,7 @@ if uploaded_file is not None:
     worksheet167.set_column('F:F', 8.57, center)
     worksheet167.set_column('G:V', 5, center)
     worksheet167.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF HEK-KRAMAT JATI', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_167}', title)
     worksheet167.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet167.write('A5', 'LOKASI', header)
@@ -2370,7 +2427,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet167.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF HEK-KRAMAT JATI', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_167}', title)
     worksheet167.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet167.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -2422,7 +2479,7 @@ if uploaded_file is not None:
     worksheet168.set_column('F:F', 8.57, center)
     worksheet168.set_column('G:V', 5, center)
     worksheet168.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MAMPANG', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_168}', title)
     worksheet168.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet168.write('A5', 'LOKASI', header)
@@ -2463,7 +2520,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet168.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF MAMPANG', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_168}', title)
     worksheet168.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet168.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -2515,7 +2572,7 @@ if uploaded_file is not None:
     worksheet169.set_column('F:F', 8.57, center)
     worksheet169.set_column('G:V', 5, center)
     worksheet169.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PALMERAH', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_169}', title)
     worksheet169.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet169.write('A5', 'LOKASI', header)
@@ -2556,7 +2613,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet169.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF PALMERAH', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_169}', title)
     worksheet169.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet169.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -2608,7 +2665,7 @@ if uploaded_file is not None:
     worksheet171.set_column('F:F', 8.57, center)
     worksheet171.set_column('G:V', 5, center)
     worksheet171.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PASAR MINGGU', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_171}', title)
     worksheet171.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet171.write('A5', 'LOKASI', header)
@@ -2649,7 +2706,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet171.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF PASAR MINGGU', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_171}', title)
     worksheet171.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet171.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -2701,7 +2758,7 @@ if uploaded_file is not None:
     worksheet173.set_column('F:F', 8.57, center)
     worksheet173.set_column('G:V', 5, center)
     worksheet173.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BINTARO', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_173}', title)
     worksheet173.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet173.write('A5', 'LOKASI', header)
@@ -2742,7 +2799,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet173.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF BINTARO', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_173}', title)
     worksheet173.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet173.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -2794,7 +2851,7 @@ if uploaded_file is not None:
     worksheet174.set_column('F:F', 8.57, center)
     worksheet174.set_column('G:V', 5, center)
     worksheet174.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF LAMPIRI', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_174}', title)
     worksheet174.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet174.write('A5', 'LOKASI', header)
@@ -2835,7 +2892,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet174.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF LAMPIRI', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_174}', title)
     worksheet174.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet174.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -2887,7 +2944,7 @@ if uploaded_file is not None:
     worksheet175.set_column('F:F', 8.57, center)
     worksheet175.set_column('G:V', 5, center)
     worksheet175.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PONDOK BAMBU', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_175}', title)
     worksheet175.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet175.write('A5', 'LOKASI', header)
@@ -2928,7 +2985,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet175.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF PONDOK BAMBU', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_175}', title)
     worksheet175.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet175.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -2980,7 +3037,7 @@ if uploaded_file is not None:
     worksheet176.set_column('F:F', 8.57, center)
     worksheet176.set_column('G:V', 5, center)
     worksheet176.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RAWA BADAK', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_176}', title)
     worksheet176.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet176.write('A5', 'LOKASI', header)
@@ -3021,7 +3078,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet176.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF RAWA BADAK', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_176}', title)
     worksheet176.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet176.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -3153,7 +3210,7 @@ if uploaded_file is not None:
     worksheet177.set_column('F:F', 8.57, center)
     worksheet177.set_column('G:V', 5, center)
     worksheet177.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RAWAMANGUN', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_176}', title)
     worksheet177.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet177.write('A5', 'LOKASI', header)
@@ -3194,7 +3251,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet177.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF RAWAMANGUN', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_176}', title)
     worksheet177.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet177.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -3246,7 +3303,7 @@ if uploaded_file is not None:
     worksheet178.set_column('F:F', 8.57, center)
     worksheet178.set_column('G:V', 5, center)
     worksheet178.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIRACAS', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_178}', title)
     worksheet178.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet178.write('A5', 'LOKASI', header)
@@ -3287,7 +3344,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet178.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF CIRACAS', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_178}', title)
     worksheet178.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet178.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -3339,7 +3396,7 @@ if uploaded_file is not None:
     worksheet179.set_column('F:F', 8.57, center)
     worksheet179.set_column('G:V', 5, center)
     worksheet179.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KAMPUNG MELAYU', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_179}', title)
     worksheet179.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet179.write('A5', 'LOKASI', header)
@@ -3380,7 +3437,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet179.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF KAMPUNG MELAYU', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_179}', title)
     worksheet179.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet179.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -3432,7 +3489,7 @@ if uploaded_file is not None:
     worksheet180.set_column('F:F', 8.57, center)
     worksheet180.set_column('G:V', 5, center)
     worksheet180.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF AKSES UI', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_180}', title)
     worksheet180.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet180.write('A5', 'LOKASI', header)
@@ -3473,7 +3530,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet180.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF AKSES UI', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_180}', title)
     worksheet180.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet180.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -3525,7 +3582,7 @@ if uploaded_file is not None:
     worksheet181.set_column('F:F', 8.57, center)
     worksheet181.set_column('G:V', 5, center)
     worksheet181.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATIMEKAR', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_181}', title)
     worksheet181.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet181.write('A5', 'LOKASI', header)
@@ -3566,7 +3623,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet181.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF JATIMEKAR', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_181}', title)
     worksheet181.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet181.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -3618,7 +3675,7 @@ if uploaded_file is not None:
     worksheet182.set_column('F:F', 8.57, center)
     worksheet182.set_column('G:V', 5, center)
     worksheet182.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF RAWALUMBU', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_182}', title)
     worksheet182.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet182.write('A5', 'LOKASI', header)
@@ -3659,7 +3716,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet182.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF RAWALUMBU', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_182}', title)
     worksheet182.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet182.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -3711,7 +3768,7 @@ if uploaded_file is not None:
     worksheet183.set_column('F:F', 8.57, center)
     worksheet183.set_column('G:V', 5, center)
     worksheet183.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TAMAN HARAPAN BARU', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_183}', title)
     worksheet183.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet183.write('A5', 'LOKASI', header)
@@ -3752,7 +3809,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet183.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF TAMAN HARAPAN BARU', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_183}', title)
     worksheet183.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet183.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -3804,7 +3861,7 @@ if uploaded_file is not None:
     worksheet184.set_column('F:F', 8.57, center)
     worksheet184.set_column('G:V', 5, center)
     worksheet184.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF VILA NUSA INDAH', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_184}', title)
     worksheet184.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet184.write('A5', 'LOKASI', header)
@@ -3845,7 +3902,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet184.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF VILA NUSA INDAH', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_184}', title)
     worksheet184.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet184.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -3897,7 +3954,7 @@ if uploaded_file is not None:
     worksheet185.set_column('F:F', 8.57, center)
     worksheet185.set_column('G:V', 5, center)
     worksheet185.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATIWARNA', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_185}', title)
     worksheet185.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet185.write('A5', 'LOKASI', header)
@@ -3938,7 +3995,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet185.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF JATIWARNA', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_185}', title)
     worksheet185.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet185.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -3990,7 +4047,7 @@ if uploaded_file is not None:
     worksheet186.set_column('F:F', 8.57, center)
     worksheet186.set_column('G:V', 5, center)
     worksheet186.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF TAMBUN', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_186}', title)
     worksheet186.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet186.write('A5', 'LOKASI', header)
@@ -4031,7 +4088,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet186.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF TAMBUN', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_186}', title)
     worksheet186.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet186.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -4083,7 +4140,7 @@ if uploaded_file is not None:
     worksheet187.set_column('F:F', 8.57, center)
     worksheet187.set_column('G:V', 5, center)
     worksheet187.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF DAAN MOGOT', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_187}', title)
     worksheet187.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet187.write('A5', 'LOKASI', header)
@@ -4124,7 +4181,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet187.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF DAAN MOGOT', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_187}', title)
     worksheet187.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet187.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -4176,7 +4233,7 @@ if uploaded_file is not None:
     worksheet189.set_column('F:F', 8.57, center)
     worksheet189.set_column('G:V', 5, center)
     worksheet189.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIBUBUR', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_189}', title)
     worksheet189.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet189.write('A5', 'LOKASI', header)
@@ -4217,7 +4274,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet189.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF CIBUBUR', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_189}', title)
     worksheet189.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet189.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -4269,7 +4326,7 @@ if uploaded_file is not None:
     worksheet190.set_column('F:F', 8.57, center)
     worksheet190.set_column('G:V', 5, center)
     worksheet190.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CENGKARENG', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_190}', title)
     worksheet190.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet190.write('A5', 'LOKASI', header)
@@ -4310,7 +4367,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet190.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF CENGKARENG', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_190}', title)
     worksheet190.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet190.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -4362,7 +4419,7 @@ if uploaded_file is not None:
     worksheet191.set_column('F:F', 8.57, center)
     worksheet191.set_column('G:V', 5, center)
     worksheet191.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PETUKANGAN', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_191}', title)
     worksheet191.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet191.write('A5', 'LOKASI', header)
@@ -4403,7 +4460,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet191.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF PETUKANGAN', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_191}', title)
     worksheet191.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet191.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -4455,7 +4512,7 @@ if uploaded_file is not None:
     worksheet192.set_column('F:F', 8.57, center)
     worksheet192.set_column('G:V', 5, center)
     worksheet192.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MERUYA UTARA', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_192}', title)
     worksheet192.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet192.write('A5', 'LOKASI', header)
@@ -4496,7 +4553,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet192.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF MERUYA UTARA', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_192}', title)
     worksheet192.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet192.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -4548,7 +4605,7 @@ if uploaded_file is not None:
     worksheet193.set_column('F:F', 8.57, center)
     worksheet193.set_column('G:V', 5, center)
     worksheet193.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BINTARA', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_193}', title)
     worksheet193.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet193.write('A5', 'LOKASI', header)
@@ -4589,7 +4646,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet193.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF BINTARA', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_193}', title)
     worksheet193.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet193.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -4641,7 +4698,7 @@ if uploaded_file is not None:
     worksheet194.set_column('F:F', 8.57, center)
     worksheet194.set_column('G:V', 5, center)
     worksheet194.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MALANG', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_194}', title)
     worksheet194.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet194.write('A5', 'LOKASI', header)
@@ -4682,7 +4739,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet194.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF MALANG', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_194}', title)
     worksheet194.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet194.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -4734,7 +4791,7 @@ if uploaded_file is not None:
     worksheet195.set_column('F:F', 8.57, center)
     worksheet195.set_column('G:V', 5, center)
     worksheet195.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MEDAN BARU', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_195}', title)
     worksheet195.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet195.write('A5', 'LOKASI', header)
@@ -4775,7 +4832,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet195.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF MEDAN BARU', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_195}', title)
     worksheet195.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet195.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -4827,7 +4884,7 @@ if uploaded_file is not None:
     worksheet196.set_column('F:F', 8.57, center)
     worksheet196.set_column('G:V', 5, center)
     worksheet196.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MEDAN HELVETIA', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_196}', title)
     worksheet196.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet196.write('A5', 'LOKASI', header)
@@ -4868,7 +4925,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet196.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF MEDAN HELVETIA', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_196}', title)
     worksheet196.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet196.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -4920,7 +4977,7 @@ if uploaded_file is not None:
     worksheet197.set_column('F:F', 8.57, center)
     worksheet197.set_column('G:V', 5, center)
     worksheet197.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIHANJUANG', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_197}', title)
     worksheet197.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet197.write('A5', 'LOKASI', header)
@@ -4961,7 +5018,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet197.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF CIHANJUANG', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_197}', title)
     worksheet197.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet197.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -5013,7 +5070,7 @@ if uploaded_file is not None:
     worksheet198.set_column('F:F', 8.57, center)
     worksheet198.set_column('G:V', 5, center)
     worksheet198.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF BUAH BATU', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_198}', title)
     worksheet198.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet198.write('A5', 'LOKASI', header)
@@ -5054,7 +5111,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet198.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF BUAH BATU', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_198}', title)
     worksheet198.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet198.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -5106,7 +5163,7 @@ if uploaded_file is not None:
     worksheet199.set_column('F:F', 8.57, center)
     worksheet199.set_column('G:V', 5, center)
     worksheet199.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUMBAWA', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_199}', title)
     worksheet199.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet199.write('A5', 'LOKASI', header)
@@ -5147,7 +5204,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet199.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF SUMBAWA', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_198}', title)
     worksheet199.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet199.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -5199,7 +5256,7 @@ if uploaded_file is not None:
     worksheet201.set_column('F:F', 8.57, center)
     worksheet201.set_column('G:V', 5, center)
     worksheet201.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF UJUNG BERUNG', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_201}', title)
     worksheet201.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet201.write('A5', 'LOKASI', header)
@@ -5240,7 +5297,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet201.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF UJUNG BERUNG', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_201}', title)
     worksheet201.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet201.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -5292,7 +5349,7 @@ if uploaded_file is not None:
     worksheet202.set_column('F:F', 8.57, center)
     worksheet202.set_column('G:V', 5, center)
     worksheet202.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SANGKURIANG', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_202}', title)
     worksheet202.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet202.write('A5', 'LOKASI', header)
@@ -5333,7 +5390,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet202.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF SANGKURIANG', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_202}', title)
     worksheet202.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet202.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -5466,7 +5523,7 @@ if uploaded_file is not None:
     worksheet203.set_column('F:F', 8.57, center)
     worksheet203.set_column('G:V', 5, center)
     worksheet203.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KARAWACI', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_203}', title)
     worksheet203.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet203.write('A5', 'LOKASI', header)
@@ -5507,7 +5564,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet203.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF KARAWACI', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_203}', title)
     worksheet203.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet203.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -5559,7 +5616,7 @@ if uploaded_file is not None:
     worksheet210.set_column('F:F', 8.57, center)
     worksheet210.set_column('G:V', 5, center)
     worksheet210.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF VETERAN TANGERANG', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_210}', title)
     worksheet210.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet210.write('A5', 'LOKASI', header)
@@ -5600,7 +5657,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet210.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF VETERAN TANGERANG', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_210}', title)
     worksheet210.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet210.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -5652,7 +5709,7 @@ if uploaded_file is not None:
     worksheet211.set_column('F:F', 8.57, center)
     worksheet211.set_column('G:V', 5, center)
     worksheet211.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PERUMNAS 2 TANGERANG', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_211}', title)
     worksheet211.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet211.write('A5', 'LOKASI', header)
@@ -5693,7 +5750,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet211.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF PERUMNAS 2 TANGERANG', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_211}', title)
     worksheet211.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet211.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -5745,7 +5802,7 @@ if uploaded_file is not None:
     worksheet212.set_column('F:F', 8.57, center)
     worksheet212.set_column('G:V', 5, center)
     worksheet212.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KAYURINGIN', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_212}', title)
     worksheet212.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet212.write('A5', 'LOKASI', header)
@@ -5786,7 +5843,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet212.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF KAYURINGIN', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_212}', title)
     worksheet212.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet212.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -5838,7 +5895,7 @@ if uploaded_file is not None:
     worksheet216.set_column('F:F', 8.57, center)
     worksheet216.set_column('G:V', 5, center)
     worksheet216.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF AGUS SALIM', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_216}', title)
     worksheet216.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet216.write('A5', 'LOKASI', header)
@@ -5879,7 +5936,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet216.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF AGUS SALIM', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_216}', title)
     worksheet216.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet216.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -5931,7 +5988,7 @@ if uploaded_file is not None:
     worksheet217.set_column('F:F', 8.57, center)
     worksheet217.set_column('G:V', 5, center)
     worksheet217.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF SUMERU', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_217}', title)
     worksheet217.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet217.write('A5', 'LOKASI', header)
@@ -5972,7 +6029,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet217.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF SUMERU', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_217}', title)
     worksheet217.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet217.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -6024,7 +6081,7 @@ if uploaded_file is not None:
     worksheet218.set_column('F:F', 8.57, center)
     worksheet218.set_column('G:V', 5, center)
     worksheet218.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIKEAS', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_218}', title)
     worksheet218.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet218.write('A5', 'LOKASI', header)
@@ -6065,7 +6122,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet218.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF CIKEAS', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_218}', title)
     worksheet218.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet218.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -6117,7 +6174,7 @@ if uploaded_file is not None:
     worksheet219.set_column('F:F', 8.57, center)
     worksheet219.set_column('G:V', 5, center)
     worksheet219.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIJAWA MASJID', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_219}', title)
     worksheet219.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet219.write('A5', 'LOKASI', header)
@@ -6158,7 +6215,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet219.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF CIJAWA MASJID', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_219}', title)
     worksheet219.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet219.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -6210,7 +6267,7 @@ if uploaded_file is not None:
     worksheet220.set_column('F:F', 8.57, center)
     worksheet220.set_column('G:V', 5, center)
     worksheet220.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PALEDANG', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_220}', title)
     worksheet220.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet220.write('A5', 'LOKASI', header)
@@ -6251,7 +6308,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet220.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF PALEDANG', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_220}', title)
     worksheet220.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet220.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -6303,7 +6360,7 @@ if uploaded_file is not None:
     worksheet226.set_column('F:F', 8.57, center)
     worksheet226.set_column('G:V', 5, center)
     worksheet226.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GEDONG KUNING', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_226}', title)
     worksheet226.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet226.write('A5', 'LOKASI', header)
@@ -6344,7 +6401,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet226.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF GEDONG KUNING', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_226}', title)
     worksheet226.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet226.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -6396,7 +6453,7 @@ if uploaded_file is not None:
     worksheet227.set_column('F:F', 8.57, center)
     worksheet227.set_column('G:V', 5, center)
     worksheet227.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF JATIWARINGIN', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_227}', title)
     worksheet227.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet227.write('A5', 'LOKASI', header)
@@ -6437,7 +6494,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet227.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF JATIWARINGIN', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_227}', title)
     worksheet227.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet227.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -6489,7 +6546,7 @@ if uploaded_file is not None:
     worksheet228.set_column('F:F', 8.57, center)
     worksheet228.set_column('G:V', 5, center)
     worksheet228.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CILEDUG', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_228}', title)
     worksheet228.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet228.write('A5', 'LOKASI', header)
@@ -6530,7 +6587,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet228.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF CILEDUG', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_228}', title)
     worksheet228.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet228.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -6582,7 +6639,7 @@ if uploaded_file is not None:
     worksheet229.set_column('F:F', 8.57, center)
     worksheet229.set_column('G:V', 5, center)
     worksheet229.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KRANGGAN', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_229}', title)
     worksheet229.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet229.write('A5', 'LOKASI', header)
@@ -6623,7 +6680,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet229.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF KRANGGAN', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_229}', title)
     worksheet229.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet229.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -6675,7 +6732,7 @@ if uploaded_file is not None:
     worksheet230.set_column('F:F', 8.57, center)
     worksheet230.set_column('G:V', 5, center)
     worksheet230.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF MUSTIKA JAYA', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_230}', title)
     worksheet230.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet230.write('A5', 'LOKASI', header)
@@ -6716,7 +6773,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet230.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF MUSTIKA JAYA', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_230}', title)
     worksheet230.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet230.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -6768,7 +6825,7 @@ if uploaded_file is not None:
     worksheet231.set_column('F:F', 8.57, center)
     worksheet231.set_column('G:V', 5, center)
     worksheet231.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF ALEXINDO', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_231}', title)
     worksheet231.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet231.write('A5', 'LOKASI', header)
@@ -6809,7 +6866,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet231.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF ALEXINDO', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_231}', title)
     worksheet231.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet231.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -6861,7 +6918,7 @@ if uploaded_file is not None:
     worksheet233.set_column('F:F', 8.57, center)
     worksheet233.set_column('G:V', 5, center)
     worksheet233.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF CIBITUNG', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_233}', title)
     worksheet233.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet233.write('A5', 'LOKASI', header)
@@ -6902,7 +6959,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet233.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF CIBITUNG', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_233}', title)
     worksheet233.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet233.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -6954,7 +7011,7 @@ if uploaded_file is not None:
     worksheet234.set_column('F:F', 8.57, center)
     worksheet234.set_column('G:V', 5, center)
     worksheet234.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF KRAMAT JAYA', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_234}', title)
     worksheet234.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet234.write('A5', 'LOKASI', header)
@@ -6995,7 +7052,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet234.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF KRAMAT JAYA', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_234}', title)
     worksheet234.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet234.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -7047,7 +7104,7 @@ if uploaded_file is not None:
     worksheet235.set_column('F:F', 8.57, center)
     worksheet235.set_column('G:V', 5, center)
     worksheet235.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF PONDOK GEDE', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_235}', title)
     worksheet235.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet235.write('A5', 'LOKASI', header)
@@ -7088,7 +7145,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet235.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF PONDOK GEDE', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_235}', title)
     worksheet235.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet235.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
@@ -7140,7 +7197,7 @@ if uploaded_file is not None:
     worksheet236.set_column('F:F', 8.57, center)
     worksheet236.set_column('G:V', 5, center)
     worksheet236.merge_range(
-        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF GALAXY', title)
+        'A1:AD1', fr'10 SISWA KELAS {kelas} PERINGKAT TERTINGGI NF {lok_236}', title)
     worksheet236.merge_range(
         'A2:AD2', fr'{penilaian} - {semester} TAHUN {tahun}', sub_title)
     worksheet236.write('A5', 'LOKASI', header)
@@ -7181,7 +7238,7 @@ if uploaded_file is not None:
                                     {'type': 'no_errors', 'format': border})
 
     worksheet236.merge_range(
-        'A17:AD17', fr'KELAS {kelas} - LOKASI NF GALAXY', title)
+        'A17:AD17', fr'KELAS {kelas} - LOKASI NF {lok_236}', title)
     worksheet236.merge_range('A18:AD18', fr'{penilaian}', subTitle)
     worksheet236.merge_range(
         'A19:AD19', fr'{semester} TAHUN {tahun}', sub_title)
