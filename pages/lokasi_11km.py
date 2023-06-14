@@ -22065,7 +22065,7 @@ lok_663 = 'SOETOMO'
 lok_664 = 'TAN MALAKA'
 
 uploaded_file = st.file_uploader(
-    'Letakkan file excel NILAI STANDAR [LOKASI DEPOK - PRODUK]', type='xlsx')
+    'Letakkan file excel NILAI STANDAR [LOKASI DEPOK - PADANG]', type='xlsx')
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
