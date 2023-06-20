@@ -143,7 +143,7 @@ column_order_km_11sma = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LO
                          'ENG_11KM', 'SEJ_11KM', 'GEO_11KM', 'EKO_11KM', 'SOS_11KM', 'FIS_11KM', 'KIM_11KM', 'BIO_11KM']
 
 
-image = Image.open('E:\\logo resmi nf resize.png')
+image = Image.open('logo resmi nf resize.png')
 st.image(image)
 
 st.title("PIVOT - PAT")
