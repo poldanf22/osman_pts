@@ -262,13 +262,13 @@ if bobot is not None and jwb is not None:
 
     # Menyimpan DataFrame ke file Excel
     result_pivot.to_excel(file_path, index=False)
-    st.success("File sudah diunduh!")
+    st.success("File siap diunduh!")
 
     # Tombol unduh file
     with open(file_path, "rb") as f:
         bytes_data = f.read()
     st.download_button(label="Unduh File", data=bytes_data,
                        file_name=path_file)
-    st.write(result_pivot)
-else:
-    st.write("File tidak ditemukan atau gagal diunggah.")
+#     st.write(result_pivot)
+# else:
+#     st.write("File tidak ditemukan atau gagal diunggah.")
