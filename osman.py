@@ -255,13 +255,20 @@ if bobot is not None and jwb is not None:
 
     path_file = f"{kelas}_pat_sm2_{kurikulum}_{tahun}_pivot.xlsx"
 
-    current_directory = os.getcwd()
-    print(current_directory)
+    # Simpan file ke direktori temporer
+    temp_dir = tempfile.gettempdir()
+    file_path = temp_dir + '/' + path_file
+    # wb.save(file_path)
 
     # Menyimpan DataFrame ke file Excel
-    result_pivot.to_excel(path_file, index=False)
+    result_pivot.to_excel(file_path, index=False)
     st.success("File sudah diunduh!")
 
+    # Tombol unduh file
+    with open(file_path, "rb") as f:
+        bytes_data = f.read()
+    st.download_button(label="Unduh File", data=bytes_data,
+                       file_name=path_file)
     st.write(result_pivot)
 else:
     st.write("File tidak ditemukan atau gagal diunggah.")
