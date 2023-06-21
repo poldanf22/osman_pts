@@ -5,6 +5,20 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 import subprocess
 
+# menghilangkan hamburger
+st.markdown("""
+<style>
+.css-1rs6os.edgvbvh3
+{
+    visibility:hidden;
+}
+.css-1lsmgbg.egzxvld0
+{
+    visibility:hidden;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # # Membuat objek SQLAlchemy Engine untuk koneksi MySQL
 # engine = create_engine(
 #     'mysql+pymysql://root@localhost/db_streamlit')
