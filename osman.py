@@ -1,4 +1,5 @@
 import streamlit as st
+import sqlalchemy
 from passlib.hash import pbkdf2_sha256
 from sqlalchemy import create_engine, Column, String
 from sqlalchemy.orm import sessionmaker
@@ -24,7 +25,7 @@ st.markdown("""
 #     'mysql+pymysql://root@localhost/db_streamlit')
 
 # Membuat objek SQLAlchemy Engine untuk koneksi Server
-engine = create_engine(
+engine = sqlalchemy.create_engine(
     'mysql+mysqldb://poldanf:polda4lhamdulillaHoke@10.212.37.103/db_streamlit')
 
 # Membuat objek Session
