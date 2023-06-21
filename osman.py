@@ -104,11 +104,11 @@ def after_login():
     if st.session_state.is_authenticated:
         # Tambahkan file lain yang ingin diakses
         selected_file = st.selectbox(
-            "Pilih file:", ("nilai_std.py", "lookup.py"))
+            "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
 
         if st.button("Buka File"):
             # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
-            file_path = f"pages/{selected_file}"
+            file_path = f"halaman/{selected_file}"
             subprocess.Popen(["streamlit", "run", file_path])
             st.warning("Mohon ditunggu sampai muncul Tab Baru!")
 
