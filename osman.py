@@ -293,5 +293,11 @@ if authentication_status:
     #     st.write("File tidak ditemukan atau gagal diunggah.")
     authenticator.logout("Logout", "sidebar")
     st.sidebar.title(f"Welcome {name}")
-    selected_file = st.selectbox(
+    selected_file = st.sidebat.selectbox(
         "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
+
+    if st.sidebar.button("Buka File"):
+        # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
+        file_path = f"halaman/{selected_file}"
+        subprocess.Popen(["streamlit", "run", file_path])
+        st.sidebar.warning("Mohon ditunggu sampai muncul Tab Baru!")
