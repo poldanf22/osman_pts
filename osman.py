@@ -36,7 +36,7 @@ def after_login():
             subprocess.Popen(["streamlit", "run", file_path])
             st.warning("Mohon ditunggu sampai muncul Tab Baru!")
 
-            authenticator.logout("Logout", "sidebar")
+            authenticator.logout("Logout")
             # st.sidebar.title(f"Welcome {name}")
 
 
