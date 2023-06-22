@@ -34,8 +34,7 @@ if authentication_status:
             options=["Pivot"],
         )
     if selected_file == "Pivot":
-        subprocess.Popen(["streamlit", "run", selected_file])
-        st.warning("Mohon ditunggu sampai muncul Tab Baru!")
+        subprocess.Popen(["streamlit", "run", "pivot.py"])
 
         # st.sidebar.title(f"Assalamu'alaikum")
         # selected_file = st.sidebar.selectbox(
