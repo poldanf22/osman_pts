@@ -20,14 +20,14 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# # Membuat objek SQLAlchemy Engine untuk koneksi MySQL
-# engine = create_engine(
-#     'mysql+pymysql://root@localhost/db_streamlit')
+# Membuat objek SQLAlchemy Engine untuk koneksi MySQL
+engine = create_engine(
+    'mysql+pymysql://{0}:{1}@{2}:{3}/{4}'.format('poldanf', 'polda4lhamdulillaHoke', '10.212.37.103', 3306, 'db_streamlit'))
 
 # Membuat objek SQLAlchemy Engine untuk koneksi Server
 
-engine = create_engine(
-    'mysql+mysqldb://{0}:{1}@{2}:{3}/{4}'.format('poldanf', 'polda4lhamdulillaHoke', '10.212.37.103', 3306, 'db_streamlit'))
+# engine = create_engine(
+#     'mysql+mysqldb://{0}:{1}@{2}:{3}/{4}'.format('poldanf', 'polda4lhamdulillaHoke', '10.212.37.103', 3306, 'db_streamlit'))
 # 'mysql+mysqldb://poldanf:polda4lhamdulillaHoke@10.212.37.103/db_streamlit')
 
 # Membuat objek Session
