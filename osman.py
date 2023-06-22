@@ -27,8 +27,8 @@ st.markdown("""
 # Membuat objek SQLAlchemy Engine untuk koneksi Server
 
 engine = create_engine(
-    'mysql+mysqldb://{0}:{1}@{2}:{3}'.format(poldanf, polda4lhamdulillaHoke, 10.212.37.103, 3306))
-    # 'mysql+mysqldb://poldanf:polda4lhamdulillaHoke@10.212.37.103/db_streamlit')
+    'mysql+mysqldb://{0}:{1}@{2}:{3}'.format('poldanf', 'polda4lhamdulillaHoke', '"10.212.37.103"', '"3306"'))
+# 'mysql+mysqldb://poldanf:polda4lhamdulillaHoke@10.212.37.103/db_streamlit')
 
 # Membuat objek Session
 Session = sessionmaker(bind=engine)
