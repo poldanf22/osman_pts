@@ -27,6 +27,11 @@ if authentication_status == None:
 
 if authentication_status:
     authenticator.logout("Logout", "sidebar")
+    selected_file = option_menu(
+        menu_title=None,
+        options=["Lok. SD, SMP, 10KM", "Lok. All IPA"],
+        orientation="horizontal",
+    )
     with st.sidebar:
         selected_file = option_menu(
             menu_title="Pilih file:",
@@ -1743,9 +1748,3 @@ if authentication_status:
 
             st.warning(
                 "Buka file unduhan, klik 'Enable Editing' dan 'Save'")
-
-selected_file = option_menu(
-    menu_title=None,
-    options=["Lok. SD, SMP, 10KM", "Lok. All IPA"],
-    orientation="horizontal",
-)
