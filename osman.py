@@ -4,7 +4,7 @@ from sqlalchemy import create_engine, Column, String
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 import subprocess
-from sqlalchemy_utils import create_database, database_exists
+import MySQLdb
 
 # menghilangkan hamburger
 st.markdown("""
