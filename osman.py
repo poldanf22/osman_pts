@@ -27,7 +27,7 @@ def after_login():
         st.warning("Silahkan masukan username dan kode akses")
 
     if authentication_status:
-         selected_file = st.selectbox(
+        selected_file = st.selectbox(
             "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
 
         if st.button("Buka File"):
@@ -36,8 +36,8 @@ def after_login():
             subprocess.Popen(["streamlit", "run", file_path])
             st.warning("Mohon ditunggu sampai muncul Tab Baru!")
 
-        authenticator.logout("Logout", "sidebar")
-        # st.sidebar.title(f"Welcome {name}")
+            authenticator.logout("Logout", "sidebar")
+            # st.sidebar.title(f"Welcome {name}")
 
 
 if __name__ == "__main__":
