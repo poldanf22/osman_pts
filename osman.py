@@ -33,8 +33,14 @@ if st.session_state.is_authenticated:
     if st.button("Buka File"):
         # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
         file_path = f"halaman/{selected_file}"
-        subprocess.Popen(["streamlit", "run", file_path])
-        st.warning("Mohon ditunggu sampai muncul Tab Baru!")
+        st.experimental_rerun()
+        st.stop()
+
+    # if st.button("Buka File"):
+    #     # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
+    #     file_path = f"halaman/{selected_file}"
+    #     subprocess.Popen(["streamlit", "run", file_path])
+    #     st.warning("Mohon ditunggu sampai muncul Tab Baru!")
 else:
     if authentication_status is False:
         st.error("Username/Password is incorrect")
