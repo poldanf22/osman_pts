@@ -27,17 +27,17 @@ def after_login():
         st.warning("Silahkan masukan username dan kode akses")
 
     if authentication_status:
-
-        authenticator.logout("Logout", "sidebar")
-        # st.sidebar.title(f"Welcome {name}")
-        selected_file = st.sidebar.selectbox(
+         selected_file = st.selectbox(
             "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
 
-        if st.sidebar.button("Buka File"):
+        if st.button("Buka File"):
             # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
             file_path = f"{selected_file}"
             subprocess.Popen(["streamlit", "run", file_path])
-            st.sidebar.warning("Mohon ditunggu sampai muncul Tab Baru!")
+            st.warning("Mohon ditunggu sampai muncul Tab Baru!")
+
+        authenticator.logout("Logout", "sidebar")
+        # st.sidebar.title(f"Welcome {name}")
 
 
 if __name__ == "__main__":
