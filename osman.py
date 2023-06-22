@@ -291,3 +291,5 @@ if authentication_status:
     #     st.write(result_pivot)
     # else:
     #     st.write("File tidak ditemukan atau gagal diunggah.")
+    authenticator.logout("Logout", "sidebar")
+    st.sidebar.title(f"Welcome {name}")
