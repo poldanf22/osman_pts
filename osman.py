@@ -2,8 +2,10 @@ import pickle
 import streamlit as st
 import streamlit_authenticator as stauth
 from pathlib import Path
+from PIL import Image
+
 # User Authentication
-names = ["TI Polda NF", "TI Polda NF"]
+names = ["TI Polda NF 1", "TI Polda NF 2"]
 usernames = ["admin1", "admin2"]
 
 # load hashed kd_akses
