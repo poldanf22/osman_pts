@@ -34,12 +34,12 @@ def after_login():
             "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
 
         if st.sidebar.button("Buka File"):
-           try:
-            with open(selected_file, "r") as file:
-                contents = file.read()
-                st.code(contents)
-                except FileNotFoundError:
-                    st.sidebar.error("File tidak ditemukan")
+            try:
+                with open(selected_file, "r") as file:
+                    contents = file.read()
+                    st.code(contents)
+            except FileNotFoundError:
+                st.sidebar.error("File tidak ditemukan")
 
 
 if __name__ == "__main__":
