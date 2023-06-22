@@ -33,6 +33,6 @@ if authentication_status:
 
     if st.sidebar.button("Buka File"):
         # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
-        path_file = f"halaman/{selected_file}"
+        path_file = f"{selected_file}"
         subprocess.Popen(["streamlit", "run", path_file])
         st.sidebar.warning("Mohon ditunggu sampai muncul Tab Baru!")
