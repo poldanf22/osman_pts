@@ -19,21 +19,27 @@ authenticator = stauth.Authenticate(
 name, authentication_status, username = authenticator.login("Login", "main")
 
 
-if authentication_status == False:
-    st.error("Username/kode akses salah")
+def after_login():
+    if authentication_status == False:
+        st.error("Username/kode akses salah")
 
-if authentication_status == None:
-    st.warning("Silahkan masukan username dan kode akses")
+    if authentication_status == None:
+        st.warning("Silahkan masukan username dan kode akses")
 
-if authentication_status:
+    if authentication_status:
 
-    authenticator.logout("Logout", "sidebar")
-    # st.sidebar.title(f"Welcome {name}")
-    selected_file = st.sidebar.selectbox(
-        "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
+        authenticator.logout("Logout", "sidebar")
+        # st.sidebar.title(f"Welcome {name}")
+        selected_file = st.sidebar.selectbox(
+            "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
 
-    if st.sidebar.button("Buka File"):
-        # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
-        path_file = f"halaman/{selected_file}"
-        subprocess.Popen(["streamlit", "run", path_file])
-        st.sidebar.warning("Mohon ditunggu sampai muncul Tab Baru!")
+        if st.sidebar.button("Buka File"):
+            # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
+            path_file = f"halaman/{selected_file}"
+            subprocess.Popen(["streamlit", "run", path_file])
+            st.sidebar.warning("Mohon ditunggu sampai muncul Tab Baru!")
+
+
+if __name__ == "__main__":
+    login_register()
+    after_login()
