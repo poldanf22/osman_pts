@@ -34,7 +34,7 @@ if authentication_status:
             options=["Pivot"],
         )
     if selected_file == "Pivot":
-        subprocess.Popen([f"streamlit", "run", {selected_file}])
+        subprocess.Popen(["streamlit", "run", selected_file])
         st.warning("Mohon ditunggu sampai muncul Tab Baru!")
 
         # st.sidebar.title(f"Assalamu'alaikum")
