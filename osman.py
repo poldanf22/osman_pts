@@ -27,10 +27,10 @@ if authentication_status == None:
 
 if authentication_status:
 
-    # authenticator.logout("Logout", "sidebar")
+    authenticator.logout("Logout", "sidebar")
     # st.sidebar.title(f"Welcome {name}")
-    # selected_file = st.sidebar.selectbox(
-    #     "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
+    selected_file = st.sidebar.selectbox(
+        "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
 
     # if st.sidebar.button("Buka File"):
     #     # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
