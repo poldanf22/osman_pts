@@ -38,8 +38,8 @@ def after_login():
             with open(selected_file, "r") as file:
                 contents = file.read()
                 st.code(contents)
-        except FileNotFoundError:
-            st.sidebar.error("File tidak ditemukan")
+            except FileNotFoundError:
+                st.sidebar.error("File tidak ditemukan")
 
 
 if __name__ == "__main__":
