@@ -6,4 +6,6 @@ PyMySQL==1.0.3
 SQLAlchemy==1.4.32
 streamlit==1.23.1
 streamlit_authenticator==0.1.5
+streamlit_option_menu==0.3.2
 XlsxWriter==3.0.3
+~treamlit==1.23.1
