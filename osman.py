@@ -302,3 +302,6 @@ if authentication_status:
         file_path = f"halaman/{selected_file}"
         subprocess.Popen(["streamlit", "run", file_path])
         st.sidebar.warning("Mohon ditunggu sampai muncul Tab Baru!")
+
+if __name__ == "__main__":
+    
