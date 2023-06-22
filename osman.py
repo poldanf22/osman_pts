@@ -27,12 +27,21 @@ if authentication_status == None:
 if authentication_status:
 
     authenticator.logout("Logout", "sidebar")
-    # st.sidebar.title(f"Welcome {name}")
-    selected_file = st.sidebar.selectbox(
-        "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
+    with st.sidebar:
+        selected_file = option_menu(
+            menu_title="Pilih file:",
+            options=["Pivot"],
+        )
+    if selected_file == "Pivot":
+        subprocess.Popen([f"streamlit", "run", {selected_file}])
+        st.warning("Mohon ditunggu sampai muncul Tab Baru!")
 
-    if st.sidebar.button("Buka File"):
-        # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
-        path_file = f"{selected_file}"
-        subprocess.Popen(["streamlit", "run", path_file])
-        st.sidebar.warning("Mohon ditunggu sampai muncul Tab Baru!")
+    # st.sidebar.title(f"Assalamu'alaikum")
+    # selected_file = st.sidebar.selectbox(
+    #     "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
+
+    # if st.sidebar.button("Buka File"):
+    #     # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
+    #     path_file = f"{selected_file}"
+    #     subprocess.Popen(["streamlit", "run", path_file])
+    #     st.sidebar.warning("Mohon ditunggu sampai muncul Tab Baru!")
