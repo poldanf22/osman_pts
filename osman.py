@@ -293,7 +293,7 @@ if authentication_status:
     #     st.write("File tidak ditemukan atau gagal diunggah.")
     authenticator.logout("Logout", "sidebar")
     st.sidebar.title(f"Welcome {name}")
-    selected_file = st.sidebat.selectbox(
+    selected_file = st.sidebar.selectbox(
         "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
 
     if st.sidebar.button("Buka File"):
