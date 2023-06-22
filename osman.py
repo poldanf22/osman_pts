@@ -41,5 +41,4 @@ def after_login():
 
 
 if __name__ == "__main__":
-    login_register()
     after_login()
