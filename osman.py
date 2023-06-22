@@ -4,6 +4,7 @@ from sqlalchemy import create_engine, Column, String
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 import subprocess
+import pymysql
 
 # menghilangkan hamburger
 st.markdown("""
@@ -18,6 +19,9 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+
+# Connect to the database
+connection = pymysql.connect(host='10.212.37.103', trusted=True)
 
 # Membuat objek SQLAlchemy Engine untuk koneksi MySQL
 engine = create_engine(
