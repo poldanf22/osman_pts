@@ -32,8 +32,8 @@ if authentication_status:
     selected_file = st.sidebar.selectbox(
         "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
 
-    # if st.sidebar.button("Buka File"):
-    #     # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
-    #     file_path = f"halaman/{selected_file}"
-    #     subprocess.Popen(["streamlit", "run", file_path])
-    #     st.sidebar.warning("Mohon ditunggu sampai muncul Tab Baru!")
+    if st.sidebar.button("Buka File"):
+        # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
+        path_file = f"halaman/{selected_file}"
+        subprocess.Popen(["streamlit", "run", path_file])
+        st.sidebar.warning("Mohon ditunggu sampai muncul Tab Baru!")
