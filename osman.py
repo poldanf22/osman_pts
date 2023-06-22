@@ -21,7 +21,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Connect to the database
-connection = pymysql.connect(host='10.212.37.103', trusted=True)
+connection = pymysql.connect(host='10.212.37.103',  # Ganti dengan alamat host yang sesuai
+                             user='poldanf',  # Ganti dengan nama pengguna MySQL yang sesuai
+                             password='polda4lhamdulillaHoke',  # Ganti dengan kata sandi MySQL yang sesuai
+                             database='db_streamlit'  # Ganti dengan nama database yang sesuai
+                             )
 
 # Membuat objek SQLAlchemy Engine untuk koneksi MySQL
 engine = create_engine(
