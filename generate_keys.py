@@ -3,9 +3,9 @@ from pathlib import Path
 
 import streamlit_authenticator as stauth
 
-name = ["TI Polda NF", "TI Polda NF"]
+name = ["TI Polda NF 1", "TI Polda NF 2"]
 username = ["admin1", "admin2"]
-kd_akses = ["nfcemerlang", "nfcemerlang"]
+kd_akses = ["XXX", "XXX"]
 
 hashed_kd_akses = stauth.Hasher(kd_akses).generate()
 
