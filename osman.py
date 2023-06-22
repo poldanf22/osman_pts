@@ -34,10 +34,12 @@ def after_login():
             "Pilih file:", ("pivot.py", "nilai_std_sd_smp_10km.py"))
 
         if st.sidebar.button("Buka File"):
-            # Ganti folder_path dengan jalur folder yang berisi file-file tersebut
-            path_file = f"{selected_file}"
-            subprocess.Popen(["streamlit", path_file])
-            st.sidebar.warning("Mohon ditunggu sampai muncul Tab Baru!")
+           try:
+            with open(selected_file, "r") as file:
+                contents = file.read()
+                st.code(contents)
+        except FileNotFoundError:
+            st.sidebar.error("File tidak ditemukan")
 
 
 if __name__ == "__main__":
