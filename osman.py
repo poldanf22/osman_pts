@@ -38,8 +38,8 @@ if authentication_status:
                 f'''<a href={url}><button style="background-color:GreenYellow;">Untuk Lok.</button></a>''', unsafe_allow_html=True)
         selected_file = option_menu(
             menu_title="Pilih file:",
-            options=["Pivot", "Nilai Std. SD, SMP, 10KM", "Nilai Std. All IPA", "Nilai Std. 10, 11 IPS", "Nilai Std. PPLS, RONIN IPS", "Nilai Std. 11KM",
-                     "Lok. SD, SMP, 10KM", "Lok. All IPA", "Lok. 10, 11 IPS", "Lok. PPLS, RONIN IPS", "Lok. 11KM"],
+            options=["Pivot", "Nilai Std. SD, SMP, 10KM", "Nilai Std. All IPA",
+                     "Nilai Std. 10, 11 IPS", "Nilai Std. PPLS, RONIN IPS", "Nilai Std. 11KM"],
         )
     if selected_file == "Pivot":
         # kurikulum - kelas - mapel
