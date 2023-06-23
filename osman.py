@@ -5,6 +5,9 @@ from pathlib import Path
 from PIL import Image
 import subprocess
 from streamlit_option_menu import option_menu
+import openpyxl
+from openpyxl.styles import Font, PatternFill
+import tempfile
 
 # User Authentication
 names = ["TI Polda NF 1", "TI Polda NF 2"]
@@ -25,9 +28,16 @@ if authentication_status == False:
 if authentication_status == None:
     st.warning("Silahkan masukan username dan kode akses")
 
+url = "https://osman2-8bdgvgq3z54.streamlit.app/"
+
 if authentication_status:
     authenticator.logout("Logout", "sidebar")
     with st.sidebar:
+        with st.sidebar:
+        st.markdown(f'''
+<a href={url}><button style="background-color:GreenYellow;">Untuk Lok.</button></a>
+''',
+                    unsafe_allow_html=True)
         selected_file = option_menu(
             menu_title="Pilih file:",
             options=["Pivot", "Nilai Std. SD, SMP, 10KM", "Nilai Std. All IPA", "Nilai Std. 10, 11 IPS", "Nilai Std. PPLS, RONIN IPS", "Nilai Std. 11KM",
@@ -329,7 +339,7 @@ if authentication_status:
         # if st.button("Panduan"):
         #     webbrowser.open_new_tab(url)
 
-        st.header("SD-SMP")
+        st.header("SD-SMP-10KM")
 
         col6 = st.container()
 
