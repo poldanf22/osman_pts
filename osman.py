@@ -1814,18 +1814,18 @@ if authentication_status:
                 (15, 20, 25, 30, 35, 40, 45, 50))
 
         with col2:
-            BIO = st.selectbox(
-                "JML. SOAL BIO.",
-                (15, 20, 25, 30, 35, 40, 45, 50))
-
-        with col3:
             FIS = st.selectbox(
                 "JML. SOAL FIS.",
                 (15, 20, 25, 30, 35, 40, 45, 50))
 
-        with col4:
+        with col3:
             KIM = st.selectbox(
                 "JML. SOAL KIM.",
+                (15, 20, 25, 30, 35, 40, 45, 50))
+
+        with col4:
+            BIO = st.selectbox(
+                "JML. SOAL BIO.",
                 (15, 20, 25, 30, 35, 40, 45, 50))
 
         JML_SOAL_MAT = MTK
@@ -2179,9 +2179,9 @@ if authentication_status:
             # Jumlah Soal
             ws['F{}'.format(v)] = 'JUMLAH SOAL'
             ws['G{}'.format(v)] = JML_SOAL_MAT
-            ws['H{}'.format(v)] = JML_SOAL_BIO
-            ws['I{}'.format(v)] = JML_SOAL_FIS
-            ws['J{}'.format(v)] = JML_SOAL_KIM
+            ws['H{}'.format(v)] = JML_SOAL_FIS
+            ws['I{}'.format(v)] = JML_SOAL_KIM
+            ws['J{}'.format(v)] = JML_SOAL_BIO
 
             # Z Score
             ws['B1'] = 'NAMA SISWA_A'
@@ -2190,18 +2190,18 @@ if authentication_status:
             ws['E1'] = 'NAMA SEKOLAH_A'
             ws['F1'] = 'LOKASI_A'
             ws['G1'] = 'MAT_A'
-            ws['H1'] = 'BIO_A'
-            ws['I1'] = 'FIS_A'
-            ws['J1'] = 'KIM_A'
+            ws['H1'] = 'FIS_A'
+            ws['I1'] = 'KIM_A'
+            ws['J1'] = 'BIO_A'
             ws['K1'] = 'JML_A'
             ws['L1'] = 'Z_MAT_A'
-            ws['M1'] = 'Z_BIO_A'
-            ws['N1'] = 'Z_FIS_A'
-            ws['O1'] = 'Z_KIM_A'
+            ws['M1'] = 'Z_FIS_A'
+            ws['N1'] = 'Z_KIM_A'
+            ws['O1'] = 'Z_BIO_A'
             ws['P1'] = 'S_MAT_A'
-            ws['Q1'] = 'S_BIO_A'
-            ws['R1'] = 'S_FIS_A'
-            ws['S1'] = 'S_KIM_A'
+            ws['Q1'] = 'S_FIS_A'
+            ws['R1'] = 'S_KIM_A'
+            ws['S1'] = 'S_BIO_A'
             ws['T1'] = 'S_JML_A'
             ws['U1'] = 'RANK NAS._A'
             ws['V1'] = 'RANK LOK._A'
@@ -2264,9 +2264,9 @@ if authentication_status:
 
             # tambahan
             ws['W1'] = 'MAT_20_A'
-            ws['X1'] = 'BIO_20_A'
-            ws['Y1'] = 'FIS_20_A'
-            ws['Z1'] = 'KIM_20_A'
+            ws['X1'] = 'FIS_20_A'
+            ws['Y1'] = 'KIM_20_A'
+            ws['Z1'] = 'BIO_20_A'
             ws['W1'].font = Font(bold=False, name='Calibri', size=11)
             ws['X1'].font = Font(bold=False, name='Calibri', size=11)
             ws['Y1'].font = Font(bold=False, name='Calibri', size=11)
@@ -2281,6 +2281,8 @@ if authentication_status:
                 fill_type='solid', start_color='00FF6600', end_color='00FF6600')
 
             for row in range(2, q+1):
+                ws['K{}'.format(
+                    row)] = '=SUM(G{}:J{})'.format(row, row, row)
                 ws['L{}'.format(
                     row)] = '=IFERROR(ROUND(IF(G{}="","",(G{}-G${})/G${}),2),"")'.format(row, row, r, s)
                 ws['M{}'.format(
@@ -2321,18 +2323,18 @@ if authentication_status:
             ws['AE1'] = 'NAMA SEKOLAH_B'
             ws['AF1'] = 'LOKASI_B'
             ws['AG1'] = 'MAT_B'
-            ws['AH1'] = 'BIO_B'
-            ws['AI1'] = 'FIS_B'
-            ws['AJ1'] = 'KIM_B'
+            ws['AH1'] = 'FIS_B'
+            ws['AI1'] = 'KIM_B'
+            ws['AJ1'] = 'BIO_B'
             ws['AK1'] = 'JML_B'
             ws['AL1'] = 'Z_MAT_B'
-            ws['AM1'] = 'Z_BIO_B'
-            ws['AN1'] = 'Z_FIS_B'
-            ws['AO1'] = 'Z_KIM_B'
+            ws['AM1'] = 'Z_FIS_B'
+            ws['AN1'] = 'Z_KIM_B'
+            ws['AO1'] = 'Z_BIO_B'
             ws['AP1'] = 'S_MAT_B'
-            ws['AQ1'] = 'S_BIO_B'
-            ws['AR1'] = 'S_FIS_B'
-            ws['AS1'] = 'S_KIM_B'
+            ws['AQ1'] = 'S_FIS_B'
+            ws['AR1'] = 'S_KIM_B'
+            ws['AS1'] = 'S_BIO_B'
             ws['AT1'] = 'S_JML_B'
             ws['AU1'] = 'RANK NAS._B'
             ws['AV1'] = 'RANK LOK._B'
@@ -2395,9 +2397,9 @@ if authentication_status:
 
             # tambahan
             ws['AW1'] = 'MAT_20'
-            ws['AX1'] = 'BIO_20'
-            ws['AY1'] = 'FIS_20'
-            ws['AZ1'] = 'KIM_20'
+            ws['AX1'] = 'FIS_20'
+            ws['AY1'] = 'KIM_20'
+            ws['AZ1'] = 'BIO_20'
             ws['AW1'].font = Font(bold=False, name='Calibri', size=11)
             ws['AX1'].font = Font(bold=False, name='Calibri', size=11)
             ws['AY1'].font = Font(bold=False, name='Calibri', size=11)
@@ -2465,18 +2467,18 @@ if authentication_status:
             ws['BE1'] = 'NAMA SEKOLAH_C'
             ws['BF1'] = 'LOKASI_C'
             ws['BG1'] = 'MAT_C'
-            ws['BH1'] = 'BIO_C'
-            ws['BI1'] = 'FIS_C'
-            ws['BJ1'] = 'KIM_C'
+            ws['BH1'] = 'FIS_C'
+            ws['BI1'] = 'KIM_C'
+            ws['BJ1'] = 'BIO_C'
             ws['BK1'] = 'JML_C'
             ws['BL1'] = 'Z_MAT_C'
-            ws['BM1'] = 'Z_BIO_C'
-            ws['BN1'] = 'Z_FIS_C'
-            ws['BO1'] = 'Z_KIM_C'
+            ws['BM1'] = 'Z_FIS_C'
+            ws['BN1'] = 'Z_KIM_C'
+            ws['BO1'] = 'Z_BIO_C'
             ws['BP1'] = 'S_MAT_C'
-            ws['BQ1'] = 'S_BIO_C'
-            ws['BR1'] = 'S_FIS_C'
-            ws['BS1'] = 'S_KIM_C'
+            ws['BQ1'] = 'S_FIS_C'
+            ws['BR1'] = 'S_KIM_C'
+            ws['BS1'] = 'S_BIO_C'
             ws['BT1'] = 'S_JML_C'
             ws['BU1'] = 'RANK NAS._C'
             ws['BV1'] = 'RANK LOK._C'
@@ -2539,9 +2541,9 @@ if authentication_status:
 
             # tambahan
             ws['BW1'] = 'MAT_20_C'
-            ws['BX1'] = 'BIO_20_C'
-            ws['BY1'] = 'FIS_20_C'
-            ws['BZ1'] = 'KIM_20_C'
+            ws['BX1'] = 'FIS_20_C'
+            ws['BY1'] = 'KIM_20_C'
+            ws['BZ1'] = 'BIO_20_C'
             ws['BW1'].font = Font(bold=False, name='Calibri', size=11)
             ws['BX1'].font = Font(bold=False, name='Calibri', size=11)
             ws['BY1'].font = Font(bold=False, name='Calibri', size=11)
@@ -2614,18 +2616,18 @@ if authentication_status:
             ws['CE1'] = 'NAMA SEKOLAH_D'
             ws['CF1'] = 'LOKASI_D'
             ws['CG1'] = 'MAT_D'
-            ws['CH1'] = 'BIO_D'
-            ws['CI1'] = 'FIS_D'
-            ws['CJ1'] = 'KIM_D'
+            ws['CH1'] = 'FIS_D'
+            ws['CI1'] = 'KIM_D'
+            ws['CJ1'] = 'BIO_D'
             ws['CK1'] = 'JML_D'
             ws['CL1'] = 'Z_MAT_D'
-            ws['CM1'] = 'Z_BIO_D'
-            ws['CN1'] = 'Z_FIS_D'
-            ws['CO1'] = 'Z_KIM_D'
+            ws['CM1'] = 'Z_FIS_D'
+            ws['CN1'] = 'Z_KIM_D'
+            ws['CO1'] = 'Z_BIO_D'
             ws['CP1'] = 'S_MAT_D'
-            ws['CQ1'] = 'S_BIO_D'
-            ws['CR1'] = 'S_FIS_D'
-            ws['CS1'] = 'S_KIM_D'
+            ws['CQ1'] = 'S_FIS_D'
+            ws['CR1'] = 'S_KIM_D'
+            ws['CS1'] = 'S_BIO_D'
             ws['CT1'] = 'S_JML_D'
             ws['CU1'] = 'RANK NAS._D'
             ws['CV1'] = 'RANK LOK._D'
@@ -2688,9 +2690,9 @@ if authentication_status:
 
             # tambahan
             ws['CW1'] = 'MAT_20_D'
-            ws['CX1'] = 'BIO_20_D'
-            ws['CY1'] = 'FIS_20_D'
-            ws['CZ1'] = 'KIM_20_D'
+            ws['CX1'] = 'FIS_20_D'
+            ws['CY1'] = 'KIM_20_D'
+            ws['CZ1'] = 'BIO_20_D'
             ws['CW1'].font = Font(bold=False, name='Calibri', size=11)
             ws['CX1'].font = Font(bold=False, name='Calibri', size=11)
             ws['CY1'].font = Font(bold=False, name='Calibri', size=11)
@@ -2762,18 +2764,18 @@ if authentication_status:
             ws['DE1'] = 'NAMA SEKOLAH_E'
             ws['DF1'] = 'LOKASI_E'
             ws['DG1'] = 'MAT_E'
-            ws['DH1'] = 'BIO_E'
-            ws['DI1'] = 'FIS_E'
-            ws['DJ1'] = 'KIM_E'
+            ws['DH1'] = 'FIS_E'
+            ws['DI1'] = 'KIM_E'
+            ws['DJ1'] = 'BIO_E'
             ws['DK1'] = 'JML_E'
             ws['DL1'] = 'Z_MAT_E'
-            ws['DM1'] = 'Z_BIO_E'
-            ws['DN1'] = 'Z_FIS_E'
-            ws['DO1'] = 'Z_KIM_E'
+            ws['DM1'] = 'Z_FIS_E'
+            ws['DN1'] = 'Z_KIM_E'
+            ws['DO1'] = 'Z_BIO_E'
             ws['DP1'] = 'S_MAT_E'
-            ws['DQ1'] = 'S_BIO_E'
-            ws['DR1'] = 'S_FIS_E'
-            ws['DS1'] = 'S_KIM_E'
+            ws['DQ1'] = 'S_FIS_E'
+            ws['DR1'] = 'S_KIM_E'
+            ws['DS1'] = 'S_BIO_E'
             ws['DT1'] = 'S_JML_E'
             ws['DU1'] = 'RANK NAS._E'
             ws['DV1'] = 'RANK LOK._E'
@@ -2836,9 +2838,9 @@ if authentication_status:
 
             # tambahan
             ws['DW1'] = 'MAT_20'
-            ws['DX1'] = 'BIO_20'
-            ws['DY1'] = 'FIS_20'
-            ws['DZ1'] = 'KIM_20'
+            ws['DX1'] = 'FIS_20'
+            ws['DY1'] = 'KIM_20'
+            ws['DZ1'] = 'BIO_20'
             ws['DW1'].font = Font(bold=False, name='Calibri', size=11)
             ws['DX1'].font = Font(bold=False, name='Calibri', size=11)
             ws['DY1'].font = Font(bold=False, name='Calibri', size=11)
@@ -2911,18 +2913,18 @@ if authentication_status:
             ws['EE1'] = 'NAMA SEKOLAH'
             ws['EF1'] = 'LOKASI'
             ws['EG1'] = 'MAT'
-            ws['EH1'] = 'BIO'
-            ws['EI1'] = 'FIS'
-            ws['EJ1'] = 'KIM'
+            ws['EH1'] = 'FIS'
+            ws['EI1'] = 'KIM'
+            ws['EJ1'] = 'BIO'
             ws['EK1'] = 'JML'
             ws['EL1'] = 'Z_MAT'
-            ws['EM1'] = 'Z_BIO'
-            ws['EN1'] = 'Z_FIS'
-            ws['EO1'] = 'Z_KIM'
+            ws['EM1'] = 'Z_FIS'
+            ws['EN1'] = 'Z_KIM'
+            ws['EO1'] = 'Z_BIO'
             ws['EP1'] = 'S_MAT'
-            ws['EQ1'] = 'S_BIO'
-            ws['ER1'] = 'S_FIS'
-            ws['ES1'] = 'S_KIM'
+            ws['EQ1'] = 'S_FIS'
+            ws['ER1'] = 'S_KIM'
+            ws['ES1'] = 'S_BIO'
             ws['ET1'] = 'S_JML'
             ws['EU1'] = 'RANK NAS.'
             ws['EV1'] = 'RANK LOK.'
@@ -2985,9 +2987,9 @@ if authentication_status:
 
             # tambahan
             ws['EW1'] = 'MAT_20'
-            ws['EX1'] = 'BIO_20'
-            ws['EY1'] = 'FIS_20'
-            ws['EZ1'] = 'KIM_20'
+            ws['EX1'] = 'FIS_20'
+            ws['EY1'] = 'KIM_20'
+            ws['EZ1'] = 'BIO_20'
             ws['EW1'].font = Font(bold=False, name='Calibri', size=11)
             ws['EX1'].font = Font(bold=False, name='Calibri', size=11)
             ws['EY1'].font = Font(bold=False, name='Calibri', size=11)
