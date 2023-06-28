@@ -420,12 +420,12 @@ if authentication_status:
             w = len(ws['K'])+7
             x = len(ws['K'])+8
 
-            ws['G{}'.format(r)] = "=ROUND(AVERAGE(G2:G{}),2)".format(q)
-            ws['H{}'.format(r)] = "=ROUND(AVERAGE(H2:H{}),2)".format(q)
-            ws['I{}'.format(r)] = "=ROUND(AVERAGE(I2:I{}),2)".format(q)
-            ws['J{}'.format(r)] = "=ROUND(AVERAGE(J2:J{}),2)".format(q)
-            ws['K{}'.format(r)] = "=ROUND(AVERAGE(K2:K{}),2)".format(q)
-            ws['L{}'.format(r)] = "=ROUND(AVERAGE(L2:L{}),2)".format(q)
+            ws['G{}'.format(r)] = "=ROUND(AVERAGE(G2:G{}),2)".format(q)  # mat
+            ws['H{}'.format(r)] = "=ROUND(AVERAGE(H2:H{}),2)".format(q)  # ind
+            ws['I{}'.format(r)] = "=ROUND(AVERAGE(I2:I{}),2)".format(q)  # eng
+            ws['J{}'.format(r)] = "=ROUND(AVERAGE(J2:J{}),2)".format(q)  # ipa
+            ws['K{}'.format(r)] = "=ROUND(AVERAGE(K2:K{}),2)".format(q)  # ips
+            ws['L{}'.format(r)] = "=ROUND(AVERAGE(L2:L{}),2)".format(q)  # jml
             ws['G{}'.format(s)] = "=STDEV(G2:G{})".format(q)
             ws['H{}'.format(s)] = "=STDEV(H2:H{})".format(q)
             ws['I{}'.format(s)] = "=STDEV(I2:I{})".format(q)
@@ -878,6 +878,8 @@ if authentication_status:
                 fill_type='solid', start_color='00FF6600', end_color='00FF6600')
 
             for row in range(2, q+1):
+                ws['L{}'.format(
+                    row)] = '=SUM(G{}:K{})'.format(row, row, row)
                 ws['M{}'.format(
                     row)] = '=IFERROR(ROUND(IF(G{}="","",(G{}-G${})/G${}),2),"")'.format(row, row, r, s)
                 ws['N{}'.format(
