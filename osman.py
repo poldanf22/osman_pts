@@ -3,7 +3,7 @@ import streamlit as st
 import streamlit_authenticator as stauth
 from pathlib import Path
 from PIL import Image
-import subprocess
+import pandas as pd
 from streamlit_option_menu import option_menu
 import openpyxl
 from openpyxl.styles import Font, PatternFill
