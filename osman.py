@@ -3917,6 +3917,8 @@ if authentication_status:
                 fill_type='solid', start_color='00FF6600', end_color='00FF6600')
 
             for row in range(2, q+1):
+                ws['N{}'.format(
+                    row)] = '=SUM(G{}:M{})'.format(row, row, row)
                 ws['O{}'.format(
                     row)] = '=IFERROR(ROUND(IF(G{}="","",(G{}-G${})/G${}),2),"")'.format(row, row, r, s)
                 ws['P{}'.format(
