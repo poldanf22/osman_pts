@@ -8,6 +8,7 @@ from streamlit_option_menu import option_menu
 import openpyxl
 from openpyxl.styles import Font, PatternFill
 import tempfile
+import time
 
 # User Authentication
 names = ["TI Polda NF 1", "TI Polda NF 2"]
@@ -1728,6 +1729,9 @@ if authentication_status:
                     v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
                 ws['FX{}'.format(row)] = '=IF($K${}=25,IF(AND(FE{}>4,FP{}=20),1,""),IF($K${}=30,IF(AND(FE{}>5,FP{}=20),1,""),IF($K${}=35,IF(AND(FE{}>6,FP{}=20),1,""),IF($K${}=40,IF(AND(FE{}>7,FP{}=20),1,""),IF($K${}=45,IF(AND(FE{}>8,FP{}=20),1,""))))))'.format(
                     v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
+
+            with st.spinner('Mohon ditunggu...'):
+                time.sleep(5)
 
             # Mengubah 'KELAS' sesuai dengan nilai yang dipilih dari selectbox 'KELAS'
             kelas = KELAS.lower().replace(" ", "")
