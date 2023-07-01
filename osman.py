@@ -1729,7 +1729,7 @@ if authentication_status:
                 ws['FX{}'.format(row)] = '=IF($K${}=25,IF(AND(FE{}>4,FP{}=20),1,""),IF($K${}=30,IF(AND(FE{}>5,FP{}=20),1,""),IF($K${}=35,IF(AND(FE{}>6,FP{}=20),1,""),IF($K${}=40,IF(AND(FE{}>7,FP{}=20),1,""),IF($K${}=45,IF(AND(FE{}>8,FP{}=20),1,""))))))'.format(
                     v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
 
-            with st.spinner('Mohon ditunggu...')
+            st.spinner('Mohon ditunggu...')
 
             # Mengubah 'KELAS' sesuai dengan nilai yang dipilih dari selectbox 'KELAS'
             kelas = KELAS.lower().replace(" ", "")
