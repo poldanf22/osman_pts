@@ -289,8 +289,8 @@ if authentication_status:
                          'LHH0U12P': 'MAT_4KM', 'LHH19TQN': 'IND_4KM', 'LHH47YLV': 'ENG_4KM', 'LHH4U3Q0': 'IPAS_4KM',
                          'LHG94EEQ': 'MAT_4SD', 'LHG9KCRA': 'IND_4SD', 'LHGA44Y9': 'ENG_4SD', 'LHGALT9N': 'IPA_4SD', 'LHH0F32F': 'IPS_4SD'})
 
-             st.spinner('Mohon ditunggu...')
-            
+            st.spinner('Mohon ditunggu...')
+
             result_pivot = result_pivot.reindex(columns=column_order)
 
             kelas = KELAS.lower().replace(" ", "")
