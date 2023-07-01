@@ -289,8 +289,6 @@ if authentication_status:
                          'LHH0U12P': 'MAT_4KM', 'LHH19TQN': 'IND_4KM', 'LHH47YLV': 'ENG_4KM', 'LHH4U3Q0': 'IPAS_4KM',
                          'LHG94EEQ': 'MAT_4SD', 'LHG9KCRA': 'IND_4SD', 'LHGA44Y9': 'ENG_4SD', 'LHGALT9N': 'IPA_4SD', 'LHH0F32F': 'IPS_4SD'})
 
-            st.spinner('Mohon ditunggu...')
-
             result_pivot = result_pivot.reindex(columns=column_order)
 
             kelas = KELAS.lower().replace(" ", "")
@@ -1730,8 +1728,6 @@ if authentication_status:
                     v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
                 ws['FX{}'.format(row)] = '=IF($K${}=25,IF(AND(FE{}>4,FP{}=20),1,""),IF($K${}=30,IF(AND(FE{}>5,FP{}=20),1,""),IF($K${}=35,IF(AND(FE{}>6,FP{}=20),1,""),IF($K${}=40,IF(AND(FE{}>7,FP{}=20),1,""),IF($K${}=45,IF(AND(FE{}>8,FP{}=20),1,""))))))'.format(
                     v, row, row, v, row, row, v, row, row, v, row, row, v, row, row)
-
-            st.spinner('Mohon ditunggu...')
 
             # Mengubah 'KELAS' sesuai dengan nilai yang dipilih dari selectbox 'KELAS'
             kelas = KELAS.lower().replace(" ", "")
