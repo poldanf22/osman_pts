@@ -111,7 +111,7 @@ if authentication_status:
         image = Image.open('logo resmi nf resize.png')
         st.image(image)
 
-        st.title("PIVOT - PTS SEMESTER 1")
+        st.title("PIVOT - PTS")
 
         col1 = st.container()
         with col1:
@@ -259,7 +259,7 @@ if authentication_status:
         with col8:
             PENILAIAN = st.selectbox(
                 "PENILAIAN",
-                ("PENILAIAN TENGAH SEMESTER"))
+                ("--Pilih Semester--", "PENILAIAN TENGAH SEMESTER 1", "PENILAIAN TENGAH SEMESTER 2"))
 
         col9 = st.container()
 
