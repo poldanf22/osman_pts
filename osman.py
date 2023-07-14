@@ -128,7 +128,7 @@ if authentication_status:
         col3 = st.container()
         with col3:
             SEMESTER = st.selectbox(
-                "KELAS",
+                "SEMESTER",
                 ("--Pilih Semester--", "SEMESTER 1", "SEMESTER 2"))
 
         TAHUN = st.text_input("Masukkan Tahun Ajaran",
