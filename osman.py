@@ -125,6 +125,12 @@ if authentication_status:
                 "KELAS",
                 ("--Pilih Kelas--", "4 SD", "5 SD", "6 SD", "7 SMP", "8 SMP", "9 SMP"))
 
+        col3 = st.container()
+        with col3:
+            SEMESTER = st.selectbox(
+                "KELAS",
+                ("--Pilih Semester--", "SEMESTER 1", "SEMESTER 2"))
+
         TAHUN = st.text_input("Masukkan Tahun Ajaran",
                               placeholder="contoh: 2022-2023")
 
@@ -195,8 +201,9 @@ if authentication_status:
             kelas = KELAS.lower().replace(" ", "")
             kurikulum = KURIKULUM.lower()
             tahun = TAHUN.replace("-", "")
+            semester = SEMESTER.lower()
 
-            path_file = f"{kelas}_pat_sm2_{kurikulum}_{tahun}_pivot.xlsx"
+            path_file = f"{kelas}_pts_{semester}_{kurikulum}_{tahun}_pivot.xlsx"
 
             # Simpan file ke direktori temporer
             temp_dir = tempfile.gettempdir()
