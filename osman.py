@@ -274,16 +274,16 @@ if authentication_status:
 
             result_filtered = result[result['kode'].isin(kode_kls_kur)]
             result_filtered.drop_duplicates(
-                subset=['name', 'kode'], keep='first', inplace=True)
+                subset=['nama', 'kode'], keep='first', inplace=True)
 
             # Menggunakan pivot_table untuk menjadikan konten kolom 'kode' sebagai header dan menghilangkan duplikat
             result_pivot = pd.pivot_table(result_filtered, index=[
-                'name', 'no_nf', 'lokasi_id', 'sekolah', 'kelas_id', 'tahun_ajaran'], columns='kode', values='jumlah_benar', aggfunc='first')
+                'nama', 'no_nf', 'lokasi_id', 'sekolah', 'kelas_id', 'tahun_ajaran'], columns='kode', values='jumlah_benar', aggfunc='first')
             result_pivot.reset_index(inplace=True)  # Mengatur ulang indeks
 
             # Ubah nama kolom
             result_pivot = result_pivot.rename(
-                columns={'name': 'NAMA', 'no_nf': 'NONF', 'lokasi_id': 'KD_LOK', 'sekolah': 'NAMA_SKLH', 'kelas_id': 'KELAS', 'tahun_ajaran': 'IDTAHUN',
+                columns={'nama': 'NAMA', 'no_nf': 'NONF', 'lokasi_id': 'KD_LOK', 'sekolah': 'NAMA_SKLH', 'kelas_id': 'KELAS', 'tahun_ajaran': 'IDTAHUN',
                          'LM47QOI3': 'MAT_4SD', 'LM489WSA': 'IND_4SD', 'LM48GJ1W': 'ENG_4SD', 'LM48NVWR': 'IPA_4SD', 'LM48Q846': 'IPS_4SD',
                          'LM48SNIQ': 'MAT_5SD', 'LM48UUB0': 'IND_5SD', 'LM48WYUX': 'ENG_5SD', 'LM48YL8I': 'IPA_5SD', 'LM4904RV': 'IPS_5SD',
                          'LM49BLB1': 'MAT_6SD', 'LM49DP7D': 'IND_6SD', 'LM49FVOL': 'ENG_6SD', 'LM4A9AEX': 'IPA_6SD', 'LM4AATC8': 'IPS_6SD',
