@@ -276,6 +276,7 @@ if authentication_status:
             result_pivot = pd.pivot_table(result_filtered, index=[
                 'nama', 'nonf', 'kd_lok', 'nama_sklh', 'kelas', 'idtahun'], columns='kode', values='jml_benar', aggfunc='first')
             result_pivot.reset_index(inplace=True)  # Mengatur ulang indeks
+            result_pivot['nonf'].fillna('skolla', inplace=True)
 
             # Ubah nama kolom
             result_pivot = result_pivot.rename(
@@ -294,7 +295,6 @@ if authentication_status:
                          'LM4DHEHI': 'GEO_PPLS_IPS', 'LM4DQ997': 'EKO_PPLS_IPS', 'LM4DJK3I': 'SEJ_PPLS_IPS', 'LM4DOPS3': 'SOS_PPLS_IPS'})
 
             result_pivot = result_pivot.reindex(columns=column_order)
-            result_pivot = result_pivot['NONF'].fillna('skolla', inplace=True)
 
             kelas = KELAS.lower().replace(" ", "")
             kurikulum = KURIKULUM.lower()
