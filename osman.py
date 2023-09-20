@@ -272,13 +272,13 @@ if authentication_status:
                 kode_kls_kur = ppls_ips
                 column_order = column_order_ppls_ips
 
-            result_filtered = result[result['kode_paket'].isin(kode_kls_kur)]
+            result_filtered = result[result['kode'].isin(kode_kls_kur)]
             result_filtered.drop_duplicates(
-                subset=['name', 'kode_paket'], keep='first', inplace=True)
+                subset=['name', 'kode'], keep='first', inplace=True)
 
-            # Menggunakan pivot_table untuk menjadikan konten kolom 'kode_paket' sebagai header dan menghilangkan duplikat
+            # Menggunakan pivot_table untuk menjadikan konten kolom 'kode' sebagai header dan menghilangkan duplikat
             result_pivot = pd.pivot_table(result_filtered, index=[
-                'name', 'no_nf', 'lokasi_id', 'sekolah', 'kelas_id', 'tahun_ajaran'], columns='kode_paket', values='jumlah_benar', aggfunc='first')
+                'name', 'no_nf', 'lokasi_id', 'sekolah', 'kelas_id', 'tahun_ajaran'], columns='kode', values='jumlah_benar', aggfunc='first')
             result_pivot.reset_index(inplace=True)  # Mengatur ulang indeks
 
             # Ubah nama kolom
