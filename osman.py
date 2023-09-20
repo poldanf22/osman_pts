@@ -136,7 +136,7 @@ if authentication_status:
         km_4sd_mat = 'LM47IX82'
         km_4sd_ind = 'LM47LN5E'
         km_4sd_eng = 'LM47OQMM'
-        km_4sd_ipas = 'LM47SWCL
+        km_4sd_ipas = 'LM47SWCL'
         km_4sd = [km_4sd_mat, km_4sd_ind,
                   km_4sd_eng, km_4sd_ipas]
         column_order_km_4sd = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_4SD', 'IND_4SD',
