@@ -221,7 +221,7 @@ if authentication_status:
             jawaban = pd.read_excel(uploaded_jawaban)
 
         if bobot is not None and bobot is not None:
-            bobot = bobot.drop(['id', 'jns_paket', 'jns_tes', 'nama_tes', 'kel_studi',
+            bobot = bobot.drop(['id', 'jns_pkt', 'jns_tes', 'nama_tes', 'kel_studi',
                                   'no_soal', 'bobot', 'kd_studi', 'bab',
                                   'eigen', 'kode_soal', 'st_eigen', 'modified_time','kode_naskah',
                                   'group_tes', 'kunci', 'sequence', 'label', 'item_id'], axis=1)  # Menghilangkan kolom sebelum dilakukan merge
