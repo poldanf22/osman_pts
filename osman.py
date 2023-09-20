@@ -305,7 +305,7 @@ if authentication_status:
             semester = SEMESTER.lower()
             penilaian = PENILAIAN.lower()
 
-            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_pivot.xlsx"
+            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_skolla_pivot.xlsx"
 
             # Simpan file ke direktori temporer
             temp_dir = tempfile.gettempdir()
@@ -1740,7 +1740,7 @@ if authentication_status:
             penilaian = PENILAIAN.lower()
             kurikulum = KURIKULUM.lower()
 
-            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
+            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_skolla_nilai_std.xlsx"
 
             # Simpan file ke direktori temporer
             temp_dir = tempfile.gettempdir()
@@ -3177,7 +3177,7 @@ if authentication_status:
             penilaian = PENILAIAN.lower()
             kurikulum = KURIKULUM.lower()
 
-            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
+            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_skolla_nilai_std.xlsx"
 
             # Simpan file ke direktori temporer
             temp_dir = tempfile.gettempdir()
@@ -4503,7 +4503,7 @@ if authentication_status:
             penilaian = PENILAIAN.lower()
             kurikulum = KURIKULUM.lower()
 
-            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
+            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_skolla_nilai_std.xlsx"
 
             # Simpan file ke direktori temporer
             temp_dir = tempfile.gettempdir()
@@ -5829,7 +5829,7 @@ if authentication_status:
             penilaian = PENILAIAN.lower()
             kurikulum = KURIKULUM.lower()
 
-            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
+            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_skolla_nilai_std.xlsx"
 
             # Simpan file ke direktori temporer
             temp_dir = tempfile.gettempdir()
@@ -7155,7 +7155,7 @@ if authentication_status:
             penilaian = PENILAIAN.lower()
             kurikulum = KURIKULUM.lower()
 
-            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_nilai_std.xlsx"
+            path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_skolla_nilai_std.xlsx"
 
             # Simpan file ke direktori temporer
             temp_dir = tempfile.gettempdir()
