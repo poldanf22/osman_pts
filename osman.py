@@ -227,8 +227,6 @@ if authentication_status:
             result = pd.merge(bobot, jwb[['kode', 'nama', 'nonf', 'kd_lok',
                                           'nama_sklh', 'kelas', 'jml_benar']], on='kode', how='left')
 
-            result['nonf'].fillna('skolla', inplace=True)
-
             # k13
             if KELAS == "4 SD" and KURIKULUM == "K13":
                 kode_kls_kur = k13_4sd
@@ -313,7 +311,7 @@ if authentication_status:
             # Menyimpan DataFrame ke file Excel
             result_pivot.to_excel(file_path, index=False)
             st.success("File siap diunduh!")
-            st.write(result_pivot)
+            st.write(result)
 
             # Tombol unduh file
             with open(file_path, "rb") as f:
