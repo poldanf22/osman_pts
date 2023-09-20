@@ -294,7 +294,7 @@ if authentication_status:
                          'LM4DHEHI': 'GEO_PPLS_IPS', 'LM4DQ997': 'EKO_PPLS_IPS', 'LM4DJK3I': 'SEJ_PPLS_IPS', 'LM4DOPS3': 'SOS_PPLS_IPS'})
 
             result_pivot = result_pivot.reindex(columns=column_order)
-            result_pivot = result_pivot['nonf'].fillna('skolla', inplace=True)
+            result_pivot = result_pivot['NONF'].fillna('skolla', inplace=True)
 
             kelas = KELAS.lower().replace(" ", "")
             kurikulum = KURIKULUM.lower()
