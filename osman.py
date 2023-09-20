@@ -177,7 +177,7 @@ if authentication_status:
         image = Image.open('logo resmi nf resize.png')
         st.image(image)
 
-        st.title("PIVOT DOANG")
+        st.title("PIVOT-PTS")
 
         col1 = st.container()
         with col1:
