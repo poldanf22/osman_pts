@@ -274,8 +274,8 @@ if authentication_status:
 
             # Menggunakan pivot_table untuk menjadikan konten kolom 'kode' sebagai header dan menghilangkan duplikat
             result_pivot = pd.pivot_table(result_filtered, index=[
-                'nama', 'kd_lok', 'nama_sklh', 'kelas', 'idtahun'], columns='kode', values='jml_benar', aggfunc='first')
-            result_pivot.reset_index(inplace=True)  # Mengatur ulang indeks
+                'nama', 'nonf', 'kd_lok', 'nama_sklh', 'kelas', 'idtahun'], columns='kode', values='jml_benar', aggfunc='first')
+            # Mengatur ulang indeks
 
             # Ubah nama kolom
             result_pivot = result_pivot.rename(
