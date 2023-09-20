@@ -269,6 +269,8 @@ if authentication_status:
                 column_order = column_order_ppls_ips
 
             result_filtered = result[result['kode'].isin(kode_kls_kur)]
+            result_filtered['nonf'].fillna('skolla', inplace=True)
+            
             result_filtered.drop_duplicates(
                 subset=['nama', 'kode'], keep='first', inplace=True)
 
@@ -276,7 +278,6 @@ if authentication_status:
             result_pivot = pd.pivot_table(result_filtered, index=[
                 'nama', 'nonf', 'kd_lok', 'nama_sklh', 'kelas', 'idtahun'], columns='kode', values='jml_benar', aggfunc='first')
             result_pivot.reset_index(inplace=True)  # Mengatur ulang indeks
-            result_pivot['nonf'].fillna('skolla', inplace=True)
 
             # Ubah nama kolom
             result_pivot = result_pivot.rename(
