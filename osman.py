@@ -227,6 +227,8 @@ if authentication_status:
             result = pd.merge(bobot, jwb[['kode', 'nama', 'nonf', 'kd_lok',
                                           'nama_sklh', 'kelas', 'jml_benar']], on='kode', how='left')
 
+            result['nonf'].fillna('skolla', inplace=True)
+
             # k13
             if KELAS == "4 SD" and KURIKULUM == "K13":
                 kode_kls_kur = k13_4sd
@@ -269,8 +271,6 @@ if authentication_status:
                 column_order = column_order_ppls_ips
 
             result_filtered = result[result['kode'].isin(kode_kls_kur)]
-            result_filtered['nonf'].fillna('skolla', inplace=True)
-            
             result_filtered.drop_duplicates(
                 subset=['nama', 'kode'], keep='first', inplace=True)
 
