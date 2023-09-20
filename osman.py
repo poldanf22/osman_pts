@@ -311,7 +311,7 @@ if authentication_status:
             # Menyimpan DataFrame ke file Excel
             result_pivot.to_excel(file_path, index=False)
             st.success("File siap diunduh!")
-            st.write(result_pivot)
+            st.write(result_filtered)
 
             # Tombol unduh file
             with open(file_path, "rb") as f:
