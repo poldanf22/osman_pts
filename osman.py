@@ -207,27 +207,26 @@ if authentication_status:
                               placeholder="contoh: 2022-2023")
 
         uploaded_bobot = st.file_uploader(
-            'Letakkan file excel Bobot', type='xlsx')
-        uploaded_jawaban = st.file_uploader(
-            'Letakkan file excel Jawaban', type='xlsx')
+            'Letakkan file excel bobot TO', type='xlsx')
+        uploaded_jwb = st.file_uploader(
+            'Letakkan file excel jwb TO', type='xlsx')
 
         bobot = None
-        jawaban = None
+        jwb = None
 
         if uploaded_bobot is not None:
             bobot = pd.read_excel(uploaded_bobot)
 
-        if uploaded_jawaban is not None:
-            jawaban = pd.read_excel(uploaded_jawaban)
+        if uploaded_jwb is not None:
+            jwb = pd.read_excel(uploaded_jwb)
 
-        if bobot is not None and bobot is not None:
-            bobot = bobot.drop(['id', 'jns_pkt', 'jns_tes', 'nama_tes', 'kel_studi',
-                                  'no_soal', 'bobot', 'kd_studi', 'bab',
-                                  'eigen', 'kode_soal', 'st_eigen', 'modified_time','kode_naskah',
-                                  'group_tes', 'kunci', 'sequence', 'label', 'item_id'], axis=1)  # Menghilangkan kolom sebelum dilakukan merge
+        if bobot is not None and jwb is not None:
+            bobot = bobot.drop(['id', 'jns_pkt', 'jns_tes', 'kel_studi', 'nama_tes', 'no_soal', 'bobot', 'kd_studi', 'bab', 'eigen', 'kode_soal', 'st_eigen',
+                                'modified_time', 'kode_naskah', 'group_tes', 'kunci', 'sequence', 'label', 'item_id'], axis=1)  # Menghilangkan kolom sebelum dilakukan merge
 
-            result = pd.merge(bobot, jawaban[['kode', 'nama', 'nonf', 'kd_lok', 'nama_sklh', 'kelas', 'jml_benar']], on='kode', how='left')
-            # Menghapus nilai NaN dari kolom 'kode_paket'
+            result = pd.merge(bobot, jwb[['kode', 'nama', 'nonf', 'kd_lok',
+                                          'nama_sklh', 'kelas', 'jml_benar']], on='kode', how='left')
+            # Menghapus nilai NaN dari kolom 'nonf'
             result = result.dropna(subset=['nonf'])
 
             # k13
