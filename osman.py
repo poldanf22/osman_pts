@@ -226,8 +226,6 @@ if authentication_status:
 
             result = pd.merge(bobot, jwb[['kode', 'nama', 'nonf', 'kd_lok',
                                           'nama_sklh', 'kelas', 'jml_benar']], on='kode', how='left')
-            # Menghapus nilai NaN dari kolom 'nonf'
-            result = result.dropna(subset=['nonf'])
 
             # k13
             if KELAS == "4 SD" and KURIKULUM == "K13":
