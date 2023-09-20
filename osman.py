@@ -226,8 +226,7 @@ if authentication_status:
                                   'eigen', 'kode_soal', 'st_eigen', 'modified_time','kode_naskah',
                                   'group_tes', 'kunci', 'sequence', 'label', 'item_id'], axis=1)  # Menghilangkan kolom sebelum dilakukan merge
 
-            result = pd.merge(bobot, jawaban[['kode', 'nama', 'nonf', 'nama_sklh',
-                                              'kode_naskah', 'jml_benar']], on='no_nf', how='left')
+            result = pd.merge(bobot, jawaban[['kode', 'nama', 'nonf', 'nama_sklh', 'kode_naskah', 'jml_benar']], on='nonf', how='left')
             # Menghapus nilai NaN dari kolom 'kode_paket'
             result = result.dropna(subset=['kode_paket'])
 
